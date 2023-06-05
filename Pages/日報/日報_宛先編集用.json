@@ -1,0 +1,1696 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0,
+          "IsHidden": true
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 6.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 17.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 17.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 17.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 17.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 17.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 17.0
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 17.0
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 17.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 17.0
+        }
+      },
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 6.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0,
+      1
+    ],
+    "Count": 25
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 7.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 7.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 7.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 7.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 44.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 44.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 7.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 7.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 7.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 7.0
+        }
+      }
+    },
+    "Count": 22
+  },
+  "Values": {
+    "2,1": "下記に送信",
+    "2,13": "下記から選択",
+    "4,10": "生駒会計全員",
+    "5,10": "正社員",
+    "6,10": "アシスタント",
+    "7,10": "役員",
+    "7,14": "全選択",
+    "7,17": "全解除",
+    "8,14": "正社員\n選択",
+    "8,16": "準社員\n選択",
+    "8,18": "ｱｼｽﾀﾝﾄ\n選択",
+    "13,10": "←追加",
+    "16,10": "全削除→",
+    "21,2": 0
+  },
+  "Formulas": {
+    "23,2": "IF(C22<>0,C22&\",\",\"\")&C23"
+  },
+  "AttachInfos": {
+    "4,2": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxGroupCellType, ServerDesignerCommon",
+        "Style": 3,
+        "LayoutMode": 1,
+        "ItemSpace": 1,
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "ユーザー",
+        "ValueColumnBindingInfo": {
+          "TableName": "ユーザー",
+          "ColumnName": "MJSID"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "ユーザー",
+          "ColumnName": "名前"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+          "CompareType": 8,
+          "ColumnBindingInfo": {
+            "TableName": "ユーザー",
+            "ColumnName": "MJSID"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=日報_宛先編集用!C24"
+          }
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "ユーザー",
+                "ColumnName": "入社順"
+              },
+              "Order": 0
+            }
+          ]
+        }
+      }
+    },
+    "4,10": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "税理士法人生駒会計",
+            "TableValue": {
+              "TableName": "ユーザー組織_ユーザー",
+              "OnlyGetValue": true,
+              "TableValueType": 0,
+              "BindingInfos": [
+                {
+                  "BindingInfo": {
+                    "TableName": "ユーザー組織_ユーザー",
+                    "ColumnName": "ユーザーID"
+                  },
+                  "ColumnName": "ユーザーID"
+                }
+              ],
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "ユーザー組織_ユーザー",
+                  "ColumnName": "組織"
+                },
+                "Value": "1"
+              }
+            },
+            "ID": "9ae01c6bfee940ba85d9a8fc1c6afae4"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=日報_宛先編集用!atesaki222"
+                      }
+                    ]
+                  },
+                  "value": "0",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日報_宛先編集用!C22"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日報_宛先編集用!atesaki222"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "28db9521-7241-4b7d-8aec-49364dd1bb49"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_宛先編集用!C23"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_宛先編集用!税理士法人生駒会計"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_宛先編集用!atesaki222"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_宛先編集用!C24"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "生駒会計全員",
+        "TemplateKey": "_RS_Outline_RoundCorner_Style5"
+      }
+    },
+    "4,14": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "ValidateItem": true,
+        "TemplateKey": "_RS_DarkLine_LargeRoundCorner_Normal6",
+        "WaterMark": "組織",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "ユーザー組織_ユーザー",
+        "ValueColumnBindingInfo": {
+          "TableName": "ユーザー組織_ユーザー",
+          "ColumnName": "ユーザーID"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "ユーザー組織_ユーザー",
+          "ColumnName": "組織名"
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "ユーザー組織_ユーザー",
+                "ColumnName": "表示順"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "AddNullItemWhenBinding": true,
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_宛先編集用!O11"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_宛先編集用!O5"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_宛先編集用!O22"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_宛先編集用!O5"
+                }
+              }
+            ],
+            "Comments": "O10に値を入れて全選択、O22に値を入れて全選択ボタンで選択できるように"
+          }
+        ]
+      }
+    },
+    "5,10": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "正社員",
+            "TableValue": {
+              "TableName": "ユーザー組織_ユーザー",
+              "OnlyGetValue": true,
+              "TableValueType": 0,
+              "BindingInfos": [
+                {
+                  "BindingInfo": {
+                    "TableName": "ユーザー組織_ユーザー",
+                    "ColumnName": "ユーザーID"
+                  },
+                  "ColumnName": "ユーザーID"
+                }
+              ],
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "ユーザー組織_ユーザー",
+                  "ColumnName": "組織"
+                },
+                "Value": "3"
+              }
+            },
+            "ID": "08365e5c087d474ab7b4c5c44188ed21"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=日報_宛先編集用!atesaki222"
+                      }
+                    ]
+                  },
+                  "value": "0",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日報_宛先編集用!C22"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日報_宛先編集用!atesaki222"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "c851382c-452f-4cb0-95cc-e28be4b71f5b"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_宛先編集用!C23"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_宛先編集用!正社員"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_宛先編集用!atesaki222"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_宛先編集用!C24"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "正社員",
+        "TemplateKey": "_RS_Outline_RoundCorner_Style5"
+      }
+    },
+    "5,14": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "ValidateItem": true,
+        "TemplateKey": "_RS_DarkLine_LargeRoundCorner_Normal6",
+        "WaterMark": "チーム",
+        "IsBounding": true,
+        "NoneItemText": "",
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "ユーザーチーム_ユーザー",
+        "ValueColumnBindingInfo": {
+          "TableName": "ユーザーチーム_ユーザー",
+          "ColumnName": "ユーザーID"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "ユーザーチーム_ユーザー",
+          "ColumnName": "チーム名"
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "ユーザーチーム_ユーザー",
+                "ColumnName": "表示順"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "AddNullItemWhenBinding": true,
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_宛先編集用!O22"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_宛先編集用!O6"
+                }
+              }
+            ],
+            "Comments": "O22に値を入れて全選択ボタンで選択できるように"
+          }
+        ]
+      }
+    },
+    "6,10": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "アシスタント",
+            "TableValue": {
+              "TableName": "ユーザー組織_ユーザー",
+              "OnlyGetValue": true,
+              "TableValueType": 0,
+              "BindingInfos": [
+                {
+                  "BindingInfo": {
+                    "TableName": "ユーザー組織_ユーザー",
+                    "ColumnName": "ユーザーID"
+                  },
+                  "ColumnName": "ユーザーID"
+                }
+              ],
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "ユーザー組織_ユーザー",
+                  "ColumnName": "組織"
+                },
+                "Value": "5"
+              }
+            },
+            "ID": "337445eb981b49bdada7a08644c3c0bb"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=日報_宛先編集用!atesaki222"
+                      }
+                    ]
+                  },
+                  "value": "0",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日報_宛先編集用!C22"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日報_宛先編集用!atesaki222"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "78f94368-ea0f-4ade-b9d2-10cf81825b08"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_宛先編集用!C23"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_宛先編集用!アシスタント"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_宛先編集用!atesaki222"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_宛先編集用!C24"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "アシスタント",
+        "TemplateKey": "_RS_Outline_RoundCorner_Style5"
+      }
+    },
+    "6,14": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "Icon": {
+          "Name": "Application/047_search_8.svg",
+          "BuiltIn": true,
+          "Color": "Text 1 70"
+        },
+        "TemplateKey": "_RS_DarkLine_LargeRoundCorner_Normal6",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_宛先編集用!O5"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_宛先編集用!O6"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_宛先編集用!O22"
+                }
+              }
+            ],
+            "Comments": "O5,O6,O22を空白にする"
+          }
+        ]
+      }
+    },
+    "7,10": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "役員",
+            "TableValue": {
+              "TableName": "ユーザー組織_ユーザー",
+              "OnlyGetValue": true,
+              "TableValueType": 0,
+              "BindingInfos": [
+                {
+                  "BindingInfo": {
+                    "TableName": "ユーザー組織_ユーザー",
+                    "ColumnName": "ユーザーID"
+                  },
+                  "ColumnName": "ユーザーID"
+                }
+              ],
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "ユーザー組織_ユーザー",
+                  "ColumnName": "組織"
+                },
+                "Value": "2"
+              }
+            },
+            "ID": "5311b161912e4cc99dc872bd0b1b917f"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=日報_宛先編集用!atesaki222"
+                      }
+                    ]
+                  },
+                  "value": "0",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日報_宛先編集用!C22"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日報_宛先編集用!atesaki222"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "2773fc04-4ebc-4a1e-9bba-21cc1cd65082"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_宛先編集用!C23"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_宛先編集用!役員"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_宛先編集用!atesaki222"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_宛先編集用!C24"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "役員",
+        "TemplateKey": "_RS_Outline_RoundCorner_Style5"
+      }
+    },
+    "7,14": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_宛先編集用!O11"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_宛先編集用!O22"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "全選択",
+        "TemplateKey": "_RS_Outline_Style2"
+      }
+    },
+    "7,17": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_宛先編集用!O11"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "全解除",
+        "TemplateKey": "_RS_Outline_Style2"
+      }
+    },
+    "8,14": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "正社員ユーザーID",
+            "ParameterValue": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ODATA(\"ユーザー区分_ユーザー?$select=ユーザーID&$filter=区分 eq '正社員'\")"
+            },
+            "ID": "9f14e6f5197744b39ea98055962eb714"
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_宛先編集用!atesaki_kouho_itiji"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_宛先編集用!正社員ユーザーID"
+                }
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.RunJavaScriptCommand, ServerDesignerCommon",
+            "JavaScript": "// 現在のページを取得する。\r\nvar page = Forguncy.Page;\r\n// 現在のページでatesaki_kouhoセルを取得する。\r\nvar atesakikouhocell = page.getCell(\"atesaki_kouho\");\r\n// getValueメソッドでatesaki_kouhoセルの値を取得する。\r\nvar atesakikouhocellValue = atesakikouhocell.getValue();\r\n// atesaki_kouhoを配列にする\r\nvar atesakikouhoitem = atesakikouhocellValue.split(',');\r\n// 現在のページでatesaki_kouho_itijiという名前のセルを取得する。\r\nvar atesakikouhoitijicell = page.getCell(\"atesaki_kouho_itiji\");\r\n// getValueメソッドでatesaki_kouho_itijiセルの値を取得する。\r\nvar atesakikouhoitijicellValue = atesakikouhoitijicell.getValue();\r\n// atesaki_kouho_itijiを配列にする\r\nvar atesakikouhoitijiitem = atesakikouhoitijicellValue.split(',');\r\n\r\n// リストuを作成\r\nvar u = [];\r\n\r\n// atesakikouhoitemの数を繰り返して、atesakikouhoitijiitemの中にあれば、uにUSERのMJSIDを追加\r\natesakikouhoitem.forEach(function(user, index) {\r\n\tvar result = atesakikouhoitijiitem.includes(user);\r\n\tif(result) {\r\n\t\tu.push(user);\r\n\t}\r\n});\r\n\r\n// uをカンマ区切りにしてurに格納\r\nvar ur = u.join( ',' );\r\n\r\n// urの値をatesaki_kouhosentakuに\r\nForguncy.Page.getCell(\"atesaki_kouhosentaku\").setValue(ur);",
+            "ID": "568b03a31a984030b6f22d9021465c54"
+          }
+        ],
+        "Text": "正社員\n選択",
+        "TemplateKey": "_RS_Outline_Style2"
+      }
+    },
+    "8,16": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "準社員ID",
+            "ParameterValue": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ODATA(\"ユーザー区分_ユーザー?$select=ユーザーID&$filter=区分 eq '準社員'\")"
+            },
+            "ID": "5b999c2115744fbca8f11790d74d45c4"
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_宛先編集用!atesaki_kouho_itiji"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_宛先編集用!準社員ID"
+                }
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.RunJavaScriptCommand, ServerDesignerCommon",
+            "JavaScript": "// 現在のページを取得する。\r\nvar page = Forguncy.Page;\r\n// 現在のページでatesaki_kouhoセルを取得する。\r\nvar atesakikouhocell = page.getCell(\"atesaki_kouho\");\r\n// getValueメソッドでatesaki_kouhoセルの値を取得する。\r\nvar atesakikouhocellValue = atesakikouhocell.getValue();\r\n// atesaki_kouhoを配列にする\r\nvar atesakikouhoitem = atesakikouhocellValue.split(',');\r\n// 現在のページでatesaki_kouho_itijiという名前のセルを取得する。\r\nvar atesakikouhoitijicell = page.getCell(\"atesaki_kouho_itiji\");\r\n// getValueメソッドでatesaki_kouho_itijiセルの値を取得する。\r\nvar atesakikouhoitijicellValue = atesakikouhoitijicell.getValue();\r\n// atesaki_kouho_itijiを配列にする\r\nvar atesakikouhoitijiitem = atesakikouhoitijicellValue.split(',');\r\n\r\n// リストuを作成\r\nvar u = [];\r\n\r\n// atesakikouhoitemの数を繰り返して、atesakikouhoitijiitemの中にあれば、uにUSERのMJSIDを追加\r\natesakikouhoitem.forEach(function(user, index) {\r\n\tvar result = atesakikouhoitijiitem.includes(user);\r\n\tif(result) {\r\n\t\tu.push(user);\r\n\t}\r\n});\r\n\r\n// uをカンマ区切りにしてurに格納\r\nvar ur = u.join( ',' );\r\n\r\n// urの値をatesaki_kouhosentakuに\r\nForguncy.Page.getCell(\"atesaki_kouhosentaku\").setValue(ur);",
+            "ID": "96d9510217a1433abe574605315df988"
+          }
+        ],
+        "Text": "準社員\n選択",
+        "TemplateKey": "_RS_Outline_Style2"
+      }
+    },
+    "8,18": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "アシスタントユーザーID",
+            "ParameterValue": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ODATA(\"ユーザー区分_ユーザー?$select=ユーザーID&$filter=区分 eq 'アシスタント'\")"
+            },
+            "ID": "192c4b1f043b41ab9c45dad10eac6f79"
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_宛先編集用!atesaki_kouho_itiji"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_宛先編集用!アシスタントユーザーID"
+                }
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.RunJavaScriptCommand, ServerDesignerCommon",
+            "JavaScript": "// 現在のページを取得する。\r\nvar page = Forguncy.Page;\r\n// 現在のページでatesaki_kouhoセルを取得する。\r\nvar atesakikouhocell = page.getCell(\"atesaki_kouho\");\r\n// getValueメソッドでatesaki_kouhoセルの値を取得する。\r\nvar atesakikouhocellValue = atesakikouhocell.getValue();\r\n// atesaki_kouhoを配列にする\r\nvar atesakikouhoitem = atesakikouhocellValue.split(',');\r\n// 現在のページでatesaki_kouho_itijiという名前のセルを取得する。\r\nvar atesakikouhoitijicell = page.getCell(\"atesaki_kouho_itiji\");\r\n// getValueメソッドでatesaki_kouho_itijiセルの値を取得する。\r\nvar atesakikouhoitijicellValue = atesakikouhoitijicell.getValue();\r\n// atesaki_kouho_itijiを配列にする\r\nvar atesakikouhoitijiitem = atesakikouhoitijicellValue.split(',');\r\n\r\n// リストuを作成\r\nvar u = [];\r\n\r\n// atesakikouhoitemの数を繰り返して、atesakikouhoitijiitemの中にあれば、uにUSERのMJSIDを追加\r\natesakikouhoitem.forEach(function(user, index) {\r\n\tvar result = atesakikouhoitijiitem.includes(user);\r\n\tif(result) {\r\n\t\tu.push(user);\r\n\t}\r\n});\r\n\r\n// uをカンマ区切りにしてurに格納\r\nvar ur = u.join( ',' );\r\n\r\n// urの値をatesaki_kouhosentakuに\r\nForguncy.Page.getCell(\"atesaki_kouhosentaku\").setValue(ur);",
+            "ID": "e08263baa5664d5cbbfd02b959fd6e8d"
+          }
+        ],
+        "Text": "ｱｼｽﾀﾝﾄ\n選択",
+        "TemplateKey": "_RS_Outline_Style2"
+      }
+    },
+    "10,14": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxGroupCellType, ServerDesignerCommon",
+        "Style": 3,
+        "LayoutMode": 1,
+        "ItemSpace": 1,
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "ユーザー_組織コード",
+        "ValueColumnBindingInfo": {
+          "TableName": "ユーザー_組織コード",
+          "ColumnName": "MJSID"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "ユーザー_組織コード",
+          "ColumnName": "名前"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+            "CompareType": 9,
+            "ColumnBindingInfo": {
+              "TableName": "ユーザー_組織コード",
+              "ColumnName": "MJSID"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=日報_宛先編集用!atesaki222"
+            }
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                "CompareType": 8,
+                "ColumnBindingInfo": {
+                  "TableName": "ユーザー_組織コード",
+                  "ColumnName": "MJSID"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_宛先編集用!O5"
+                },
+                "LeftBracket": 1
+              },
+              "Condition2": {
+                "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                "CompareType": 8,
+                "ColumnBindingInfo": {
+                  "TableName": "ユーザー_組織コード",
+                  "ColumnName": "MJSID"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_宛先編集用!O6"
+                }
+              },
+              "RelationType": 1
+            },
+            "Condition2": {
+              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+              "CompareType": 6,
+              "ColumnBindingInfo": {
+                "TableName": "ユーザー_組織コード",
+                "ColumnName": "名前"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=日報_宛先編集用!O7"
+              },
+              "RightBracket": 1
+            },
+            "RelationType": 1
+          }
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "ユーザー_組織コード",
+                "ColumnName": "入社順"
+              },
+              "Order": 0
+            }
+          ]
+        }
+      }
+    },
+    "13,10": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=日報_宛先編集用!atesaki222"
+                      }
+                    ]
+                  },
+                  "value": "0",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日報_宛先編集用!C22"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=日報_宛先編集用!atesaki222"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "a39f3d40-6a42-48a6-8de0-342a05af7f88"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_宛先編集用!C23"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_宛先編集用!O11"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_宛先編集用!atesaki222"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_宛先編集用!C24"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "←追加",
+        "TemplateKey": "_RS_Gradient_Shadow_Style5"
+      }
+    },
+    "16,10": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_宛先編集用!atesaki222"
+                },
+                "Value": "0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_宛先編集用!C22"
+                },
+                "Value": "0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_宛先編集用!宛先ユーザー一時"
+                }
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_宛先編集用!atesaki222"
+                },
+                "Value": "%Null%"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_宛先編集用!C24"
+                },
+                "Value": "%Null%"
+              }
+            ],
+            "Disabled": true
+          }
+        ],
+        "Text": "全削除→",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontWeight": 1,
+        "HorizontalAlignment": 2
+      },
+      {
+        "HorizontalAlignment": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "HorizontalAlignment": 2
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 1,
+        "BorderLeft": 1,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 1,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 1,
+        "BorderLeft": null,
+        "BorderRight": 1
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 10.666666666666666,
+        "HorizontalAlignment": 2,
+        "VerticalAlignment": 5,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "Formatter": 6,
+        "WordWrap": true
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 1,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "HorizontalAlignment": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 1
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "Formatter": 6
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 1,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 7,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderLeft": 0
+      },
+      {
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderLeft": 1
+      },
+      {
+        "BorderRight": 1
+      },
+      {
+        "FontSize": 10.666666666666666,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 10.666666666666666,
+        "WordWrap": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 10.666666666666666,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 10.666666666666666,
+        "HorizontalAlignment": 2,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333333333332,
+        "Formatter": 6
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": 1,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 1
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 6,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 2,
+        "BorderTop": 2,
+        "BorderLeft": 2,
+        "BorderRight": 2
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Bold",
+        "Center",
+        "#FFFFC000",
+        "Accent 3 40",
+        "Top",
+        "[AUTO]General",
+        "@",
+        "black"
+      ],
+      "Borders": [
+        {
+          "Style": 6,
+          "Color": 3
+        },
+        {
+          "Style": 6,
+          "Color": 4
+        },
+        {
+          "Color": 8
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,1": 0,
+      "2,1": 1,
+      "2,9": 2,
+      "2,10": 2,
+      "2,13": 1,
+      "2,21": 1,
+      "3,1": 3,
+      "3,2": 4,
+      "3,3": 4,
+      "3,4": 4,
+      "3,5": 4,
+      "3,6": 4,
+      "3,7": 4,
+      "3,8": 5,
+      "3,13": 6,
+      "3,14": 7,
+      "3,15": 7,
+      "3,16": 7,
+      "3,17": 7,
+      "3,18": 7,
+      "3,19": 7,
+      "3,20": 8,
+      "4,1": 9,
+      "4,2": 10,
+      "4,8": 11,
+      "4,10": 12,
+      "4,13": 13,
+      "4,14": 14,
+      "4,15": 15,
+      "4,16": 15,
+      "4,17": 15,
+      "4,18": 15,
+      "4,19": 15,
+      "4,20": 16,
+      "5,1": 9,
+      "5,8": 11,
+      "5,10": 17,
+      "5,12": 15,
+      "5,13": 18,
+      "5,14": 14,
+      "5,15": 15,
+      "5,16": 15,
+      "5,17": 15,
+      "5,18": 15,
+      "5,19": 15,
+      "5,20": 16,
+      "6,1": 19,
+      "6,8": 11,
+      "6,10": 17,
+      "6,12": 15,
+      "6,13": 18,
+      "6,14": 20,
+      "6,15": 15,
+      "6,16": 15,
+      "6,17": 15,
+      "6,18": 15,
+      "6,19": 15,
+      "6,20": 16,
+      "7,1": 21,
+      "7,8": 22,
+      "7,10": 17,
+      "7,12": 23,
+      "7,13": 24,
+      "7,17": 23,
+      "7,20": 25,
+      "8,1": 21,
+      "8,8": 22,
+      "8,11": 23,
+      "8,12": 23,
+      "8,13": 24,
+      "8,14": 26,
+      "8,16": 27,
+      "8,17": 15,
+      "8,18": 28,
+      "8,20": 25,
+      "9,0": 15,
+      "9,1": 9,
+      "9,8": 11,
+      "9,11": 15,
+      "9,12": 15,
+      "9,13": 18,
+      "9,16": 15,
+      "9,17": 15,
+      "9,20": 16,
+      "10,0": 15,
+      "10,1": 9,
+      "10,8": 11,
+      "10,11": 15,
+      "10,12": 15,
+      "10,13": 18,
+      "10,14": 29,
+      "10,20": 16,
+      "11,0": 15,
+      "11,1": 9,
+      "11,8": 11,
+      "11,11": 15,
+      "11,13": 13,
+      "11,20": 16,
+      "12,0": 15,
+      "12,1": 9,
+      "12,8": 11,
+      "12,13": 13,
+      "12,20": 16,
+      "13,0": 15,
+      "13,1": 9,
+      "13,8": 11,
+      "13,10": 30,
+      "13,12": 15,
+      "13,13": 18,
+      "13,20": 16,
+      "14,0": 15,
+      "14,1": 9,
+      "14,8": 11,
+      "14,13": 18,
+      "14,20": 16,
+      "15,0": 15,
+      "15,1": 9,
+      "15,8": 11,
+      "15,11": 15,
+      "15,12": 15,
+      "15,13": 18,
+      "15,20": 16,
+      "16,0": 15,
+      "16,1": 9,
+      "16,8": 11,
+      "16,10": 30,
+      "16,12": 15,
+      "16,13": 18,
+      "16,20": 16,
+      "17,0": 15,
+      "17,1": 9,
+      "17,8": 11,
+      "17,12": 15,
+      "17,13": 18,
+      "17,20": 16,
+      "18,1": 19,
+      "18,8": 11,
+      "18,13": 13,
+      "18,20": 16,
+      "19,1": 19,
+      "19,8": 11,
+      "19,13": 13,
+      "19,20": 16,
+      "20,1": 31,
+      "20,2": 32,
+      "20,3": 32,
+      "20,4": 32,
+      "20,5": 32,
+      "20,6": 32,
+      "20,7": 32,
+      "20,8": 33,
+      "20,13": 34,
+      "20,14": 35,
+      "20,15": 35,
+      "20,16": 35,
+      "20,17": 35,
+      "20,18": 35,
+      "20,19": 35,
+      "20,20": 36,
+      "21,2": 37,
+      "22,2": 37,
+      "22,3": 15,
+      "23,2": 15,
+      "23,14": 14,
+      "23,15": 15,
+      "23,16": 38,
+      "23,17": 39,
+      "23,18": 40,
+      "23,19": 15
+    },
+    "SheetStyle": {
+      "FontFamily": 0,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "2,1,1,8",
+    "2,13,1,8",
+    "4,2,16,6",
+    "0,1,2,3",
+    "4,10,1,2",
+    "5,10,1,2",
+    "6,10,1,2",
+    "7,10,1,2",
+    "6,14,1,6",
+    "4,14,1,6",
+    "5,14,1,6",
+    "7,14,1,3",
+    "7,17,1,3",
+    "10,14,10,6",
+    "8,14,2,2",
+    "8,18,2,2",
+    "8,16,2,2",
+    "13,10,2,2",
+    "16,10,2,2"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+        "PropertyItemsList": [
+          {
+            "TargetCells": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=日報_宛先編集用!atesaki222"
+            },
+            "Value": "0"
+          }
+        ]
+      }
+    ],
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "atesaki222",
+      "Formula": "日報_宛先編集用!$C$5"
+    },
+    {
+      "Name": "atesaki_obj3",
+      "Formula": "日報_宛先編集用!$R$24"
+    },
+    {
+      "Name": "宛先ユーザー",
+      "Formula": "日報_宛先編集用!$C$24"
+    },
+    {
+      "Name": "宛先ユーザー一時",
+      "Formula": "日報_宛先編集用!$C$23"
+    },
+    {
+      "Name": "atesaki_kouho",
+      "Formula": "日報_宛先編集用!$O$22"
+    },
+    {
+      "Name": "atesaki_kouho_itiji",
+      "Formula": "日報_宛先編集用!$O$23"
+    },
+    {
+      "Name": "atesaki_kouhosentaku",
+      "Formula": "日報_宛先編集用!$O$11"
+    }
+  ]
+}//ZiuDJjq+D6l/boWw2JKY5+N1leXVqECkd3sFC6/+9FR+7m9AgQb6Mlfx6Q4oFDdit+HneislBPyPyrYMLHLD3ybhxT9rFcgu2iNIr7h2iU49Vfghw1onSIvRvbHR1BRfH58BGdsGY0bwbBDWt0T/P9WHHjP5dFzLcCC0TxhI37J49LH9rYY3KjtibR7incNem6WsY/zs6mTfvjzgiftaeKRW8QWtz7pZQm28xe/37q6W89MPO9PVp7KY2YaG4C46Y+zCkZ5p3LtKwsbUOAmFY3kSBLjado+b8QUzSlJCdGIN9Xef425LQKnWrCyUcdvr73LZhAL4pJ/lLeFoaTW4tc/9MVGznDwK0KgVYp8mL/t516Xb9qOIgf+U+GUj+u8zuIUkdIfSpHqw9210j5MOPM+H4RywzKVAh8SkkGh4/Oo193Bt6l1alQruClV63QXOAY9uypS9h5FxMymSc8BDQ6ZtXvEJFueUh/ZOd7ey7wOnRLZGn9+HTzvkbA2CZI4EnPlnXQMFdhYlK12s3IsHohTogLsTjh0vdq0OdZmH5auUy9T0veGrNVS74LY+o+Ixs4hFpWFOxtOlLwa7U0OxePfsEU79qhp8YRMQzl+UgOBhZ8V58fWIai6CPcxi7xdII2jFUpqUinIkFwg+S9Hq9rMxtdss9LtnLQju1VGI41dsBrz3rPKlcLaq06+zgcid7cV9H830EcZOC4JASEtqh6asalJqF6T2VJiN1mvfeepDerwpbATAHQBZ0L9ibJj7Hz+38vry5Je/3MaA6cf789eAi2H8hRRbFjTJGhISZyvw5BlcepodkphU/cSixSiaYjx1dx2nq/uxj/9wsmc9wMse0H1G7itmN8Jag9oVXaBIk3N8LMcSAqAVsCfGPvaEGGWEy3OIezBiE9khpO3hhw==|920

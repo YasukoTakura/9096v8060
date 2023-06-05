@@ -1,0 +1,1514 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 34.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 9.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 9.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "42": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "Count": 43
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      51,
+      52
+    ],
+    "Count": 53
+  },
+  "Values": {
+    "1,1": "差出人",
+    "1,14": "検索",
+    "4,15": "編集",
+    "4,20": "再利用",
+    "4,25": "印刷",
+    "4,30": "テキスト\n出力",
+    "4,35": "削除",
+    "4,41": "前へ",
+    "4,46": "次へ",
+    "7,14": "chat一覧内容詳細"
+  },
+  "Formulas": {
+    "5,51": "ODATA(\"ユーザー?$select=MJSID&$filter=AzureADID eq \"&IF(ISBLANK(AZ4),\"null\",\"'\"&AZ4&\"'\"))",
+    "0,51": "ODATA(\"メッセージユーザー/$count?$filter=宛先ユーザー eq 99 and (既読 eq null or 既読 eq false)\")"
+  },
+  "AttachInfos": {
+    "1,4": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "ValidateItem": true,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "ユーザー",
+        "ValueColumnBindingInfo": {
+          "TableName": "ユーザー",
+          "ColumnName": "MJSID"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "ユーザー",
+          "ColumnName": "名前"
+        },
+        "AddNullItemWhenBinding": true,
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "日報chat_未読既読",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "Condition1": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "日報chat_未読既読",
+                    "ColumnName": "宛先ユーザー"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=chat一覧!loginuser"
+                  }
+                },
+                "Condition2": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "日報chat_未読既読",
+                    "ColumnName": "差出人"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=chat一覧!E2"
+                  }
+                }
+              },
+              "Condition2": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "日報chat_未読既読",
+                  "ColumnName": "区分"
+                },
+                "Value": "2"
+              }
+            },
+            "Params": [
+              "=loginuser",
+              "=E2"
+            ],
+            "ID": "d1e553cd3bf44fae9dbed5338a08b8be"
+          }
+        ]
+      }
+    },
+    "1,16": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "Icon": {
+          "Name": "Application/046_search_7.svg",
+          "BuiltIn": true,
+          "Color": "Text 1 70"
+        },
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "日報chat_未読既読",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "Condition1": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "日報chat_未読既読",
+                    "ColumnName": "宛先ユーザー"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=chat一覧!loginuser"
+                  }
+                },
+                "Condition2": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "日報chat_未読既読",
+                    "ColumnName": "区分"
+                  },
+                  "Value": "2"
+                }
+              },
+              "Condition2": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "Condition1": {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "日報chat_未読既読",
+                    "ColumnName": "日報chatID",
+                    "RelationBinding": {
+                      "RelatedTable": "メッセージ",
+                      "RelatedColumn": "mid",
+                      "DisplayColumn": "本文"
+                    }
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=chat一覧!Q2"
+                  },
+                  "LeftBracket": 1
+                },
+                "Condition2": {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "日報chat_未読既読",
+                    "ColumnName": "日報chatID",
+                    "RelationBinding": {
+                      "RelatedTable": "メッセージ",
+                      "RelatedColumn": "mid",
+                      "DisplayColumn": "標題"
+                    }
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=chat一覧!Q2"
+                  },
+                  "RightBracket": 1
+                },
+                "RelationType": 1
+              }
+            },
+            "Params": [
+              "=loginuser",
+              "=Q2"
+            ],
+            "ID": "baa971d973bf419a8508324db956d707"
+          }
+        ]
+      }
+    },
+    "3,1": {
+      "CellType": {
+        "$type": "Forguncy.ContentContainerCellType, ServerDesignerCommon",
+        "PageName": "chat件名一覧"
+      }
+    },
+    "3,51": {
+      "CellType": {
+        "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
+        "CellCustomValue": "%CurrentUser%",
+        "ShowCircleUserPicture": true,
+        "NavigateSettingWhenLogout": {
+          "NavigateWhenLogoutMode": 1
+        }
+      }
+    },
+    "4,15": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "chat編集",
+            "PassValues": []
+          }
+        ],
+        "Text": "編集",
+        "TemplateKey": "_RS_Outline_RoundCorner_Style3",
+        "Icon": {
+          "Name": "Application/023_edit_3.svg",
+          "BuiltIn": true,
+          "Color": "#FF00B0F0"
+        }
+      }
+    },
+    "4,20": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "chat新規投稿",
+            "PassValues": []
+          }
+        ],
+        "Text": "再利用",
+        "TemplateKey": "_RS_Outline_RoundCorner_Style3",
+        "Icon": {
+          "Name": "Application/062_refresh_6.svg",
+          "BuiltIn": true,
+          "Color": "#FF00B0F0"
+        }
+      }
+    },
+    "4,25": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ExportPageToPdfCommand, ServerDesignerCommon",
+            "AutoFitRowHeight": true,
+            "TargetPageName": "chat一覧内容詳細",
+            "NewOtherName": ""
+          }
+        ],
+        "Text": "印刷",
+        "TemplateKey": "_RS_Outline_RoundCorner_Style3",
+        "Icon": {
+          "Name": "Application/073_print_4.svg",
+          "BuiltIn": true,
+          "Color": "#FF00B0F0"
+        }
+      }
+    },
+    "4,30": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "テキスト\n出力",
+        "TemplateKey": "_RS_Outline_RoundCorner_Style3",
+        "Icon": {
+          "Name": "Application/111_download_6.svg",
+          "BuiltIn": true,
+          "Color": "#FF00B0F0"
+        }
+      }
+    },
+    "4,35": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=chat一覧!itirannaiyou_sassidashinin"
+                      }
+                    ]
+                  },
+                  "value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=chat一覧!user"
+                  }
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "日報chat_未読既読",
+                    "UpdateType": "delete",
+                    "ShowConfirm": true,
+                    "ConfirmText": "本当にこのメッセージを削除してもよろしいですか？",
+                    "UpdateValues": [],
+                    "NextUpdateDataTableCommand": {
+                      "TableName": "メッセージ",
+                      "ShowConfirm": false,
+                      "ConfirmText": "本当に更新してもよろしいですか？",
+                      "UpdateValues": [
+                        {
+                          "ColumnName": "mid",
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=chat一覧!itirannaiyou_messageid"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "ID": "3eca2bfe-a09b-4c78-9532-3c3387cbeb38"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                    "ValueFormula": "差出人のみが削除できます。",
+                    "PassValues": []
+                  }
+                ],
+                "ID": "c9cbedf1-4ef2-4498-ac90-810aa9522ab3"
+              }
+            ]
+          }
+        ],
+        "Text": "削除",
+        "TemplateKey": "_RS_Outline_RoundCorner_Style3",
+        "Icon": {
+          "Name": "Application/037_delete_2.svg",
+          "BuiltIn": true,
+          "Color": "#FFFF0000"
+        }
+      }
+    },
+    "4,41": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.GoToRecordCommand, ServerDesignerCommon",
+            "TargetRecord": 0,
+            "TableName": "日報chat_宛先カンマ"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=chat一覧!itirannaiyou_kidoku"
+                      }
+                    ]
+                  },
+                  "value": "true"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=chat一覧!itirannaiyou_comment"
+                        },
+                        "PropertyType": 1,
+                        "Value": true
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=chat一覧!itirannaiyou_kakunin"
+                        },
+                        "PropertyType": 1,
+                        "Value": false
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.RunJavaScriptCommand, ServerDesignerCommon",
+                    "JavaScript": "window.setTimeout(dispMsg, 300);\r\n\r\nfunction dispMsg(){\r\n    var pposition = $(\"#r0c0p1\").offset().top;\r\n    var sposition = $(\"#r19c0p1\").offset().top;\r\n    var position = sposition - pposition -45;\r\n    var speed = 300;\n$(\"#r7c14p_div\").animate({scrollTop:position},speed);\r\n}",
+                    "ID": "3db9a0e70e8b4dc5ae80d1883042044c"
+                  }
+                ],
+                "ID": "b106965c-cf90-4e62-a608-ab8170dc5665"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=chat一覧!itirannaiyou_comment"
+                        },
+                        "PropertyType": 1,
+                        "Value": false
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=chat一覧!itirannaiyou_kakunin"
+                        },
+                        "PropertyType": 1,
+                        "Value": true
+                      }
+                    ]
+                  }
+                ],
+                "ID": "95bc6d49-546e-4893-b4fa-df3589a4e4c8"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=chat一覧!itirannaiyou_fusen"
+                      }
+                    ]
+                  },
+                  "value": "1"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=chat一覧!itirannaiyou_fusen1"
+                        },
+                        "PropertyType": 2,
+                        "Value": "#FFFF0000"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "84cdccd9-90ff-4d2b-8756-3cbcc68b81d4"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=chat一覧!itirannaiyou_fusen"
+                      }
+                    ]
+                  },
+                  "value": "2"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=chat一覧!itirannaiyou_fusen2"
+                        },
+                        "PropertyType": 2,
+                        "Value": "#FFFFFF00"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "d1c0f875-5eba-428e-a904-4e245a667fe3"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=chat一覧!itirannaiyou_fusen1"
+                        },
+                        "PropertyType": 2,
+                        "Value": "Background 1 0"
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=chat一覧!itirannaiyou_fusen2"
+                        },
+                        "PropertyType": 2,
+                        "Value": "Background 1 0"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "2eb7d2d5-afaf-4eac-883f-575bd26c421e"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "コメント_未読既読",
+            "ShowConfirm": false,
+            "ConfirmText": "本当に更新してもよろしいですか？",
+            "RowsToUpdate": 1,
+            "RowsToUpdateCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "コメント_未読既読",
+                  "ColumnName": "コメントID",
+                  "RelationBinding": {
+                    "RelatedTable": "コメント",
+                    "RelatedColumn": "コメントID",
+                    "DisplayColumn": "メッセージID"
+                  }
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=chat一覧!itirannaiyou_messageid"
+                }
+              },
+              "Condition2": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "コメント_未読既読",
+                  "ColumnName": "宛先ユーザー"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=chat一覧!loginuser"
+                }
+              }
+            },
+            "UpdateValues": [
+              {
+                "ColumnName": "既読状態",
+                "Value": "true"
+              },
+              {
+                "ColumnName": "既読日時",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=NOW()"
+                }
+              }
+            ],
+            "NextUpdateDataTableCommand": {
+              "TableName": "日報chat_未読既読",
+              "ShowConfirm": false,
+              "ConfirmText": "本当に更新してもよろしいですか？",
+              "RowsToUpdate": 1,
+              "RowsToUpdateCondition": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "Condition1": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "日報chat_未読既読",
+                    "ColumnName": "日報chatID"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=chat一覧!itirannaiyou_messageid"
+                  }
+                },
+                "Condition2": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "日報chat_未読既読",
+                    "ColumnName": "宛先ユーザー"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=chat一覧!loginuser"
+                  }
+                }
+              },
+              "UpdateValues": [
+                {
+                  "ColumnName": "コメント既読状態",
+                  "Value": "true"
+                }
+              ]
+            }
+          }
+        ],
+        "Text": "前へ",
+        "TemplateKey": "_RS_RoundCorner_Shadow_Style2",
+        "ImagePath": "Arrow/345_left_arrow_5.svg",
+        "BuiltIn": true,
+        "Color": "#FF00B050"
+      }
+    },
+    "4,46": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.GoToRecordCommand, ServerDesignerCommon",
+            "TableName": "日報chat_未読既読"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=chat一覧!itirannaiyou_kidoku"
+                      }
+                    ]
+                  },
+                  "value": "true"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=chat一覧!itirannaiyou_comment"
+                        },
+                        "PropertyType": 1,
+                        "Value": true
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=chat一覧!itirannaiyou_kakunin"
+                        },
+                        "PropertyType": 1,
+                        "Value": false
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.RunJavaScriptCommand, ServerDesignerCommon",
+                    "JavaScript": "window.setTimeout(dispMsg, 300);\r\n\r\nfunction dispMsg(){\r\n    var pposition = $(\"#r0c0p1\").offset().top;\r\n    var sposition = $(\"#r19c0p1\").offset().top;\r\n    var position = sposition - pposition -45;\r\n    var speed = 300;\n$(\"#r7c14p_div\").animate({scrollTop:position},speed);\r\n}",
+                    "ID": "b6c51d7be2764ce18c82f87d754b8f58"
+                  }
+                ],
+                "ID": "c9887b60-5325-4875-82a0-5c364151baa9"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=chat一覧!itirannaiyou_comment"
+                        },
+                        "PropertyType": 1,
+                        "Value": false
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=chat一覧!itirannaiyou_kakunin"
+                        },
+                        "PropertyType": 1,
+                        "Value": true
+                      }
+                    ]
+                  }
+                ],
+                "ID": "cb56882f-5de3-4fc0-8fe3-a1af0fc1a141"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=chat一覧!itirannaiyou_fusen"
+                      }
+                    ]
+                  },
+                  "value": "1"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=chat一覧!itirannaiyou_fusen1"
+                        },
+                        "PropertyType": 2,
+                        "Value": "#FFFF0000"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "4fa11f02-6855-43c4-8f24-f9400c0589dd"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=chat一覧!itirannaiyou_fusen"
+                      }
+                    ]
+                  },
+                  "value": "2"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=chat一覧!itirannaiyou_fusen2"
+                        },
+                        "PropertyType": 2,
+                        "Value": "#FFFFFF00"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "cacf1b48-a47a-4dd7-9d35-26b8cf2f67bc"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=chat一覧!itirannaiyou_fusen1"
+                        },
+                        "PropertyType": 2,
+                        "Value": "Background 1 0"
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=chat一覧!itirannaiyou_fusen2"
+                        },
+                        "PropertyType": 2,
+                        "Value": "Background 1 0"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "3a28ba54-a7b7-4d6e-acd0-bd1b8aaecbad"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "コメント_未読既読",
+            "ShowConfirm": false,
+            "ConfirmText": "本当に更新してもよろしいですか？",
+            "RowsToUpdate": 1,
+            "RowsToUpdateCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "コメント_未読既読",
+                  "ColumnName": "コメントID",
+                  "RelationBinding": {
+                    "RelatedTable": "コメント",
+                    "RelatedColumn": "コメントID",
+                    "DisplayColumn": "メッセージID"
+                  }
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=chat一覧!itirannaiyou_messageid"
+                }
+              },
+              "Condition2": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "コメント_未読既読",
+                  "ColumnName": "宛先ユーザー"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=chat一覧!loginuser"
+                }
+              }
+            },
+            "UpdateValues": [
+              {
+                "ColumnName": "既読状態",
+                "Value": "true"
+              },
+              {
+                "ColumnName": "既読日時",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=NOW()"
+                }
+              }
+            ],
+            "NextUpdateDataTableCommand": {
+              "TableName": "日報chat_未読既読",
+              "ShowConfirm": false,
+              "ConfirmText": "本当に更新してもよろしいですか？",
+              "RowsToUpdate": 1,
+              "RowsToUpdateCondition": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "Condition1": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "日報chat_未読既読",
+                    "ColumnName": "日報chatID"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=chat一覧!itirannaiyou_messageid"
+                  }
+                },
+                "Condition2": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "日報chat_未読既読",
+                    "ColumnName": "宛先ユーザー"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=chat一覧!loginuser"
+                  }
+                }
+              },
+              "UpdateValues": [
+                {
+                  "ColumnName": "コメント既読状態",
+                  "Value": "true"
+                }
+              ]
+            }
+          }
+        ],
+        "Text": "次へ",
+        "TemplateKey": "_RS_RoundCorner_Shadow_Style2",
+        "ImagePath": "Arrow/346_right_arrow_6.svg",
+        "BuiltIn": true,
+        "Color": "#FF00B050"
+      }
+    },
+    "7,14": {
+      "CellType": {
+        "$type": "Forguncy.ContentContainerCellType, ServerDesignerCommon",
+        "PageName": "chat一覧内容詳細",
+        "OverflowMode": 1
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "HorizontalAlignment": 2,
+        "BorderLeft": 0
+      },
+      {
+        "Background": 4,
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 4
+      },
+      {
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 0,
+        "Foreground": 5,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333333333332,
+        "Foreground": 5,
+        "Formatter": 6,
+        "WordWrap": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "Foreground": 5,
+        "Formatter": 6,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "HorizontalAlignment": 7,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 1,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 14.67,
+        "HorizontalAlignment": 9,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 2,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 1
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 1,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 2,
+        "BorderRight": null
+      },
+      {
+        "Background": 4,
+        "FontFamily": 0,
+        "Foreground": 5,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 4,
+        "FontFamily": 0,
+        "Foreground": 5,
+        "Formatter": 6,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "@",
+        "Center",
+        "Accent 2 80",
+        "#FF92D050",
+        "#FF000000",
+        "[AUTO]General",
+        "Right",
+        "Background 1 -15",
+        "Left",
+        "#FF00B050"
+      ],
+      "Borders": [
+        {
+          "Style": 4,
+          "Color": 3
+        },
+        {
+          "Style": 3,
+          "Color": 8
+        },
+        {
+          "Color": 10
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "1,2": 0,
+      "1,3": 0,
+      "1,4": 1,
+      "1,14": 0,
+      "1,15": 0,
+      "1,16": 2,
+      "1,17": 0,
+      "1,18": 0,
+      "1,19": 0,
+      "1,20": 0,
+      "1,21": 0,
+      "1,22": 0,
+      "1,23": 0,
+      "1,24": 0,
+      "1,25": 0,
+      "1,26": 0,
+      "1,27": 0,
+      "1,28": 0,
+      "1,29": 0,
+      "1,30": 0,
+      "1,31": 0,
+      "1,32": 0,
+      "1,33": 0,
+      "1,34": 0,
+      "1,35": 0,
+      "1,42": 0,
+      "1,43": 0,
+      "1,44": 0,
+      "1,45": 0,
+      "1,46": 0,
+      "2,1": 3,
+      "2,2": 3,
+      "2,3": 3,
+      "2,4": 3,
+      "2,5": 3,
+      "2,6": 3,
+      "2,7": 3,
+      "2,8": 3,
+      "2,9": 3,
+      "2,10": 3,
+      "2,11": 3,
+      "2,12": 3,
+      "2,13": 3,
+      "2,14": 3,
+      "2,15": 3,
+      "2,16": 3,
+      "2,17": 3,
+      "2,18": 3,
+      "2,19": 3,
+      "2,20": 3,
+      "2,21": 3,
+      "2,22": 3,
+      "2,23": 3,
+      "2,24": 3,
+      "2,25": 3,
+      "2,26": 3,
+      "2,27": 3,
+      "2,28": 3,
+      "2,29": 3,
+      "2,30": 3,
+      "2,31": 3,
+      "2,32": 3,
+      "2,33": 3,
+      "2,34": 3,
+      "2,35": 3,
+      "2,36": 3,
+      "2,37": 3,
+      "2,38": 3,
+      "2,39": 3,
+      "2,40": 3,
+      "2,41": 3,
+      "2,42": 3,
+      "2,43": 3,
+      "2,44": 3,
+      "2,45": 3,
+      "2,46": 3,
+      "3,1": 4,
+      "3,14": 5,
+      "3,15": 5,
+      "3,16": 5,
+      "3,17": 5,
+      "3,18": 5,
+      "3,19": 5,
+      "3,20": 5,
+      "3,21": 5,
+      "3,22": 5,
+      "3,23": 5,
+      "3,24": 5,
+      "3,25": 5,
+      "3,26": 5,
+      "3,27": 5,
+      "3,28": 5,
+      "3,29": 5,
+      "3,30": 5,
+      "3,31": 5,
+      "3,32": 5,
+      "3,33": 5,
+      "3,34": 5,
+      "3,35": 5,
+      "3,36": 5,
+      "3,37": 5,
+      "3,38": 5,
+      "3,39": 5,
+      "3,40": 5,
+      "3,41": 5,
+      "3,42": 5,
+      "3,43": 5,
+      "3,44": 5,
+      "3,45": 5,
+      "3,46": 5,
+      "3,47": 5,
+      "3,48": 5,
+      "3,49": 5,
+      "3,50": 6,
+      "3,51": 0,
+      "4,1": 7,
+      "4,14": 5,
+      "4,15": 8,
+      "4,16": 0,
+      "4,17": 0,
+      "4,18": 0,
+      "4,19": 5,
+      "4,20": 8,
+      "4,21": 0,
+      "4,22": 0,
+      "4,23": 0,
+      "4,24": 5,
+      "4,25": 8,
+      "4,26": 0,
+      "4,27": 0,
+      "4,28": 0,
+      "4,29": 5,
+      "4,30": 9,
+      "4,31": 0,
+      "4,32": 0,
+      "4,33": 0,
+      "4,34": 5,
+      "4,35": 10,
+      "4,36": 0,
+      "4,37": 0,
+      "4,38": 0,
+      "4,39": 5,
+      "4,40": 6,
+      "4,41": 11,
+      "4,42": 0,
+      "4,43": 0,
+      "4,44": 0,
+      "4,45": 6,
+      "4,46": 12,
+      "4,47": 0,
+      "4,48": 0,
+      "4,49": 13,
+      "4,50": 6,
+      "4,51": 0,
+      "5,1": 7,
+      "5,14": 5,
+      "5,15": 0,
+      "5,16": 0,
+      "5,17": 0,
+      "5,18": 0,
+      "5,19": 5,
+      "5,20": 0,
+      "5,21": 0,
+      "5,22": 0,
+      "5,23": 0,
+      "5,24": 5,
+      "5,25": 0,
+      "5,26": 0,
+      "5,27": 0,
+      "5,28": 0,
+      "5,29": 5,
+      "5,30": 0,
+      "5,31": 0,
+      "5,32": 0,
+      "5,33": 0,
+      "5,34": 5,
+      "5,35": 0,
+      "5,36": 0,
+      "5,37": 0,
+      "5,38": 0,
+      "5,39": 5,
+      "5,40": 6,
+      "5,41": 14,
+      "5,42": 0,
+      "5,43": 0,
+      "5,44": 0,
+      "5,45": 6,
+      "5,46": 15,
+      "5,47": 0,
+      "5,48": 0,
+      "5,49": 13,
+      "5,50": 6,
+      "5,51": 0,
+      "6,1": 7,
+      "6,14": 5,
+      "6,15": 16,
+      "6,16": 16,
+      "6,17": 16,
+      "6,18": 16,
+      "6,19": 16,
+      "6,20": 5,
+      "6,21": 16,
+      "6,22": 16,
+      "6,23": 16,
+      "6,24": 16,
+      "6,25": 16,
+      "6,26": 5,
+      "6,27": 16,
+      "6,28": 16,
+      "6,29": 16,
+      "6,30": 16,
+      "6,31": 16,
+      "6,32": 5,
+      "6,33": 17,
+      "6,34": 17,
+      "6,35": 17,
+      "6,36": 17,
+      "6,37": 17,
+      "6,38": 5,
+      "6,39": 17,
+      "6,40": 17,
+      "6,41": 17,
+      "6,42": 17,
+      "6,43": 17,
+      "6,44": 5,
+      "6,45": 5,
+      "6,46": 5,
+      "6,47": 5,
+      "6,48": 5,
+      "6,49": 5,
+      "6,50": 6,
+      "7,1": 7,
+      "7,14": 4,
+      "8,1": 7,
+      "8,14": 7,
+      "9,1": 7,
+      "9,14": 7,
+      "10,1": 7,
+      "10,14": 7,
+      "11,1": 7,
+      "11,14": 7,
+      "12,1": 7,
+      "12,14": 7,
+      "13,1": 7,
+      "13,14": 7,
+      "14,1": 7,
+      "14,14": 7,
+      "15,1": 7,
+      "15,14": 7,
+      "16,1": 7,
+      "16,14": 7,
+      "17,1": 7,
+      "17,14": 7,
+      "18,1": 7,
+      "18,14": 7,
+      "19,1": 7,
+      "19,14": 7,
+      "20,1": 7,
+      "20,14": 7,
+      "21,1": 7,
+      "21,14": 7,
+      "22,1": 7,
+      "22,14": 7,
+      "23,1": 7,
+      "23,14": 7,
+      "24,1": 7,
+      "24,14": 7,
+      "25,1": 7,
+      "25,14": 7,
+      "26,1": 7,
+      "26,14": 7,
+      "27,1": 7,
+      "27,14": 7,
+      "28,1": 7,
+      "28,14": 7,
+      "29,1": 7,
+      "29,14": 7,
+      "30,1": 7,
+      "30,14": 7,
+      "31,1": 7,
+      "31,14": 7,
+      "32,1": 7,
+      "32,14": 7,
+      "33,1": 7,
+      "33,14": 7,
+      "34,1": 7,
+      "34,14": 7,
+      "35,1": 7,
+      "35,14": 7,
+      "36,1": 7,
+      "36,14": 7,
+      "37,1": 7,
+      "37,14": 7,
+      "38,1": 7,
+      "38,14": 7,
+      "39,1": 7,
+      "39,14": 7,
+      "40,1": 7,
+      "40,14": 7,
+      "41,1": 7,
+      "41,14": 7,
+      "42,1": 7,
+      "42,14": 7
+    },
+    "SheetStyle": {
+      "FontFamily": 0,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "7,14,36,37",
+    "3,1,40,13",
+    "1,4,1,8",
+    "1,16,1,20",
+    "4,15,2,4",
+    "4,20,2,4",
+    "4,25,2,4",
+    "4,30,2,4",
+    "4,35,2,4",
+    "4,41,2,4",
+    "4,46,2,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "マスターページ　日報CHAT",
+    "PageOverflowMode": 1,
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "ColumnStart": 14,
+    "ColumnEnd": 50,
+    "RowStart": 2,
+    "RowEnd": 42,
+    "Margin": {},
+    "PageOrder": 1,
+    "FitPagesWide": 1,
+    "PaperSize": {},
+    "ShowColumnHeader": 1,
+    "ShowRowHeader": 1
+  },
+  "CustomNames": [
+    {
+      "Name": "user",
+      "Formula": "chat一覧!$AZ$6"
+    }
+  ]
+}//cFWBt/zIfnNf2crA8HYmYsBrX9mZYhX7Kbs1I3Je3bdR5OZPbYQYoK0kkbpKFk44n5pJrVqKii0j92vAnErF9AK4Rr8aK6zyvELjqpBg2/p9SztNnhA6eOsR2WhMMiDRyFUysWmXocrQRt7JLGQtDQWr0tWaLS+bFG9bCaELbhEoU85qiXwq8stwuRu8i7RspXNxeoP93XwGS652NWqTaSC0BdLGBwQQtQt98FZtbiBsoBcWS0VFjz5IP6gUew0D4cK3oOxjB80b5Bg17V1CxdORP6fGBcLkMAxiTYxgeVtt7o7fqwdcIluU8KINesm8ebsD04E5I925f40PReGC17yMl4Ltf3aE4XdQdzSTrpvR9DnkvV5PezqLRwUPz9MYCgFyQuVDFuTAbPuV3mIZGPJeavTghlhHYhB/RXaUY4muNXfOLZYsqiM1AvY1gN8aJB6zuuRnIpbyU0jumpzSmnRen9xJBLBxkk+IfXv4oRURL0i/PKPeoBr97ZEt3iFCiRD0ZWEHX3yshkPdpR4AITUG2cSTV3/2T/AW1E7VMBqjYtf8GSRWjks1U4544GWqm9VyyAvlA5pkNrEY95X2OD0zOxsZkdj3R66BGICOamijo0FyWb+FyxUQK0tbmC15/tstZSeZEwJy5nsgHTPHy2kToJ75Sp6eTL2j3xixgd3wugjkua01A4fXB20jYDnzdi5cRYUm2EQzLlLcXG8hmRJIZJWLMMlvilcgcUDTIg55NvaR94SIju9jj2Sf/wNAEXLfJyZBgOO9PuTYZRlfrtmvvOFpOYwwU7wRNWq3h+FEtJNbElpGJVzKtzmWtz2fhGqp3fyEyYAdqinijkT6i2PgMPaTv/muMMCC+ZK16eTEFK7ws+NOyd3Qm0SICGetlVCoMQhomAr4/kEqrUlVFg==|920

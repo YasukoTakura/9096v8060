@@ -1,0 +1,228 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 55.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      }
+    },
+    "Count": 45
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "Values": {
+    "3,13": "所属組織 一覧画面",
+    "7,6": "登録ページ",
+    "9,14": "更新",
+    "9,17": "削除"
+  },
+  "AttachInfos": {
+    "5,13": {
+      "CellType": {
+        "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
+        "CellCustomValue": "%CurrentUser%",
+        "ShowCircleUserPicture": true,
+        "NavigateSettingWhenLogout": {
+          "NavigateWhenLogoutMode": 1
+        }
+      }
+    },
+    "7,6": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "NavigateType": "back",
+            "PassValues": [],
+            "LoadBindingDataOption": 2
+          }
+        ],
+        "Text": "登録ページ"
+      }
+    },
+    "7,17": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "ImportExportCSV.ImportExportCSV, ImportExportCSV",
+            "ImportExportInfo": {
+              "AlertMessage": "CSVファイルのインポートが正常に完了しました。",
+              "ListViewName": "リストビュー1",
+              "Columns": [
+                {
+                  "ListViewColumnCell": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=所属組織_一覧ページ!I10"
+                  },
+                  "CSVColumnName": "MJSID",
+                  "CSVColumnIndex": 1
+                },
+                {
+                  "ListViewColumnCell": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=所属組織_一覧ページ!L10"
+                  },
+                  "CSVColumnName": "組織コード",
+                  "CSVColumnIndex": 2
+                }
+              ],
+              "ColumnDelimiter": ",",
+              "EncodingType": "Shift-JIS",
+              "TextQualifier": "\"",
+              "FilePath": "Documents\\example.csv"
+            }
+          },
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "UpdateType": 3,
+            "ListviewName": "リストビュー1"
+          }
+        ],
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "8,6": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "ユーザー_所属組織",
+        "RowIndex": 8,
+        "ColumnIndex": 6,
+        "ColumnCount": 14,
+        "RowCount": 12,
+        "IsRowHeaderVisible": true,
+        "ColumnOperation": 2,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "リストビュー1",
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2"
+      }
+    },
+    "9,8": {
+      "BindingInfo": {
+        "TableName": "ユーザー_所属組織",
+        "ColumnName": "MJSID"
+      }
+    },
+    "9,11": {
+      "BindingInfo": {
+        "TableName": "ユーザー_所属組織",
+        "ColumnName": "組織コード"
+      }
+    },
+    "9,14": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "NavigateType": "back",
+            "PassValues": [],
+            "LoadBindingDataOption": 1
+          }
+        ],
+        "Text": "更新"
+      }
+    },
+    "9,17": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.DeleteRecordCommand, ServerDesignerCommon",
+            "ConfirmText": "本当に削除してもよろしいですか？",
+            "UpdateValues": []
+          }
+        ],
+        "Text": "削除"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 30.0,
+        "HorizontalAlignment": 0,
+        "VerticalAlignment": 0
+      },
+      {
+        "FontSize": 15.0,
+        "HorizontalAlignment": 1,
+        "VerticalAlignment": 0
+      },
+      {
+        "Foreground": 2,
+        "Underline": true
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Center",
+        "Right",
+        "Blue",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "3,13": 0,
+      "5,13": 1,
+      "7,6": 2,
+      "9,14": 2,
+      "9,17": 2
+    },
+    "SheetStyle": {
+      "FontFamily": 3
+    }
+  },
+  "Spans": [
+    "5,13,1,7",
+    "10,6,10,14",
+    "9,6,1,2",
+    "9,8,1,3",
+    "9,11,1,3",
+    "9,14,1,3",
+    "9,17,1,3",
+    "7,17,1,3",
+    "8,6,1,2",
+    "8,8,1,3",
+    "8,11,1,3",
+    "8,14,1,3",
+    "8,17,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//aHmzAYXHaR7bxzwCPwE57uAc6aJ3qL1UCdZM3nNv2OMhVFjieUowDsTFoLvoyOj149Q2OhEc1/+J0wWDfBo239c/WqY3+IoIwFDM6WbRZwUk6pxhxA6D6hQsSdvd0vmstTaqfCgh1WQ9pLkF+7I1ghTdRlkH/ogBFljNUyiyzfHS+c6707ldyrta224Bb3vUAL0kElo4JcqLEbMevw+wkDvvTqFEERkBP8k7bCdMYsdGMiUySugCWZPhOrYEx7TMH7TnQJW5Me2TBU6oDpPSz3fIZrO4hvYLuCahqxhePnl0xVCt3lA2XTTuavUqL31hVHduR7NYuokockRwWlz3Fo3qui94axW/iNlvNn0l+RlTL852FwGEkfeJQzoJsiadcD8qGxwfyaXjSJWqPJwZRiK6zq93nZW22BMwXnRKkWIJeudtvt6zoozEz8e6usLTCYxZVXBJ1F+MgDgBn9yyUXopUVSaciEaIwRM1PvilFpzkdI9xKzqlQ2i4N/aiIojMn332weDh1pARxmwVSXCYHRcEHCttv07sicXoyH3TtygvJvgFakpYPIc34lLn9O67fS16e1s4NjKM+iHJZCsV6LvYubcj0WFWcNiVMjBImWa/T6qQZDpqZPFVewDOiYYn6t+RHCQRBesPlnz0IH3o5aoGE5iyzDcpFMK9x+AQ/siNv2BiP/YoR4uBujCBSMGjaxDEtNubGV6/0DxQF6sHnUHdOmE49ObdJ+H6D4qpcU1IhoJJ8RFQiTRLoc0niw4O+aB3lbSxqBfs5MPrEmXnMiymmNRZBBYFXQ2tx8bzu4rE38cdoO3licK7WbqcOAlKgjtW+JaYX4vMBX+VEnvp3V0bpPaQ3ok6go7yy57LhdrYfOGh+9NZ1j90N3IXdy4SkHiueJhS5mMVsi7JsTZdw==|920

@@ -1,0 +1,227 @@
+{
+  "Rows": {
+    "Count": 45
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "Values": {
+    "2,3": "日報一覧",
+    "5,3": "ID",
+    "5,5": "名前",
+    "5,48": "確認",
+    "6,48": "表示"
+  },
+  "Formulas": {
+    "4,3": "COUNT(F7)",
+    "6,3": "ROW()-$D$5",
+    "4,6": "ROW()"
+  },
+  "AttachInfos": {
+    "3,12": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "Icon": {
+          "Name": "Application/046_search_7.svg",
+          "BuiltIn": true,
+          "Color": "#FF92D050"
+        },
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "検索"
+      }
+    },
+    "5,3": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "日報内容",
+        "RowIndex": 5,
+        "ColumnIndex": 3,
+        "ColumnCount": 49,
+        "RowCount": 24,
+        "ColumnOperation": 2,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "リストビュー1",
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2"
+      }
+    },
+    "6,5": {
+      "BindingInfo": {
+        "TableName": "日報内容",
+        "ColumnName": "ユーザーID",
+        "RelationBinding": {
+          "RelatedTable": "ユーザー",
+          "RelatedColumn": "MJSID",
+          "DisplayColumn": "名前"
+        }
+      }
+    },
+    "6,10": {
+      "BindingInfo": {
+        "TableName": "日報内容",
+        "ColumnName": "所属チーム",
+        "RelationBinding": {
+          "RelatedTable": "マスター_所属チーム",
+          "RelatedColumn": "チームコード",
+          "DisplayColumn": "チーム名"
+        }
+      }
+    },
+    "6,15": {
+      "BindingInfo": {
+        "TableName": "日報内容",
+        "ColumnName": "内容"
+      }
+    },
+    "6,38": {
+      "BindingInfo": {
+        "TableName": "日報内容",
+        "ColumnName": "開始時刻"
+      }
+    },
+    "6,43": {
+      "BindingInfo": {
+        "TableName": "日報内容",
+        "ColumnName": "終了時刻"
+      }
+    },
+    "6,48": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "日報チェック",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報一覧!F7"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=日報チェック!AC9"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "表示",
+        "ClickMode": 1
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 16.0,
+        "FontWeight": 0
+      },
+      {
+        "Formatter": 1
+      },
+      {
+        "FontFamily": 2
+      },
+      {
+        "FontFamily": 2,
+        "Formatter": 3
+      },
+      {
+        "FontSize": 13.333333333333332,
+        "Foreground": 4,
+        "Underline": true
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "@",
+        "Body",
+        "h:mm",
+        "Blue"
+      ]
+    },
+    "CellStyles": {
+      "2,3": 0,
+      "3,12": 1,
+      "6,15": 2,
+      "6,16": 2,
+      "6,17": 2,
+      "6,18": 2,
+      "6,19": 2,
+      "6,20": 2,
+      "6,21": 2,
+      "6,22": 2,
+      "6,23": 2,
+      "6,24": 2,
+      "6,25": 2,
+      "6,26": 2,
+      "6,27": 2,
+      "6,28": 2,
+      "6,29": 2,
+      "6,30": 2,
+      "6,31": 2,
+      "6,32": 2,
+      "6,33": 2,
+      "6,34": 2,
+      "6,35": 2,
+      "6,36": 2,
+      "6,37": 2,
+      "6,38": 3,
+      "6,39": 2,
+      "6,40": 2,
+      "6,41": 2,
+      "6,42": 2,
+      "6,43": 3,
+      "6,44": 2,
+      "6,45": 2,
+      "6,46": 2,
+      "6,47": 2,
+      "6,48": 4
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "2,3,2,6",
+    "7,3,22,49",
+    "3,12,1,9",
+    "6,43,1,5",
+    "6,38,1,5",
+    "6,15,1,23",
+    "6,10,1,5",
+    "6,5,1,5",
+    "6,3,1,2",
+    "4,6,1,3",
+    "4,3,1,3",
+    "6,48,1,4",
+    "5,3,1,2",
+    "5,5,1,5",
+    "5,10,1,5",
+    "5,15,1,23",
+    "5,38,1,5",
+    "5,43,1,5",
+    "5,48,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "マスターページ　日報",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "日報内容"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//2ik5oq2bMEZpT8Oaxn1uclDi6M3GiRFuLpBab6sqXWkEN1g4zzYI+lRjl6RFHUu5LKPKKAnLtRcv4ivJ7hxwN6r/nNg86wfRp1FCkj8Ehjyx2utteYub8LlyCTgS1eMn3ZbXjP3eG6/ufr2HnH5w1JsJhT9HC+kVZRp6Kj0MXZS6+GuFuWbotqxQ5J+DtLoHLtsTdGk/AmPbQQSQE/HqjQkbwszqtm4nr6ycR8cGFStF6s61SpwQ3pC+ukh4wn7nHHChQqMiRx2B/5jVp/+QhgflHtMxA6YRIgIlfoZ87u7dfqSLUZkU7JyJQ5fNxYLd+XxypA3WNy+/Oc38lgRoYLMkT5RK9bdyU+fvli6fC4Why1EajFM6orYQwCflXkJQvUCoQLOuE9SQjMuo+YhJDZZpBxGMwm4nXJ/abDlrxksbgicNwMX5U1s0Q6aDSLOCMJAIfa/rRLIa3aCTdCgD6IdrrvhJiDSVXQuw2YuOnHlkwEC+JafXajvQGMvybTfGto37Umibimix8Z4aL+/FnXvXh4YmKzT6uo0EtZ8AxTDSWeDKcj1aPZuCs6kYTZ4d1J1RdVig5hAsQ5JIlM/dTnVJBUobUYPr2ZI+JKqWynsgaAy4czJlskCde/AK/RtTfDru/PaFuTX3LynJ5tsozRtBOTG2HfQmvH6d5ChYcSBica1msoOsNAXVmxI+d5ORat5FS6QA5iTCRPy7LoLyg8dbBjAdp1ftlrpot93qeX/a43baupzv08iyavfIhjcWSElQK14NlyE6ocqCncqfpVCQypve+3cSnsLmsIBklHsL5rEjpeCtPeOEFt2AWSNeOheDxIL9ZM7Y9ErygOwB3lyM2Asy5MrMrdOeiZ0MqwCdQBCkwxqBMipN315fK3xVyK2y3uHE8tnHQXu8GY7TdQ==|920

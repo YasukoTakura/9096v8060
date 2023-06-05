@@ -1,0 +1,32 @@
+[
+  {
+    "ConnectionString": "Driver={Microsoft Access Text Driver (*.txt, *.csv)};defaultdir=\\\\KOKYAKU-SV\\ForguncyData\\01チーム予定表_項目検索結果リスト;driverid=27;extensions=txt,csv,tab,asc;fil=text;filedsn=\\\\KOKYAKU-SV\\ForguncyData\\01チーム予定表_項目検索結果リスト\\項目検索結果リスト1.dsn;maxbuffersize=2048;maxscanrows=25;pagetimeout=5;safetransactions=0;threads=3;uid=administrator;usercommitsync=Yes;pwd=p@ssw0rd",
+    "DataBaseType": 4,
+    "ID": "a8e1151b-45f5-42a0-81c8-307d4134ec70"
+  },
+  {
+    "ConnectionString": "Driver={Microsoft Access Text Driver (*.txt, *.csv)};defaultdir=\\\\KOKYAKU-SV\\ForguncyData\\02請求データエクスポート;driverid=27;extensions=txt,csv,tab,asc;fil=text;filedsn=\\\\KOKYAKU-SV\\ForguncyData\\02請求データエクスポート\\請求データエクスポート1.dsn;maxbuffersize=2048;maxscanrows=25;pagetimeout=5;safetransactions=0;threads=3;uid=administrator;usercommitsync=Yes;pwd=p@ssw0rd",
+    "DataBaseType": 4,
+    "ID": "9f8c7144-e085-4c46-bb79-e1c7031f75b3"
+  },
+  {
+    "ConnectionString": "Server=192.168.1.24;User ID=forguncy;Password=co40clOCP;Database=nippotest;Port=3306;Allow Public Key Retrieval=True",
+    "DataBaseType": 6,
+    "ID": "3f62ef6b-d6a0-4d89-881d-76764ddec400"
+  },
+  {
+    "ConnectionString": "Server=192.168.1.24;User ID=forguncy;Password=co40clOCP;Database=nippotest;Port=3306",
+    "DataBaseType": 6,
+    "ID": "8963dd03-60ae-405c-ab62-fdbd071385fc"
+  },
+  {
+    "ConnectionString": "Server=192.168.1.24;User ID=forguncy;Database=nippotest;Password=co40clOCP;Port=3306",
+    "DataBaseType": 6,
+    "ID": "6f007300-6962-4ce0-ae41-4000b7aec3b1"
+  },
+  {
+    "ConnectionString": "Server=192.168.1.24;User ID=forguncy;Database=nippotest;Password=co40clOCP;Port=3306;Allow Public Key Retrieval=True",
+    "DataBaseType": 6,
+    "ID": "0c28d429-fb88-44ec-9bae-c7f34ed11bf4"
+  }
+]

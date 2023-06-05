@@ -1,0 +1,3527 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 26.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 22.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 22.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 22.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 22.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 22.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 22.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 22.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 22.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 22.0
+        }
+      },
+      "24": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "38": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "39": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "40": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "Count": 41
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      1,
+      2
+    ],
+    "Count": 53
+  },
+  "Values": {
+    "1,3": "一覧",
+    "1,7": "未確認数：",
+    "1,30": "未確認のみ",
+    "1,36": "全て表示",
+    "1,45": "全社員",
+    "3,10": "投稿者",
+    "3,39": "未読コメ",
+    "3,45": "チーム別",
+    "3,49": "未読",
+    "4,41": "編集",
+    "4,45": "役員",
+    "5,45": "第1課",
+    "6,45": "第2課",
+    "7,45": "第3課",
+    "8,45": "第4課",
+    "9,45": "第5課",
+    "10,45": "第6課",
+    "11,45": "第7課",
+    "12,45": "第8課",
+    "13,45": "第9課",
+    "14,45": "本部",
+    "15,45": "システム課",
+    "16,51": "ID：",
+    "18,3": "日報",
+    "18,44": "状況：",
+    "19,36": "訪問予定",
+    "20,3": "開始",
+    "20,6": "～",
+    "20,7": "終了",
+    "21,6": "～",
+    "24,36": "報連相",
+    "25,36": "ページ1",
+    "30,36": "コメント",
+    "30,46": "投稿",
+    "35,36": "コメント履歴",
+    "35,43": "コメント数：",
+    "35,49": "件",
+    "36,36": "コメント",
+    "37,48": "削除"
+  },
+  "Formulas": {
+    "15,49": "ODATA(\"日報view_未読件数/$count?$filter=宛先ユーザー eq \"&IF(ISBLANK($BA$2),\"null\",$BA$2)&\" and 既読 eq null and 所属チーム eq 11\")",
+    "14,49": "ODATA(\"日報view_未読件数/$count?$filter=宛先ユーザー eq \"&IF(ISBLANK($BA$2),\"null\",$BA$2)&\" and 所属チーム eq 9 and 既読 eq null\")",
+    "13,49": "ODATA(\"日報view_未読件数/$count?$filter=宛先ユーザー eq \"&IF(ISBLANK($BA$2),\"null\",$BA$2)&\" and 所属チーム eq 16 and 既読 eq null\")",
+    "12,49": "ODATA(\"日報view_未読件数/$count?$filter=宛先ユーザー eq \"&IF(ISBLANK($BA$2),\"null\",$BA$2)&\" and 所属チーム eq 8 and 既読 eq null\")",
+    "11,49": "ODATA(\"日報view_未読件数/$count?$filter=宛先ユーザー eq \"&IF(ISBLANK($BA$2),\"null\",$BA$2)&\" and 所属チーム eq 7 and 既読 eq null\")",
+    "10,49": "ODATA(\"日報view_未読件数/$count?$filter=宛先ユーザー eq \"&IF(ISBLANK($BA$2),\"null\",$BA$2)&\" and 所属チーム eq 6 and 既読 eq null\")",
+    "9,49": "ODATA(\"日報view_未読件数/$count?$filter=宛先ユーザー eq \"&IF(ISBLANK($BA$2),\"null\",$BA$2)&\" and 所属チーム eq 5 and 既読 eq null\")",
+    "8,49": "ODATA(\"日報view_未読件数/$count?$filter=宛先ユーザー eq \"&IF(ISBLANK($BA$2),\"null\",$BA$2)&\" and 所属チーム eq 4 and 既読 eq null\")",
+    "7,49": "ODATA(\"日報view_未読件数/$count?$filter=宛先ユーザー eq \"&IF(ISBLANK($BA$2),\"null\",$BA$2)&\" and 所属チーム eq 3 and 既読 eq null\")",
+    "6,49": "ODATA(\"日報view_未読件数/$count?$filter=宛先ユーザー eq \"&IF(ISBLANK($BA$2),\"null\",$BA$2)&\" and 所属チーム eq 2 and 既読 eq null\")",
+    "5,49": "ODATA(\"日報view_未読件数/$count?$filter=宛先ユーザー eq \"&IF(ISBLANK($BA$2),\"null\",$BA$2)&\" and 所属チーム eq 1 and 既読 eq null\")",
+    "4,49": "ODATA(\"日報view_未読件数/$count?$filter=宛先ユーザー eq \"&IF(ISBLANK($BA$2),\"null\",$BA$2)&\" and 所属チーム eq 10 and 既読 eq null\")",
+    "5,52": "ODATA(\"日報_未読既読/$count?$filter=宛先ユーザー eq \"&IF(ISBLANK(BA2),\"null\",BA2)&\" and 既読 eq null\")",
+    "2,52": "ODATA(\"ユーザー?$select=所属チーム&$filter=AzureADID eq \"&IF(ISBLANK(BA1),\"null\",\"'\"&BA1&\"'\"))",
+    "35,47": "ODATA(\"日報_コメント/$count?$filter=日報ID eq \"&IF(ISBLANK(AZ19),\"null\",\"'\"&AZ19&\"'\")&\" and 宛先ユーザー eq \"&IF(ISBLANK(toukouuser),\"null\",toukouuser))",
+    "1,52": "ODATA(\"ユーザー?$select=MJSID&$filter=AzureADID eq \"&IF(ISBLANK(BA1),\"null\",\"'\"&BA1&\"'\"))",
+    "1,11": "IFERROR(COUNTIFS(B5,BA2,P5,\"\"),\"\")",
+    "23,52": "ODATA(\"日報_ワークフロー?$select=宛先&$filter=日報ID eq \"&IF(ISBLANK(AZ19),\"null\",\"'\"&AZ19&\"'\"))",
+    "4,39": "IF(ODATA(\"日報_コメント/$count?$filter=日報ID eq \"&IF(ISBLANK(C5),\"null\",\"'\"&C5&\"'\")&\" and 既読 eq null and 宛先ユーザー eq \"&IF(ISBLANK(toukouuser),\"null\",toukouuser))=0,\"\",ODATA(\"日報_コメント/$count?$filter=日報ID eq \"&IF(ISBLANK(C5),\"null\",\"'\"&C5&\"'\")&\" and 既読 eq null and 宛先ユーザー eq \"&IF(ISBLANK(toukouuser),\"null\",toukouuser))&\"件\")",
+    "7,52": "ODATA(\"ユーザー?$select=名前&$filter=AzureADID eq \"&IF(ISBLANK(BA1),\"null\",\"'\"&BA1&\"'\"))"
+  },
+  "AttachInfos": {
+    "0,52": {
+      "CellType": {
+        "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
+        "CellCustomValue": "%CurrentUser%",
+        "ShowCircleUserPicture": true,
+        "NavigateSettingWhenLogout": {
+          "NavigateWhenLogoutMode": 1
+        }
+      }
+    },
+    "1,30": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "日報chat_未読既読",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "日報chat_未読既読",
+                  "ColumnName": "既読"
+                },
+                "Value": "%Null%"
+              },
+              "Condition2": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "日報chat_未読既読",
+                  "ColumnName": "宛先ユーザー"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報一覧バックアップ!BA2"
+                }
+              }
+            },
+            "Params": [
+              "=BA2"
+            ],
+            "ID": "0050c9967f7e4d12a1b3ffbf5badb12a"
+          }
+        ],
+        "Text": "未確認のみ",
+        "TemplateKey": "スタイル14"
+      }
+    },
+    "1,36": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "日報chat_未読既読",
+            "Params": [],
+            "ID": "a673429c2e414a26a93e84474a06d2fe"
+          }
+        ],
+        "Text": "全て表示",
+        "TemplateKey": "_RS_Outline_RoundCorner_Style3"
+      }
+    },
+    "1,45": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "日報chat_未読既読",
+            "Params": [],
+            "ID": "4c3731e32c2a4ad28b0def5ffab132ae"
+          }
+        ],
+        "Text": "全社員",
+        "TemplateKey": "スタイル13"
+      }
+    },
+    "3,1": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "日報chat_未読既読",
+        "RowIndex": 3,
+        "ColumnIndex": 1,
+        "ColumnCount": 42,
+        "RowCount": 14,
+        "SelectionMode": 1,
+        "ColumnOperation": 1,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "リストビュー3",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "日報chat_未読既読",
+            "ColumnName": "宛先ユーザー"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=正社員日報一覧バックアップ!BA2"
+          }
+        },
+        "TopCondition": {
+          "$type": "ForguncyDataAccess.TopCESqlCondition, ForguncyDataAccess",
+          "TopCount": 200
+        },
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "日報chat_未読既読",
+                "ColumnName": "FGC_CreateDate"
+              },
+              "Order": 1
+            }
+          ]
+        },
+        "TableLoadOnDemandInfo": {
+          "IsEnabled": true
+        },
+        "ListViewStyleName": "_RS_Medium3"
+      }
+    },
+    "4,1": {
+      "BindingInfo": {
+        "TableName": "日報chat_未読既読",
+        "ColumnName": "宛先ユーザー"
+      },
+      "NameUsedInJavaScript": "宛先ユーザー"
+    },
+    "4,2": {
+      "BindingInfo": {
+        "TableName": "日報chat_未読既読",
+        "ColumnName": "日報chatID"
+      },
+      "NameUsedInJavaScript": "日報ID"
+    },
+    "4,3": {
+      "BindingInfo": {
+        "TableName": "日報chat_未読既読",
+        "ColumnName": "FGC_CreateDate"
+      },
+      "NameUsedInJavaScript": "作成日時"
+    },
+    "4,10": {
+      "BindingInfo": {
+        "TableName": "日報chat_未読既読",
+        "ColumnName": "差出人",
+        "RelationBinding": {
+          "RelatedTable": "ユーザー",
+          "RelatedColumn": "MJSID",
+          "DisplayColumn": "名前"
+        }
+      },
+      "NameUsedInJavaScript": "投稿者"
+    },
+    "4,15": {
+      "BindingInfo": {
+        "TableName": "日報chat_未読既読",
+        "ColumnName": "既読"
+      },
+      "NameUsedInJavaScript": "既読"
+    },
+    "4,19": {
+      "BindingInfo": {
+        "TableName": "日報chat_未読既読",
+        "ColumnName": "日報chatID",
+        "RelationBinding": {
+          "RelatedTable": "日報_ワークフロー",
+          "RelatedColumn": "日報ID",
+          "DisplayColumn": "報告事項"
+        }
+      },
+      "NameUsedInJavaScript": "報告事項"
+    },
+    "4,39": {
+      "NameUsedInJavaScript": "未読コメ"
+    },
+    "4,41": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報一覧バックアップ!K5"
+                      }
+                    ]
+                  },
+                  "value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=正社員日報一覧バックアップ!編集コマンドに使用"
+                  }
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "正社員日報本体_編集",
+                    "PassValues": [
+                      {
+                        "Source": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報一覧バックアップ!nippouID2"
+                        },
+                        "TargetCell": {
+                          "SerializeProperty": "=正社員日報本体_編集!nippouID"
+                        }
+                      },
+                      {
+                        "Source": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報一覧バックアップ!nippouID2"
+                        },
+                        "TargetCell": {
+                          "SerializeProperty": "=正社員日報本体_編集!日報ID編集"
+                        }
+                      },
+                      {
+                        "Source": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報一覧バックアップ!atesakiuser"
+                        },
+                        "TargetCell": {
+                          "SerializeProperty": "=正社員日報本体_編集!宛先ユーザー一時"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "e6d17b98-ade0-4f0b-ad79-3f29fc6f2428"
+              },
+              {
+                "CommandList": [],
+                "ID": "03b32563-41be-42e5-a30a-e4bf6c4cf686"
+              }
+            ]
+          }
+        ],
+        "Text": "編集",
+        "ClickMode": 1
+      },
+      "NameUsedInJavaScript": "編集"
+    },
+    "4,45": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報一覧バックアップ!チーム名"
+                },
+                "Value": "10"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報一覧バックアップ!ログインユーザーのチーム"
+                      }
+                    ]
+                  },
+                  "value": "10"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "日報chat_未読既読",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "日報chat_未読既読",
+                        "ColumnName": "宛先メンバー"
+                      },
+                      "Value": "1"
+                    },
+                    "Params": [],
+                    "ID": "1d1917698e99498380f93ae013254b89"
+                  }
+                ],
+                "ID": "9a8a1388-5340-44f5-9c74-c484df0adef7"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "日報chat_未読既読",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "日報chat_未読既読",
+                        "ColumnName": "差出人",
+                        "RelationBinding": {
+                          "RelatedTable": "ユーザー",
+                          "RelatedColumn": "MJSID",
+                          "DisplayColumn": "所属チーム"
+                        }
+                      },
+                      "Value": "10"
+                    },
+                    "Params": [],
+                    "ID": "cb1a768ca7934263a5abc3ec99ecf1f3"
+                  }
+                ],
+                "ID": "7251ae7f-616b-452f-9c0d-810ee5d71db0"
+              }
+            ]
+          }
+        ],
+        "Text": "役員",
+        "TemplateKey": "スタイル10"
+      }
+    },
+    "5,45": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報一覧バックアップ!チーム名"
+                },
+                "Value": "1"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報一覧バックアップ!ログインユーザーのチーム"
+                      }
+                    ]
+                  },
+                  "value": "1"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "日報chat_未読既読",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "日報chat_未読既読",
+                        "ColumnName": "宛先メンバー"
+                      },
+                      "Value": "1"
+                    },
+                    "Params": [],
+                    "ID": "3893add577164a87988ce342594b82f3"
+                  }
+                ],
+                "ID": "d6be90c6-3a0e-4ce4-b49a-28b6f0587967"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "日報chat_未読既読",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "日報chat_未読既読",
+                        "ColumnName": "差出人",
+                        "RelationBinding": {
+                          "RelatedTable": "ユーザー",
+                          "RelatedColumn": "MJSID",
+                          "DisplayColumn": "所属チーム"
+                        }
+                      },
+                      "Value": "1"
+                    },
+                    "Params": [],
+                    "ID": "62ccac128b604d18add03f938265e86b"
+                  }
+                ],
+                "ID": "3d195575-d642-4234-9d82-a289adbca46b"
+              }
+            ]
+          }
+        ],
+        "Text": "第1課",
+        "TemplateKey": "スタイル11"
+      }
+    },
+    "6,45": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報一覧バックアップ!チーム名"
+                },
+                "Value": "2"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報一覧バックアップ!ログインユーザーのチーム"
+                      }
+                    ]
+                  },
+                  "value": "2"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "日報chat_未読既読",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "日報chat_未読既読",
+                        "ColumnName": "宛先メンバー"
+                      },
+                      "Value": "1"
+                    },
+                    "Params": [],
+                    "ID": "7e9c9a9e2b4d457c9a0b97a3d63c856c"
+                  }
+                ],
+                "ID": "f6ac0760-1f37-4935-ba21-46c8221b4d9e"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "日報chat_未読既読",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "日報chat_未読既読",
+                        "ColumnName": "差出人",
+                        "RelationBinding": {
+                          "RelatedTable": "ユーザー",
+                          "RelatedColumn": "MJSID",
+                          "DisplayColumn": "所属チーム"
+                        }
+                      },
+                      "Value": "2"
+                    },
+                    "Params": [],
+                    "ID": "26a18b7a0ba641a3a4dbf138af6b3141"
+                  }
+                ],
+                "ID": "d3dd33a6-2109-4a7e-bfab-4eae39c94560"
+              }
+            ]
+          }
+        ],
+        "Text": "第2課",
+        "TemplateKey": "スタイル15"
+      }
+    },
+    "7,45": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報一覧バックアップ!チーム名"
+                },
+                "Value": "3"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報一覧バックアップ!ログインユーザーのチーム"
+                      }
+                    ]
+                  },
+                  "value": "3"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "日報chat_未読既読",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "日報chat_未読既読",
+                        "ColumnName": "宛先メンバー"
+                      },
+                      "Value": "1"
+                    },
+                    "Params": [],
+                    "ID": "1677f9e8ee2a4f8ea9d0fd0b88aa6dce"
+                  }
+                ],
+                "ID": "a8ab1ddd-4e10-4069-b9b8-1fb6ab75fa62"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "日報chat_未読既読",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "日報chat_未読既読",
+                        "ColumnName": "差出人",
+                        "RelationBinding": {
+                          "RelatedTable": "ユーザー",
+                          "RelatedColumn": "MJSID",
+                          "DisplayColumn": "所属チーム"
+                        }
+                      },
+                      "Value": "3"
+                    },
+                    "Params": [],
+                    "ID": "11862e62015c485a8e74a8619e48ea7f"
+                  }
+                ],
+                "ID": "b8d15cbd-a0e0-4290-b5cf-d58bc3f400cb"
+              }
+            ]
+          }
+        ],
+        "Text": "第3課",
+        "TemplateKey": "スタイル16"
+      }
+    },
+    "8,45": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報一覧バックアップ!チーム名"
+                },
+                "Value": "4"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報一覧バックアップ!ログインユーザーのチーム"
+                      }
+                    ]
+                  },
+                  "value": "4"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "日報chat_未読既読",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "日報chat_未読既読",
+                        "ColumnName": "宛先メンバー"
+                      },
+                      "Value": "1"
+                    },
+                    "Params": [],
+                    "ID": "e3007dbb37c640f4b17372d17b2efdbe"
+                  }
+                ],
+                "ID": "c9626239-e74b-4040-afea-9fb3c65b9859"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "日報chat_未読既読",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "日報chat_未読既読",
+                        "ColumnName": "差出人",
+                        "RelationBinding": {
+                          "RelatedTable": "ユーザー",
+                          "RelatedColumn": "MJSID",
+                          "DisplayColumn": "所属チーム"
+                        }
+                      },
+                      "Value": "4"
+                    },
+                    "Params": [],
+                    "ID": "d4dfc873a0d3447582b3db8f3e66abac"
+                  }
+                ],
+                "ID": "0e0faa64-4538-4eb9-b5f0-c960642dfec5"
+              }
+            ]
+          }
+        ],
+        "Text": "第4課",
+        "TemplateKey": "スタイル17"
+      }
+    },
+    "9,45": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報一覧バックアップ!チーム名"
+                },
+                "Value": "5"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報一覧バックアップ!ログインユーザーのチーム"
+                      }
+                    ]
+                  },
+                  "value": "5"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "日報chat_未読既読",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "日報chat_未読既読",
+                        "ColumnName": "宛先メンバー"
+                      },
+                      "Value": "1"
+                    },
+                    "Params": [],
+                    "ID": "cc2ef987c8c64009a2430ee5a2bc7e27"
+                  }
+                ],
+                "ID": "e0c49097-de07-445f-b39f-6bb0fad89267"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "日報chat_未読既読",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "日報chat_未読既読",
+                        "ColumnName": "差出人",
+                        "RelationBinding": {
+                          "RelatedTable": "ユーザー",
+                          "RelatedColumn": "MJSID",
+                          "DisplayColumn": "所属チーム"
+                        }
+                      },
+                      "Value": "5"
+                    },
+                    "Params": [],
+                    "ID": "bbfae8e11bb6485986c85010b065a677"
+                  }
+                ],
+                "ID": "17d4f197-3f0a-46c5-adee-8bdfef4673a2"
+              }
+            ]
+          }
+        ],
+        "Text": "第5課",
+        "TemplateKey": "スタイル18"
+      }
+    },
+    "10,45": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報一覧バックアップ!チーム名"
+                },
+                "Value": "6"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報一覧バックアップ!ログインユーザーのチーム"
+                      }
+                    ]
+                  },
+                  "value": "6"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "日報chat_未読既読",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "日報chat_未読既読",
+                        "ColumnName": "宛先メンバー"
+                      },
+                      "Value": "1"
+                    },
+                    "Params": [],
+                    "ID": "c4dcb26b4de54afcb44bbc3d5e348a65"
+                  }
+                ],
+                "ID": "27ba00bb-de8c-4b14-aef1-6f14669eb096"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "日報chat_未読既読",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "日報chat_未読既読",
+                        "ColumnName": "差出人",
+                        "RelationBinding": {
+                          "RelatedTable": "ユーザー",
+                          "RelatedColumn": "MJSID",
+                          "DisplayColumn": "所属チーム"
+                        }
+                      },
+                      "Value": "6"
+                    },
+                    "Params": [],
+                    "ID": "d97477ab7e5f4634934b5bb7bf0e3459"
+                  }
+                ],
+                "ID": "6d78dc0e-e637-4717-929a-51f52dd5bdac"
+              }
+            ]
+          }
+        ],
+        "Text": "第6課",
+        "TemplateKey": "スタイル19"
+      }
+    },
+    "11,45": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報一覧バックアップ!チーム名"
+                },
+                "Value": "7"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報一覧バックアップ!ログインユーザーのチーム"
+                      }
+                    ]
+                  },
+                  "value": "7"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "日報chat_未読既読",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "日報chat_未読既読",
+                        "ColumnName": "宛先メンバー"
+                      },
+                      "Value": "7"
+                    },
+                    "Params": [],
+                    "ID": "1a15865dccb2429aad6758253271eb0a"
+                  }
+                ],
+                "ID": "9dcdeebd-c992-42ac-a943-49ede17c11d6"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "日報chat_未読既読",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "日報chat_未読既読",
+                        "ColumnName": "差出人",
+                        "RelationBinding": {
+                          "RelatedTable": "ユーザー",
+                          "RelatedColumn": "MJSID",
+                          "DisplayColumn": "所属チーム"
+                        }
+                      },
+                      "Value": "7"
+                    },
+                    "Params": [],
+                    "ID": "d1e7804a41214ec1a28147e981d29b89"
+                  }
+                ],
+                "ID": "e230cf74-8983-4d37-a4ad-e6b43e8b95be"
+              }
+            ]
+          }
+        ],
+        "Text": "第7課",
+        "TemplateKey": "スタイル20"
+      }
+    },
+    "12,45": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報一覧バックアップ!チーム名"
+                },
+                "Value": "8"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報一覧バックアップ!ログインユーザーのチーム"
+                      }
+                    ]
+                  },
+                  "value": "8"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "日報chat_未読既読",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "日報chat_未読既読",
+                        "ColumnName": "宛先メンバー"
+                      },
+                      "Value": "1"
+                    },
+                    "Params": [],
+                    "ID": "5c62149906e24b548e14ce73a5d40aa4"
+                  }
+                ],
+                "ID": "ee453894-6dac-4d19-98a2-de8f7222f6b2"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "日報chat_未読既読",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "日報chat_未読既読",
+                        "ColumnName": "差出人",
+                        "RelationBinding": {
+                          "RelatedTable": "ユーザー",
+                          "RelatedColumn": "MJSID",
+                          "DisplayColumn": "所属チーム"
+                        }
+                      },
+                      "Value": "8"
+                    },
+                    "Params": [],
+                    "ID": "5252d852f4a14b4a80f5a303b05bfc37"
+                  }
+                ],
+                "ID": "e6d5c9d7-88c3-4011-a7dd-e4f865771684"
+              }
+            ]
+          }
+        ],
+        "Text": "第8課",
+        "TemplateKey": "スタイル21"
+      }
+    },
+    "13,45": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報一覧バックアップ!チーム名"
+                },
+                "Value": "16"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報一覧バックアップ!ログインユーザーのチーム"
+                      }
+                    ]
+                  },
+                  "value": "16"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "日報chat_未読既読",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "日報chat_未読既読",
+                        "ColumnName": "宛先メンバー"
+                      },
+                      "Value": "1"
+                    },
+                    "Params": [],
+                    "ID": "4d219391a7a84db397f37dd4825f3503"
+                  }
+                ],
+                "ID": "1c8c7b7d-688e-43e4-8faf-a7a5ad99db39"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "日報chat_未読既読",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "日報chat_未読既読",
+                        "ColumnName": "差出人",
+                        "RelationBinding": {
+                          "RelatedTable": "ユーザー",
+                          "RelatedColumn": "MJSID",
+                          "DisplayColumn": "所属チーム"
+                        }
+                      },
+                      "Value": "16"
+                    },
+                    "Params": [],
+                    "ID": "e63a5257f8354492a57cd079e962acea"
+                  }
+                ],
+                "ID": "c389a39b-a551-4142-ad22-067b94f06a16"
+              }
+            ]
+          }
+        ],
+        "Text": "第9課",
+        "TemplateKey": "スタイル22"
+      }
+    },
+    "14,45": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報一覧バックアップ!チーム名"
+                },
+                "Value": "9"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報一覧バックアップ!ログインユーザーのチーム"
+                      }
+                    ]
+                  },
+                  "value": "9"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "日報chat_未読既読",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "日報chat_未読既読",
+                        "ColumnName": "宛先メンバー"
+                      },
+                      "Value": "1"
+                    },
+                    "Params": [],
+                    "ID": "429939751555407fbb7fa0d9ee2cb6fa"
+                  }
+                ],
+                "ID": "7f60fc5b-c7c5-42c3-b35d-255744e0fb49"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "日報chat_未読既読",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "日報chat_未読既読",
+                        "ColumnName": "差出人",
+                        "RelationBinding": {
+                          "RelatedTable": "ユーザー",
+                          "RelatedColumn": "MJSID",
+                          "DisplayColumn": "所属チーム"
+                        }
+                      },
+                      "Value": "9"
+                    },
+                    "Params": [],
+                    "ID": "b96430ec667a4ee6affff02a8dfc29b7"
+                  }
+                ],
+                "ID": "6685f2d2-14c5-4d3c-bf63-2f56f1350dd4"
+              }
+            ]
+          }
+        ],
+        "Text": "本部",
+        "TemplateKey": "スタイル23"
+      }
+    },
+    "15,45": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報一覧バックアップ!チーム名"
+                },
+                "Value": "11"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報一覧バックアップ!ログインユーザーのチーム"
+                      }
+                    ]
+                  },
+                  "value": "11"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "日報chat_未読既読",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "日報chat_未読既読",
+                        "ColumnName": "宛先メンバー"
+                      },
+                      "Value": "1"
+                    },
+                    "Params": [],
+                    "ID": "580296a2f4b04f8aa9ea9fbe8ac879e4"
+                  }
+                ],
+                "ID": "532df0c3-12f2-496b-bb39-6c6b182114a7"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "日報chat_未読既読",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "日報chat_未読既読",
+                        "ColumnName": "差出人",
+                        "RelationBinding": {
+                          "RelatedTable": "ユーザー",
+                          "RelatedColumn": "MJSID",
+                          "DisplayColumn": "所属チーム"
+                        }
+                      },
+                      "Value": "11"
+                    },
+                    "Params": [],
+                    "ID": "07052b585e504c688e5bb0aa302ccb7e"
+                  }
+                ],
+                "ID": "d02a8fb9-6390-46f3-b630-b59a06816f84"
+              }
+            ]
+          }
+        ],
+        "Text": "システム課",
+        "TemplateKey": "スタイル24"
+      }
+    },
+    "18,6": {
+      "BindingInfo": {
+        "TableName": "日報chat_未読既読",
+        "ColumnName": "日報chatID",
+        "RelationBinding": {
+          "RelatedTable": "日報_ワークフロー",
+          "RelatedColumn": "日報ID",
+          "DisplayColumn": "日付"
+        }
+      }
+    },
+    "18,16": {
+      "BindingInfo": {
+        "TableName": "日報chat_未読既読",
+        "ColumnName": "差出人",
+        "RelationBinding": {
+          "RelatedTable": "ユーザー",
+          "RelatedColumn": "MJSID",
+          "DisplayColumn": "名前"
+        }
+      }
+    },
+    "18,24": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報一覧バックアップ!AV19"
+                      }
+                    ]
+                  },
+                  "value": "確認済み",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "日報chat_未読既読",
+                    "ShowConfirm": false,
+                    "ConfirmText": "本当に更新してもよろしいですか？",
+                    "RowsToUpdate": 1,
+                    "RowsToUpdateCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "Condition1": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "日報chat_未読既読",
+                          "ColumnName": "日報chatID"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報一覧バックアップ!AZ19"
+                        }
+                      },
+                      "Condition2": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "日報chat_未読既読",
+                          "ColumnName": "宛先ユーザー"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報一覧バックアップ!BA2"
+                        }
+                      }
+                    },
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "既読",
+                        "Value": "確認済み"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "fccace2b-4d66-4fbe-a280-f003d35c021b"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報一覧バックアップ!AN5"
+                      }
+                    ]
+                  },
+                  "value": "%Null%"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "日報_コメント",
+                    "ShowConfirm": false,
+                    "ConfirmText": "本当に更新してもよろしいですか？",
+                    "RowsToUpdate": 1,
+                    "RowsToUpdateCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "Condition1": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "日報_コメント",
+                          "ColumnName": "日報ID"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報一覧バックアップ!nippouID2"
+                        }
+                      },
+                      "Condition2": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "日報_コメント",
+                          "ColumnName": "宛先ユーザー"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報一覧バックアップ!toukouuser"
+                        }
+                      }
+                    },
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "既読",
+                        "Value": "確認済み"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "11726e79-f11f-46e1-843a-1009c308b8a1"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.GoToRecordCommand, ServerDesignerCommon",
+            "TargetRecord": 2,
+            "TableName": "日報chat_未読既読"
+          }
+        ],
+        "ImagePath": "Arrow/277_move_first_3.svg",
+        "BuiltIn": true,
+        "Color": "Accent 2 -25"
+      }
+    },
+    "18,27": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報一覧バックアップ!AV19"
+                      }
+                    ]
+                  },
+                  "value": "確認済み",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "日報chat_未読既読",
+                    "ShowConfirm": false,
+                    "ConfirmText": "本当に更新してもよろしいですか？",
+                    "RowsToUpdate": 1,
+                    "RowsToUpdateCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "Condition1": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "日報chat_未読既読",
+                          "ColumnName": "日報chatID"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報一覧バックアップ!AZ19"
+                        }
+                      },
+                      "Condition2": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "日報chat_未読既読",
+                          "ColumnName": "宛先ユーザー"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報一覧バックアップ!BA2"
+                        }
+                      }
+                    },
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "既読",
+                        "Value": "確認済み"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "8402a802-8fd9-4963-99b4-e73c2f7f8e56"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報一覧バックアップ!AN5"
+                      }
+                    ]
+                  },
+                  "value": "%Null%",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "日報_コメント",
+                    "ShowConfirm": false,
+                    "ConfirmText": "本当に更新してもよろしいですか？",
+                    "RowsToUpdate": 1,
+                    "RowsToUpdateCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "Condition1": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "日報_コメント",
+                          "ColumnName": "日報ID"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報一覧バックアップ!nippouID2"
+                        }
+                      },
+                      "Condition2": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "日報_コメント",
+                          "ColumnName": "宛先ユーザー"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報一覧バックアップ!toukouuser"
+                        }
+                      }
+                    },
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "既読",
+                        "Value": "確認済み"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "4fb335c1-e1f8-41db-891d-f17bd029df36"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.GoToRecordCommand, ServerDesignerCommon",
+            "TargetRecord": 0,
+            "TableName": "日報chat_未読既読"
+          }
+        ],
+        "ImagePath": "Arrow/291_left_arrow_2.svg",
+        "BuiltIn": true,
+        "Color": "Accent 2 -25"
+      }
+    },
+    "18,30": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報一覧バックアップ!AV19"
+                      }
+                    ]
+                  },
+                  "value": "確認済み",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "日報chat_未読既読",
+                    "ShowConfirm": false,
+                    "ConfirmText": "本当に更新してもよろしいですか？",
+                    "RowsToUpdate": 1,
+                    "RowsToUpdateCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "Condition1": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "日報chat_未読既読",
+                          "ColumnName": "日報chatID"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報一覧バックアップ!nippouID2"
+                        }
+                      },
+                      "Condition2": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "日報chat_未読既読",
+                          "ColumnName": "宛先ユーザー"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報一覧バックアップ!BA2"
+                        }
+                      }
+                    },
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "既読",
+                        "Value": "確認済み"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "26464c6b-ea05-472f-aba2-57c3d0b6189b"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報一覧バックアップ!AN5"
+                      }
+                    ]
+                  },
+                  "value": "%Null%",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "日報_コメント",
+                    "ShowConfirm": false,
+                    "ConfirmText": "本当に更新してもよろしいですか？",
+                    "RowsToUpdate": 1,
+                    "RowsToUpdateCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "Condition1": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "日報_コメント",
+                          "ColumnName": "日報ID"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報一覧バックアップ!nippouID2"
+                        }
+                      },
+                      "Condition2": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "日報_コメント",
+                          "ColumnName": "宛先ユーザー"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報一覧バックアップ!toukouuser"
+                        }
+                      }
+                    },
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "既読",
+                        "Value": "確認済み"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "f283ceef-8bb7-4677-8331-9bbaaca5ffa1"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.GoToRecordCommand, ServerDesignerCommon",
+            "TableName": "日報chat_未読既読"
+          }
+        ],
+        "ImagePath": "Arrow/292_move_next_3.svg",
+        "BuiltIn": true,
+        "Color": "Accent 2 -25"
+      }
+    },
+    "18,33": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報一覧バックアップ!AV19"
+                      }
+                    ]
+                  },
+                  "value": "確認済み",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "日報chat_未読既読",
+                    "ShowConfirm": false,
+                    "ConfirmText": "本当に更新してもよろしいですか？",
+                    "RowsToUpdate": 1,
+                    "RowsToUpdateCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "Condition1": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "日報chat_未読既読",
+                          "ColumnName": "日報chatID"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報一覧バックアップ!AZ19"
+                        }
+                      },
+                      "Condition2": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "日報chat_未読既読",
+                          "ColumnName": "宛先ユーザー"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報一覧バックアップ!BA2"
+                        }
+                      }
+                    },
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "既読",
+                        "Value": "確認済み"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "7c069662-f385-47bd-aa1e-fb452dcca54a"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報一覧バックアップ!AN5"
+                      }
+                    ]
+                  },
+                  "value": "%Null%"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "日報_コメント",
+                    "ShowConfirm": false,
+                    "ConfirmText": "本当に更新してもよろしいですか？",
+                    "RowsToUpdate": 1,
+                    "RowsToUpdateCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "Condition1": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "日報_コメント",
+                          "ColumnName": "日報ID"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報一覧バックアップ!nippouID2"
+                        }
+                      },
+                      "Condition2": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "日報_コメント",
+                          "ColumnName": "宛先ユーザー"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報一覧バックアップ!toukouuser"
+                        }
+                      }
+                    },
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "既読",
+                        "Value": "確認済み"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "5e3c464b-e9f2-48a6-bbcb-8207fb7e8408"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.GoToRecordCommand, ServerDesignerCommon",
+            "TargetRecord": 3,
+            "TableName": "日報chat_未読既読"
+          }
+        ],
+        "ImagePath": "Arrow/278_move_last_3.svg",
+        "BuiltIn": true,
+        "Color": "Accent 2 -25"
+      }
+    },
+    "18,47": {
+      "BindingInfo": {
+        "TableName": "日報chat_未読既読",
+        "ColumnName": "既読"
+      }
+    },
+    "18,51": {
+      "BindingInfo": {
+        "TableName": "日報chat_未読既読",
+        "ColumnName": "日報chatID"
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "20,1": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "日報_内容",
+        "RowIndex": 20,
+        "ColumnIndex": 1,
+        "ColumnCount": 34,
+        "RowCount": 21,
+        "AutoFitRowHeight": true,
+        "ColumnOperation": 2,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "リストビュー2",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "日報_内容",
+            "ColumnName": "日報ID"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=正社員日報一覧バックアップ!AZ19"
+          }
+        },
+        "TopCondition": null,
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "日報_内容",
+                "ColumnName": "開始時刻"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "ListViewStyleName": "_RS_Light10"
+      }
+    },
+    "20,36": {
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      },
+      "BindingInfo": {
+        "TableName": "日報chat_未読既読",
+        "ColumnName": "日報chatID",
+        "RelationBinding": {
+          "RelatedTable": "日報_ワークフロー",
+          "RelatedColumn": "日報ID",
+          "DisplayColumn": "訪問予定"
+        }
+      }
+    },
+    "21,3": {
+      "BindingInfo": {
+        "TableName": "日報_内容",
+        "ColumnName": "開始時刻"
+      }
+    },
+    "21,7": {
+      "BindingInfo": {
+        "TableName": "日報_内容",
+        "ColumnName": "終了時刻"
+      }
+    },
+    "21,10": {
+      "BindingInfo": {
+        "TableName": "日報_内容",
+        "ColumnName": "項目",
+        "RelationBinding": {
+          "RelatedTable": "日報項目",
+          "RelatedColumn": "日報項目ID",
+          "DisplayColumn": "項目"
+        }
+      }
+    },
+    "21,15": {
+      "BindingInfo": {
+        "TableName": "日報_内容",
+        "ColumnName": "顧問先",
+        "RelationBinding": {
+          "RelatedTable": "顧客一覧",
+          "RelatedColumn": "MJS",
+          "DisplayColumn": "会社名"
+        }
+      }
+    },
+    "21,20": {
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon"
+      },
+      "BindingInfo": {
+        "TableName": "日報_内容",
+        "ColumnName": "内容"
+      }
+    },
+    "25,36": {
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "CellDefaultValue": "ページ1"
+      },
+      "BindingInfo": {
+        "TableName": "日報chat_未読既読",
+        "ColumnName": "日報chatID",
+        "RelationBinding": {
+          "RelatedTable": "日報_ワークフロー",
+          "RelatedColumn": "日報ID",
+          "DisplayColumn": "報告事項"
+        }
+      }
+    },
+    "30,46": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "atesakigai2",
+            "TableValue": {
+              "TableName": "ユーザー",
+              "BindingInfos": [
+                {
+                  "BindingInfo": {
+                    "TableName": "ユーザー",
+                    "ColumnName": "MJSID"
+                  },
+                  "ColumnName": "MJSID"
+                }
+              ],
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                "CompareType": 9,
+                "ColumnBindingInfo": {
+                  "TableName": "ユーザー",
+                  "ColumnName": "MJSID"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報一覧バックアップ!atesakiuser"
+                }
+              }
+            },
+            "ID": "c01d524fe4954f2ebbf759bbb5aba487"
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報一覧バックアップ!atesakigai9"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報一覧バックアップ!atesakigai2"
+                }
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報一覧バックアップ!コメント内容"
+                      }
+                    ]
+                  },
+                  "value": "%Null%"
+                },
+                "CommandList": [],
+                "ID": "71acaed7-320d-48a8-8c26-9d31e713ab9c"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.RunJavaScriptCommand, ServerDesignerCommon",
+                    "JavaScript": "// 現在のページを取得する。\r\nvar page = Forguncy.Page;\r\n// 現在のページでatesakiという名前のセルを取得する。\r\nvar atesakicell = page.getCell(\"atesakiuser\");\r\n// getValueメソッドでatesakiセルの値を取得する。\r\nvar atesakicellValue = atesakicell.getValue();\r\n// 宛先を配列にする\r\nvar atesakiitem = atesakicellValue.split(',');\r\n//　配列に含まれる重複を削除\r\nvar atesakiitem1 = new Set(atesakiitem);\r\n// 現在のページでatesakiigaiセルを取得する。\r\nvar ateigaicell = page.getCell(\"atesakigai9\");\r\n// getValueメソッドでatesakiigaiセルの値を取得する。\r\nvar ateigaiValue = ateigaicell.getValue();\r\n// 現在のページでnippouIDセルを取得する。\r\nvar nidcell = page.getCell(\"nippouID2\");\r\n// getValueメソッドでmidセルの値を取得する。\r\nvar nidcellValue = nidcell.getValue();\r\n// 現在のページでユーザーセルを取得する。\r\nvar toukousyacell = page.getCell(\"toukouuser\");\r\n// getValueメソッドでuserセルの値を取得する。\r\nvar toukousyacellValue = toukousyacell.getValue();\r\n// 現在のページでユーザーセルを取得する。\r\nvar commentcell = page.getCell(\"コメント内容\");\r\n// getValueメソッドでcommentセルの値を取得する。\r\nvar commentcellValue = commentcell.getValue();\r\n\r\natesaki = [];\r\n\r\n\r\n\r\n// atesakiitem1の配列の数を繰り返して、オブジェクトを作成\r\nfor ( var ate of atesakiitem1) { \r\n atesaki.push(\r\n\t{\r\n\t\t宛先ユーザー: ate,\r\n\t\t日報ID: nidcellValue,\r\n\t\t宛先メンバー: true,\r\n\t\t差出人: toukousyacellValue,\r\n\t\tコメント: commentcellValue\r\n\t});\r\n}\r\n\r\n//  atesakiigaiのオブジェクトの数を繰り返して、オブジェクトを作成\r\nateigaiValue.forEach(function(item, index) {\r\n\tatesaki.push(\r\n\t\t{\r\n\t\t宛先ユーザー: item.MJSID,\r\n\t\t日報ID: nidcellValue,\r\n\t\t宛先メンバー: false,\r\n\t\t既読: \"確認済み\",\r\n\t\t差出人: toukousyacellValue,\r\n\t\tコメント: commentcellValue\r\n\t\t} );\r\n})\r\n\r\nForguncy.Page.getCell(\"atesaki_obj1\").setValue(atesaki);",
+                    "ID": "2687cebb723d431e8c3af9989af03cd3",
+                    "Comments": "カスタムWebAPIを利用してメッセージユーザーテーブルに追加するためのオブジェクトを作成",
+                    "Disabled": true
+                  },
+                  {
+                    "$type": "Forguncy.Model.RunJavaScriptCommand, ServerDesignerCommon",
+                    "JavaScript": "// 現在のページを取得する。\r\nvar page = Forguncy.Page;\r\n// 現在のページでatesakiという名前のセルを取得する。\r\nvar ateobjcell = page.getCell(\"atesaki_obj1\");\r\n// getValueメソッドでatesakiセルの値を取得する。\r\nvar ateobjcellValue = ateobjcell.getValue();\r\n\r\n// 1回のpostリクエストを送信して、サーバーサイドでテーブルを追加・\r\n\r\nvar postUrl = \"http://localhost:37998/customapi/modifytablesdatademo/modifytablesdata\";\r\n\r\n// サーバーサイドAPIの「IDataAccess.ModifyTablesData メソッドで使用するModifyDataのデータを準備します。\r\nvar modifyData = {};\r\n\r\nmodifyData.日報_コメント= {};\r\n\r\n// 追加\r\nmodifyData.日報_コメント.AddRows = ateobjcellValue;\r\n\r\n// post\r\n$.post(postUrl, JSON.stringify(modifyData), function () {\r\n});\r\n",
+                    "ID": "2931a0582b0b4471bdb8d4c169b259e8",
+                    "Comments": "カスタムWebAPIを利用してメッセージユーザーテーブルに追加",
+                    "Disabled": true
+                  },
+                  {
+                    "$type": "Forguncy.Model.RunJavaScriptCommand, ServerDesignerCommon",
+                    "JavaScript": "// 現在のページを取得する。\r\nvar page = Forguncy.Page;\r\n// 現在のページでatesakiという名前のセルを取得する。\r\nvar atesakicell = page.getCell(\"atesakiuser\");\r\n// getValueメソッドでatesakiセルの値を取得する。\r\nvar atesakicellValue = atesakicell.getValue();\r\n// 宛先を配列にする\r\nvar atesakiitem = atesakicellValue.split(',');\r\n//　配列に含まれる重複を削除\r\nvar atesakiitem1 = new Set(atesakiitem);\r\n// 現在のページでatesakiigaiセルを取得する。\r\nvar ateigaicell = page.getCell(\"atesakigai9\");\r\n// getValueメソッドでatesakiigaiセルの値を取得する。\r\nvar ateigaiValue = ateigaicell.getValue();\r\n// 現在のページでnippouIDセルを取得する。\r\nvar nidcell = page.getCell(\"nippouID2\");\r\n// getValueメソッドでmidセルの値を取得する。\r\nvar nidcellValue = nidcell.getValue();\r\n// 現在のページでユーザーセルを取得する。\r\nvar toukousyacell = page.getCell(\"toukouuser\");\r\n// getValueメソッドでuserセルの値を取得する。\r\nvar toukousyacellValue = toukousyacell.getValue();\r\n\r\n\r\natesaki = [];\r\n\r\n\r\n\r\n// atesakiitem1の配列の数を繰り返して、オブジェクトを作成\r\nfor ( var ate of atesakiitem1) { \r\n atesaki.push(\r\n\t{\r\n\t\t宛先ユーザー: ate,\r\n\t\t日報ID: nidcellValue,\r\n\t\t宛先メンバー: true,\r\n\t\t差出人: toukousyacellValue\r\n\t});\r\n}\r\n\r\n//  atesakiigaiのオブジェクトの数を繰り返して、オブジェクトを作成\r\nateigaiValue.forEach(function(item, index) {\r\n\tatesaki.push(\r\n\t\t{\r\n\t\t宛先ユーザー: item.MJSID,\r\n\t\t日報ID: nidcellValue,\r\n\t\t宛先メンバー: false,\r\n\t\t既読: \"確認済み\",\r\n\t\t差出人: toukousyacellValue\r\n\t\t} );\r\n})\r\n\r\nForguncy.Page.getCell(\"atesaki_obj1\").setValue(atesaki);",
+                    "ID": "47f5b3cc1bac4d7d9358c3b07816ba83",
+                    "Comments": "カスタムWebAPIを利用してメッセージユーザーテーブルに追加するためのオブジェクトを作成"
+                  },
+                  {
+                    "$type": "Forguncy.Model.RunJavaScriptCommand, ServerDesignerCommon",
+                    "JavaScript": "// 現在のページを取得する。\r\nvar page = Forguncy.Page;\r\n// 現在のページでatesakiという名前のセルを取得する。\r\nvar ateobjcell = page.getCell(\"atesaki_obj1\");\r\n// getValueメソッドでatesakiセルの値を取得する。\r\nvar ateobjcellValue = ateobjcell.getValue();\r\n\r\n// 1回のpostリクエストを送信して、サーバーサイドでテーブルを追加・\r\n\r\nvar postUrl = \"http://localhost:37998/customapi/modifytablesdatademo/modifytablesdata\";\r\n\r\n// サーバーサイドAPIの「IDataAccess.ModifyTablesData メソッドで使用するModifyDataのデータを準備します。\r\nvar modifyData = {};\r\n\r\nmodifyData.日報_コメント= {};\r\n\r\n// 追加\r\nmodifyData.日報_コメント.AddRows = ateobjcellValue;\r\n\r\n// post\r\n$.post(postUrl, JSON.stringify(modifyData), function () {\r\n});\r\n",
+                    "ID": "6b15c0df54de4d5782af54f57aefc273",
+                    "Comments": "カスタムWebAPIを利用してメッセージユーザーテーブルに追加"
+                  }
+                ],
+                "ID": "9419cb5c-b231-4bc9-b9c4-4107e61805ac"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "日報_コメント",
+            "ShowConfirm": false,
+            "ConfirmText": "本当に更新してもよろしいですか？",
+            "RowsToUpdate": 1,
+            "RowsToUpdateCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "日報_コメント",
+                "ColumnName": "日報ID"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=正社員日報一覧バックアップ!AZ19"
+              }
+            },
+            "UpdateValues": [
+              {
+                "ColumnName": "コメント",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報一覧バックアップ!コメント内容"
+                }
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報一覧バックアップ!AK32"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "投稿",
+        "TemplateKey": "_RS_Gradient_Shadow_Style3",
+        "Icon": {
+          "Name": "Application/057_refresh_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        },
+        "IconSize": 14.0
+      }
+    },
+    "31,36": {
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "入力したら「投稿」をクリック"
+      }
+    },
+    "35,36": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PopupDisplayMode": 1,
+            "DialogLocation": "25%",
+            "Placement": {
+              "SerializeProperty": "=正社員日報一覧バックアップ!AK25"
+            },
+            "PageName": "コメント履歴",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報一覧バックアップ!AZ19"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=コメント履歴!AB2"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "コメント履歴",
+        "ClickMode": 1
+      }
+    },
+    "36,36": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "日報_コメント",
+        "RowIndex": 36,
+        "ColumnIndex": 36,
+        "ColumnCount": 14,
+        "RowCount": 5,
+        "AutoFitRowHeight": true,
+        "ColumnOperation": 2,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "リストビュー4",
+        "DetailListViewInfo": {
+          "MasterTable": "日報chat_未読既読",
+          "ColumnOfMasterTable": "日報chatID",
+          "ColumnOfDetailTable": "日報ID",
+          "DataCommitType": 2
+        },
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "日報_コメント",
+            "ColumnName": "宛先ユーザー"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=正社員日報一覧バックアップ!toukouuser"
+          }
+        },
+        "TopCondition": null,
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "日報_コメント",
+                "ColumnName": "FGC_LastModifyDate"
+              },
+              "Order": 1
+            }
+          ]
+        },
+        "CommitType": 1,
+        "ListViewStyleName": "_RS_Light10"
+      }
+    },
+    "37,36": {
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon"
+      },
+      "BindingInfo": {
+        "TableName": "日報_コメント",
+        "ColumnName": "コメント"
+      }
+    },
+    "37,48": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "日報_コメント",
+            "UpdateType": "delete",
+            "ShowConfirm": true,
+            "ConfirmText": "本当に削除してもよろしいですか？",
+            "UpdateValues": []
+          }
+        ],
+        "Text": "削除",
+        "ClickMode": 1
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontSize": 21.333333333333332,
+        "FontWeight": 1
+      },
+      {
+        "FontFamily": 0,
+        "Foreground": 2
+      },
+      {
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 4
+      },
+      {
+        "FontFamily": 0,
+        "HorizontalAlignment": 5
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 6,
+        "HorizontalAlignment": 5
+      },
+      {
+        "FontFamily": 0,
+        "Foreground": 2,
+        "HorizontalAlignment": 5
+      },
+      {
+        "Foreground": 7,
+        "Underline": true
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 21.333333333333332,
+        "FontWeight": 1
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 21.333333333333332,
+        "FontWeight": 1,
+        "Formatter": 6
+      },
+      {
+        "FontFamily": 0,
+        "HorizontalAlignment": 5,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 0,
+        "Underline": true
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 8,
+        "VerticalAlignment": 9,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 10,
+        "HorizontalAlignment": 5
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "Formatter": 8,
+        "VerticalAlignment": 9,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 0,
+        "Foreground": 11,
+        "Underline": true
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 14.666666666666666,
+        "HorizontalAlignment": 12
+      },
+      {
+        "FontFamily": 0,
+        "HorizontalAlignment": 12
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 4,
+        "HorizontalAlignment": 5
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333333333332,
+        "Foreground": 11,
+        "HorizontalAlignment": 5,
+        "Underline": true
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Bold",
+        "#FFFF0000",
+        "black",
+        "[AUTO]General",
+        "Center",
+        "yyyy/m/d(aaa)",
+        "Accent 2 -25",
+        "@",
+        "Top",
+        "h:mm",
+        "Blue",
+        "Right"
+      ],
+      "Borders": [
+        {
+          "Color": 3
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,1": 0,
+      "0,2": 0,
+      "0,3": 0,
+      "0,4": 0,
+      "0,5": 0,
+      "1,3": 1,
+      "1,7": 0,
+      "1,11": 2,
+      "1,30": 0,
+      "1,31": 0,
+      "1,32": 0,
+      "1,33": 0,
+      "1,34": 0,
+      "1,35": 0,
+      "1,36": 0,
+      "1,37": 0,
+      "1,38": 0,
+      "1,39": 0,
+      "1,40": 0,
+      "1,44": 3,
+      "1,45": 4,
+      "2,30": 0,
+      "2,31": 0,
+      "2,32": 0,
+      "2,33": 0,
+      "2,34": 0,
+      "2,35": 0,
+      "2,36": 0,
+      "2,37": 0,
+      "2,38": 0,
+      "2,39": 0,
+      "2,40": 0,
+      "2,44": 3,
+      "3,39": 4,
+      "3,44": 3,
+      "3,45": 5,
+      "3,46": 0,
+      "3,47": 0,
+      "3,48": 0,
+      "3,49": 5,
+      "3,50": 0,
+      "3,52": 6,
+      "4,2": 0,
+      "4,3": 7,
+      "4,10": 5,
+      "4,11": 0,
+      "4,12": 0,
+      "4,13": 0,
+      "4,14": 0,
+      "4,15": 5,
+      "4,16": 0,
+      "4,17": 0,
+      "4,18": 0,
+      "4,19": 0,
+      "4,39": 8,
+      "4,41": 9,
+      "4,44": 3,
+      "4,45": 0,
+      "4,46": 0,
+      "4,47": 0,
+      "4,48": 0,
+      "4,49": 8,
+      "4,50": 0,
+      "5,44": 3,
+      "5,45": 4,
+      "5,46": 0,
+      "5,47": 0,
+      "5,48": 0,
+      "5,49": 8,
+      "5,50": 0,
+      "6,44": 3,
+      "6,45": 4,
+      "6,46": 0,
+      "6,47": 0,
+      "6,48": 0,
+      "6,49": 8,
+      "6,50": 0,
+      "7,44": 3,
+      "7,45": 4,
+      "7,46": 0,
+      "7,47": 0,
+      "7,48": 0,
+      "7,49": 8,
+      "7,50": 0,
+      "8,44": 3,
+      "8,45": 4,
+      "8,46": 0,
+      "8,47": 0,
+      "8,48": 0,
+      "8,49": 8,
+      "8,50": 0,
+      "9,44": 3,
+      "9,45": 4,
+      "9,46": 0,
+      "9,47": 0,
+      "9,48": 0,
+      "9,49": 8,
+      "9,50": 0,
+      "10,44": 3,
+      "10,45": 4,
+      "10,46": 0,
+      "10,47": 0,
+      "10,48": 0,
+      "10,49": 8,
+      "10,50": 0,
+      "11,44": 3,
+      "11,45": 4,
+      "11,46": 0,
+      "11,47": 0,
+      "11,48": 0,
+      "11,49": 8,
+      "11,50": 0,
+      "12,44": 3,
+      "12,45": 4,
+      "12,46": 0,
+      "12,47": 0,
+      "12,48": 0,
+      "12,49": 8,
+      "12,50": 0,
+      "13,44": 3,
+      "13,45": 4,
+      "13,46": 0,
+      "13,47": 0,
+      "13,48": 0,
+      "13,49": 8,
+      "13,50": 0,
+      "14,44": 3,
+      "14,45": 4,
+      "14,46": 0,
+      "14,47": 0,
+      "14,48": 0,
+      "14,49": 8,
+      "14,50": 0,
+      "15,44": 3,
+      "15,45": 5,
+      "15,46": 0,
+      "15,47": 0,
+      "15,48": 0,
+      "15,49": 8,
+      "15,50": 0,
+      "16,44": 3,
+      "16,51": 0,
+      "16,52": 0,
+      "17,3": 10,
+      "17,4": 10,
+      "17,5": 10,
+      "17,6": 10,
+      "17,7": 10,
+      "17,8": 10,
+      "17,9": 10,
+      "17,10": 10,
+      "17,11": 10,
+      "17,12": 10,
+      "17,13": 10,
+      "17,14": 10,
+      "17,15": 10,
+      "17,16": 10,
+      "17,17": 10,
+      "17,18": 10,
+      "17,19": 10,
+      "17,20": 10,
+      "17,21": 10,
+      "17,22": 10,
+      "17,23": 10,
+      "17,24": 10,
+      "17,25": 10,
+      "17,26": 10,
+      "17,27": 10,
+      "17,28": 10,
+      "17,29": 10,
+      "17,30": 10,
+      "17,31": 10,
+      "17,32": 10,
+      "17,33": 10,
+      "17,34": 10,
+      "17,35": 10,
+      "17,36": 10,
+      "17,37": 10,
+      "17,38": 10,
+      "17,39": 10,
+      "17,40": 10,
+      "17,41": 10,
+      "17,42": 10,
+      "17,43": 10,
+      "17,46": 10,
+      "17,47": 10,
+      "17,48": 10,
+      "17,49": 10,
+      "17,51": 0,
+      "17,52": 0,
+      "18,1": 11,
+      "18,2": 11,
+      "18,3": 12,
+      "18,4": 0,
+      "18,5": 0,
+      "18,6": 13,
+      "18,16": 12,
+      "18,23": 0,
+      "18,24": 0,
+      "18,25": 0,
+      "18,27": 0,
+      "18,28": 0,
+      "18,30": 0,
+      "18,31": 0,
+      "18,33": 0,
+      "18,34": 0,
+      "18,44": 14,
+      "18,45": 15,
+      "18,46": 0,
+      "18,47": 0,
+      "18,51": 16,
+      "19,3": 0,
+      "19,4": 0,
+      "19,5": 0,
+      "19,23": 0,
+      "19,24": 0,
+      "19,25": 0,
+      "19,27": 0,
+      "19,28": 0,
+      "19,30": 0,
+      "19,31": 0,
+      "19,33": 0,
+      "19,34": 0,
+      "19,36": 4,
+      "19,39": 0,
+      "19,44": 0,
+      "19,45": 0,
+      "19,46": 0,
+      "20,1": 4,
+      "20,3": 4,
+      "20,4": 0,
+      "20,5": 0,
+      "20,6": 4,
+      "20,7": 4,
+      "20,8": 0,
+      "20,9": 0,
+      "20,10": 0,
+      "20,11": 0,
+      "20,12": 0,
+      "20,13": 0,
+      "20,14": 0,
+      "20,15": 0,
+      "20,16": 0,
+      "20,17": 0,
+      "20,18": 0,
+      "20,19": 0,
+      "20,20": 0,
+      "20,21": 0,
+      "20,22": 0,
+      "20,23": 0,
+      "20,24": 0,
+      "20,25": 0,
+      "20,26": 0,
+      "20,27": 0,
+      "20,28": 0,
+      "20,29": 0,
+      "20,30": 0,
+      "20,31": 0,
+      "20,32": 0,
+      "20,33": 0,
+      "20,34": 0,
+      "20,36": 17,
+      "20,50": 0,
+      "21,1": 0,
+      "21,3": 18,
+      "21,4": 0,
+      "21,5": 0,
+      "21,6": 5,
+      "21,7": 18,
+      "21,8": 0,
+      "21,9": 0,
+      "21,10": 5,
+      "21,11": 0,
+      "21,12": 0,
+      "21,13": 0,
+      "21,14": 0,
+      "21,15": 19,
+      "21,16": 0,
+      "21,17": 0,
+      "21,18": 0,
+      "21,19": 0,
+      "21,20": 17,
+      "21,21": 0,
+      "21,22": 0,
+      "21,23": 0,
+      "21,24": 0,
+      "21,25": 0,
+      "21,26": 0,
+      "21,27": 0,
+      "21,28": 0,
+      "21,29": 0,
+      "21,30": 0,
+      "21,31": 0,
+      "21,32": 0,
+      "21,33": 0,
+      "21,34": 0,
+      "22,1": 0,
+      "22,2": 0,
+      "22,3": 0,
+      "22,4": 0,
+      "22,5": 0,
+      "22,6": 0,
+      "22,7": 0,
+      "22,8": 0,
+      "22,9": 0,
+      "22,10": 0,
+      "22,11": 0,
+      "22,12": 0,
+      "22,13": 0,
+      "22,14": 0,
+      "22,15": 0,
+      "22,16": 0,
+      "22,17": 0,
+      "22,18": 0,
+      "22,19": 0,
+      "22,20": 0,
+      "22,21": 0,
+      "22,22": 0,
+      "22,23": 0,
+      "22,24": 0,
+      "22,25": 0,
+      "22,26": 0,
+      "22,27": 0,
+      "22,28": 0,
+      "22,29": 0,
+      "22,30": 0,
+      "22,31": 0,
+      "22,32": 0,
+      "22,33": 0,
+      "22,34": 0,
+      "23,1": 0,
+      "23,2": 0,
+      "23,3": 0,
+      "23,4": 0,
+      "23,5": 0,
+      "23,6": 0,
+      "23,7": 0,
+      "23,8": 0,
+      "23,9": 0,
+      "23,10": 0,
+      "23,11": 0,
+      "23,12": 0,
+      "23,13": 0,
+      "23,14": 0,
+      "23,15": 0,
+      "23,16": 0,
+      "23,17": 0,
+      "23,18": 0,
+      "23,19": 0,
+      "23,20": 0,
+      "23,21": 0,
+      "23,22": 0,
+      "23,23": 0,
+      "23,24": 0,
+      "23,25": 0,
+      "23,26": 0,
+      "23,27": 0,
+      "23,28": 0,
+      "23,29": 0,
+      "23,30": 0,
+      "23,31": 0,
+      "23,32": 0,
+      "23,33": 0,
+      "23,34": 0,
+      "23,52": 0,
+      "24,1": 0,
+      "24,2": 0,
+      "24,3": 0,
+      "24,4": 0,
+      "24,5": 0,
+      "24,6": 0,
+      "24,7": 0,
+      "24,8": 0,
+      "24,9": 0,
+      "24,10": 0,
+      "24,11": 0,
+      "24,12": 0,
+      "24,13": 0,
+      "24,14": 0,
+      "24,15": 0,
+      "24,16": 0,
+      "24,17": 0,
+      "24,18": 0,
+      "24,19": 0,
+      "24,20": 0,
+      "24,21": 0,
+      "24,22": 0,
+      "24,23": 0,
+      "24,24": 0,
+      "24,25": 0,
+      "24,26": 0,
+      "24,27": 0,
+      "24,28": 0,
+      "24,29": 0,
+      "24,30": 0,
+      "24,31": 0,
+      "24,32": 0,
+      "24,33": 0,
+      "24,34": 0,
+      "24,50": 0,
+      "24,51": 0,
+      "24,52": 20,
+      "25,1": 0,
+      "25,2": 0,
+      "25,3": 0,
+      "25,4": 0,
+      "25,5": 0,
+      "25,6": 0,
+      "25,7": 0,
+      "25,8": 0,
+      "25,9": 0,
+      "25,10": 0,
+      "25,11": 0,
+      "25,12": 0,
+      "25,13": 0,
+      "25,14": 0,
+      "25,15": 0,
+      "25,16": 0,
+      "25,17": 0,
+      "25,18": 0,
+      "25,19": 0,
+      "25,20": 0,
+      "25,21": 0,
+      "25,22": 0,
+      "25,23": 0,
+      "25,24": 0,
+      "25,25": 0,
+      "25,26": 0,
+      "25,27": 0,
+      "25,28": 0,
+      "25,29": 0,
+      "25,30": 0,
+      "25,31": 0,
+      "25,32": 0,
+      "25,33": 0,
+      "25,34": 0,
+      "25,36": 21,
+      "25,50": 0,
+      "25,51": 0,
+      "25,52": 0,
+      "26,1": 0,
+      "26,2": 0,
+      "26,3": 0,
+      "26,4": 0,
+      "26,5": 0,
+      "26,6": 0,
+      "26,7": 0,
+      "26,8": 0,
+      "26,9": 0,
+      "26,10": 0,
+      "26,11": 0,
+      "26,12": 0,
+      "26,13": 0,
+      "26,14": 0,
+      "26,15": 0,
+      "26,16": 0,
+      "26,17": 0,
+      "26,18": 0,
+      "26,19": 0,
+      "26,20": 0,
+      "26,21": 0,
+      "26,22": 0,
+      "26,23": 0,
+      "26,24": 0,
+      "26,25": 0,
+      "26,26": 0,
+      "26,27": 0,
+      "26,28": 0,
+      "26,29": 0,
+      "26,30": 0,
+      "26,31": 0,
+      "26,32": 0,
+      "26,33": 0,
+      "26,34": 0,
+      "26,52": 6,
+      "27,1": 0,
+      "27,2": 0,
+      "27,3": 0,
+      "27,4": 0,
+      "27,5": 0,
+      "27,6": 0,
+      "27,7": 0,
+      "27,8": 0,
+      "27,9": 0,
+      "27,10": 0,
+      "27,11": 0,
+      "27,12": 0,
+      "27,13": 0,
+      "27,14": 0,
+      "27,15": 0,
+      "27,16": 0,
+      "27,17": 0,
+      "27,18": 0,
+      "27,19": 0,
+      "27,20": 0,
+      "27,21": 0,
+      "27,22": 0,
+      "27,23": 0,
+      "27,24": 0,
+      "27,25": 0,
+      "27,26": 0,
+      "27,27": 0,
+      "27,28": 0,
+      "27,29": 0,
+      "27,30": 0,
+      "27,31": 0,
+      "27,32": 0,
+      "27,33": 0,
+      "27,34": 0,
+      "28,1": 0,
+      "28,2": 0,
+      "28,3": 0,
+      "28,4": 0,
+      "28,5": 0,
+      "28,6": 0,
+      "28,7": 0,
+      "28,8": 0,
+      "28,9": 0,
+      "28,10": 0,
+      "28,11": 0,
+      "28,12": 0,
+      "28,13": 0,
+      "28,14": 0,
+      "28,15": 0,
+      "28,16": 0,
+      "28,17": 0,
+      "28,18": 0,
+      "28,19": 0,
+      "28,20": 0,
+      "28,21": 0,
+      "28,22": 0,
+      "28,23": 0,
+      "28,24": 0,
+      "28,25": 0,
+      "28,26": 0,
+      "28,27": 0,
+      "28,28": 0,
+      "28,29": 0,
+      "28,30": 0,
+      "28,31": 0,
+      "28,32": 0,
+      "28,33": 0,
+      "28,34": 0,
+      "29,1": 0,
+      "29,2": 0,
+      "29,3": 0,
+      "29,4": 0,
+      "29,5": 0,
+      "29,6": 0,
+      "29,7": 0,
+      "29,8": 0,
+      "29,9": 0,
+      "29,10": 0,
+      "29,11": 0,
+      "29,12": 0,
+      "29,13": 0,
+      "29,14": 0,
+      "29,15": 0,
+      "29,16": 0,
+      "29,17": 0,
+      "29,18": 0,
+      "29,19": 0,
+      "29,20": 0,
+      "29,21": 0,
+      "29,22": 0,
+      "29,23": 0,
+      "29,24": 0,
+      "29,25": 0,
+      "29,26": 0,
+      "29,27": 0,
+      "29,28": 0,
+      "29,29": 0,
+      "29,30": 0,
+      "29,31": 0,
+      "29,32": 0,
+      "29,33": 0,
+      "29,34": 0,
+      "30,1": 0,
+      "30,2": 0,
+      "30,3": 0,
+      "30,4": 0,
+      "30,5": 0,
+      "30,6": 0,
+      "30,7": 0,
+      "30,8": 0,
+      "30,9": 0,
+      "30,10": 0,
+      "30,11": 0,
+      "30,12": 0,
+      "30,13": 0,
+      "30,14": 0,
+      "30,15": 0,
+      "30,16": 0,
+      "30,17": 0,
+      "30,18": 0,
+      "30,19": 0,
+      "30,20": 0,
+      "30,21": 0,
+      "30,22": 0,
+      "30,23": 0,
+      "30,24": 0,
+      "30,25": 0,
+      "30,26": 0,
+      "30,27": 0,
+      "30,28": 0,
+      "30,29": 0,
+      "30,30": 0,
+      "30,31": 0,
+      "30,32": 0,
+      "30,33": 0,
+      "30,34": 0,
+      "30,36": 4,
+      "30,37": 0,
+      "30,38": 0,
+      "30,39": 0,
+      "30,40": 0,
+      "30,41": 0,
+      "30,42": 0,
+      "30,43": 0,
+      "30,44": 0,
+      "30,45": 0,
+      "30,46": 0,
+      "30,47": 0,
+      "30,48": 0,
+      "30,49": 0,
+      "31,1": 0,
+      "31,2": 0,
+      "31,3": 0,
+      "31,4": 0,
+      "31,5": 0,
+      "31,6": 0,
+      "31,7": 0,
+      "31,8": 0,
+      "31,9": 0,
+      "31,10": 0,
+      "31,11": 0,
+      "31,12": 0,
+      "31,13": 0,
+      "31,14": 0,
+      "31,15": 0,
+      "31,16": 0,
+      "31,17": 0,
+      "31,18": 0,
+      "31,19": 0,
+      "31,20": 0,
+      "31,21": 0,
+      "31,22": 0,
+      "31,23": 0,
+      "31,24": 0,
+      "31,25": 0,
+      "31,26": 0,
+      "31,27": 0,
+      "31,28": 0,
+      "31,29": 0,
+      "31,30": 0,
+      "31,31": 0,
+      "31,32": 0,
+      "31,33": 0,
+      "31,34": 0,
+      "31,36": 17,
+      "31,37": 0,
+      "31,38": 0,
+      "31,39": 0,
+      "31,40": 0,
+      "31,41": 0,
+      "31,42": 0,
+      "31,43": 0,
+      "31,44": 0,
+      "31,45": 0,
+      "31,46": 0,
+      "31,47": 0,
+      "31,48": 0,
+      "31,49": 0,
+      "32,1": 0,
+      "32,2": 0,
+      "32,3": 0,
+      "32,4": 0,
+      "32,5": 0,
+      "32,6": 0,
+      "32,7": 0,
+      "32,8": 0,
+      "32,9": 0,
+      "32,10": 0,
+      "32,11": 0,
+      "32,12": 0,
+      "32,13": 0,
+      "32,14": 0,
+      "32,15": 0,
+      "32,16": 0,
+      "32,17": 0,
+      "32,18": 0,
+      "32,19": 0,
+      "32,20": 0,
+      "32,21": 0,
+      "32,22": 0,
+      "32,23": 0,
+      "32,24": 0,
+      "32,25": 0,
+      "32,26": 0,
+      "32,27": 0,
+      "32,28": 0,
+      "32,29": 0,
+      "32,30": 0,
+      "32,31": 0,
+      "32,32": 0,
+      "32,33": 0,
+      "32,34": 0,
+      "32,36": 0,
+      "32,37": 0,
+      "32,38": 0,
+      "32,39": 0,
+      "32,40": 0,
+      "32,41": 0,
+      "32,42": 0,
+      "32,43": 0,
+      "32,44": 0,
+      "32,45": 0,
+      "32,46": 0,
+      "32,47": 0,
+      "32,48": 0,
+      "32,49": 0,
+      "32,50": 0,
+      "32,51": 0,
+      "32,52": 0,
+      "33,1": 0,
+      "33,2": 0,
+      "33,3": 0,
+      "33,4": 0,
+      "33,5": 0,
+      "33,6": 0,
+      "33,7": 0,
+      "33,8": 0,
+      "33,9": 0,
+      "33,10": 0,
+      "33,11": 0,
+      "33,12": 0,
+      "33,13": 0,
+      "33,14": 0,
+      "33,15": 0,
+      "33,16": 0,
+      "33,17": 0,
+      "33,18": 0,
+      "33,19": 0,
+      "33,20": 0,
+      "33,21": 0,
+      "33,22": 0,
+      "33,23": 0,
+      "33,24": 0,
+      "33,25": 0,
+      "33,26": 0,
+      "33,27": 0,
+      "33,28": 0,
+      "33,29": 0,
+      "33,30": 0,
+      "33,31": 0,
+      "33,32": 0,
+      "33,33": 0,
+      "33,34": 0,
+      "33,36": 0,
+      "33,37": 0,
+      "33,38": 0,
+      "33,39": 0,
+      "33,40": 0,
+      "33,41": 0,
+      "33,42": 0,
+      "33,43": 0,
+      "33,44": 0,
+      "33,45": 0,
+      "33,46": 0,
+      "33,47": 0,
+      "33,48": 0,
+      "33,49": 0,
+      "33,50": 0,
+      "33,51": 0,
+      "33,52": 0,
+      "34,36": 0,
+      "34,37": 0,
+      "34,38": 0,
+      "34,39": 0,
+      "34,40": 0,
+      "34,41": 0,
+      "34,42": 0,
+      "34,43": 0,
+      "34,44": 0,
+      "34,45": 0,
+      "34,46": 0,
+      "34,47": 0,
+      "34,48": 0,
+      "34,49": 0,
+      "34,50": 0,
+      "34,51": 0,
+      "34,52": 0,
+      "35,36": 22,
+      "35,37": 0,
+      "35,38": 0,
+      "35,39": 0,
+      "35,40": 0,
+      "35,41": 0,
+      "35,42": 0,
+      "35,43": 23,
+      "35,44": 0,
+      "35,45": 0,
+      "35,46": 0,
+      "35,47": 24,
+      "35,48": 0,
+      "35,49": 25,
+      "35,50": 0,
+      "35,51": 0,
+      "35,52": 0,
+      "36,36": 4,
+      "36,37": 0,
+      "36,38": 0,
+      "36,39": 0,
+      "36,40": 0,
+      "36,41": 0,
+      "36,42": 0,
+      "36,43": 0,
+      "36,44": 0,
+      "36,45": 0,
+      "36,46": 0,
+      "36,47": 0,
+      "36,48": 0,
+      "36,49": 0,
+      "36,50": 0,
+      "36,51": 0,
+      "36,52": 0,
+      "37,36": 17,
+      "37,37": 0,
+      "37,38": 0,
+      "37,39": 0,
+      "37,40": 0,
+      "37,41": 0,
+      "37,42": 0,
+      "37,43": 0,
+      "37,44": 0,
+      "37,45": 0,
+      "37,46": 0,
+      "37,47": 0,
+      "37,48": 26,
+      "37,49": 0,
+      "37,50": 0,
+      "37,51": 0,
+      "37,52": 0,
+      "38,36": 0,
+      "38,37": 0,
+      "38,38": 0,
+      "38,39": 0,
+      "38,40": 0,
+      "38,41": 0,
+      "38,42": 0,
+      "38,43": 0,
+      "38,44": 0,
+      "38,45": 0,
+      "38,46": 0,
+      "38,47": 0,
+      "38,48": 0,
+      "38,49": 0,
+      "38,50": 0,
+      "38,51": 0,
+      "38,52": 0,
+      "39,36": 0,
+      "39,37": 0,
+      "39,38": 0,
+      "39,39": 0,
+      "39,40": 0,
+      "39,41": 0,
+      "39,42": 0,
+      "39,43": 0,
+      "39,44": 0,
+      "39,45": 0,
+      "39,46": 0,
+      "39,47": 0,
+      "39,48": 0,
+      "39,49": 0,
+      "39,50": 0,
+      "39,51": 0,
+      "39,52": 0,
+      "40,50": 0,
+      "40,51": 0,
+      "40,52": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "1,3,2,3",
+    "1,7,2,4",
+    "18,3,2,3",
+    "21,3,1,3",
+    "21,7,1,3",
+    "21,10,1,5",
+    "21,20,1,15",
+    "18,44,2,3",
+    "16,51,2,2",
+    "18,51,2,2",
+    "18,47,2,3",
+    "18,6,2,10",
+    "18,16,2,7",
+    "4,15,1,4",
+    "4,10,1,5",
+    "21,1,1,2",
+    "18,33,2,2",
+    "18,30,2,2",
+    "18,27,2,2",
+    "18,24,2,2",
+    "1,36,2,5",
+    "1,30,2,5",
+    "4,3,1,7",
+    "1,11,2,3",
+    "31,36,4,14",
+    "35,47,1,2",
+    "35,36,1,4",
+    "35,43,1,4",
+    "37,36,1,12",
+    "37,48,1,2",
+    "15,45,1,4",
+    "4,45,1,4",
+    "5,45,1,4",
+    "6,45,1,4",
+    "7,45,1,4",
+    "8,45,1,4",
+    "6,49,1,2",
+    "9,45,1,4",
+    "5,49,1,2",
+    "7,49,1,2",
+    "8,49,1,2",
+    "9,49,1,2",
+    "10,49,1,2",
+    "11,49,1,2",
+    "12,49,1,2",
+    "13,49,1,2",
+    "10,45,1,4",
+    "11,45,1,4",
+    "12,45,1,4",
+    "13,45,1,4",
+    "14,45,1,4",
+    "14,49,1,2",
+    "4,49,1,2",
+    "15,49,1,2",
+    "3,45,1,4",
+    "3,49,1,2",
+    "1,45,2,6",
+    "4,19,1,20",
+    "30,46,1,4",
+    "5,1,12,42",
+    "22,1,19,34",
+    "38,36,3,14",
+    "4,41,1,2",
+    "4,39,1,2",
+    "21,15,1,5",
+    "20,36,4,14",
+    "25,36,5,14",
+    "3,3,1,7",
+    "3,10,1,5",
+    "3,15,1,4",
+    "3,19,1,20",
+    "3,39,1,2",
+    "3,41,1,2",
+    "20,1,1,2",
+    "20,3,1,3",
+    "20,7,1,3",
+    "20,10,1,5",
+    "20,15,1,5",
+    "20,20,1,15",
+    "36,36,1,12",
+    "36,48,1,2"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "マスターページ　日報CHAT",
+    "PageLoadedCommandList": [
+      {
+        "$type": "SetCurrentRowCommand.SetCurrentRowCommand, SetCurrentRowCommand",
+        "CurrentRowInfo": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "日報chat_未読既読",
+            "ColumnName": "ID"
+          },
+          "Value": "1"
+        }
+      }
+    ],
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "日報chat_未読既読"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "コメント",
+      "Formula": "#REF!"
+    },
+    {
+      "Name": "件数",
+      "Formula": "正社員日報一覧バックアップ!$I$3"
+    },
+    {
+      "Name": "申請者",
+      "Formula": "正社員日報一覧バックアップ!$AW$36"
+    },
+    {
+      "Name": "ログインユーザーのチーム",
+      "Formula": "正社員日報一覧バックアップ!$BA$3"
+    },
+    {
+      "Name": "チーム名",
+      "Formula": "正社員日報一覧バックアップ!$BA$4"
+    },
+    {
+      "Name": "未読件数",
+      "Formula": "正社員日報一覧バックアップ!$BA$6"
+    },
+    {
+      "Name": "atesakiuser",
+      "Formula": "正社員日報一覧バックアップ!$BA$24"
+    },
+    {
+      "Name": "toukouuser",
+      "Formula": "正社員日報一覧バックアップ!$BA$2"
+    },
+    {
+      "Name": "atesakigai9",
+      "Formula": "正社員日報一覧バックアップ!$BA$25"
+    },
+    {
+      "Name": "nippouID2",
+      "Formula": "正社員日報一覧バックアップ!$AZ$19"
+    },
+    {
+      "Name": "atesaki_obj1",
+      "Formula": "正社員日報一覧バックアップ!$BA$27"
+    },
+    {
+      "Name": "コメント内容",
+      "Formula": "正社員日報一覧バックアップ!$AK$32"
+    },
+    {
+      "Name": "編集コマンドに使用",
+      "Formula": "正社員日報一覧バックアップ!$BA$8"
+    }
+  ]
+}//W4QJ7jU3rIEmObdBuJ5feBYE12b3kxwqlzX/41fwqc4Y4pgv4nUs00Rto8l/XmTAPxjzUDwEjeMdPN+uiAMwRvzZhvgd3vlBejsu/QOxT1bG5yJiwPf0p5FDU0SUaf5jaZ+ST0/mDeF8K02lxMDDZzPs91Ld/2RUzoZDx4nObWc7URvf4Iw5h3iJhmmFAikbzUuhQbV1QhMA7FosADsSeIAgbZh5jZwF0DXq8Wz7DnEkO8Hv3oGzZDC1e+f2WfJWKq5qZe6kmNRtYpACoWaFBVe+icpmeEFSVgxojs0eDz7AMWH1kcmvEdLlQLF+yHAs2iNANwgdTjKZMXpI3JFTRxwZBBuE7+d6GWCV4My5XYypGgIaj5gOTrXKejDJRapegywQ4OXd9lmKqgsdsFGQw3ElZXrTUYBrTILTLek4qzd21O+H7FormwIVEutbEld0ks+eOEpr0sBxIY/RFTlXBw+2PMIm9nS9WgjUR5DrZf/pdLqmS435qlwljFwmu6CwcWpF5CFYDXJq0iUJmorsDdk2WZNgX0kJNV8leU+QHv6s6YHywzPvMTx2ZCmotlQZ3OREKoiWzu3tuMrb159YO4TcU3objPvG6GvcRel7384jjmLM8Ig9VsMEJ5Ls9BLak1sn1yK3bPc7S4PWUDWgSbP6xs0LBHnhKQnj/NRHSyTKRWG9UgU5fWhj0kxO/vTlSQucl9nbb5LqGAUnFb7BNGB7Tcsnl/JlhTi5T40aAhNI9QFjj0msV/3IyLsVcrwjrqTqGrlRhhUpdNROPHKjPTAjJ+rKHYoi3kPvy8KDPWji9OeXjz0uMSbmeOismKVRtGYWXXIyLsC820rMlHTLuK+BI1czRz+v4G4sI3LcUwq7vhxlbMGJqJrfQ8txhQtMo8xsyk7pVfAr6XAsyg35xQ==|920

@@ -1,0 +1,111 @@
+{
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.PostRequestTrigger, ServerDesignerCommon",
+      "Permission": {
+        "AllowRoles": [
+          "FGC_LoginUser"
+        ]
+      },
+      "Parameters": [
+        {
+          "Name": "No"
+        },
+        {
+          "Name": "開始時刻"
+        },
+        {
+          "Name": "終了時刻"
+        },
+        {
+          "Name": "作業時間"
+        },
+        {
+          "Name": "項目"
+        },
+        {
+          "Name": "顧問先"
+        },
+        {
+          "Name": "内容"
+        }
+      ]
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+      "TableName": "日報_内容2",
+      "UpdateType": "add",
+      "ShowConfirm": false,
+      "ConfirmText": "本当に追加してもよろしいですか？",
+      "UpdateValues": [
+        {
+          "ColumnName": "mid",
+          "Value": "%GUID%"
+        },
+        {
+          "ColumnName": "No",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=No"
+          }
+        },
+        {
+          "ColumnName": "開始時刻",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=開始時刻"
+          }
+        },
+        {
+          "ColumnName": "終了時刻",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=終了時刻"
+          }
+        },
+        {
+          "ColumnName": "作業時間",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=作業時間"
+          }
+        },
+        {
+          "ColumnName": "項目",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=項目"
+          }
+        },
+        {
+          "ColumnName": "顧問先",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=顧問先"
+          }
+        },
+        {
+          "ColumnName": "内容",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=内容"
+          }
+        }
+      ],
+      "ParamNameToSaveNewRowValue": "NewRecord"
+    },
+    {
+      "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+      "ErrorCode": "0",
+      "Message": {
+        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+        "SerializeProperty": "=NewRecord.mid"
+      },
+      "CustomReturns": []
+    }
+  ],
+  "Name": "サーバーサイドコマンド1"
+}

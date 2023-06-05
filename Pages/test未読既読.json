@@ -1,0 +1,75 @@
+{
+  "Rows": {
+    "Count": 45
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "AttachInfos": {
+    "3,6": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "日報chat_未読既読",
+        "RowIndex": 3,
+        "ColumnIndex": 6,
+        "ColumnCount": 44,
+        "RowCount": 19,
+        "ColumnOperation": 2,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "リストビュー1",
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2"
+      }
+    },
+    "4,8": {
+      "BindingInfo": {
+        "TableName": "日報chat_未読既読",
+        "ColumnName": "ID"
+      }
+    },
+    "4,14": {
+      "BindingInfo": {
+        "TableName": "日報chat_未読既読",
+        "ColumnName": "日報chatID"
+      }
+    },
+    "7,55": {
+      "BindingInfo": {
+        "TableName": "日報chat_未読既読",
+        "ColumnName": "日報chatID"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Types": {
+      "Strs": [
+        "Body"
+      ]
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "5,6,17,44",
+    "4,8,1,6",
+    "4,14,1,6",
+    "7,55,1,5",
+    "3,8,1,6",
+    "3,14,1,6"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "日報chat_未読既読"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//9ROyextx5V9N10zcmEMcW5+w5Z+mjbqQi8/5ENQtmndYpbFewnoJgkgzLH3Ls9CpUjk2bZGJxxqQv6nQI4c8ymJxNvtfnnLDzdovpmi2/5TLDUL0rxWpkc/07ZsE5WraC6jWqYhgzOg8E+yOfve2zZvG9R5UIMSnhJXvV6Ywvoe3Jcz6nbeuAdS8Guto9QpqZE9OzzztZCY+ThcCckleSeeA3W7EdGPJIsyrbrLTejhrnyPGkvhIeIySb/O+u05yb0ItiTqXTowBGP8/H77+au1Fqn3ol6/FkmdRL8aTW/y/ORMWdvCG84kcbZofjPhLPj/GQRX5X3oTpZoNOHEJVAonGzliUJvs+RhQvggX4sGbgOFe4uAE0JTeMfDcJl+1yeEftv4ABtYNeBh1ic9Yf1ZkH2DCUh+GFIES8T6zvawXrg4H8O5L5Xl8f27qfyqeDoaUExD+HJSsDGnd560TBTc3uxUEKzUYAPPK+0ZYktwhz02ivw0bOq+ZTZQly9zVlpeDPsAAgw0TXv1I0H8bGmpUGBTu2mXmBquFa+LcEjoZnXVp1SzluXPyEtYuMgxC3OUCK3r90c+QKfW8rv5BJyqkIfc2i+JnaYohitgYAvjcA7UqCkhuSBuIVQmffddFQI7yVX1vjfYKfLrwjKVAHgHcl1gh0pc/x/XHunSBPtybaE+3SB5AgyadqYllvogYqEkwIUxAPWcjhfngGxGl26kaXEacrkTAv3pPDRw2EroPjXtkgN8FBm4cMISFo9K7V7zmMZFr61Jci0ddOaBYURTiMWOCceQL9LkD1M/L+hiY+P36OzZi0+3Ba5uH4FMhoyYbX3j9sA+lLJzRhuK5p5fz+7nRcd9WiQJ6QaDS/FYMKaEDzRaBH4lfKIU0p0WxSCN6KYMRYoAmGHeOeeK3zQ==|920

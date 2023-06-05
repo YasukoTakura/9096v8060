@@ -1,0 +1,93 @@
+{
+  "Rows": {
+    "Count": 10
+  },
+  "Cols": {
+    "Count": 10
+  },
+  "Values": {
+    "2,1": "完了しました"
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 26.666666030883789,
+        "Formatter": 1,
+        "TextIndent": 0,
+        "HorizontalAlignment": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "ＭＳ Ｐゴシック",
+        "[AUTO]General",
+        "Center"
+      ]
+    },
+    "CellStyles": {
+      "2,1": 0,
+      "2,2": 0,
+      "2,3": 0,
+      "2,4": 0,
+      "2,5": 0,
+      "2,6": 0,
+      "2,7": 0,
+      "2,8": 0,
+      "3,1": 0,
+      "3,2": 0,
+      "3,3": 0,
+      "3,4": 0,
+      "3,5": 0,
+      "3,6": 0,
+      "3,7": 0,
+      "3,8": 0,
+      "4,1": 0,
+      "4,2": 0,
+      "4,3": 0,
+      "4,4": 0,
+      "4,5": 0,
+      "4,6": 0,
+      "4,7": 0,
+      "4,8": 0,
+      "5,1": 0,
+      "5,2": 0,
+      "5,3": 0,
+      "5,4": 0,
+      "5,5": 0,
+      "5,6": 0,
+      "5,7": 0,
+      "5,8": 0,
+      "6,1": 0,
+      "6,2": 0,
+      "6,3": 0,
+      "6,4": 0,
+      "6,5": 0,
+      "6,6": 0,
+      "6,7": 0,
+      "6,8": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "2,1,5,8"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//ZHYsLsKchqkqgJxKas5JvSIDi+eEKaiDxFZq0q9YBS6imX4g5FvsbLPW/0xLzVzBGvaqj0iH4hRcAWC54G98wDfDrnh2+ffM/NICKOEKs5zmMOIMqw/+fYFjr3vJwNDB7GH3343gzaAPC8c1wzpUkNfXRD//3y9V6PY3NP7V6LWdUNufpRTET/a9p/+3gSn/BCmZsEmczuIK5+Go9a3BWWKIARkTLDHi7HwXjG80/8wFlFNWUQt7K1vhwrjv3pEnIpMOAXb3fRPUGmrhBimRZ9WZ3FolveNhekZ55Vhckah4KZ+eNlM6ugTpi9B4nvXWuSmndAra4+Qhs46MSJi9DLbWJzsFg8RkdzpMMC3SvwgUrYOb2One01OxS6a41PEqBhJeF5388e7LOTy6v0rwd8JuFwl/ah/f1nJO5ofwFsNcKkGfn4MOHJNj1JYpovbqAteaLVaxU8W0j+kZ1D2XhOQjPl/h9NbrSmIFQ04ya30UfobFqMvtQ25IamZHfSfISMPSrwheSqmK2ASnqDVpHxm8zL1SydhtynR4yONFxOE3hfn+DzG+Oe/xGqNuRmfrbXhdFZzhpJgDuKxX3yZ3loR+bHgFGC8kkRm1qQLw6fFeUBmCXEEh7P6p13mWNI/qVGPrOqpBDPSci8ZXudwsvWAPg3SFq9XGhhpi0ux6ssV+lmGYqM96pI0O/91QxmsTBq2fmHqB4MaIaRcn/rd1zdhjGyB+oaVNqOyQ4ljqX3TK3fOEmluJJzY5DLpURSZZMY/GEE2TOUQELLcBxRPO01IFwP9thomlqUc0THQmbyqaO2P07KpTaSQKr7luegEWSpd1DcEaGPvpGZbRwW2245Fj6UTTkv6yhDNEDiurrAp4pyT6Tg4L4CVpAZ7tnEDesI/+fdLO7PNdlG4bj5E3DQ==|920

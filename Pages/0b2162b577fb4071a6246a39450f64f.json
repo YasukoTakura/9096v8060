@@ -1,0 +1,437 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 6.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 1
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 1
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 1
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 6.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0
+    ],
+    "Count": 7
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 8.0
+        }
+      },
+      "38": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 8.0
+        }
+      }
+    },
+    "Count": 39
+  },
+  "Values": {
+    "2,34": "既読状態"
+  },
+  "AttachInfos": {
+    "0,0": {
+      "TemplateCellSource": "既読状態"
+    },
+    "0,1": {
+      "TemplateCellSource": "コメントID"
+    },
+    "1,0": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='0b2162b577fb4071a6246a39450f64f'!$A$1=TRUE"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "2,1": {
+      "TemplateCellSource": "行番号"
+    },
+    "2,3": {
+      "TemplateCellSource": "差出人"
+    },
+    "2,10": {
+      "TemplateCellSource": "日時"
+    },
+    "2,34": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "chatコメント既読状態",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='0b2162b577fb4071a6246a39450f64f'!B1"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=chatコメント既読状態!A1"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "既読状態",
+        "TemplateKey": "_RS_Outline_RoundCorner_Style1"
+      }
+    },
+    "3,1": {
+      "CellType": {
+        "$type": "HtmlRichEditor.HtmlRichEditor, HtmlRichEditor",
+        "ShowToolBars": false,
+        "ReadOnly": true
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='0b2162b577fb4071a6246a39450f64f'!$A$1=TRUE"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "コメント"
+    },
+    "6,0": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='0b2162b577fb4071a6246a39450f64f'!$A$1=TRUE"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='0b2162b577fb4071a6246a39450f64f'!$A$1=TRUE"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 2,
+        "BorderTop": null
+      },
+      {
+        "BorderTop": null
+      },
+      {
+        "Background": 3
+      },
+      {
+        "Background": 4,
+        "BorderTop": null,
+        "BorderLeft": null
+      },
+      {
+        "BorderTop": null,
+        "BorderRight": null
+      },
+      {
+        "BorderLeft": null
+      },
+      {
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderLeft": null
+      },
+      {
+        "BorderBottom": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 4
+      },
+      {
+        "Background": 2
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "#FFFFC000",
+        "Accent 3 60",
+        "Background 1 -5",
+        "Accent 3 80"
+      ],
+      "Borders": [
+        {
+          "Style": 8,
+          "Color": 1
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "1,0": 1,
+      "1,1": 2,
+      "1,2": 2,
+      "1,3": 2,
+      "1,4": 2,
+      "1,5": 2,
+      "1,6": 2,
+      "1,7": 2,
+      "1,8": 2,
+      "1,9": 2,
+      "1,10": 2,
+      "1,11": 2,
+      "1,12": 2,
+      "1,13": 2,
+      "1,14": 2,
+      "1,15": 2,
+      "1,16": 2,
+      "1,17": 2,
+      "1,18": 2,
+      "1,19": 2,
+      "1,20": 2,
+      "1,21": 2,
+      "1,22": 2,
+      "1,23": 2,
+      "1,24": 2,
+      "1,25": 2,
+      "1,26": 2,
+      "1,27": 2,
+      "1,28": 2,
+      "1,29": 2,
+      "1,30": 2,
+      "1,31": 2,
+      "1,32": 2,
+      "1,33": 2,
+      "1,34": 2,
+      "1,35": 2,
+      "1,36": 2,
+      "1,37": 2,
+      "1,38": 2,
+      "2,1": 3,
+      "2,3": 3,
+      "2,10": 3,
+      "2,22": 3,
+      "2,23": 3,
+      "2,24": 3,
+      "2,25": 3,
+      "2,26": 3,
+      "2,27": 3,
+      "2,28": 3,
+      "2,29": 3,
+      "2,30": 3,
+      "2,31": 3,
+      "2,32": 3,
+      "2,33": 3,
+      "3,1": 4,
+      "3,2": 2,
+      "3,3": 2,
+      "3,4": 2,
+      "3,5": 2,
+      "3,6": 2,
+      "3,7": 2,
+      "3,8": 2,
+      "3,9": 2,
+      "3,10": 2,
+      "3,11": 2,
+      "3,12": 2,
+      "3,13": 2,
+      "3,14": 2,
+      "3,15": 2,
+      "3,16": 2,
+      "3,17": 2,
+      "3,18": 2,
+      "3,19": 2,
+      "3,20": 2,
+      "3,21": 2,
+      "3,22": 2,
+      "3,23": 2,
+      "3,24": 2,
+      "3,25": 2,
+      "3,26": 2,
+      "3,27": 2,
+      "3,28": 2,
+      "3,29": 2,
+      "3,30": 2,
+      "3,31": 2,
+      "3,32": 2,
+      "3,33": 2,
+      "3,34": 2,
+      "3,35": 2,
+      "3,36": 2,
+      "3,37": 5,
+      "4,1": 6,
+      "4,37": 7,
+      "5,1": 8,
+      "5,2": 9,
+      "5,3": 9,
+      "5,4": 9,
+      "5,5": 9,
+      "5,6": 9,
+      "5,7": 9,
+      "5,8": 9,
+      "5,9": 9,
+      "5,10": 9,
+      "5,11": 9,
+      "5,12": 9,
+      "5,13": 9,
+      "5,14": 9,
+      "5,15": 9,
+      "5,16": 9,
+      "5,17": 9,
+      "5,18": 9,
+      "5,19": 9,
+      "5,20": 9,
+      "5,21": 9,
+      "5,22": 9,
+      "5,23": 9,
+      "5,24": 9,
+      "5,25": 9,
+      "5,26": 9,
+      "5,27": 9,
+      "5,28": 9,
+      "5,29": 9,
+      "5,30": 9,
+      "5,31": 9,
+      "5,32": 9,
+      "5,33": 9,
+      "5,34": 9,
+      "5,35": 9,
+      "5,36": 9,
+      "5,37": 10,
+      "6,0": 9,
+      "6,1": 9,
+      "6,2": 9,
+      "6,3": 9,
+      "6,4": 9,
+      "6,5": 9,
+      "6,6": 9,
+      "6,7": 9,
+      "6,8": 9,
+      "6,9": 9,
+      "6,10": 9,
+      "6,11": 9,
+      "6,12": 9,
+      "6,13": 9,
+      "6,14": 9,
+      "6,15": 9,
+      "6,16": 9,
+      "6,17": 9,
+      "6,18": 9,
+      "6,19": 9,
+      "6,20": 9,
+      "6,21": 9,
+      "6,22": 9,
+      "6,23": 9,
+      "6,24": 9,
+      "6,25": 9,
+      "6,26": 9,
+      "6,27": 9,
+      "6,28": 9,
+      "6,29": 9,
+      "6,30": 9,
+      "6,31": 9,
+      "6,32": 9,
+      "6,33": 9,
+      "6,34": 9,
+      "6,35": 9,
+      "6,36": 9,
+      "6,37": 9,
+      "6,38": 9
+    },
+    "RowStyles": {
+      "1": 11,
+      "6": 12
+    },
+    "SheetStyle": {
+      "FontFamily": 0,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "2,10,1,12",
+    "6,0,1,39",
+    "3,1,3,37",
+    "2,1,1,2",
+    "2,3,1,7",
+    "1,0,1,39",
+    "2,34,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.TemplatePage, ServerDesignerCommon",
+    "ParentPageName": "メッセージ閲覧"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//nvqwYkHJTwle/x2OE2F0FWWJbo+vdppK4FdAGOfcUD+VewMnUN3E3tMgbprW694KXUtpVpghz+4xlcg6G+PFAln8O+o0y1EW7KCD0xpd2DvkrngPwdpnUUvNqMJerYA+FQiJ3f8Y7IqatsQ1r3ZqUpIl+M3gw6v1v3FeQYIBlNgtmIHoM2r4yid8JCT5t82POKGUPm59WZRZKc0IxyIKZWkIvjRO5FuG+CXGAWyvv58LDpSrkndX9ATQzOyLdkvJQDBqzxCdUpO0bWeRyk3ZwjBR3sywXqf82MgeqOsRZPytWkL5dkJEj9dUfrW9mVfeCHCHew8ncJU3gGHUiTWFWkGJ4zVAejT7/+IsOb9nUHr9CbRyfIc8Ij0mEiQohXB9IqfEZ0BkBNBpdZfYjIFLQ3G/BD4vMzWMvjLmdANlqLtlXal+q/Ab1cZpZoB1n/v9iqUu7/BD+oy7MWDmH8BvjY4KJS7VdStf4tRVidNpzSeD4d0x9NPq59x1ZK8XR+kUuI4Z/3QXI+wfCIBuCiBCCUe4Wp+Lb9/dJ8Gw8Se4L9maAdF7HPeOasxR307JrXrdQEXC1UD6s/mXgve9iQXjpyn0iZZrhTjL2La/xW2OEJJvxmotj/ZFQ3pxHJkZSgZSBUllWtRkAh9bfJnQIisxuD5Wg9fIG8Fg+JNMykf3Bc4EK5ILnU8RvKyacDLuqMKA4OJTkXPsEKxHHT538EuEm3h3xWK6GpUVBiOjF44JYK/d4noVGGrDKX/oyG7+KGag2iJ5AFaN6tC0IKwj5d0SCvcSzrkADe+Hot65e+lKogGBo22JAqcr3KL0HeAUaX3TpTeIfkuAlpUeVpbvbku2cdmO9lGkZRfQGY8PfplGKJ1Qo7DaMu7o3vSgbwlYZiIZUCnRtstuS5BJoTz7HKlh8A==|920

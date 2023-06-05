@@ -1,0 +1,322 @@
+{
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.PostRequestTrigger, ServerDesignerCommon",
+      "Permission": {
+        "AllowRoles": [
+          "FGC_LoginUser"
+        ]
+      },
+      "Parameters": [
+        {
+          "Name": "日付"
+        },
+        {
+          "Name": "既読状態"
+        },
+        {
+          "Name": "報告事項"
+        },
+        {
+          "Name": "訪問予定"
+        },
+        {
+          "Name": "ユーザーID"
+        },
+        {
+          "Name": "宛先"
+        },
+        {
+          "Name": "開始時刻1"
+        },
+        {
+          "Name": "終了時刻1"
+        },
+        {
+          "Name": "作業時刻1"
+        },
+        {
+          "Name": "項目1"
+        },
+        {
+          "Name": "顧問先1"
+        },
+        {
+          "Name": "内容1"
+        }
+      ]
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+      "TableName": "日報_ワークフロー",
+      "UpdateType": "add",
+      "ShowConfirm": false,
+      "ConfirmText": "本当に追加してもよろしいですか？",
+      "UpdateValues": [
+        {
+          "ColumnName": "日報ID",
+          "Value": "%GUID%"
+        },
+        {
+          "ColumnName": "日付",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=日付"
+          }
+        },
+        {
+          "ColumnName": "既読状態",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=既読状態"
+          }
+        },
+        {
+          "ColumnName": "報告事項",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=報告事項"
+          }
+        },
+        {
+          "ColumnName": "訪問予定",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=訪問予定"
+          }
+        },
+        {
+          "ColumnName": "ユーザーID",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=ユーザーID"
+          }
+        },
+        {
+          "ColumnName": "宛先",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=宛先"
+          }
+        }
+      ],
+      "ParamNameToSaveNewRowValue": "New_日報_ワークフロー"
+    },
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=開始時刻1"
+              }
+            },
+            "value": "%Null%",
+            "compareType": 1
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+              "TableName": "日報_内容",
+              "UpdateType": "add",
+              "ShowConfirm": false,
+              "ConfirmText": "本当に追加してもよろしいですか？",
+              "UpdateValues": [
+                {
+                  "ColumnName": "日報ID",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=New_日報_ワークフロー.日報ID"
+                  }
+                },
+                {
+                  "ColumnName": "内容ID",
+                  "Value": "%GUID%"
+                },
+                {
+                  "ColumnName": "No",
+                  "Value": "1"
+                },
+                {
+                  "ColumnName": "開始時刻",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=開始時刻1"
+                  }
+                },
+                {
+                  "ColumnName": "終了時刻",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=終了時刻1"
+                  }
+                },
+                {
+                  "ColumnName": "作業時間",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=作業時刻1"
+                  }
+                },
+                {
+                  "ColumnName": "項目",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=項目1"
+                  }
+                },
+                {
+                  "ColumnName": "顧問先",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=顧問先1"
+                  }
+                },
+                {
+                  "ColumnName": "内容",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=内容1"
+                  }
+                },
+                {
+                  "ColumnName": "日付",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=日付"
+                  }
+                }
+              ],
+              "ParamNameToSaveNewRowValue": "New_日報_内容_1"
+            }
+          ],
+          "ID": "ae0505e2-0f8e-45e3-8481-b49b3a6e684f"
+        },
+        {
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+              "TableName": "日報_内容",
+              "UpdateType": "add",
+              "ShowConfirm": false,
+              "ConfirmText": "本当に追加してもよろしいですか？",
+              "UpdateValues": [
+                {
+                  "ColumnName": "日報ID",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=New_日報_ワークフロー.日報ID"
+                  }
+                },
+                {
+                  "ColumnName": "内容ID",
+                  "Value": "%GUID%"
+                },
+                {
+                  "ColumnName": "No",
+                  "Value": "1"
+                },
+                {
+                  "ColumnName": "開始時刻",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=開始時刻1"
+                  }
+                },
+                {
+                  "ColumnName": "終了時刻",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=終了時刻1"
+                  }
+                },
+                {
+                  "ColumnName": "作業時間",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=作業時刻1"
+                  }
+                },
+                {
+                  "ColumnName": "項目",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=項目1"
+                  }
+                },
+                {
+                  "ColumnName": "顧問先",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=顧問先1"
+                  }
+                },
+                {
+                  "ColumnName": "内容",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=内容1"
+                  }
+                },
+                {
+                  "ColumnName": "日付",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=日付"
+                  }
+                }
+              ],
+              "ParamNameToSaveNewRowValue": "New_日報_内容_2"
+            }
+          ],
+          "ID": "9dcdb441-0b38-4b6b-bd5f-c297ca736c30"
+        }
+      ]
+    },
+    {
+      "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+      "CustomReturns": [
+        {
+          "ReturnPropertyName": "日報ID",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=New_日報_ワークフロー.日報ID"
+          }
+        },
+        {
+          "ReturnPropertyName": "内容ID1",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=New_日報_内容_1.内容ID"
+          }
+        },
+        {
+          "ReturnPropertyName": "戻り値1",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=New_日報_内容_2.内容ID"
+          }
+        }
+      ]
+    }
+  ],
+  "ReturnProperties": [
+    {
+      "Name": "日報ID"
+    },
+    {
+      "Name": "内容ID1"
+    },
+    {
+      "Name": "戻り値1"
+    }
+  ],
+  "Name": "日報追加1"
+}

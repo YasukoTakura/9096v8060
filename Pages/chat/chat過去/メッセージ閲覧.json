@@ -1,0 +1,1975 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 1
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 1
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 1
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 1
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 1
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 1
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "23": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "24": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "25": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "26": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "27": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "28": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "29": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "30": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "33": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 1,
+          "IsHidden": true
+        }
+      },
+      "34": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 1,
+          "IsHidden": true
+        }
+      },
+      "35": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 1,
+          "IsHidden": true
+        }
+      },
+      "36": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 1,
+          "IsHidden": true
+        }
+      },
+      "37": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 1,
+          "IsHidden": true
+        }
+      },
+      "38": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 1,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "Count": 40
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "43": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0,
+          "IsHidden": true
+        }
+      },
+      "44": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0,
+          "IsHidden": true
+        }
+      },
+      "45": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0,
+          "IsHidden": true
+        }
+      },
+      "46": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0,
+          "IsHidden": true
+        }
+      },
+      "47": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0,
+          "IsHidden": true
+        }
+      },
+      "48": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0,
+          "IsHidden": true
+        }
+      },
+      "49": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0,
+          "IsHidden": true
+        }
+      },
+      "50": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50
+    ],
+    "Count": 51
+  },
+  "Values": {
+    "2,2": "宛先：",
+    "2,39": "既読状態",
+    "4,2": "顧問先：",
+    "4,14": "差出人：",
+    "4,31": "前へ",
+    "4,36": "次へ",
+    "6,2": "標題：",
+    "13,2": "添付",
+    "13,36": "確認",
+    "13,47": "行番号",
+    "17,1": "コメント",
+    "31,1": "書き込む"
+  },
+  "Formulas": {
+    "14,47": "ROW()",
+    "12,43": "COUNT(AR15)",
+    "2,5": "TEXTJOIN(\",\",TRUE,AT7)"
+  },
+  "AttachInfos": {
+    "1,43": {
+      "BindingInfo": {
+        "TableName": "メッセージ_未読既読",
+        "ColumnName": "メッセージID"
+      }
+    },
+    "1,44": {
+      "BindingInfo": {
+        "TableName": "メッセージ_未読既読",
+        "ColumnName": "メッセージID",
+        "RelationBinding": {
+          "RelatedTable": "メッセージ",
+          "RelatedColumn": "mid",
+          "DisplayColumn": "差出人"
+        }
+      }
+    },
+    "1,45": {
+      "BindingInfo": {
+        "TableName": "メッセージ_未読既読",
+        "ColumnName": "付箋"
+      }
+    },
+    "2,39": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "chatメッセージ既読状態",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=メッセージ閲覧!AR2"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=chatメッセージ既読状態!A1"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "既読状態",
+        "TemplateKey": "_RS_Gradient_Shadow_Style2"
+      }
+    },
+    "3,43": {
+      "BindingInfo": {
+        "TableName": "メッセージ_未読既読",
+        "ColumnName": "既読"
+      }
+    },
+    "4,5": {
+      "BindingInfo": {
+        "TableName": "メッセージ_未読既読",
+        "ColumnName": "メッセージID",
+        "RelationBinding": {
+          "RelatedTable": "メッセージ",
+          "RelatedColumn": "mid",
+          "DisplayColumn": "顧問先",
+          "NextRelationBinding": {
+            "RelatedTable": "顧客一覧",
+            "RelatedColumn": "MJS",
+            "DisplayColumn": "会社名"
+          }
+        }
+      }
+    },
+    "4,17": {
+      "BindingInfo": {
+        "TableName": "メッセージ_未読既読",
+        "ColumnName": "メッセージID",
+        "RelationBinding": {
+          "RelatedTable": "メッセージ",
+          "RelatedColumn": "mid",
+          "DisplayColumn": "差出人",
+          "NextRelationBinding": {
+            "RelatedTable": "ユーザー",
+            "RelatedColumn": "MJSID",
+            "DisplayColumn": "名前"
+          }
+        }
+      }
+    },
+    "4,23": {
+      "BindingInfo": {
+        "TableName": "メッセージ_未読既読",
+        "ColumnName": "メッセージID",
+        "RelationBinding": {
+          "RelatedTable": "メッセージ",
+          "RelatedColumn": "mid",
+          "DisplayColumn": "日時"
+        }
+      }
+    },
+    "4,31": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.GoToRecordCommand, ServerDesignerCommon",
+            "TargetRecord": 0,
+            "TableName": "メッセージ_未読既読"
+          }
+        ],
+        "Text": "前へ",
+        "ImagePath": "Arrow/277_move_first_3.svg",
+        "BuiltIn": true,
+        "Color": "Accent 1"
+      }
+    },
+    "4,36": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.GoToRecordCommand, ServerDesignerCommon",
+            "TableName": "メッセージ_未読既読"
+          }
+        ],
+        "Text": "次へ",
+        "ImagePath": "Arrow/278_move_last_3.svg",
+        "BuiltIn": true,
+        "Color": "Accent 1"
+      }
+    },
+    "6,5": {
+      "BindingInfo": {
+        "TableName": "メッセージ_未読既読",
+        "ColumnName": "メッセージID",
+        "RelationBinding": {
+          "RelatedTable": "メッセージ",
+          "RelatedColumn": "mid",
+          "DisplayColumn": "標題"
+        }
+      }
+    },
+    "6,32": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "Condition1": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                      "cellLocations": [
+                        {
+                          "SerializeProperty": "=メッセージ閲覧!AT2"
+                        }
+                      ]
+                    },
+                    "value": "%Null%"
+                  },
+                  "Condition2": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                      "cellLocations": [
+                        {
+                          "SerializeProperty": "=メッセージ閲覧!AT2"
+                        }
+                      ]
+                    },
+                    "value": "0"
+                  },
+                  "RelationType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "メッセージ_未読既読",
+                    "ShowConfirm": false,
+                    "ConfirmText": "本当に更新してもよろしいですか？",
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "付箋",
+                        "Value": "1"
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=メッセージ閲覧!AG7"
+                        },
+                        "PropertyType": 2,
+                        "Value": "#FFFF0000"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "93cdeaf6-2f3b-4ef3-8e44-11a3bcf208f8"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=メッセージ閲覧!AT2"
+                      }
+                    ]
+                  },
+                  "value": "1"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "メッセージ_未読既読",
+                    "ShowConfirm": false,
+                    "ConfirmText": "本当に更新してもよろしいですか？",
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "付箋",
+                        "Value": "0"
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=メッセージ閲覧!AG7"
+                        },
+                        "PropertyType": 2,
+                        "Value": "Background 1 0"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "5b4a3a41-8824-4171-8d91-d5386e6dcf1a"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=メッセージ閲覧!AT2"
+                      }
+                    ]
+                  },
+                  "value": "2"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "メッセージ_未読既読",
+                    "ShowConfirm": false,
+                    "ConfirmText": "本当に更新してもよろしいですか？",
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "付箋",
+                        "Value": "1"
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=メッセージ閲覧!AG7"
+                        },
+                        "PropertyType": 2,
+                        "Value": "#FFFF0000"
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=メッセージ閲覧!AL7"
+                        },
+                        "PropertyType": 2,
+                        "Value": "Background 1 0"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "60057098-e9b8-4824-8956-e6b117ab6255"
+              }
+            ]
+          }
+        ],
+        "ImagePath": "優先3.png"
+      }
+    },
+    "6,37": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "Condition1": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                      "cellLocations": [
+                        {
+                          "SerializeProperty": "=メッセージ閲覧!AT2"
+                        }
+                      ]
+                    },
+                    "value": "%Null%"
+                  },
+                  "Condition2": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                      "cellLocations": [
+                        {
+                          "SerializeProperty": "=メッセージ閲覧!AT2"
+                        }
+                      ]
+                    },
+                    "value": "0"
+                  },
+                  "RelationType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "メッセージ_未読既読",
+                    "ShowConfirm": false,
+                    "ConfirmText": "本当に更新してもよろしいですか？",
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "付箋",
+                        "Value": "2"
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=メッセージ閲覧!AL7"
+                        },
+                        "PropertyType": 2,
+                        "Value": "#FFFFFF00"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "fe1cd9b8-e7e7-4516-89c7-51123c90f9ab"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=メッセージ閲覧!AT2"
+                      }
+                    ]
+                  },
+                  "value": "2"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "メッセージ_未読既読",
+                    "ShowConfirm": false,
+                    "ConfirmText": "本当に更新してもよろしいですか？",
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "付箋",
+                        "Value": "0"
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=メッセージ閲覧!AL7"
+                        },
+                        "PropertyType": 2,
+                        "Value": "Background 1 0"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "ff7460cd-2295-432b-b350-a06ab24d1e86"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=メッセージ閲覧!AT2"
+                      }
+                    ]
+                  },
+                  "value": "1"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "メッセージ_未読既読",
+                    "ShowConfirm": false,
+                    "ConfirmText": "本当に更新してもよろしいですか？",
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "付箋",
+                        "Value": "2"
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=メッセージ閲覧!AL7"
+                        },
+                        "PropertyType": 2,
+                        "Value": "#FFFFFF00"
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=メッセージ閲覧!AG7"
+                        },
+                        "PropertyType": 2,
+                        "Value": "Background 1 0"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "191e8566-b9ab-44f3-b90b-af7b063fe7ab"
+              }
+            ]
+          }
+        ],
+        "ImagePath": "優先4.png"
+      }
+    },
+    "9,2": {
+      "CellType": {
+        "$type": "HtmlRichEditor.HtmlRichEditor, HtmlRichEditor",
+        "ShowToolBars": false
+      },
+      "BindingInfo": {
+        "TableName": "メッセージ_未読既読",
+        "ColumnName": "メッセージID",
+        "RelationBinding": {
+          "RelatedTable": "メッセージ",
+          "RelatedColumn": "mid",
+          "DisplayColumn": "本文"
+        }
+      }
+    },
+    "13,2": {
+      "CellType": {
+        "$type": "Forguncy.AttachmentCelltype, ServerDesignerCommon",
+        "UploadLimit": {
+          "ExtensionFilter": ".jpg, .jpeg, .png, .gif, .bmp, .xlsx, .docx, .doc, .xls, .pdf",
+          "ReplaceWhenOneFile": true
+        },
+        "ReadOnly": true,
+        "TemplateKey": "_RS_Normal_Style2"
+      },
+      "BindingInfo": {
+        "TableName": "メッセージ_未読既読",
+        "ColumnName": "メッセージID",
+        "RelationBinding": {
+          "RelatedTable": "メッセージ",
+          "RelatedColumn": "mid",
+          "DisplayColumn": "添付ファイル"
+        }
+      }
+    },
+    "13,36": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "メッセージ_未読既読",
+            "ShowConfirm": false,
+            "ConfirmText": "本当に更新してもよろしいですか？",
+            "RowsToUpdate": 1,
+            "RowsToUpdateCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "メッセージ_未読既読",
+                  "ColumnName": "メッセージID"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=メッセージ閲覧!AR2"
+                }
+              },
+              "Condition2": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "メッセージ_未読既読",
+                  "ColumnName": "宛先ユーザー"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=メッセージ閲覧!AS2"
+                }
+              }
+            },
+            "UpdateValues": [
+              {
+                "ColumnName": "既読",
+                "Value": "1"
+              },
+              {
+                "ColumnName": "既読日時",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=NOW()"
+                }
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "Location": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=メッセージ閲覧!18:40"
+                },
+                "Value": true
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=メッセージ閲覧!AK14"
+                },
+                "PropertyType": 1,
+                "Value": false
+              }
+            ]
+          }
+        ],
+        "Text": "確認",
+        "TemplateKey": "_RS_Gradient_Shadow_Style2"
+      }
+    },
+    "13,43": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "コメント_未読既読",
+        "RowIndex": 13,
+        "ColumnIndex": 43,
+        "ColumnCount": 8,
+        "RowCount": 3,
+        "ColumnOperation": 2,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "リストビュー2",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "コメント_未読既読",
+              "ColumnName": "メッセージID"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=メッセージ閲覧!AR2"
+            }
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "コメント_未読既読",
+              "ColumnName": "宛先ユーザー"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=メッセージ閲覧!AS2"
+            }
+          }
+        },
+        "TopCondition": null,
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "コメント_未読既読",
+                "ColumnName": "FGC_CreateDate"
+              },
+              "Order": 1
+            }
+          ]
+        },
+        "DoNotLoadDataWhenLoadPage": true,
+        "ListViewStyleName": "_RS_Medium2"
+      }
+    },
+    "14,43": {
+      "BindingInfo": {
+        "TableName": "コメント_未読既読",
+        "ColumnName": "コメントID",
+        "RelationBinding": {
+          "RelatedTable": "コメント",
+          "RelatedColumn": "コメントID",
+          "DisplayColumn": "コメント"
+        }
+      },
+      "NameUsedInJavaScript": "コメント"
+    },
+    "14,44": {
+      "BindingInfo": {
+        "TableName": "コメント_未読既読",
+        "ColumnName": "コメントID",
+        "RelationBinding": {
+          "RelatedTable": "コメント",
+          "RelatedColumn": "コメントID",
+          "DisplayColumn": "差出人",
+          "NextRelationBinding": {
+            "RelatedTable": "ユーザー",
+            "RelatedColumn": "MJSID",
+            "DisplayColumn": "名前"
+          }
+        }
+      },
+      "NameUsedInJavaScript": "差出人"
+    },
+    "14,45": {
+      "BindingInfo": {
+        "TableName": "コメント_未読既読",
+        "ColumnName": "コメントID",
+        "RelationBinding": {
+          "RelatedTable": "コメント",
+          "RelatedColumn": "コメントID",
+          "DisplayColumn": "日時"
+        }
+      },
+      "NameUsedInJavaScript": "日時"
+    },
+    "14,46": {
+      "BindingInfo": {
+        "TableName": "コメント_未読既読",
+        "ColumnName": "既読状態"
+      },
+      "NameUsedInJavaScript": "既読状態"
+    },
+    "14,47": {
+      "NameUsedInJavaScript": "行番号"
+    },
+    "14,48": {
+      "BindingInfo": {
+        "TableName": "コメント_未読既読",
+        "ColumnName": "コメントID"
+      },
+      "NameUsedInJavaScript": "コメントID"
+    },
+    "18,1": {
+      "CellType": {
+        "$type": "HtmlRichEditor.HtmlRichEditor, HtmlRichEditor"
+      }
+    },
+    "31,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "コメント",
+            "UpdateType": "add",
+            "ShowConfirm": false,
+            "ConfirmText": "本当に追加してもよろしいですか？",
+            "UpdateValues": [
+              {
+                "ColumnName": "メッセージID",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=メッセージ閲覧!AR2"
+                }
+              },
+              {
+                "ColumnName": "コメントID",
+                "Value": "%GUID%"
+              },
+              {
+                "ColumnName": "コメント",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=メッセージ閲覧!B19"
+                }
+              },
+              {
+                "ColumnName": "差出人",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=メッセージ閲覧!AS2"
+                }
+              },
+              {
+                "ColumnName": "日時",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=NOW()"
+                }
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "宛先",
+            "TableValue": {
+              "TableName": "メッセージ_未読既読",
+              "BindingInfos": [
+                {
+                  "BindingInfo": {
+                    "TableName": "メッセージ_未読既読",
+                    "ColumnName": "宛先ユーザー"
+                  },
+                  "ColumnName": "宛先ユーザー"
+                }
+              ],
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "メッセージ_未読既読",
+                  "ColumnName": "メッセージID"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=メッセージ閲覧!AR2"
+                }
+              }
+            },
+            "ID": "9d4aded7347d49b2b985b7418e8f7269",
+            "Disabled": true
+          },
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "コメントGUID",
+            "TableValue": {
+              "TableName": "コメント",
+              "OnlyGetValue": true,
+              "TableValueType": 0,
+              "BindingInfos": [
+                {
+                  "BindingInfo": {
+                    "TableName": "コメント",
+                    "ColumnName": "コメントID"
+                  },
+                  "ColumnName": "コメントID"
+                }
+              ],
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "コメント",
+                  "ColumnName": "差出人"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=メッセージ閲覧!AS2"
+                }
+              },
+              "TopCount": "1",
+              "OrderBySqlCondition": {
+                "OrderByColumns": [
+                  {
+                    "ColumnBindingInfo": {
+                      "TableName": "コメント",
+                      "ColumnName": "日時"
+                    },
+                    "Order": 1
+                  }
+                ]
+              }
+            },
+            "ID": "fbb0f114ec26423db779e91493a88e7e",
+            "Disabled": true
+          },
+          {
+            "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
+            "LoopInfo": {
+              "$type": "Forguncy.Model.CountLoopInfo, ServerDesignerCommon",
+              "LoopCount": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=メッセージ閲覧!宛先"
+              },
+              "LoopItemParamName": "Item"
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                "TableName": "コメント_未読既読",
+                "UpdateType": "add",
+                "ShowConfirm": false,
+                "ConfirmText": "本当に追加してもよろしいですか？",
+                "UpdateValues": [
+                  {
+                    "ColumnName": "メッセージID",
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=メッセージ閲覧!AR2"
+                    }
+                  },
+                  {
+                    "ColumnName": "コメントID",
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=メッセージ閲覧!コメントGUID"
+                    }
+                  },
+                  {
+                    "ColumnName": "宛先ユーザー",
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=メッセージ閲覧!Item.宛先ユーザー"
+                    }
+                  }
+                ],
+                "Disabled": true
+              }
+            ],
+            "Disabled": true
+          },
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "コメント_未読既読",
+            "ShowConfirm": false,
+            "ConfirmText": "本当に更新してもよろしいですか？",
+            "RowsToUpdate": 1,
+            "RowsToUpdateCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "コメント_未読既読",
+                  "ColumnName": "コメントID"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=メッセージ閲覧!コメントGUID"
+                }
+              },
+              "Condition2": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "コメント_未読既読",
+                  "ColumnName": "宛先ユーザー"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=メッセージ閲覧!AS2"
+                }
+              }
+            },
+            "UpdateValues": [
+              {
+                "ColumnName": "既読状態",
+                "Value": "TRUE"
+              }
+            ],
+            "Disabled": true
+          },
+          {
+            "$type": "Forguncy.Model.RunJavaScriptCommand, ServerDesignerCommon",
+            "JavaScript": "// 現在のページを取得する。\r\nvar page = Forguncy.Page;\r\n// 現在のページでatesakiという名前のセルを取得する。\r\nvar midcell = page.getCell(\"messageitsuran_messageid\");\r\n// getValueメソッドでatesakiセルの値を取得する。\r\nvar midcellValue = midcell.getValue();\r\nvar midatesaki = \"メッセージユーザー?$select=宛先ユーザー&$filter=メッセージID eq \" + midcellValue ;\r\n// Forguncy.Page.getCell(\"TextBoxCell2\").setValue(mcellValue2);\r\n\r\n// 本サンプルコードでは、getTableDataByODataメソッドを使用して「Caterories」テーブルの全レコードを取得し、表示に適切な内容に整形したうえで「resultLabel」という名前が付いたセルに値として設定する例を示します。\r\nForguncy.getTableDataByOData(midatesaki,\r\n    // 成功した場合のコールバック処理\r\n    function (data) {//データ型 Type:List&lt;Dictionary&lt;string, object&gt;&gt;\r\n\r\n        Forguncy.Page.getCell(\"TextBoxCell1\").setValue(data);\r\n    },\r\n    // エラー時のコールバック処理\r\n    function (e) {\r\n        alert(e);\r\n    });\r\n\r\n// 現在のページでatesakiという名前のセルを取得する。\r\nvar textcell = page.getCell(\"TextBoxCell1\");\r\n// getValueメソッドでatesakiセルの値を取得する。\r\nvar textcellValue = textcell.getValue();\r\n\r\n//このサンプルコードは、1回のpostリクエストを送信して、サーバーサイドでテーブルを追加・更新・削除する方法を把握するためのものです。\r\n\r\nvar postUrl = \"http://localhost:37998/customapi/modifytablesdatademo/modifytablesdata\";\r\n\r\n//サーバーサイドAPIの「IDataAccess.ModifyTablesData メソッドで使用するModifyDataのデータを準備します。\r\nvar modifyData = {};\r\n\r\nmodifyData.コメントユーザー= {};\r\n//追加\r\nmodifyData.コメントユーザー.AddRows = textcellValue ;\r\n\r\n$.post(postUrl, JSON.stringify(modifyData), function () {\r\n});\r\n",
+            "ID": "146a4c9891c44ce0b9bfd64feb819d9e"
+          }
+        ],
+        "Text": "書き込む",
+        "TemplateKey": "_RS_Gradient_Shadow_Style2"
+      }
+    },
+    "33,1": {
+      "CellType": {
+        "$type": "Forguncy.RepeaterCellType, ServerDesignerCommon",
+        "ListviewName": "リストビュー2",
+        "TemplatePageName": "0b2162b577fb4071a6246a39450f64f",
+        "TemplateKey": "_RS_Selectable"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "Formatter": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 14.67,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "Background": 3
+      },
+      {
+        "Background": 3,
+        "WordWrap": true
+      },
+      {
+        "WordWrap": true
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "BorderLeft": 0
+      },
+      {
+        "Background": 3,
+        "FontFamily": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 3,
+        "FontFamily": 2
+      },
+      {
+        "Background": 3,
+        "FontFamily": 2,
+        "Formatter": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 3,
+        "FontFamily": 2,
+        "Formatter": 4
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 14.67,
+        "HorizontalAlignment": 5
+      },
+      {
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderRight": 0
+      },
+      {
+        "Background": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 1,
+        "BorderLeft": 1,
+        "BorderRight": null
+      },
+      {
+        "BorderTop": 1
+      },
+      {
+        "FontFamily": 2,
+        "BorderBottom": null,
+        "BorderTop": 1,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 2,
+        "BorderBottom": null,
+        "BorderTop": 1,
+        "BorderLeft": null,
+        "BorderRight": 1
+      },
+      {
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": 1,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 2,
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 2,
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 1
+      },
+      {
+        "HorizontalAlignment": 7,
+        "VerticalAlignment": 8,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Underline": true
+      },
+      {
+        "FontFamily": 2
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 14.67
+      },
+      {
+        "Underline": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "HorizontalAlignment": 9,
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Background 1 -15",
+        "General",
+        "Body",
+        "Accent 1 80",
+        "[AUTO]General",
+        "Right",
+        "black",
+        "Left",
+        "Top",
+        "Center"
+      ],
+      "Borders": [
+        {
+          "Style": 6,
+          "Color": 0
+        },
+        {
+          "Style": 4,
+          "Color": 6
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "1,2": 1,
+      "1,3": 1,
+      "1,4": 1,
+      "1,5": 1,
+      "1,6": 1,
+      "1,7": 1,
+      "1,8": 1,
+      "1,9": 1,
+      "1,10": 1,
+      "1,11": 1,
+      "1,12": 1,
+      "1,13": 1,
+      "1,14": 1,
+      "1,15": 1,
+      "1,16": 1,
+      "1,17": 1,
+      "1,18": 1,
+      "1,19": 1,
+      "1,20": 1,
+      "1,21": 1,
+      "1,22": 1,
+      "1,23": 1,
+      "1,24": 1,
+      "1,25": 1,
+      "1,26": 1,
+      "1,27": 1,
+      "1,28": 1,
+      "1,29": 1,
+      "1,30": 1,
+      "1,31": 1,
+      "1,32": 1,
+      "1,33": 1,
+      "1,34": 1,
+      "1,35": 1,
+      "1,36": 1,
+      "1,37": 1,
+      "1,38": 1,
+      "1,39": 1,
+      "1,40": 1,
+      "1,41": 2,
+      "1,43": 3,
+      "1,44": 4,
+      "2,1": 5,
+      "2,2": 6,
+      "2,5": 7,
+      "2,39": 8,
+      "2,41": 9,
+      "3,1": 5,
+      "3,41": 9,
+      "4,1": 10,
+      "4,2": 11,
+      "4,3": 4,
+      "4,4": 4,
+      "4,5": 12,
+      "4,14": 13,
+      "4,15": 4,
+      "4,16": 4,
+      "4,17": 11,
+      "4,18": 4,
+      "4,19": 4,
+      "4,20": 4,
+      "4,21": 4,
+      "4,22": 4,
+      "4,23": 14,
+      "4,36": 15,
+      "4,41": 16,
+      "4,44": 4,
+      "4,45": 4,
+      "4,46": 4,
+      "4,47": 4,
+      "5,1": 5,
+      "5,2": 4,
+      "5,3": 4,
+      "5,4": 4,
+      "5,14": 4,
+      "5,15": 4,
+      "5,16": 4,
+      "5,17": 4,
+      "5,18": 4,
+      "5,19": 4,
+      "5,20": 4,
+      "5,21": 4,
+      "5,22": 4,
+      "5,41": 17,
+      "6,1": 5,
+      "6,2": 18,
+      "6,5": 18,
+      "6,30": 19,
+      "6,31": 20,
+      "6,32": 21,
+      "6,33": 21,
+      "6,34": 21,
+      "6,35": 21,
+      "6,36": 21,
+      "6,37": 22,
+      "6,38": 22,
+      "6,39": 22,
+      "6,40": 23,
+      "6,41": 17,
+      "7,1": 5,
+      "7,30": 19,
+      "7,31": 24,
+      "7,32": 25,
+      "7,33": 26,
+      "7,34": 26,
+      "7,35": 26,
+      "7,36": 26,
+      "7,37": 27,
+      "7,38": 27,
+      "7,39": 27,
+      "7,40": 28,
+      "7,41": 17,
+      "8,1": 5,
+      "8,41": 9,
+      "9,1": 5,
+      "9,2": 29,
+      "9,41": 9,
+      "10,1": 5,
+      "10,41": 9,
+      "11,1": 5,
+      "11,41": 9,
+      "12,1": 5,
+      "12,41": 9,
+      "12,43": 4,
+      "12,44": 4,
+      "12,45": 4,
+      "12,46": 4,
+      "12,47": 4,
+      "12,48": 4,
+      "12,49": 4,
+      "12,50": 4,
+      "13,1": 5,
+      "13,2": 30,
+      "13,41": 9,
+      "13,43": 4,
+      "13,44": 31,
+      "13,45": 4,
+      "13,46": 31,
+      "13,47": 4,
+      "13,48": 32,
+      "13,49": 4,
+      "13,50": 4,
+      "14,1": 5,
+      "14,5": 33,
+      "14,41": 9,
+      "14,43": 4,
+      "14,44": 31,
+      "14,45": 4,
+      "14,46": 31,
+      "14,47": 4,
+      "14,48": 32,
+      "14,49": 4,
+      "14,50": 4,
+      "15,1": 34,
+      "15,2": 35,
+      "15,3": 35,
+      "15,4": 35,
+      "15,5": 35,
+      "15,6": 35,
+      "15,7": 35,
+      "15,8": 35,
+      "15,9": 35,
+      "15,10": 35,
+      "15,11": 35,
+      "15,12": 35,
+      "15,13": 35,
+      "15,14": 35,
+      "15,15": 35,
+      "15,16": 35,
+      "15,17": 35,
+      "15,18": 35,
+      "15,19": 35,
+      "15,20": 35,
+      "15,21": 35,
+      "15,22": 35,
+      "15,23": 35,
+      "15,24": 35,
+      "15,25": 35,
+      "15,26": 35,
+      "15,27": 35,
+      "15,28": 35,
+      "15,29": 35,
+      "15,30": 35,
+      "15,31": 35,
+      "15,32": 35,
+      "15,33": 35,
+      "15,34": 35,
+      "15,35": 35,
+      "15,36": 35,
+      "15,37": 35,
+      "15,38": 35,
+      "15,39": 35,
+      "15,40": 35,
+      "15,41": 36,
+      "15,43": 4,
+      "15,44": 4,
+      "15,45": 4,
+      "15,46": 4,
+      "15,47": 4,
+      "15,48": 4,
+      "15,49": 4,
+      "15,50": 4,
+      "31,1": 4,
+      "31,2": 4,
+      "31,3": 4,
+      "31,4": 4,
+      "31,5": 4,
+      "32,1": 4,
+      "32,2": 4,
+      "32,3": 4,
+      "32,4": 4,
+      "32,5": 4,
+      "33,1": 37,
+      "33,2": 1,
+      "33,3": 1,
+      "33,4": 1,
+      "33,5": 1,
+      "33,6": 1,
+      "33,7": 1,
+      "33,8": 1,
+      "33,9": 1,
+      "33,10": 1,
+      "33,11": 1,
+      "33,12": 1,
+      "33,13": 1,
+      "33,14": 1,
+      "33,15": 1,
+      "33,16": 1,
+      "33,17": 1,
+      "33,18": 1,
+      "33,19": 1,
+      "33,20": 1,
+      "33,21": 1,
+      "33,22": 1,
+      "33,23": 1,
+      "33,24": 1,
+      "33,25": 1,
+      "33,26": 1,
+      "33,27": 1,
+      "33,28": 1,
+      "33,29": 1,
+      "33,30": 1,
+      "33,31": 1,
+      "33,32": 1,
+      "33,33": 1,
+      "33,34": 1,
+      "33,35": 1,
+      "33,36": 1,
+      "33,37": 1,
+      "33,38": 1,
+      "33,39": 1,
+      "33,40": 1,
+      "33,41": 2,
+      "34,1": 5,
+      "34,41": 9,
+      "35,1": 5,
+      "35,41": 9,
+      "36,1": 5,
+      "36,41": 9,
+      "37,1": 5,
+      "37,41": 9,
+      "38,1": 34,
+      "38,2": 35,
+      "38,3": 35,
+      "38,4": 35,
+      "38,5": 35,
+      "38,6": 35,
+      "38,7": 35,
+      "38,8": 35,
+      "38,9": 35,
+      "38,10": 35,
+      "38,11": 35,
+      "38,12": 35,
+      "38,13": 35,
+      "38,14": 35,
+      "38,15": 35,
+      "38,16": 35,
+      "38,17": 35,
+      "38,18": 35,
+      "38,19": 35,
+      "38,20": 35,
+      "38,21": 35,
+      "38,22": 35,
+      "38,23": 35,
+      "38,24": 35,
+      "38,25": 35,
+      "38,26": 35,
+      "38,27": 35,
+      "38,28": 35,
+      "38,29": 35,
+      "38,30": 35,
+      "38,31": 35,
+      "38,32": 35,
+      "38,33": 35,
+      "38,34": 35,
+      "38,35": 35,
+      "38,36": 35,
+      "38,37": 35,
+      "38,38": 35,
+      "38,39": 35,
+      "38,40": 35,
+      "38,41": 36
+    },
+    "SheetStyle": {
+      "FontFamily": 2,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "6,2,2,3",
+    "6,5,2,25",
+    "9,2,3,39",
+    "13,36,2,5",
+    "31,1,2,5",
+    "33,1,6,41",
+    "18,1,13,41",
+    "13,2,1,6",
+    "6,32,2,4",
+    "6,37,2,4",
+    "4,2,2,3",
+    "2,2,2,3",
+    "15,43,1,8",
+    "4,5,2,9",
+    "4,14,2,3",
+    "4,17,2,6",
+    "2,5,2,34",
+    "2,39,2,2",
+    "4,23,2,8",
+    "4,31,2,5",
+    "4,36,2,5"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+        "ParameterName": "既読判定",
+        "TableValue": {
+          "TableName": "メッセージ_未読既読",
+          "TableValueType": 1,
+          "BindingInfos": [
+            {
+              "BindingInfo": {
+                "TableName": "メッセージ_未読既読",
+                "ColumnName": "既読"
+              },
+              "ColumnName": "既読"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "メッセージ_未読既読",
+                "ColumnName": "付箋"
+              },
+              "ColumnName": "付箋"
+            }
+          ],
+          "SqlCondition": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "メッセージ_未読既読",
+                "ColumnName": "メッセージID"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=メッセージ閲覧!AR2"
+              }
+            },
+            "Condition2": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "メッセージ_未読既読",
+                "ColumnName": "宛先ユーザー"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=メッセージ閲覧!AS2"
+              }
+            }
+          }
+        },
+        "ID": "c7b0c228a273462e824b052b9b60f8a2"
+      },
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=メッセージ閲覧!既読判定.付箋"
+                  }
+                ]
+              },
+              "value": "1"
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=メッセージ閲覧!AG7"
+                    },
+                    "PropertyType": 2,
+                    "Value": "#FFFF0000"
+                  }
+                ]
+              }
+            ],
+            "ID": "0489d690-0ecc-4380-9a22-d7ab74991a04"
+          },
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=メッセージ閲覧!既読判定.付箋"
+                  }
+                ]
+              },
+              "value": "2"
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=メッセージ閲覧!AL7"
+                    },
+                    "PropertyType": 2,
+                    "Value": "#FFFFFF00"
+                  }
+                ]
+              }
+            ],
+            "ID": "b8cf509c-527a-4ef9-983e-4f8fb4d5c07d"
+          }
+        ]
+      },
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=メッセージ閲覧!既読判定.既読"
+                  }
+                ]
+              },
+              "value": "true"
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "Location": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=メッセージ閲覧!18:40"
+                    },
+                    "Value": true
+                  }
+                ]
+              },
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=メッセージ閲覧!AK14"
+                    },
+                    "PropertyType": 1,
+                    "Value": false
+                  }
+                ]
+              }
+            ],
+            "ID": "3b4fd674-6ced-4825-b7b1-e001a667e8bb"
+          }
+        ]
+      },
+      {
+        "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+        "TableName": "コメント_未読既読",
+        "ShowConfirm": false,
+        "ConfirmText": "本当に更新してもよろしいですか？",
+        "RowsToUpdate": 1,
+        "RowsToUpdateCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "コメント_未読既読",
+              "ColumnName": "コメントID",
+              "RelationBinding": {
+                "RelatedTable": "コメント",
+                "RelatedColumn": "コメントID",
+                "DisplayColumn": "メッセージID"
+              }
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=メッセージ閲覧!AR2"
+            }
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "コメント_未読既読",
+              "ColumnName": "宛先ユーザー"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=メッセージ閲覧!AS2"
+            }
+          }
+        },
+        "UpdateValues": [
+          {
+            "ColumnName": "既読状態",
+            "Value": "1"
+          },
+          {
+            "ColumnName": "既読日時",
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=NOW()"
+            }
+          }
+        ]
+      }
+    ],
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "コメント_未読既読"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "atesaki",
+      "Formula": "メッセージ閲覧!$F$24"
+    },
+    {
+      "Name": "messageid",
+      "Formula": "メッセージ閲覧!$AW$7"
+    }
+  ]
+}//SrSmoDXTUN/SQF3eUCh5yT/oWck8YLSz+v8kD6UNWYinEpOcfRLA30HGeLy7srHuCCqqEm42iBKj7OovXvQRz4PZezvL9dX/TOfnNkoiqxss+liYyEuqs/Ix6Yk/d3UZJm7tiqxDGXQiYCj92m4RAWSwNX66/7uyMpbvblq1ojm3YHVtw+CSGhn/JXMAVNalrkY+FV8cp4XBOnoJvkvSxaF41yGuQ425go9CbLCClw/PmRKoKIHv9hRL3D74QWtzTw4+XP9a+I6bxxlL6JQZ2d5GOmnMqm7q53Upw+wF5lcDihe/M4eEmJkDBASjYZLqaKXeaD7xqCG480HzMTAdYupx8rM3Xy5LyIP+ENOIxIZ6ZPSC05kgRpBBRjNcEJCXt9vq6+UZaidxVnuNb5u2MNp4Y3jS7hIGqXbxBDGEq1JTtTa7S5nqkB0xWLwfsMnqFZaljyiuJsHXZVG6tPRI9KqJmNZAFsGLbZ8IU9iEakSK5rq2IQbi2/ofQ+6SmNUO6h+dQoX+cTmokyDRtF593dMwT4qq4QyZHKKHOwj7MLR5/0n4touT2S7Vq5ERGuDo2PttIMPO7vmhaAmnHmcbCTAZGd0dLNSv2QX7MwxzZkogrZCylXQYPi3CLEJsoSByE+pim9N8MA3JsC/hXVsqAKcpWhF6WWg/uCdTyAFQAxQ8cSx8PQjQFbZAAIUonsy2OY521OupZ6rLmFl4u0FHKP5w6LFkkDTSfs1wcDMAQip95HineVHRCT6ntUev/1ZG1huphLpz/7ZduBpoAFle9oiXThrgUWJfj/9P6KU9u6OZH+ar2KBXoOTjZa2tqVg3wsy2Juv/WdNuw/cegobl94Ym2BxIY1S2v/EdE88g/9bwsSsdQQ1NfH90fiKT3GxkbHLfxxsLS+4ore718sZDHA==|920

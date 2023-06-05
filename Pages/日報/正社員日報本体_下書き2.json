@@ -1,0 +1,3575 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 6.0
+        }
+      }
+    },
+    "Count": 43
+  },
+  "Cols": {
+    "Count": 66
+  },
+  "Values": {
+    "1,1": "日報入力",
+    "3,1": "日付",
+    "3,12": "差出人",
+    "5,33": "報連相",
+    "6,1": "正社員日報入力(下書き仮)",
+    "10,33": "訪問予定",
+    "16,32": "日報_宛先下書き用",
+    "34,34": "送信",
+    "37,34": "キャンセル",
+    "40,34": "下書き保存"
+  },
+  "Formulas": {
+    "1,53": "ODATA(\"ユーザー?$select=MJSID&$filter=AzureADID eq \"&IF(ISBLANK(BB5),\"null\",\"'\"&BB5&\"'\"))",
+    "11,33": "IFERROR(IF(ODATA(\"日報_下書きワークフロー?$select=訪問予定&$filter=メッセージID eq \"&IF(ISBLANK(shitagakiID),\"null\",\"'\"&shitagakiID&\"'\"))=0,\"\",ODATA(\"日報_下書きワークフロー?$select=訪問予定&$filter=メッセージID eq \"&IF(ISBLANK(shitagakiID),\"null\",\"'\"&shitagakiID&\"'\"))),\"\")",
+    "6,33": "IFERROR(IF(ODATA(\"日報_下書きワークフロー?$select=報告事項&$filter=メッセージID eq \"&IF(ISBLANK(shitagakiID),\"null\",\"'\"&shitagakiID&\"'\"))=0,\"\",ODATA(\"日報_下書きワークフロー?$select=報告事項&$filter=メッセージID eq \"&IF(ISBLANK(shitagakiID),\"null\",\"'\"&shitagakiID&\"'\"))),\"\")",
+    "4,1": "IFERROR(IF(ODATA(\"日報_下書きワークフロー?$select=日付&$filter=メッセージID eq \"&IF(ISBLANK(shitagakiID),\"null\",\"'\"&shitagakiID&\"'\"))=0,\"\",ODATA(\"日報_下書きワークフロー?$select=日付&$filter=メッセージID eq \"&IF(ISBLANK(shitagakiID),\"null\",\"'\"&shitagakiID&\"'\"))),\"\")",
+    "6,53": "ODATA(\"日報chat_未読既読/$count?$filter=宛先ユーザー eq \"&IF(ISBLANK(ログインユーザー),\"null\",ログインユーザー)&\" and 既読状態 eq false\")"
+  },
+  "AttachInfos": {
+    "4,1": {
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "4,12": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "MaxDropDownItemCount": 10,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "ユーザー",
+        "ValueColumnBindingInfo": {
+          "TableName": "ユーザー",
+          "ColumnName": "MJSID"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "ユーザー",
+          "ColumnName": "名前"
+        },
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "ユーザー",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "ユーザー",
+                "ColumnName": "MJSID"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=正社員日報本体_下書き2!ユーザー"
+              }
+            },
+            "Params": [
+              "=ユーザー"
+            ],
+            "ID": "913a18e5ce264f8e8b24198130a4ab2f"
+          }
+        ],
+        "CellDefaultValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=正社員日報本体_下書き2!ログインユーザー"
+        }
+      }
+    },
+    "4,53": {
+      "CellType": {
+        "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
+        "CellCustomValue": "%CurrentUser%"
+      }
+    },
+    "6,1": {
+      "CellType": {
+        "$type": "Forguncy.ContentContainerCellType, ServerDesignerCommon",
+        "PageName": "正社員日報入力(下書き仮)",
+        "OverflowMode": 1
+      }
+    },
+    "6,33": {
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "11,33": {
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "16,32": {
+      "CellType": {
+        "$type": "Forguncy.ContentContainerCellType, ServerDesignerCommon",
+        "PageName": "日報_宛先下書き用",
+        "OverflowMode": 1
+      }
+    },
+    "34,34": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "日報_ワークフロー",
+            "UpdateType": "add",
+            "ShowConfirm": false,
+            "ConfirmText": "本当に追加してもよろしいですか？",
+            "UpdateValues": [
+              {
+                "ColumnName": "日報ID",
+                "Value": "%GUID%"
+              },
+              {
+                "ColumnName": "日付",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報本体_下書き2!day"
+                }
+              },
+              {
+                "ColumnName": "状況"
+              },
+              {
+                "ColumnName": "報告事項",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報本体_下書き2!報告事項"
+                }
+              },
+              {
+                "ColumnName": "訪問予定",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報本体_下書き2!訪問予定"
+                }
+              },
+              {
+                "ColumnName": "ユーザーID",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報本体_下書き2!ユーザー"
+                }
+              },
+              {
+                "ColumnName": "宛先",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報本体_下書き2!宛先ユーザー"
+                }
+              },
+              {
+                "ColumnName": "既読状態",
+                "Value": "0"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "nGUID",
+            "TableValue": {
+              "TableName": "日報_ワークフロー",
+              "OnlyGetValue": true,
+              "TableValueType": 0,
+              "BindingInfos": [
+                {
+                  "BindingInfo": {
+                    "TableName": "日報_ワークフロー",
+                    "ColumnName": "日報ID"
+                  },
+                  "ColumnName": "日報ID"
+                }
+              ],
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "日報_ワークフロー",
+                  "ColumnName": "ユーザーID"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報本体_下書き2!ログインユーザー"
+                }
+              },
+              "TopCount": "1",
+              "OrderBySqlCondition": {
+                "OrderByColumns": [
+                  {
+                    "ColumnBindingInfo": {
+                      "TableName": "日報_ワークフロー",
+                      "ColumnName": "FGC_CreateDate"
+                    },
+                    "Order": 1
+                  }
+                ]
+              }
+            },
+            "ID": "05a683c98a664e9eaf6c2d9a5eb82aa8"
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報本体_下書き2!nippouID"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報本体_下書き2!nGUID"
+                }
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報本体_下書き2!starttime1"
+                      }
+                    ]
+                  },
+                  "value": "%Null%",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "日報_内容",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "ConfirmText": "本当に追加してもよろしいですか？",
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "日報ID",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!nippouID"
+                        }
+                      },
+                      {
+                        "ColumnName": "No",
+                        "Value": "1"
+                      },
+                      {
+                        "ColumnName": "開始時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!starttime1"
+                        }
+                      },
+                      {
+                        "ColumnName": "終了時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!endtime1"
+                        }
+                      },
+                      {
+                        "ColumnName": "作業時間",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!worktime1"
+                        }
+                      },
+                      {
+                        "ColumnName": "項目",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!item1"
+                        }
+                      },
+                      {
+                        "ColumnName": "顧問先",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!client1"
+                        }
+                      },
+                      {
+                        "ColumnName": "内容",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!detail1"
+                        }
+                      },
+                      {
+                        "ColumnName": "日付",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!day"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "245bf9c5-8580-4023-bdfc-04fb73175162"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報本体_下書き2!starttime2"
+                      }
+                    ]
+                  },
+                  "value": "%Null%",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "日報_内容",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "ConfirmText": "本当に追加してもよろしいですか？",
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "日報ID",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!nippouID"
+                        }
+                      },
+                      {
+                        "ColumnName": "No",
+                        "Value": "2"
+                      },
+                      {
+                        "ColumnName": "開始時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!starttime2"
+                        }
+                      },
+                      {
+                        "ColumnName": "終了時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!endtime2"
+                        }
+                      },
+                      {
+                        "ColumnName": "作業時間",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!worktime2"
+                        }
+                      },
+                      {
+                        "ColumnName": "項目",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!item2"
+                        }
+                      },
+                      {
+                        "ColumnName": "顧問先",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!client2"
+                        }
+                      },
+                      {
+                        "ColumnName": "内容",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!detail2"
+                        }
+                      },
+                      {
+                        "ColumnName": "日付",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!day"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "55b64426-4483-477e-8b09-41d796c3aa54"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報本体_下書き2!starttime3"
+                      }
+                    ]
+                  },
+                  "value": "%Null%",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "日報_内容",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "ConfirmText": "本当に追加してもよろしいですか？",
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "日報ID",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!nippouID"
+                        }
+                      },
+                      {
+                        "ColumnName": "No",
+                        "Value": "3"
+                      },
+                      {
+                        "ColumnName": "開始時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!starttime3"
+                        }
+                      },
+                      {
+                        "ColumnName": "終了時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!endtime3"
+                        }
+                      },
+                      {
+                        "ColumnName": "作業時間",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!worktime3"
+                        }
+                      },
+                      {
+                        "ColumnName": "項目",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!item3"
+                        }
+                      },
+                      {
+                        "ColumnName": "顧問先",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!client3"
+                        }
+                      },
+                      {
+                        "ColumnName": "内容",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!detail3"
+                        }
+                      },
+                      {
+                        "ColumnName": "日付",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!day"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "e677f74a-2a0f-476d-ad81-ef8927a7e6d0"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報本体_下書き2!starttime4"
+                      }
+                    ]
+                  },
+                  "value": "%Null%",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "日報_内容",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "ConfirmText": "本当に追加してもよろしいですか？",
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "日報ID",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!nippouID"
+                        }
+                      },
+                      {
+                        "ColumnName": "No",
+                        "Value": "4"
+                      },
+                      {
+                        "ColumnName": "開始時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!starttime4"
+                        }
+                      },
+                      {
+                        "ColumnName": "終了時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!endtime4"
+                        }
+                      },
+                      {
+                        "ColumnName": "作業時間",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!worktime4"
+                        }
+                      },
+                      {
+                        "ColumnName": "項目",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!item4"
+                        }
+                      },
+                      {
+                        "ColumnName": "顧問先",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!client4"
+                        }
+                      },
+                      {
+                        "ColumnName": "内容",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!detail4"
+                        }
+                      },
+                      {
+                        "ColumnName": "日付",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!day"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "806ac4d3-803d-4a2b-9b2f-64f89b894bdf"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報本体_下書き2!starttime5"
+                      }
+                    ]
+                  },
+                  "value": "%Null%",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "日報_内容",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "ConfirmText": "本当に追加してもよろしいですか？",
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "日報ID",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!nippouID"
+                        }
+                      },
+                      {
+                        "ColumnName": "No",
+                        "Value": "5"
+                      },
+                      {
+                        "ColumnName": "開始時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!starttime5"
+                        }
+                      },
+                      {
+                        "ColumnName": "終了時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!endtime5"
+                        }
+                      },
+                      {
+                        "ColumnName": "作業時間",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!worktime5"
+                        }
+                      },
+                      {
+                        "ColumnName": "項目",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!item5"
+                        }
+                      },
+                      {
+                        "ColumnName": "顧問先",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!client5"
+                        }
+                      },
+                      {
+                        "ColumnName": "内容",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!detail5"
+                        }
+                      },
+                      {
+                        "ColumnName": "日付",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!day"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "52c93208-54c8-476d-9196-a70d2739347b"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報本体_下書き2!starttime6"
+                      }
+                    ]
+                  },
+                  "value": "%Null%",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "日報_内容",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "ConfirmText": "本当に追加してもよろしいですか？",
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "日報ID",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!nippouID"
+                        }
+                      },
+                      {
+                        "ColumnName": "No",
+                        "Value": "6"
+                      },
+                      {
+                        "ColumnName": "開始時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!starttime6"
+                        }
+                      },
+                      {
+                        "ColumnName": "終了時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!endtime6"
+                        }
+                      },
+                      {
+                        "ColumnName": "作業時間",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!worktime6"
+                        }
+                      },
+                      {
+                        "ColumnName": "項目",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!item6"
+                        }
+                      },
+                      {
+                        "ColumnName": "顧問先",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!client6"
+                        }
+                      },
+                      {
+                        "ColumnName": "内容",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!detail6"
+                        }
+                      },
+                      {
+                        "ColumnName": "日付",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!day"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "b7ba238c-7313-4bc1-9164-16a61da68c1f"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報本体_下書き2!starttime7"
+                      }
+                    ]
+                  },
+                  "value": "%Null%",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "日報_内容",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "ConfirmText": "本当に追加してもよろしいですか？",
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "日報ID",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!nippouID"
+                        }
+                      },
+                      {
+                        "ColumnName": "No",
+                        "Value": "7"
+                      },
+                      {
+                        "ColumnName": "開始時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!starttime7"
+                        }
+                      },
+                      {
+                        "ColumnName": "終了時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!endtime7"
+                        }
+                      },
+                      {
+                        "ColumnName": "作業時間",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!worktime7"
+                        }
+                      },
+                      {
+                        "ColumnName": "項目",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!item7"
+                        }
+                      },
+                      {
+                        "ColumnName": "顧問先",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!client7"
+                        }
+                      },
+                      {
+                        "ColumnName": "内容",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!detail7"
+                        }
+                      },
+                      {
+                        "ColumnName": "日付",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!day"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "9ae7b8b6-9a8e-4037-9f9b-46cd8b6466d0"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報本体_下書き2!starttime8"
+                      }
+                    ]
+                  },
+                  "value": "%Null%",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "日報_内容",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "ConfirmText": "本当に追加してもよろしいですか？",
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "日報ID",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!nippouID"
+                        }
+                      },
+                      {
+                        "ColumnName": "No",
+                        "Value": "8"
+                      },
+                      {
+                        "ColumnName": "開始時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!starttime8"
+                        }
+                      },
+                      {
+                        "ColumnName": "終了時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!endtime8"
+                        }
+                      },
+                      {
+                        "ColumnName": "作業時間",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!worktime8"
+                        }
+                      },
+                      {
+                        "ColumnName": "項目",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!item8"
+                        }
+                      },
+                      {
+                        "ColumnName": "顧問先",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!client8"
+                        }
+                      },
+                      {
+                        "ColumnName": "内容",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!detail8"
+                        }
+                      },
+                      {
+                        "ColumnName": "日付",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!day"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "2f95b1e0-2b05-4927-a118-dfb9867af5d0"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報本体_下書き2!starttime9"
+                      }
+                    ]
+                  },
+                  "value": "%Null%",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "日報_内容",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "ConfirmText": "本当に追加してもよろしいですか？",
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "日報ID",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!nippouID"
+                        }
+                      },
+                      {
+                        "ColumnName": "No",
+                        "Value": "9"
+                      },
+                      {
+                        "ColumnName": "開始時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!starttime9"
+                        }
+                      },
+                      {
+                        "ColumnName": "終了時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!endtime9"
+                        }
+                      },
+                      {
+                        "ColumnName": "作業時間",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!worktime9"
+                        }
+                      },
+                      {
+                        "ColumnName": "項目",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!item9"
+                        }
+                      },
+                      {
+                        "ColumnName": "顧問先",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!client9"
+                        }
+                      },
+                      {
+                        "ColumnName": "内容",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!detail9"
+                        }
+                      },
+                      {
+                        "ColumnName": "日付",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!day"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "3956020e-6e55-4682-a5f8-069e74e9356e"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報本体_下書き2!starttime10"
+                      }
+                    ]
+                  },
+                  "value": "%Null%",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "日報_内容",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "ConfirmText": "本当に追加してもよろしいですか？",
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "日報ID",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!nippouID"
+                        }
+                      },
+                      {
+                        "ColumnName": "No",
+                        "Value": "10"
+                      },
+                      {
+                        "ColumnName": "開始時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!starttime10"
+                        }
+                      },
+                      {
+                        "ColumnName": "終了時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!endtime10"
+                        }
+                      },
+                      {
+                        "ColumnName": "作業時間",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!worktime10"
+                        }
+                      },
+                      {
+                        "ColumnName": "項目",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!item10"
+                        }
+                      },
+                      {
+                        "ColumnName": "顧問先",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!client10"
+                        }
+                      },
+                      {
+                        "ColumnName": "内容",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!detail10"
+                        }
+                      },
+                      {
+                        "ColumnName": "日付",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!day"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "07032a6e-eecd-4daf-a192-d3e4ab0ba890"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報本体_下書き2!starttime11"
+                      }
+                    ]
+                  },
+                  "value": "%Null%",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "日報_内容",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "ConfirmText": "本当に追加してもよろしいですか？",
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "日報ID",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!nippouID"
+                        }
+                      },
+                      {
+                        "ColumnName": "No",
+                        "Value": "11"
+                      },
+                      {
+                        "ColumnName": "開始時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!starttime11"
+                        }
+                      },
+                      {
+                        "ColumnName": "終了時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!endtime11"
+                        }
+                      },
+                      {
+                        "ColumnName": "作業時間",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!worktime11"
+                        }
+                      },
+                      {
+                        "ColumnName": "項目",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!item11"
+                        }
+                      },
+                      {
+                        "ColumnName": "顧問先",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!client11"
+                        }
+                      },
+                      {
+                        "ColumnName": "内容",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!detail11"
+                        }
+                      },
+                      {
+                        "ColumnName": "日付",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!day"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "0ea86aa6-5f22-48ac-8da2-f5fd84b23458"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報本体_下書き2!starttime12"
+                      }
+                    ]
+                  },
+                  "value": "%Null%",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "日報_内容",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "ConfirmText": "本当に追加してもよろしいですか？",
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "日報ID",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!nippouID"
+                        }
+                      },
+                      {
+                        "ColumnName": "No",
+                        "Value": "12"
+                      },
+                      {
+                        "ColumnName": "開始時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!starttime12"
+                        }
+                      },
+                      {
+                        "ColumnName": "終了時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!endtime12"
+                        }
+                      },
+                      {
+                        "ColumnName": "作業時間",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!worktime12"
+                        }
+                      },
+                      {
+                        "ColumnName": "項目",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!item12"
+                        }
+                      },
+                      {
+                        "ColumnName": "顧問先",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!client12"
+                        }
+                      },
+                      {
+                        "ColumnName": "内容",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!detail12"
+                        }
+                      },
+                      {
+                        "ColumnName": "日付",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!day"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "d9002767-e7f3-4308-ab25-deb1ccaa39fa"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報本体_下書き2!starttime13"
+                      }
+                    ]
+                  },
+                  "value": "%Null%",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "日報_内容",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "ConfirmText": "本当に追加してもよろしいですか？",
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "日報ID",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!nippouID"
+                        }
+                      },
+                      {
+                        "ColumnName": "No",
+                        "Value": "13"
+                      },
+                      {
+                        "ColumnName": "開始時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!starttime13"
+                        }
+                      },
+                      {
+                        "ColumnName": "終了時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!endtime13"
+                        }
+                      },
+                      {
+                        "ColumnName": "作業時間",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!worktime13"
+                        }
+                      },
+                      {
+                        "ColumnName": "項目",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!item13"
+                        }
+                      },
+                      {
+                        "ColumnName": "顧問先",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!client13"
+                        }
+                      },
+                      {
+                        "ColumnName": "内容",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!detail13"
+                        }
+                      },
+                      {
+                        "ColumnName": "日付",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!day"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "44ec3ad1-4db2-41d4-8f87-0845327ae2a2"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報本体_下書き2!starttime14"
+                      }
+                    ]
+                  },
+                  "value": "%Null%",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "日報_内容",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "ConfirmText": "本当に追加してもよろしいですか？",
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "日報ID",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!nippouID"
+                        }
+                      },
+                      {
+                        "ColumnName": "No",
+                        "Value": "14"
+                      },
+                      {
+                        "ColumnName": "開始時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!starttime14"
+                        }
+                      },
+                      {
+                        "ColumnName": "終了時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!endtime14"
+                        }
+                      },
+                      {
+                        "ColumnName": "作業時間",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!worktime14"
+                        }
+                      },
+                      {
+                        "ColumnName": "項目",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!item14"
+                        }
+                      },
+                      {
+                        "ColumnName": "顧問先",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!client14"
+                        }
+                      },
+                      {
+                        "ColumnName": "内容",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!detail14"
+                        }
+                      },
+                      {
+                        "ColumnName": "日付",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!day"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "e1ef5500-0b0c-49cc-8341-b51f23c3ddf8"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報本体_下書き2!starttime15"
+                      }
+                    ]
+                  },
+                  "value": "%Null%",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "日報_内容",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "ConfirmText": "本当に追加してもよろしいですか？",
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "日報ID",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!nippouID"
+                        }
+                      },
+                      {
+                        "ColumnName": "No",
+                        "Value": "15"
+                      },
+                      {
+                        "ColumnName": "開始時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!starttime15"
+                        }
+                      },
+                      {
+                        "ColumnName": "終了時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!endtime15"
+                        }
+                      },
+                      {
+                        "ColumnName": "作業時間",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!worktime15"
+                        }
+                      },
+                      {
+                        "ColumnName": "項目",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!item15"
+                        }
+                      },
+                      {
+                        "ColumnName": "顧問先",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!client15"
+                        }
+                      },
+                      {
+                        "ColumnName": "内容",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!detail15"
+                        }
+                      },
+                      {
+                        "ColumnName": "日付",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!day"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "ab4ff98b-2ebe-4ab3-a187-4119dc7a4638"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "宛先以外",
+            "TableValue": {
+              "TableName": "ユーザー",
+              "BindingInfos": [
+                {
+                  "BindingInfo": {
+                    "TableName": "ユーザー",
+                    "ColumnName": "MJSID"
+                  },
+                  "ColumnName": "MJSID"
+                }
+              ],
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                "CompareType": 9,
+                "ColumnBindingInfo": {
+                  "TableName": "ユーザー",
+                  "ColumnName": "MJSID"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報本体_下書き2!atesaki111"
+                }
+              }
+            },
+            "ID": "7d322773d6114b3fa735bee23b445a4b",
+            "Disabled": true
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報本体_下書き2!uuu"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報本体_下書き2!宛先以外"
+                }
+              }
+            ],
+            "Disabled": true
+          },
+          {
+            "$type": "Forguncy.Model.RunJavaScriptCommand, ServerDesignerCommon",
+            "JavaScript": "// 現在のページを取得する。\r\nvar page = Forguncy.Page;\r\n// 現在のページでatesakiという名前のセルを取得する。\r\nvar atesakicell = page.getCell(\"atesaki111\");\r\n// getValueメソッドでatesakiセルの値を取得する。\r\nvar atesakicellValue = atesakicell.getValue();\r\n// 宛先を配列にする\r\nvar atesakiitem = atesakicellValue.split(',');\r\n//　配列に含まれる重複を削除\r\nvar atesakiitem1 = new Set(atesakiitem);\r\n// 現在のページでatesakiigaiセルを取得する。\r\n//var ateigaicell = page.getCell(\"uuu\");\r\n// getValueメソッドでatesakiigaiセルの値を取得する。\r\n//var ateigaiValue = ateigaicell.getValue();\r\n// 現在のページでnippouIDセルを取得する。\r\nvar nidcell = page.getCell(\"nippouID\");\r\n// getValueメソッドでmidセルの値を取得する。\r\nvar nidcellValue = nidcell.getValue();\r\n// 現在のページでユーザーセルを取得する。\r\nvar toukousyacell = page.getCell(\"ユーザー\");\r\n// getValueメソッドでuserセルの値を取得する。\r\nvar toukousyacellValue = toukousyacell.getValue();\r\n\r\n\r\natesaki = [];\r\n\r\n\r\n// atesakiitem1の配列の数を繰り返して、オブジェクトを作成\r\nfor ( var ate of atesakiitem1) { \r\n atesaki.push(\r\n\t{\r\n\t\t宛先ユーザー: ate,\r\n\t\t日報chatID: nidcellValue,\r\n\t\t宛先メンバー: true,\r\n\t\t差出人: toukousyacellValue,\r\n\t\t区分: \"1\",\r\n\t\t既読状態: \"false\",\r\n\t\tコメント既読状態: \"true\",\r\n\t});\r\n}\r\n\r\n\r\n\r\n\r\nForguncy.Page.getCell(\"atesaki_obj2\").setValue(atesaki);",
+            "ID": "3ce02a6701534779b2059ae837022298",
+            "Comments": "カスタムWebAPIを利用してメッセージユーザーテーブルに追加するためのオブジェクトを作成"
+          },
+          {
+            "$type": "Forguncy.Model.RunJavaScriptCommand, ServerDesignerCommon",
+            "JavaScript": "// 現在のページを取得する。\r\nvar page = Forguncy.Page;\r\n// 現在のページでatesakiという名前のセルを取得する。\r\nvar ateobjcell = page.getCell(\"atesaki_obj2\");\r\n// getValueメソッドでatesakiセルの値を取得する。\r\nvar ateobjcellValue = ateobjcell.getValue();\r\n\r\n// 1回のpostリクエストを送信して、サーバーサイドでテーブルを追加・\r\n\r\nvar postUrl = \"http://localhost:37998/customapi/modifytablesdatademo/modifytablesdata\";\r\n\r\n// サーバーサイドAPIの「IDataAccess.ModifyTablesData メソッドで使用するModifyDataのデータを準備します。\r\nvar modifyData = {};\r\n\r\nmodifyData.日報chat_未読既読= {};\r\n\r\n// 追加\r\nmodifyData.日報chat_未読既読.AddRows = ateobjcellValue;\r\n\r\n// post\r\n$.post(postUrl, JSON.stringify(modifyData), function () {\r\n});\r\n",
+            "ID": "a005f3f1d6a04a23979da27eb0d498a2",
+            "Comments": "カスタムWebAPIを利用してメッセージユーザーテーブルに追加"
+          },
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "日報chat_未読既読",
+            "UpdateType": "add",
+            "ShowConfirm": false,
+            "ConfirmText": "本当に追加してもよろしいですか？",
+            "UpdateValues": [
+              {
+                "ColumnName": "日報chatID",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報本体_下書き2!nippouID"
+                }
+              },
+              {
+                "ColumnName": "宛先ユーザー",
+                "Value": "9999"
+              },
+              {
+                "ColumnName": "既読状態",
+                "Value": "1"
+              },
+              {
+                "ColumnName": "コメント既読状態",
+                "Value": "1"
+              },
+              {
+                "ColumnName": "既読",
+                "Value": "確認済み"
+              },
+              {
+                "ColumnName": "差出人",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報本体_下書き2!ユーザー"
+                }
+              },
+              {
+                "ColumnName": "宛先メンバー",
+                "Value": "0"
+              },
+              {
+                "ColumnName": "区分",
+                "Value": "1"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "正社員日報一覧",
+            "PassValues": [],
+            "Disabled": true
+          }
+        ],
+        "Text": "送信",
+        "TemplateKey": "_RS_Gradient_Shadow_Style3"
+      }
+    },
+    "37,34": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "NavigateType": "back",
+            "PassValues": []
+          }
+        ],
+        "Text": "キャンセル",
+        "TemplateKey": "_RS_Outline_Style2"
+      }
+    },
+    "40,34": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "日報_下書きワークフロー",
+            "UpdateType": "add",
+            "ShowConfirm": false,
+            "ConfirmText": "本当に追加してもよろしいですか？",
+            "UpdateValues": [
+              {
+                "ColumnName": "メッセージID",
+                "Value": "%GUID%"
+              },
+              {
+                "ColumnName": "日付",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報本体_下書き2!day"
+                }
+              },
+              {
+                "ColumnName": "状況"
+              },
+              {
+                "ColumnName": "報告事項",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報本体_下書き2!報告事項"
+                }
+              },
+              {
+                "ColumnName": "訪問予定",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報本体_下書き2!訪問予定"
+                }
+              },
+              {
+                "ColumnName": "ユーザーID",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報本体_下書き2!ユーザー"
+                }
+              },
+              {
+                "ColumnName": "宛先",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報本体_下書き2!宛先ユーザー"
+                }
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "nGUIDdraft",
+            "TableValue": {
+              "TableName": "日報_下書きワークフロー",
+              "OnlyGetValue": true,
+              "TableValueType": 0,
+              "BindingInfos": [
+                {
+                  "BindingInfo": {
+                    "TableName": "日報_下書きワークフロー",
+                    "ColumnName": "メッセージID"
+                  },
+                  "ColumnName": "メッセージID"
+                }
+              ],
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "日報_下書きワークフロー",
+                  "ColumnName": "ユーザーID"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報本体_下書き2!ログインユーザー"
+                }
+              },
+              "TopCount": "1",
+              "OrderBySqlCondition": {
+                "OrderByColumns": [
+                  {
+                    "ColumnBindingInfo": {
+                      "TableName": "日報_下書きワークフロー",
+                      "ColumnName": "FGC_CreateDate"
+                    },
+                    "Order": 1
+                  }
+                ]
+              }
+            },
+            "ID": "06ad086067114575b7d672b08e649aa3"
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報本体_下書き2!shitagakiID"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報本体_下書き2!nGUIDdraft"
+                }
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報本体_下書き2!starttime1"
+                      }
+                    ]
+                  },
+                  "value": "%Null%",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "日報_下書き",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "ConfirmText": "本当に追加してもよろしいですか？",
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "メッセージID",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!shitagakiID"
+                        }
+                      },
+                      {
+                        "ColumnName": "No",
+                        "Value": "1"
+                      },
+                      {
+                        "ColumnName": "開始時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!starttime1"
+                        }
+                      },
+                      {
+                        "ColumnName": "終了時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!endtime1"
+                        }
+                      },
+                      {
+                        "ColumnName": "作業時間",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!worktime1"
+                        }
+                      },
+                      {
+                        "ColumnName": "項目",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!item1"
+                        }
+                      },
+                      {
+                        "ColumnName": "顧問先",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!client1"
+                        }
+                      },
+                      {
+                        "ColumnName": "内容",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!detail1"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "b215dabf-6be4-4d8d-b25b-5bd97d1a5b70"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報本体_下書き2!starttime2"
+                      }
+                    ]
+                  },
+                  "value": "%Null%",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "日報_下書き",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "ConfirmText": "本当に追加してもよろしいですか？",
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "メッセージID",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!shitagakiID"
+                        }
+                      },
+                      {
+                        "ColumnName": "No",
+                        "Value": "2"
+                      },
+                      {
+                        "ColumnName": "開始時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!starttime2"
+                        }
+                      },
+                      {
+                        "ColumnName": "終了時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!endtime2"
+                        }
+                      },
+                      {
+                        "ColumnName": "作業時間",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!worktime2"
+                        }
+                      },
+                      {
+                        "ColumnName": "項目",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!item2"
+                        }
+                      },
+                      {
+                        "ColumnName": "顧問先",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!client2"
+                        }
+                      },
+                      {
+                        "ColumnName": "内容",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!detail2"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "13c1e0f0-b3d3-4662-8cbe-9af3612956a8"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報本体_下書き2!starttime3"
+                      }
+                    ]
+                  },
+                  "value": "%Null%",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "日報_下書き",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "ConfirmText": "本当に追加してもよろしいですか？",
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "メッセージID",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!shitagakiID"
+                        }
+                      },
+                      {
+                        "ColumnName": "No",
+                        "Value": "3"
+                      },
+                      {
+                        "ColumnName": "開始時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!starttime3"
+                        }
+                      },
+                      {
+                        "ColumnName": "終了時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!endtime3"
+                        }
+                      },
+                      {
+                        "ColumnName": "作業時間",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!worktime3"
+                        }
+                      },
+                      {
+                        "ColumnName": "項目",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!item3"
+                        }
+                      },
+                      {
+                        "ColumnName": "顧問先",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!client3"
+                        }
+                      },
+                      {
+                        "ColumnName": "内容",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!detail3"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "107ac641-2cba-4d1d-8dba-8c26fd262fce"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報本体_下書き2!starttime4"
+                      }
+                    ]
+                  },
+                  "value": "%Null%",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "日報_下書き",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "ConfirmText": "本当に追加してもよろしいですか？",
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "メッセージID",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!shitagakiID"
+                        }
+                      },
+                      {
+                        "ColumnName": "No",
+                        "Value": "4"
+                      },
+                      {
+                        "ColumnName": "開始時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!starttime4"
+                        }
+                      },
+                      {
+                        "ColumnName": "終了時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!endtime4"
+                        }
+                      },
+                      {
+                        "ColumnName": "作業時間",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!worktime4"
+                        }
+                      },
+                      {
+                        "ColumnName": "項目",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!item4"
+                        }
+                      },
+                      {
+                        "ColumnName": "顧問先",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!client4"
+                        }
+                      },
+                      {
+                        "ColumnName": "内容",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!detail4"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "e70f3b5a-23dd-4ad4-a73d-ba9a6bee32c0"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報本体_下書き2!starttime5"
+                      }
+                    ]
+                  },
+                  "value": "%Null%",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "日報_下書き",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "ConfirmText": "本当に追加してもよろしいですか？",
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "メッセージID",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!shitagakiID"
+                        }
+                      },
+                      {
+                        "ColumnName": "No",
+                        "Value": "5"
+                      },
+                      {
+                        "ColumnName": "開始時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!starttime5"
+                        }
+                      },
+                      {
+                        "ColumnName": "終了時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!endtime5"
+                        }
+                      },
+                      {
+                        "ColumnName": "作業時間",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!worktime5"
+                        }
+                      },
+                      {
+                        "ColumnName": "項目",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!item5"
+                        }
+                      },
+                      {
+                        "ColumnName": "顧問先",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!client5"
+                        }
+                      },
+                      {
+                        "ColumnName": "内容",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!detail5"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "051d0f57-ba6c-4cd1-b0d4-83032f3ed1ec"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報本体_下書き2!starttime6"
+                      }
+                    ]
+                  },
+                  "value": "%Null%",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "日報_下書き",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "ConfirmText": "本当に追加してもよろしいですか？",
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "メッセージID",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!shitagakiID"
+                        }
+                      },
+                      {
+                        "ColumnName": "No",
+                        "Value": "6"
+                      },
+                      {
+                        "ColumnName": "開始時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!starttime6"
+                        }
+                      },
+                      {
+                        "ColumnName": "終了時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!endtime6"
+                        }
+                      },
+                      {
+                        "ColumnName": "作業時間",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!worktime6"
+                        }
+                      },
+                      {
+                        "ColumnName": "項目",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!item6"
+                        }
+                      },
+                      {
+                        "ColumnName": "顧問先",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!client6"
+                        }
+                      },
+                      {
+                        "ColumnName": "内容",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!detail6"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "0ce294cb-8b3c-46a9-9188-1bf40e8c9583"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報本体_下書き2!starttime7"
+                      }
+                    ]
+                  },
+                  "value": "%Null%",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "日報_下書き",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "ConfirmText": "本当に追加してもよろしいですか？",
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "メッセージID",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!shitagakiID"
+                        }
+                      },
+                      {
+                        "ColumnName": "No",
+                        "Value": "7"
+                      },
+                      {
+                        "ColumnName": "開始時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!starttime7"
+                        }
+                      },
+                      {
+                        "ColumnName": "終了時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!endtime7"
+                        }
+                      },
+                      {
+                        "ColumnName": "作業時間",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!worktime7"
+                        }
+                      },
+                      {
+                        "ColumnName": "項目",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!item7"
+                        }
+                      },
+                      {
+                        "ColumnName": "顧問先",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!client7"
+                        }
+                      },
+                      {
+                        "ColumnName": "内容",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!detail7"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "e7b32036-3e80-4841-b1fb-ca8aa5c00c25"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報本体_下書き2!starttime8"
+                      }
+                    ]
+                  },
+                  "value": "%Null%",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "日報_下書き",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "ConfirmText": "本当に追加してもよろしいですか？",
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "メッセージID",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!shitagakiID"
+                        }
+                      },
+                      {
+                        "ColumnName": "No",
+                        "Value": "8"
+                      },
+                      {
+                        "ColumnName": "開始時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!starttime8"
+                        }
+                      },
+                      {
+                        "ColumnName": "終了時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!endtime8"
+                        }
+                      },
+                      {
+                        "ColumnName": "作業時間",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!worktime8"
+                        }
+                      },
+                      {
+                        "ColumnName": "項目",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!item8"
+                        }
+                      },
+                      {
+                        "ColumnName": "顧問先",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!client8"
+                        }
+                      },
+                      {
+                        "ColumnName": "内容",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!detail8"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "8bbc0e6f-071e-42df-9d2b-26eab331586c"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報本体_下書き2!starttime9"
+                      }
+                    ]
+                  },
+                  "value": "%Null%",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "日報_下書き",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "ConfirmText": "本当に追加してもよろしいですか？",
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "メッセージID",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!shitagakiID"
+                        }
+                      },
+                      {
+                        "ColumnName": "No",
+                        "Value": "9"
+                      },
+                      {
+                        "ColumnName": "開始時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!starttime9"
+                        }
+                      },
+                      {
+                        "ColumnName": "終了時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!endtime9"
+                        }
+                      },
+                      {
+                        "ColumnName": "作業時間",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!worktime9"
+                        }
+                      },
+                      {
+                        "ColumnName": "項目",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!item9"
+                        }
+                      },
+                      {
+                        "ColumnName": "顧問先",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!client9"
+                        }
+                      },
+                      {
+                        "ColumnName": "内容",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!detail9"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "25dc2e8d-40a4-4cb9-8bfa-7cf92cdb31be"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報本体_下書き2!starttime10"
+                      }
+                    ]
+                  },
+                  "value": "%Null%",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "日報_下書き",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "ConfirmText": "本当に追加してもよろしいですか？",
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "メッセージID",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!shitagakiID"
+                        }
+                      },
+                      {
+                        "ColumnName": "No",
+                        "Value": "10"
+                      },
+                      {
+                        "ColumnName": "開始時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!starttime10"
+                        }
+                      },
+                      {
+                        "ColumnName": "終了時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!endtime10"
+                        }
+                      },
+                      {
+                        "ColumnName": "作業時間",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!worktime10"
+                        }
+                      },
+                      {
+                        "ColumnName": "項目",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!item10"
+                        }
+                      },
+                      {
+                        "ColumnName": "顧問先",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!client10"
+                        }
+                      },
+                      {
+                        "ColumnName": "内容",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!detail10"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "970d3259-97ef-44d0-87fb-09fa941b2da0"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報本体_下書き2!starttime11"
+                      }
+                    ]
+                  },
+                  "value": "%Null%",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "日報_下書き",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "ConfirmText": "本当に追加してもよろしいですか？",
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "メッセージID",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!shitagakiID"
+                        }
+                      },
+                      {
+                        "ColumnName": "No",
+                        "Value": "11"
+                      },
+                      {
+                        "ColumnName": "開始時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!starttime11"
+                        }
+                      },
+                      {
+                        "ColumnName": "終了時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!endtime11"
+                        }
+                      },
+                      {
+                        "ColumnName": "作業時間",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!worktime11"
+                        }
+                      },
+                      {
+                        "ColumnName": "項目",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!item11"
+                        }
+                      },
+                      {
+                        "ColumnName": "顧問先",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!client11"
+                        }
+                      },
+                      {
+                        "ColumnName": "内容",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!detail11"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "8063a882-986c-4020-b982-c2a9fad960de"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報本体_下書き2!starttime12"
+                      }
+                    ]
+                  },
+                  "value": "%Null%",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "日報_下書き",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "ConfirmText": "本当に追加してもよろしいですか？",
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "メッセージID",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!shitagakiID"
+                        }
+                      },
+                      {
+                        "ColumnName": "No",
+                        "Value": "12"
+                      },
+                      {
+                        "ColumnName": "開始時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!starttime12"
+                        }
+                      },
+                      {
+                        "ColumnName": "終了時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!endtime12"
+                        }
+                      },
+                      {
+                        "ColumnName": "作業時間",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!worktime12"
+                        }
+                      },
+                      {
+                        "ColumnName": "項目",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!item12"
+                        }
+                      },
+                      {
+                        "ColumnName": "顧問先",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!client12"
+                        }
+                      },
+                      {
+                        "ColumnName": "内容",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!detail12"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "629f456a-2c35-452a-ad0d-b3777f5d2e20"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報本体_下書き2!starttime13"
+                      }
+                    ]
+                  },
+                  "value": "%Null%",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "日報_下書き",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "ConfirmText": "本当に追加してもよろしいですか？",
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "メッセージID",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!shitagakiID"
+                        }
+                      },
+                      {
+                        "ColumnName": "No",
+                        "Value": "13"
+                      },
+                      {
+                        "ColumnName": "開始時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!starttime13"
+                        }
+                      },
+                      {
+                        "ColumnName": "終了時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!endtime13"
+                        }
+                      },
+                      {
+                        "ColumnName": "作業時間",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!worktime13"
+                        }
+                      },
+                      {
+                        "ColumnName": "項目",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!item13"
+                        }
+                      },
+                      {
+                        "ColumnName": "顧問先",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!client13"
+                        }
+                      },
+                      {
+                        "ColumnName": "内容",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!detail13"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "7ec06822-c8d5-43ff-acf8-f1ea1c3b1603"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報本体_下書き2!starttime14"
+                      }
+                    ]
+                  },
+                  "value": "%Null%",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "日報_下書き",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "ConfirmText": "本当に追加してもよろしいですか？",
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "メッセージID",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!shitagakiID"
+                        }
+                      },
+                      {
+                        "ColumnName": "No",
+                        "Value": "14"
+                      },
+                      {
+                        "ColumnName": "開始時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!starttime14"
+                        }
+                      },
+                      {
+                        "ColumnName": "終了時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!endtime14"
+                        }
+                      },
+                      {
+                        "ColumnName": "作業時間",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!worktime14"
+                        }
+                      },
+                      {
+                        "ColumnName": "項目",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!item14"
+                        }
+                      },
+                      {
+                        "ColumnName": "顧問先",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!client14"
+                        }
+                      },
+                      {
+                        "ColumnName": "内容",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!detail14"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "e324ac90-edf1-4b69-86a5-af11a1772ad1"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=正社員日報本体_下書き2!starttime15"
+                      }
+                    ]
+                  },
+                  "value": "%Null%",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "日報_下書き",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "ConfirmText": "本当に追加してもよろしいですか？",
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "メッセージID",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!shitagakiID"
+                        }
+                      },
+                      {
+                        "ColumnName": "No",
+                        "Value": "15"
+                      },
+                      {
+                        "ColumnName": "開始時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!starttime15"
+                        }
+                      },
+                      {
+                        "ColumnName": "終了時刻",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!endtime15"
+                        }
+                      },
+                      {
+                        "ColumnName": "作業時間",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!worktime15"
+                        }
+                      },
+                      {
+                        "ColumnName": "項目",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!item15"
+                        }
+                      },
+                      {
+                        "ColumnName": "顧問先",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!client15"
+                        }
+                      },
+                      {
+                        "ColumnName": "内容",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=正社員日報本体_下書き2!detail15"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "25dc55bd-bf31-4b88-8e4a-add0783a136c"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "日報_下書き一覧",
+            "PassValues": [],
+            "Disabled": true
+          }
+        ],
+        "Text": "下書き保存",
+        "TemplateKey": "_RS_Outline_RoundCorner_Style3"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 18.666666666666664,
+        "FontWeight": 0
+      },
+      {
+        "FontFamily": 1
+      },
+      {
+        "Formatter": 2,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 4
+      },
+      {
+        "FontFamily": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 5,
+        "VerticalAlignment": 6,
+        "WordWrap": true
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 5,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 8
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "Body",
+        "yyyy/m/d(aaa)",
+        "Center",
+        "ＭＳ Ｐゴシック",
+        "@",
+        "Top",
+        "black",
+        "[AUTO]General"
+      ],
+      "Borders": [
+        {
+          "Color": 7
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "1,53": 1,
+      "1,54": 1,
+      "1,55": 1,
+      "1,56": 1,
+      "1,57": 1,
+      "1,58": 1,
+      "1,59": 1,
+      "2,45": 1,
+      "2,46": 1,
+      "2,47": 1,
+      "2,48": 1,
+      "2,49": 1,
+      "2,50": 1,
+      "2,51": 1,
+      "2,52": 1,
+      "3,38": 1,
+      "3,39": 1,
+      "3,40": 1,
+      "3,41": 1,
+      "3,42": 1,
+      "3,43": 1,
+      "3,44": 1,
+      "3,45": 1,
+      "3,46": 1,
+      "3,47": 1,
+      "3,48": 1,
+      "3,49": 1,
+      "3,50": 1,
+      "3,51": 1,
+      "3,52": 1,
+      "4,1": 2,
+      "4,48": 3,
+      "4,49": 3,
+      "4,50": 3,
+      "4,52": 3,
+      "4,53": 4,
+      "4,54": 3,
+      "4,55": 3,
+      "4,56": 3,
+      "4,57": 3,
+      "4,58": 3,
+      "4,59": 3,
+      "5,33": 1,
+      "5,46": 1,
+      "6,1": 1,
+      "6,33": 5,
+      "6,53": 1,
+      "6,54": 1,
+      "6,55": 1,
+      "6,56": 1,
+      "6,57": 1,
+      "6,58": 1,
+      "6,59": 1,
+      "8,53": 6,
+      "10,33": 1,
+      "10,53": 7,
+      "10,54": 1,
+      "10,55": 1,
+      "10,56": 1,
+      "10,57": 1,
+      "10,58": 1,
+      "10,59": 1,
+      "11,33": 5,
+      "12,53": 6,
+      "13,51": 1,
+      "13,52": 1,
+      "14,51": 1,
+      "14,52": 1,
+      "15,33": 1,
+      "15,34": 1,
+      "15,35": 1,
+      "15,36": 1,
+      "15,37": 1,
+      "15,38": 1,
+      "15,39": 1,
+      "15,40": 1,
+      "15,41": 1,
+      "15,42": 1,
+      "15,43": 1,
+      "15,44": 1,
+      "15,45": 1,
+      "15,46": 1,
+      "15,47": 1,
+      "15,48": 1,
+      "15,49": 1,
+      "15,50": 1,
+      "15,52": 1,
+      "16,32": 1,
+      "16,52": 1,
+      "17,52": 1,
+      "17,53": 1,
+      "17,54": 1,
+      "17,55": 1,
+      "17,56": 1,
+      "17,57": 1,
+      "17,58": 1,
+      "17,59": 1,
+      "21,52": 1,
+      "22,52": 1,
+      "23,52": 1,
+      "24,52": 1,
+      "25,52": 1,
+      "26,52": 1,
+      "27,52": 1,
+      "27,53": 1,
+      "28,52": 1,
+      "29,52": 1,
+      "29,53": 8,
+      "29,54": 8,
+      "29,55": 8,
+      "29,56": 8,
+      "29,57": 8,
+      "29,58": 8,
+      "29,59": 8,
+      "30,52": 1,
+      "30,53": 1,
+      "30,54": 1,
+      "30,55": 1,
+      "30,56": 1,
+      "30,57": 1,
+      "30,58": 1,
+      "30,59": 1,
+      "31,52": 1,
+      "32,52": 1,
+      "33,52": 1,
+      "34,32": 1,
+      "34,33": 1,
+      "34,34": 9,
+      "34,49": 1,
+      "34,50": 1,
+      "34,51": 9,
+      "34,55": 1,
+      "34,56": 1,
+      "34,57": 1,
+      "34,58": 1,
+      "34,59": 1,
+      "34,60": 1,
+      "34,61": 1,
+      "34,62": 1,
+      "34,63": 1,
+      "34,64": 1,
+      "34,65": 1,
+      "35,51": 1,
+      "35,52": 1,
+      "35,53": 1,
+      "35,54": 1,
+      "35,55": 1,
+      "35,56": 1,
+      "35,57": 1,
+      "35,58": 1,
+      "35,59": 1,
+      "35,60": 1,
+      "35,61": 1,
+      "35,62": 1,
+      "35,63": 1,
+      "35,64": 1,
+      "35,65": 1,
+      "37,34": 1,
+      "39,40": 1,
+      "39,41": 1,
+      "40,34": 9,
+      "40,35": 1,
+      "40,36": 1,
+      "40,37": 1,
+      "40,38": 1,
+      "40,39": 1,
+      "40,40": 1,
+      "40,41": 1,
+      "40,42": 1,
+      "40,43": 1,
+      "40,44": 1,
+      "40,45": 1,
+      "40,46": 1,
+      "40,47": 1,
+      "40,48": 1,
+      "40,50": 9,
+      "40,51": 1,
+      "40,52": 1,
+      "40,53": 1,
+      "40,54": 1,
+      "40,55": 1,
+      "40,56": 1,
+      "40,57": 1,
+      "40,58": 1,
+      "40,59": 1,
+      "40,60": 1,
+      "40,61": 1,
+      "40,62": 1,
+      "40,63": 1,
+      "40,64": 1,
+      "41,34": 1,
+      "41,35": 1,
+      "41,36": 1,
+      "41,37": 1,
+      "41,38": 1,
+      "41,39": 1,
+      "41,40": 1,
+      "41,41": 1,
+      "41,42": 1,
+      "41,43": 1,
+      "41,44": 1,
+      "41,45": 1,
+      "41,46": 1,
+      "41,47": 1,
+      "41,48": 1,
+      "41,49": 1,
+      "41,50": 1,
+      "41,51": 1,
+      "41,52": 1,
+      "41,53": 1,
+      "41,54": 1,
+      "41,55": 1,
+      "41,56": 1,
+      "41,57": 1,
+      "41,58": 1,
+      "41,59": 1,
+      "41,60": 1,
+      "41,61": 1,
+      "41,62": 1,
+      "41,63": 1,
+      "41,64": 1,
+      "42,1": 1,
+      "42,2": 1,
+      "42,3": 1,
+      "42,4": 1,
+      "42,5": 1,
+      "42,6": 1,
+      "42,7": 1,
+      "42,8": 1,
+      "42,9": 1,
+      "42,10": 1,
+      "42,11": 1,
+      "42,12": 1,
+      "42,13": 1,
+      "42,14": 1,
+      "42,15": 1,
+      "42,16": 1,
+      "42,17": 1,
+      "42,18": 1,
+      "42,19": 1,
+      "42,20": 1,
+      "42,21": 1,
+      "42,22": 1,
+      "42,23": 1,
+      "42,24": 1,
+      "42,40": 1,
+      "42,41": 1,
+      "42,48": 1,
+      "42,49": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "4,1,1,9",
+    "4,12,1,9",
+    "1,1,2,5",
+    "6,33,4,18",
+    "11,33,4,18",
+    "16,32,18,19",
+    "6,1,36,31",
+    "37,34,2,15",
+    "40,34,2,15",
+    "34,34,2,15",
+    "34,51,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "マスターページ　日報CHAT",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+        "PropertyItemsList": [
+          {
+            "TargetCells": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=正社員日報本体_下書き2!atesaki111"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=正社員日報本体_下書き2!BB15"
+            }
+          }
+        ]
+      }
+    ],
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "日報_ワークフロー"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "day",
+      "Formula": "正社員日報本体_下書き2!$B$5"
+    },
+    {
+      "Name": "ユーザー",
+      "Formula": "正社員日報本体_下書き2!$M$5"
+    },
+    {
+      "Name": "ワークフロー",
+      "Formula": "正社員日報本体_下書き2!$BA$18"
+    },
+    {
+      "Name": "報告事項",
+      "Formula": "正社員日報本体_下書き2!$AH$7"
+    },
+    {
+      "Name": "訪問予定",
+      "Formula": "正社員日報本体_下書き2!$AH$12"
+    },
+    {
+      "Name": "未確認",
+      "Formula": "正社員日報本体_下書き2!$AO$19"
+    },
+    {
+      "Name": "messageid",
+      "Formula": "正社員日報本体_下書き2!$AU$6"
+    },
+    {
+      "Name": "ログインユーザー",
+      "Formula": "正社員日報本体_下書き2!$BB$2"
+    },
+    {
+      "Name": "nippouID",
+      "Formula": "正社員日報本体_下書き2!$BB$9"
+    },
+    {
+      "Name": "shitagakiID",
+      "Formula": "正社員日報本体_下書き2!$BB$11"
+    },
+    {
+      "Name": "未読件数",
+      "Formula": "正社員日報本体_下書き2!$BB$7"
+    },
+    {
+      "Name": "uuu",
+      "Formula": "正社員日報本体_下書き2!$BB$13"
+    }
+  ]
+}//GLxataDE0p0iNZV0PsEE8KLC40sfCIHJqeUtHruU8ORANhcw7WtUBBDClZgkzwg4ZKSbjN3JlI+RvYt/bf80anezw7zC6uHvOlRlMJNcGZnp4A2d1l569xF4aP48S6ZJAvSwklbyzM/j0RyFdW/KttKopqnzPORLXm2TL+esOXAWJJgjGhZzXQsqFm6JUihcGcnnjjeOk3sECRl05gGXP84QQPN1cGS5VYKwgVxJ2D04UHi3nxZ431XJ2mF280q8xMib7oGgjWcZFSJAfyIXKZ4Qglo3ZeotTmelWoyokA1NneH66S5lLX35AsnacXLn56M6PCZQspVBcqgLjSKPIYLV6LsGNb8+r0DukI6pVxpPpdFvzaj+u4NLJt8OVOVAjMgnyY+pqscsd1VujDwPiDnQsNnLUjp4k01lpPfEjkJ54Mny/JgxasmXn1iRDExkX/VhcQaRkcUCNzJBnDZlMEP26Cu6vv26VFnp160zq5B33kxAGZIVICM9FCi6Ib9q1ohUI8n/pIHKj912XEWZHSbcmBrZcVFJsD5HzhN4TqjI0uO4akXdLdVFpMAejJpK31R/SHtMhqOUeQibaxvfTsz1HwC2/QjA9AhOwjSK6kQlJdzauDbcXc8evQDoqjQdiQpH1fl8tMY3+EcPNM771YJM93c6H99fkJk4Nv5maWXbn9PJaAICuzEARMrKTpIpPW1xF8weweANYqOUk8NXqTXKohBD47Wgo6HfXNdx599hLIaqrX80+Zf/wHjFk0heHhUMeqpUH+B8+juV0pd0rbWn1yqybMAMTinFjbInQR6wk0l8mN5rRkE63M5S5DPxMvU+MHjzEjCSoO3UU5FPdNQcea7O8vaNhpyXiaqxLnCBF/CuGzECSLb7PDuWsUPzB/7SDkUx1fEO/oJlFFAqNA==|920

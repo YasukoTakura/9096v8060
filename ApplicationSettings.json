@@ -1,0 +1,32 @@
+{
+  "IntegrateWithOtherApplication": {
+    "Password": "zcJ!f!Ey^C4j"
+  },
+  "IsPageInContainerBackgroundHardCodeWhite": true,
+  "WebSitePort": 58654,
+  "UserServicePort": 40108,
+  "NotAllowModifyDatabaseByJsApi": false,
+  "NotAllowSendMailByJsApi": false,
+  "StartDateFiscalYear": 4,
+  "FocusMoveMode": 0,
+  "MaxRowCount": 10000000,
+  "AuditingList": {
+    "削除": 0,
+    "顧客_担当者": 0,
+    "顧客_契約_報酬": 0,
+    "顧客_請求一覧": 0,
+    "顧客_インボイス": 0,
+    "顧客_得意先管理表": 0,
+    "顧客_コロナ対応": 0,
+    "顧客一覧": 0,
+    "マスター_関与形態": 0,
+    "マスター_決算月_中間申告": 0,
+    "顧客_発送物": 0,
+    "顧客_備考": 0,
+    "マスター_決算料区分": 0,
+    "マスター_中間申告_契約": 0,
+    "マスター_事務所との関係": 0,
+    "ユーザー": 0,
+    "マスター_所属チーム": 0
+  }
+}

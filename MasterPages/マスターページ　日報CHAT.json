@@ -1,0 +1,1044 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 8.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 8.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 8.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 8.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 8.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 8.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 2.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "23": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 1
+        }
+      }
+    },
+    "Count": 51
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      61
+    ],
+    "Count": 62
+  },
+  "Values": {
+    "24,0": 99
+  },
+  "Formulas": {
+    "7,61": "ODATA(\"ユーザー?$select=MJSID&$filter=AzureADID eq \"&IF(ISBLANK(BA3),\"null\",\"'\"&BA3&\"'\"))",
+    "9,61": "ODATA(\"日報chat_未読既読/$count?$filter=宛先ユーザー eq \"&IF(ISBLANK(loginuser),\"null\",loginuser))"
+  },
+  "AttachInfos": {
+    "2,52": {
+      "CellType": {
+        "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
+        "CellCustomValue": "%CurrentUser%",
+        "ShowCircleUserPicture": true,
+        "NavigateSettingWhenLogout": {
+          "NavigateWhenLogoutMode": 1
+        }
+      }
+    },
+    "7,10": {
+      "IsPlaceHolderCell": true
+    },
+    "8,0": {
+      "CellType": {
+        "$type": "Forguncy.CustomMenu.ForguncyMenuCellType, Forguncy.CustomMenu",
+        "TemplateKey": "緑",
+        "Items": [
+          {
+            "Value": "日報入力",
+            "Text": "日報入力",
+            "IconPath": "Application/023_edit_3.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "正社員日報本体",
+                "PassValues": []
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ],
+            "SubItems": [
+              {
+                "Value": "下書き",
+                "Text": "下書き",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "日報_下書き一覧",
+                    "PassValues": []
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              },
+              {
+                "Value": "送信済み",
+                "Text": "送信済み",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "日報_送信履歴",
+                    "PassValues": []
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              }
+            ]
+          },
+          {
+            "Value": "日報一覧",
+            "Text": "日報一覧",
+            "IconPath": "Application/150_paste_2.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "Expand": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "正社員日報一覧",
+                "PassValues": []
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ],
+            "Notification": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ODATA(\"日報chat_未読既読/$count?$filter=宛先ユーザー eq \"&IF(ISBLANK(マスターページ　日報CHAT!loginuser),\"null\",マスターページ　日報CHAT!loginuser))"
+            }
+          },
+          {
+            "Value": "新規",
+            "Text": "新規",
+            "IconPath": "Application/029_edit_9.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "chat新規投稿",
+                "PassValues": [],
+                "DeleteCachedQuery": true,
+                "LoadBindingDataOption": 2
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Text": "受信箱",
+            "IconPath": "Application/122_send_2.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColor": "#FF000000",
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "chat一覧",
+                "PassValues": []
+              },
+              {
+                "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                "TargetTableName": "日報chat_未読既読",
+                "SqlCondition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "Condition1": {
+                    "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                    "Condition1": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "日報chat_未読既読",
+                        "ColumnName": "宛先ユーザー"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=マスターページ　日報CHAT!loginuser"
+                      }
+                    },
+                    "Condition2": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "日報chat_未読既読",
+                        "ColumnName": "宛先メンバー"
+                      },
+                      "Value": "true"
+                    }
+                  },
+                  "Condition2": {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "日報chat_未読既読",
+                      "ColumnName": "区分"
+                    },
+                    "Value": "2"
+                  }
+                },
+                "Params": [
+                  "=loginuser"
+                ],
+                "ID": "f331ad12983c4b388d2b5b9057345638"
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ],
+            "Notification": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ODATA(\"メッセージ_未読既読/$count?$filter=宛先ユーザー eq \"&IF(ISBLANK(マスターページ　日報CHAT!loginuser),\"null\",マスターページ　日報CHAT!loginuser)&\" and 宛先メンバー eq true and (既読 eq false or 既読 eq null)\")"
+            }
+          },
+          {
+            "Text": "付箋",
+            "IconPath": "Navigation/180_favorite_1.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ],
+            "SubItems": [
+              {
+                "Value": "優先1",
+                "Text": "優先1",
+                "IconPath": "優先3.png",
+                "IsBuiltInIconPath": false,
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColor": null,
+                "IsOldMenuPath": false,
+                "Expand": true,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "chat一覧",
+                    "PassValues": [],
+                    "DeleteCachedQuery": true
+                  },
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "日報chat_未読既読",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "Condition1": {
+                        "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                        "Condition1": {
+                          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                          "Condition1": {
+                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                            "ColumnBindingInfo": {
+                              "TableName": "日報chat_未読既読",
+                              "ColumnName": "宛先ユーザー"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=マスターページ　日報CHAT!loginuser"
+                            }
+                          },
+                          "Condition2": {
+                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                            "ColumnBindingInfo": {
+                              "TableName": "日報chat_未読既読",
+                              "ColumnName": "宛先メンバー"
+                            },
+                            "Value": "true"
+                          }
+                        },
+                        "Condition2": {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "日報chat_未読既読",
+                            "ColumnName": "区分"
+                          },
+                          "Value": "2"
+                        }
+                      },
+                      "Condition2": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "日報chat_未読既読",
+                          "ColumnName": "付箋"
+                        },
+                        "Value": "1"
+                      }
+                    },
+                    "Params": [
+                      "=loginuser"
+                    ],
+                    "ID": "2a017a5665484601b0bf0a5b74437309"
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ],
+                "Notification": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ODATA(\"メッセージ_未読既読/$count?$filter=宛先ユーザー eq \"&IF(ISBLANK(マスターページ　日報CHAT!loginuser),\"null\",マスターページ　日報CHAT!loginuser)&\" and 宛先メンバー eq true and 付箋 eq 1 or (既読 eq false and 既読 eq null)\")"
+                }
+              },
+              {
+                "Value": "優先2",
+                "Text": "優先2",
+                "IconPath": "優先4.png",
+                "IsBuiltInIconPath": false,
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColor": null,
+                "IsOldMenuPath": false,
+                "Expand": true,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "chat一覧",
+                    "PassValues": [],
+                    "DeleteCachedQuery": true
+                  },
+                  {
+                    "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                    "TargetTableName": "日報chat_未読既読",
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "Condition1": {
+                        "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                        "Condition1": {
+                          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                          "Condition1": {
+                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                            "ColumnBindingInfo": {
+                              "TableName": "日報chat_未読既読",
+                              "ColumnName": "宛先ユーザー"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=マスターページ　日報CHAT!loginuser"
+                            }
+                          },
+                          "Condition2": {
+                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                            "ColumnBindingInfo": {
+                              "TableName": "日報chat_未読既読",
+                              "ColumnName": "宛先メンバー"
+                            },
+                            "Value": "true"
+                          }
+                        },
+                        "Condition2": {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "日報chat_未読既読",
+                            "ColumnName": "区分"
+                          },
+                          "Value": "2"
+                        }
+                      },
+                      "Condition2": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "日報chat_未読既読",
+                          "ColumnName": "付箋"
+                        },
+                        "Value": "2"
+                      }
+                    },
+                    "Params": [
+                      "=loginuser"
+                    ],
+                    "ID": "59758006f58040ea9d4525a5904a174b"
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ],
+                "Notification": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ODATA(\"メッセージ_未読既読/$count?$filter=宛先ユーザー eq \"&IF(ISBLANK(マスターページ　日報CHAT!loginuser),\"null\",マスターページ　日報CHAT!loginuser)&\" and 宛先メンバー eq true and 付箋 eq 2 or (既読 eq false and 既読 eq null)\")"
+                }
+              }
+            ]
+          },
+          {
+            "Value": "送信箱",
+            "Text": "送信箱",
+            "IconPath": "Application/123_send_3.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "chat一覧",
+                "PassValues": []
+              },
+              {
+                "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                "TargetTableName": "メッセージ_未読既読",
+                "SqlCondition": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "メッセージ_未読既読",
+                    "ColumnName": "メッセージID",
+                    "RelationBinding": {
+                      "RelatedTable": "メッセージ",
+                      "RelatedColumn": "mid",
+                      "DisplayColumn": "差出人"
+                    }
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=マスターページ　日報CHAT!user"
+                  }
+                },
+                "Params": [
+                  "=user"
+                ],
+                "ID": "3ccf10c8b1f44930bea754fbd6c08072"
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Text": "未読",
+            "IconPath": "Application/119_mail_3.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "chat一覧",
+                "PassValues": []
+              },
+              {
+                "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                "TargetTableName": "日報chat_未読既読",
+                "SqlCondition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "Condition1": {
+                    "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                    "Condition1": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "Condition1": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "日報chat_未読既読",
+                          "ColumnName": "宛先ユーザー"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=マスターページ　日報CHAT!loginuser"
+                        }
+                      },
+                      "Condition2": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "日報chat_未読既読",
+                          "ColumnName": "宛先メンバー"
+                        },
+                        "Value": "true"
+                      }
+                    },
+                    "Condition2": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "日報chat_未読既読",
+                        "ColumnName": "区分"
+                      },
+                      "Value": "2"
+                    }
+                  },
+                  "Condition2": {
+                    "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                    "Condition1": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "日報chat_未読既読",
+                        "ColumnName": "既読状態"
+                      },
+                      "Value": "%Null%",
+                      "LeftBracket": 1
+                    },
+                    "Condition2": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "日報chat_未読既読",
+                        "ColumnName": "既読状態"
+                      },
+                      "Value": "false",
+                      "RightBracket": 1
+                    },
+                    "RelationType": 1
+                  }
+                },
+                "Params": [
+                  "=loginuser"
+                ],
+                "ID": "5d11c83bcc434392bb5bee7776cc1e20"
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ],
+            "Notification": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ODATA(\"メッセージ_未読既読/$count?$filter=宛先ユーザー eq \"&IF(ISBLANK(マスターページ　日報CHAT!loginuser),\"null\",マスターページ　日報CHAT!loginuser)&\" and 宛先メンバー eq true and (既読 eq false or 既読 eq null)\")"
+            }
+          },
+          {
+            "Value": "下書き",
+            "Text": "下書き",
+            "IconPath": "Application/153_folder_1.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "chat下書き",
+                "PassValues": []
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Value": "ゴミ箱",
+            "Text": "ゴミ箱",
+            "IconPath": "Application/037_delete_2.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "MenuLevelsStyle": [
+          {
+            "FontFamily": "Meiryo UI",
+            "FontSize": 18.666666666666664,
+            "Bold": true,
+            "Height": 30.0,
+            "IconHeight": 20.0,
+            "IconWidth": 20.0
+          },
+          {
+            "FontFamily": "Meiryo UI",
+            "FontSize": 13.333333333333332,
+            "Bold": false,
+            "Height": 25.0,
+            "IconHeight": 20.0,
+            "IconWidth": 20.0
+          }
+        ]
+      }
+    },
+    "24,0": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "ValidateItem": true,
+        "TemplateKey": "_RS_LargeRoundCorner_Normal4",
+        "WaterMark": "担当者で絞込",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "ユーザー",
+        "ValueColumnBindingInfo": {
+          "TableName": "ユーザー",
+          "ColumnName": "MJSID"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "ユーザー",
+          "ColumnName": "名前"
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "ユーザー",
+                "ColumnName": "入社順"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "AddNullItemWhenBinding": true,
+        "CellDefaultValue": 99
+      }
+    },
+    "26,0": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LargeRoundCorner_Normal4",
+        "WaterMark": "顧問先検索"
+      }
+    },
+    "28,0": {
+      "CellType": {
+        "$type": "Forguncy.CustomMenu.ForguncyTreeCellType, Forguncy.CustomMenu",
+        "IsBinding": true,
+        "BindingTreeLevelInfo": {
+          "TableName": "顧客一覧",
+          "ValueColumn": "MJS",
+          "NameColumn": "会社名_個人名",
+          "LevelName": "ツリー階層1",
+          "QueryCondition": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+              "CompareType": 6,
+              "ColumnBindingInfo": {
+                "TableName": "顧客一覧",
+                "ColumnName": "会社名"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=マスターページ　日報CHAT!A27"
+              }
+            },
+            "Condition2": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "顧客一覧",
+                "ColumnName": "担当者コード"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=マスターページ　日報CHAT!A25"
+              }
+            },
+            "RelationType": 1
+          }
+        },
+        "Items": [
+          {
+            "Value": "ノード1",
+            "Text": "ノード1",
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ],
+            "SubItems": [
+              {
+                "Value": "ノード1_1",
+                "Text": "ノード1_1",
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              },
+              {
+                "Value": "ノード1_2",
+                "Text": "ノード1_2",
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              }
+            ]
+          },
+          {
+            "Value": "ノード2",
+            "Text": "ノード2",
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ],
+            "SubItems": [
+              {
+                "Value": "ノード2_1",
+                "Text": "ノード2_1",
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              },
+              {
+                "Value": "ノード2_2",
+                "Text": "ノード2_2",
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              }
+            ]
+          },
+          {
+            "Value": "ノード3",
+            "Text": "ノード3",
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ],
+            "SubItems": [
+              {
+                "Value": "ノード3_1",
+                "Text": "ノード3_1",
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              },
+              {
+                "Value": "ノード3_2",
+                "Text": "ノード3_2",
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              }
+            ]
+          }
+        ],
+        "TemplateKey": "顧問先選択",
+        "TreeClickCommand": {
+          "ValueTo": "値",
+          "NameTo": "名前",
+          "LevelTo": "ノードレベル",
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+              "TargetTableName": "メッセージ_未読既読",
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "Condition1": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "メッセージ_未読既読",
+                    "ColumnName": "メッセージID",
+                    "RelationBinding": {
+                      "RelatedTable": "メッセージ",
+                      "RelatedColumn": "mid",
+                      "DisplayColumn": "顧問先"
+                    }
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=マスターページ　日報CHAT!A29"
+                  }
+                },
+                "Condition2": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "メッセージ_未読既読",
+                    "ColumnName": "宛先ユーザー"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=マスターページ　日報CHAT!user"
+                  }
+                }
+              },
+              "Params": [
+                "=A29",
+                "=user"
+              ],
+              "ID": "5a5c00c3d2cf4229987552acd4ffa36d"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Foreground": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666666666666
+      },
+      {
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderTop": 0
+      },
+      {
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "BorderLeft": 0
+      },
+      {
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 3,
+        "Formatter": 4,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 3
+      },
+      {
+        "FontFamily": 3,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 3,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderRight": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Text 2 0",
+        "ＭＳ Ｐゴシック",
+        "#FF92D050",
+        "Body",
+        "@"
+      ],
+      "Borders": [
+        {
+          "Style": 3,
+          "Color": 2
+        }
+      ]
+    },
+    "CellStyles": {
+      "2,52": 0,
+      "2,61": 0,
+      "3,61": 0,
+      "4,61": 0,
+      "8,0": 1,
+      "24,0": 2,
+      "24,1": 3,
+      "24,2": 3,
+      "24,3": 3,
+      "24,4": 3,
+      "24,5": 3,
+      "24,6": 3,
+      "24,7": 3,
+      "24,8": 3,
+      "24,9": 4,
+      "25,0": 5,
+      "25,9": 6,
+      "26,0": 7,
+      "26,1": 8,
+      "26,2": 8,
+      "26,3": 8,
+      "26,4": 8,
+      "26,5": 8,
+      "26,6": 8,
+      "26,7": 8,
+      "26,8": 8,
+      "26,9": 9,
+      "27,0": 10,
+      "27,1": 8,
+      "27,2": 8,
+      "27,3": 8,
+      "27,4": 8,
+      "27,5": 8,
+      "27,6": 8,
+      "27,7": 8,
+      "27,8": 8,
+      "27,9": 9,
+      "28,0": 10,
+      "28,9": 6,
+      "29,0": 5,
+      "29,9": 6,
+      "30,0": 5,
+      "30,9": 6,
+      "31,0": 5,
+      "31,9": 6,
+      "32,0": 5,
+      "32,9": 6,
+      "33,0": 5,
+      "33,9": 6,
+      "34,0": 5,
+      "34,9": 6,
+      "35,0": 5,
+      "35,9": 6,
+      "36,0": 5,
+      "36,9": 6,
+      "37,0": 5,
+      "37,9": 6,
+      "38,0": 5,
+      "38,9": 6,
+      "39,0": 5,
+      "39,9": 6,
+      "40,0": 5,
+      "40,9": 6,
+      "41,0": 5,
+      "41,9": 6,
+      "42,0": 5,
+      "42,9": 6,
+      "43,0": 5,
+      "43,9": 6,
+      "44,0": 5,
+      "44,9": 6,
+      "45,0": 5,
+      "45,9": 6,
+      "46,0": 5,
+      "46,9": 6,
+      "47,0": 5,
+      "47,9": 6,
+      "48,0": 5,
+      "48,9": 6,
+      "49,0": 5,
+      "49,9": 6,
+      "50,0": 11,
+      "50,1": 12,
+      "50,2": 12,
+      "50,3": 12,
+      "50,4": 12,
+      "50,5": 12,
+      "50,6": 12,
+      "50,7": 12,
+      "50,8": 12,
+      "50,9": 13
+    },
+    "SheetStyle": {
+      "FontFamily": 3
+    }
+  },
+  "Spans": [
+    "24,0,2,10",
+    "2,52,3,9",
+    "1,1,5,9",
+    "8,0,16,10",
+    "26,0,2,10",
+    "7,10,44,51",
+    "28,0,23,10"
+  ],
+  "BackgroundPictures": [
+    {
+      "FitToBrowserWidth": true,
+      "DisplayName": "背景画像1",
+      "ForguncyPictureName": "Banner/Sources/08.png",
+      "Transparency": 0.375,
+      "ForguncyPictureSourceType": 3,
+      "StyleInfo": {
+        "Fill": null
+      },
+      "IsAutomaticFill": false,
+      "Name": "73dd0543-fdec-4f39-b9cd-bbec2fd18a8d.png",
+      "Size": "1200,50"
+    }
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.MasterPage, ServerDesignerCommon",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+        "TargetTableName": "メッセージ_未読既読",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "メッセージ_未読既読",
+            "ColumnName": "宛先ユーザー"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=マスターページ　日報CHAT!user"
+          }
+        },
+        "Params": [
+          "=user"
+        ],
+        "ID": "1d6e0c35e18549959dc1eb8475f5e3ca",
+        "Disabled": true
+      }
+    ]
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "loginuser",
+      "Formula": "マスターページ　日報CHAT!$BJ$8"
+    }
+  ]
+}//vVz1qMCFndeoDUDthI2+rSIv0Skan8GBbpxi5zKXnnUFQiTnIeGxoaUcXJfM8ND85gu3twIDtxdOYsam+jFKUrbKyDVfYphUOSfspMPdBp1PhO3Lp+Nmtc+tFFtQyN0o9aDNC4NBrWpzDhQVa4boE7Fc4d/RZLwgl0J9LW/hD247HSM4+DiWvwHmc5bidPOS10idh5I7UfAwjrYOuE76IHYV5S+GUAvXN+D8zezpAsYjJdLaY4q0UWs3YgBS70V6E3dx0Cx+07XtEv18FtCpEA8BdpkAiiSCJ5Cl/OTVgdLwySIZLIccyF0kIH/E2oNigkDrin1GEAtWm+y+CeZAlrNCz91WdJNVdmfJzFnzos71Ov2pftkh5Pq4RlaSIvxUdQBOk2xNE3oOsJco7uy7/yDm0J2xMRSMDMi1jVpzLmkv92+LSVwo7rIqHcCmFTr1J9KvZG+nOtEU0a493ABeuXoQgupxN0LeQy3yWn4WhcK5sgBvvaYmpj+193JPF9PyOJV96OqEi4+0iw8q4kh+fa5MPwioa7ZEu0pen8wpw68uuZREHwfOUF/V27iaWeQoXl0Jzy6KKYn89k9r6wo4j++fTUcgpaIS6/ZmKsl807YiSrJS1pcZ9rrothsJO0WSWV2Gb5viJoPqIlCQK9UlodFQtVSbUF7RHwKnRkZt10NvdClKTOOUm5KHlj0i7Efv58c7a2gryKnLGwkrxDZdUXnR0P49OwmplDSuZ76boFiDb5syh1zxaAQpmKwSRwodUH5jzaZVT1otyWl8kl6jKauQei+0qA5cjG8lYCqp1Hl9dWsez9eOHbFbQptfg4yYiSepSTD/fvXhObAOwBxxEXz2pa70G2NaOnkf0gv68lxZjIcNPQMyABMhfgnNeza2bMHZmo5kaoHxaubT35Tm9A==|920

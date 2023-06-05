@@ -1,0 +1,207 @@
+{
+  "Rows": {
+    "Count": 46
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "Values": {
+    "1,4": "ワークフローID",
+    "1,14": "日付",
+    "1,35": "名前"
+  },
+  "AttachInfos": {
+    "1,17": {
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "1,37": {
+      "BindingInfo": {
+        "TableName": "日報_内容",
+        "ColumnName": "FGC_Creator"
+      }
+    },
+    "3,4": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "日報_内容",
+        "RowIndex": 3,
+        "ColumnIndex": 4,
+        "ColumnCount": 48,
+        "RowCount": 27,
+        "AutoFitRowHeight": true,
+        "AutoFitColumnWidth": true,
+        "ColumnOperation": 2,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "リストビュー1",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "日報_内容",
+                "ColumnName": "FGC_Creator"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=正社員日報詳細!AL2"
+              }
+            },
+            "Condition2": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "日報_内容",
+                "ColumnName": "ワークフローID"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=正社員日報詳細!J2"
+              }
+            }
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "日報_内容",
+              "ColumnName": "FGC_CreateDate"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=正社員日報詳細!R2"
+            }
+          }
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2"
+      }
+    },
+    "4,4": {
+      "BindingInfo": {
+        "TableName": "日報_内容",
+        "ColumnName": "No"
+      }
+    },
+    "4,7": {
+      "BindingInfo": {
+        "TableName": "日報_内容",
+        "ColumnName": "開始時刻"
+      }
+    },
+    "4,11": {
+      "BindingInfo": {
+        "TableName": "日報_内容",
+        "ColumnName": "終了時刻"
+      }
+    },
+    "4,15": {
+      "BindingInfo": {
+        "TableName": "日報_内容",
+        "ColumnName": "項目",
+        "RelationBinding": {
+          "RelatedTable": "日報項目",
+          "RelatedColumn": "日報項目ID",
+          "DisplayColumn": "項目"
+        }
+      }
+    },
+    "4,24": {
+      "BindingInfo": {
+        "TableName": "日報_内容",
+        "ColumnName": "顧問先",
+        "RelationBinding": {
+          "RelatedTable": "顧客一覧",
+          "RelatedColumn": "MJS",
+          "DisplayColumn": "会社名"
+        }
+      }
+    },
+    "4,32": {
+      "BindingInfo": {
+        "TableName": "日報_内容",
+        "ColumnName": "内容"
+      }
+    },
+    "4,48": {
+      "BindingInfo": {
+        "TableName": "日報_内容",
+        "ColumnName": "FGC_CreateDate"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Formatter": 0
+      },
+      {
+        "Formatter": 1
+      },
+      {
+        "FontFamily": 2,
+        "Formatter": 3
+      },
+      {
+        "FontFamily": 2
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "@",
+        "yyyy/m/d(aaa)",
+        "Body",
+        "[AUTO]General"
+      ]
+    },
+    "CellStyles": {
+      "1,9": 0,
+      "1,17": 1,
+      "1,35": 2,
+      "1,36": 3,
+      "1,37": 3,
+      "2,35": 3,
+      "2,36": 3
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "4,4,1,3",
+    "4,7,1,4",
+    "4,11,1,4",
+    "4,32,1,16",
+    "4,15,1,9",
+    "4,24,1,8",
+    "1,9,2,3",
+    "5,4,25,48",
+    "4,48,1,3",
+    "1,17,2,8",
+    "1,37,2,8",
+    "3,4,1,3",
+    "3,7,1,4",
+    "3,11,1,4",
+    "3,15,1,9",
+    "3,24,1,8",
+    "3,32,1,16",
+    "3,48,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "マスターページ　日報",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "日報_内容"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//TlivoYWHSYuzkEkH9KtrQgeW1EScKde3N43WLQN/ChFPtjqOLB5HckKmO1KbBuTr4SUsefKrmFRak/YihRbVhEz5pwlDuBR32qUOrxDoRe46Fhcsf4jeHsiV/u+V2vtt7YIGX7X6KKa1+7/JPHPJY5iOYZ3I0FelIeqGy+/Br9yhcO2WzMxJGCjZHgKKynHR8QLd+qta55/awUTqhMeaTqHIAKf+fcLvhTs3hFsA+L+z4dWHBKzfeTKRa9IsmGao827WiBESusIQ6NjZJ0v19xiGOCfbqAT0dSYepMPEyfQqMTnFDa9JDX90DTn+X0s98JaB/FYcP7zPBPe3LYLH+bCsbaQzu2zb8kBv6t2Uh/JH/BAe/iM3UjPgtNjbe/fEqdNNGbdQ6l92AWB4+wIuFcjM88uH0B09HeWTNOezGtcT9aM9QnDM/xvuaE3o4EsCNWHk8Pm0yoWCE4oQaS0izr7hHir0+0HwMKI9HIbUPWBGJw4k/EUDqi9AhP7+KuLgwUym76DuxOe0EyfoI1RoOJzlpAcKkSEy/LskbrJKZJOJP/nDM253wAfSwznUtoCh1GUwLGX02GSX2AxvW6BV9znxfatb6Pq9NS/mpoNFhT4zqiU16s6yIiblomQPRv5jiZfLsiz7TkvJewXgCGue/ynLiCxnwakUANDrZKXuf+z3F9e3lAK6eb5s5C/Wd/v/1NG6LJg9pxGn8+rpVKnC4cVX7NySAhfabJ+M/ld5gJdYs54z++6u9BgvtcCK4egCyKShJOylFXhjt4EpBvPkXsMklt/0J3hNUUqtKS9ajjiZ1mkCzGDxGlRnXIey70/wRBw/WVVr8N5eqXKAIPz7At7vxZoq+fdUHAgOiTR3jkEAgvOiE1fgBVw2sXAl5dtL4GuyvbsGTfUT+iwTU3z9nw==|920

@@ -1,0 +1,457 @@
+{
+  "Rows": {
+    "Count": 34
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      41,
+      42
+    ],
+    "Count": 43
+  },
+  "Values": {
+    "1,1": "顧問先",
+    "1,17": "差出人",
+    "4,1": "標題",
+    "7,1": "本文",
+    "23,1": "添付",
+    "27,4": "変更"
+  },
+  "Formulas": {
+    "1,20": "ODATA(\"ユーザー?$select=名前&$filter=AzureADID eq \"&IF(ISBLANK(AQ1),\"null\",\"'\"&AQ1&\"'\"))",
+    "1,32": "NOW()",
+    "0,41": "ODATA(\"ユーザー?$select=MJSID&$filter=AzureADID eq \"&IF(ISBLANK(AQ1),\"null\",\"'\"&AQ1&\"'\"))"
+  },
+  "AttachInfos": {
+    "0,42": {
+      "CellType": {
+        "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
+        "CellCustomValue": "%CurrentUser%",
+        "ShowCircleUserPicture": true,
+        "NavigateSettingWhenLogout": {
+          "NavigateWhenLogoutMode": 1
+        }
+      }
+    },
+    "1,4": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "ValidateItem": true,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "顧客一覧",
+        "ValueColumnBindingInfo": {
+          "TableName": "顧客一覧",
+          "ColumnName": "MJS"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "顧客一覧",
+          "ColumnName": "会社名"
+        },
+        "DropDownSubItems": [
+          {
+            "GUID": "0e8a8e717b874815a3c749d0c22421c2",
+            "ColumnName": "MJS",
+            "BindingInfo": {
+              "TableName": "顧客一覧",
+              "ColumnName": "MJS"
+            },
+            "BindingColumnDataType": 1
+          },
+          {
+            "GUID": "8834cfd2373c4e16abae1bcfd4c961eb",
+            "ColumnName": "会社名_個人名",
+            "BindingInfo": {
+              "TableName": "顧客一覧",
+              "ColumnName": "会社名_個人名"
+            },
+            "BindingColumnDataType": 5
+          }
+        ],
+        "AddNullItemWhenBinding": true
+      },
+      "BindingInfo": {
+        "TableName": "日報chat_未読既読",
+        "ColumnName": "日報chatID",
+        "RelationBinding": {
+          "RelatedTable": "メッセージ",
+          "RelatedColumn": "mid",
+          "DisplayColumn": "顧問先"
+        }
+      }
+    },
+    "1,41": {
+      "BindingInfo": {
+        "TableName": "日報chat_未読既読",
+        "ColumnName": "日報chatID"
+      }
+    },
+    "4,4": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      },
+      "BindingInfo": {
+        "TableName": "日報chat_未読既読",
+        "ColumnName": "日報chatID",
+        "RelationBinding": {
+          "RelatedTable": "メッセージ",
+          "RelatedColumn": "mid",
+          "DisplayColumn": "標題"
+        }
+      },
+      "DataValidationInfo": {}
+    },
+    "7,4": {
+      "CellType": {
+        "$type": "HtmlRichEditor.HtmlRichEditor, HtmlRichEditor"
+      },
+      "BindingInfo": {
+        "TableName": "日報chat_未読既読",
+        "ColumnName": "日報chatID",
+        "RelationBinding": {
+          "RelatedTable": "メッセージ",
+          "RelatedColumn": "mid",
+          "DisplayColumn": "本文"
+        }
+      }
+    },
+    "23,4": {
+      "CellType": {
+        "$type": "Forguncy.AttachmentCelltype, ServerDesignerCommon",
+        "UploadLimit": {
+          "ExtensionFilter": ".jpg, .jpeg, .png, .gif, .bmp, .xlsx, .docx, .doc, .xls, .pdf",
+          "ReplaceWhenOneFile": true
+        },
+        "TemplateKey": "_RS_Normal_Style3"
+      },
+      "BindingInfo": {
+        "TableName": "日報chat_未読既読",
+        "ColumnName": "日報chatID",
+        "RelationBinding": {
+          "RelatedTable": "メッセージ",
+          "RelatedColumn": "mid",
+          "DisplayColumn": "添付ファイル"
+        }
+      }
+    },
+    "27,4": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "メッセージ",
+            "ShowConfirm": false,
+            "ConfirmText": "本当に更新してもよろしいですか？",
+            "RowsToUpdate": 1,
+            "RowsToUpdateCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "メッセージ",
+                "ColumnName": "mid"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=chat編集!AP2"
+              }
+            },
+            "UpdateValues": [
+              {
+                "ColumnName": "顧問先",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=chat編集!E2"
+                }
+              },
+              {
+                "ColumnName": "差出人",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=chat編集!toukouuser"
+                }
+              },
+              {
+                "ColumnName": "標題",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=chat編集!E5"
+                }
+              },
+              {
+                "ColumnName": "本文",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=chat編集!E8"
+                }
+              },
+              {
+                "ColumnName": "添付ファイル",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=chat編集!E24"
+                }
+              }
+            ],
+            "NextUpdateDataTableCommand": {
+              "TableName": "日報chat_未読既読",
+              "ShowConfirm": false,
+              "ConfirmText": "本当に更新してもよろしいですか？",
+              "RowsToUpdate": 1,
+              "RowsToUpdateCondition": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "Condition1": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "日報chat_未読既読",
+                    "ColumnName": "日報chatID"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=chat編集!messageid"
+                  }
+                },
+                "Condition2": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "日報chat_未読既読",
+                    "ColumnName": "宛先メンバー"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=chat編集!loginuser"
+                  }
+                }
+              },
+              "UpdateValues": [
+                {
+                  "ColumnName": "既読状態",
+                  "Value": "false"
+                }
+              ]
+            }
+          },
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "メッセージ",
+            "ShowConfirm": false,
+            "ConfirmText": "本当に更新してもよろしいですか？",
+            "RowsToUpdate": 1,
+            "RowsToUpdateCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "メッセージ",
+                "ColumnName": "mid"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=chat編集!AP2"
+              }
+            },
+            "UpdateValues": [
+              {
+                "ColumnName": "顧問先",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=chat編集!E2"
+                }
+              },
+              {
+                "ColumnName": "差出人",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=chat編集!toukouuser"
+                }
+              },
+              {
+                "ColumnName": "標題",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=chat編集!E5"
+                }
+              },
+              {
+                "ColumnName": "本文",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=chat編集!E8"
+                }
+              },
+              {
+                "ColumnName": "添付ファイル",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=chat編集!E24"
+                }
+              }
+            ],
+            "NextUpdateDataTableCommand": {
+              "TableName": "メッセージ_未読既読",
+              "ShowConfirm": false,
+              "ConfirmText": "本当に更新してもよろしいですか？",
+              "RowsToUpdate": 1,
+              "RowsToUpdateCondition": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "Condition1": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "メッセージ_未読既読",
+                    "ColumnName": "メッセージID"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=chat編集!messageid"
+                  }
+                },
+                "Condition2": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "メッセージ_未読既読",
+                    "ColumnName": "宛先メンバー"
+                  },
+                  "Value": "true"
+                }
+              },
+              "UpdateValues": [
+                {
+                  "ColumnName": "既読",
+                  "Value": "false"
+                }
+              ]
+            }
+          },
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "chat一覧",
+            "PassValues": [],
+            "DeleteCachedQuery": true
+          }
+        ],
+        "Text": "変更",
+        "TemplateKey": "_RS_Gradient_Shadow_Style3"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "Formatter": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 3
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "Underline": true
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "[AUTO]General",
+        "General",
+        "@"
+      ]
+    },
+    "CellStyles": {
+      "1,17": 0,
+      "1,20": 1,
+      "1,32": 2,
+      "4,4": 3,
+      "7,4": 4,
+      "23,4": 5,
+      "27,4": 4,
+      "28,41": 4
+    },
+    "SheetStyle": {
+      "FontFamily": 0,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "1,1,2,3",
+    "1,17,2,3",
+    "1,20,2,10",
+    "1,32,2,8",
+    "4,1,2,3",
+    "7,1,2,3",
+    "23,1,2,3",
+    "27,4,2,4",
+    "1,4,2,12",
+    "4,4,2,36",
+    "7,4,15,36",
+    "23,4,2,10"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "FGC_ユーザーマスターページ",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "日報chat_未読既読"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "messageid",
+      "Formula": "chat編集!$AP$2"
+    },
+    {
+      "Name": "sinkitoukou_btn",
+      "Formula": "chat編集!$E$28"
+    },
+    {
+      "Name": "toukouuser",
+      "Formula": "chat編集!$AP$1"
+    }
+  ]
+}//2OzBDX/grn5GzQI7irv2Y6vRLwXXJ2qGLP5j+nxxd0kmi+VNfN5iKv0NTEpNPkqsNgb/LMKyEfNlePbVGPV0iQlzNiYtgvmO/gydLUeyMGqCV+GqY02yrQKQeADLEai+vwOLqvsEuZJ16XW7woHre3ABOcgA6H4TSdj8y4oZui2fEEFRdeFxhSACKWKcOa2NeMZ/aoXaRguzpgg2CS0OYzZEInmVQa7M69KieAH9MKjf1cROa7qfvpbts8VPgxQXFNTxxgof6h0gosjQ7xXUP9/HOoiE9/qhf4pX44c8b9c1F8lK9eTzFD4fLRuVP556KE6DumEscICLQwOTk3FTmZlov/4Ck5+nZMpDceHlEPDjokuc/E7D+Ty5k2t+DCfuFtiJqAkNNsTA/6vHaCypIJFv/Ja2tzOCtKAyYvLXpMO4MTMk0Bp7eigXNTlIoevKNpfhbZ0f2lwcT/BwvjmRmk/rs9O6P8tooczcZGJcX4e3k9C9NTudGQjZnicpvqp2Tp9ZZMHQ18htWCw0cpLKuEzKZ6bN3JVUkDW6D7b4eXeq/lhxUmi6Jm/c1LD53Z7SfM6u/padkPFB5hgTopC0/q8Sas9113fT2Xj+10lB06soqj+cSQumQ0a6tVI7NEo8CqCfvoAMf92QDRJhbnPtgWgVyx7bUj0231b4RZMvXCkg2sllmowbySVQBaEIIVC2nn2wJzEGcwGh5T+8STVD0/aGlXvrVpBOu4CUMUEf6VNtAkXmWsC1FNyPOBT7ZAFYgDT+v4P/qAbB4CTuBbUP4OIw4Cd/RzdZR0v4AASw5vVGMH3w+knOdHSbvfWvGIUh8zNhFM0/15ntbpOw18JbkcK/SolgE5tQlQuqSpnbFNErf8ORhK2fUwqBU+X6vkteZTUWj8WXfE/zjcYu1YLoJg==|920

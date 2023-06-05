@@ -1,0 +1,6511 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 7.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 14.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 6.0
+        }
+      },
+      "26": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 6.0
+        }
+      },
+      "39": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 6.0
+        }
+      },
+      "52": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 6.0
+        }
+      },
+      "65": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 6.0
+        }
+      },
+      "78": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 6.0
+        }
+      },
+      "91": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 6.0
+        }
+      },
+      "104": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 6.0
+        }
+      },
+      "117": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 7.0
+        }
+      },
+      "130": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 6.0
+        }
+      },
+      "143": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 6.0
+        }
+      },
+      "156": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 6.0
+        }
+      },
+      "169": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 6.0
+        }
+      },
+      "182": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 6.0
+        }
+      }
+    },
+    "Count": 200
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      31
+    ],
+    "Count": 32
+  },
+  "Values": {
+    "1,1": 1,
+    "2,2": "時刻",
+    "2,12": "作業時間",
+    "2,17": "項目",
+    "3,6": "~",
+    "5,2": "顧問先",
+    "6,2": "内容",
+    "14,1": 2.0,
+    "15,2": "時刻",
+    "15,12": "作業時間",
+    "15,17": "項目",
+    "16,6": "~",
+    "18,2": "顧問先",
+    "19,2": "内容",
+    "27,1": 3.0,
+    "28,2": "時刻",
+    "28,12": "作業時間",
+    "28,17": "項目",
+    "29,6": "~",
+    "31,2": "顧問先",
+    "32,2": "内容",
+    "40,1": 4.0,
+    "41,2": "時刻",
+    "41,12": "作業時間",
+    "41,17": "項目",
+    "42,6": "~",
+    "44,2": "顧問先",
+    "45,2": "内容",
+    "53,1": 5.0,
+    "54,2": "時刻",
+    "54,12": "作業時間",
+    "54,17": "項目",
+    "55,6": "~",
+    "57,2": "顧問先",
+    "58,2": "内容",
+    "66,1": 6.0,
+    "67,2": "時刻",
+    "67,12": "作業時間",
+    "67,17": "項目",
+    "68,6": "~",
+    "70,2": "顧問先",
+    "71,2": "内容",
+    "79,1": 7.0,
+    "80,2": "時刻",
+    "80,12": "作業時間",
+    "80,17": "項目",
+    "81,6": "~",
+    "83,2": "顧問先",
+    "84,2": "内容",
+    "92,1": 8.0,
+    "93,2": "時刻",
+    "93,12": "作業時間",
+    "93,17": "項目",
+    "94,6": "~",
+    "96,2": "顧問先",
+    "97,2": "内容",
+    "105,1": 9.0,
+    "106,2": "時刻",
+    "106,12": "作業時間",
+    "106,17": "項目",
+    "107,6": "~",
+    "109,2": "顧問先",
+    "110,2": "内容",
+    "118,1": 10.0,
+    "119,2": "時刻",
+    "119,12": "作業時間",
+    "119,17": "項目",
+    "120,6": "~",
+    "122,2": "顧問先",
+    "123,2": "内容",
+    "131,1": 11.0,
+    "132,2": "時刻",
+    "132,12": "作業時間",
+    "132,17": "項目",
+    "133,6": "~",
+    "135,2": "顧問先",
+    "136,2": "内容",
+    "144,1": 12.0,
+    "145,2": "時刻",
+    "145,12": "作業時間",
+    "145,17": "項目",
+    "146,6": "~",
+    "148,2": "顧問先",
+    "149,2": "内容",
+    "157,1": 13.0,
+    "158,2": "時刻",
+    "158,12": "作業時間",
+    "158,17": "項目",
+    "159,6": "~",
+    "161,2": "顧問先",
+    "162,2": "内容",
+    "170,1": 14.0,
+    "171,2": "時刻",
+    "171,12": "作業時間",
+    "171,17": "項目",
+    "172,6": "~",
+    "174,2": "顧問先",
+    "175,2": "内容",
+    "183,1": 15.0,
+    "184,2": "時刻",
+    "184,12": "作業時間",
+    "184,17": "項目",
+    "185,6": "~",
+    "187,2": "顧問先",
+    "188,2": "内容"
+  },
+  "TimeValues": {
+    "16,7": "12:30:00"
+  },
+  "Formulas": {
+    "29,7": "IFERROR(IF(ODATA(\"日報_下書き?$select=終了時刻&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 3\")=0,\"\",ODATA(\"日報_下書き?$select=終了時刻&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 3\")),\"\")",
+    "172,12": "IFERROR(endtime14-starttime14,\"\")",
+    "146,7": "IFERROR(IF(ODATA(\"日報_下書き?$select=終了時刻&$filter=メッセージID eq 'メッセージID引用' and No eq 12\")=0,\"\",ODATA(\"日報_下書き?$select=終了時刻&$filter=メッセージID eq 'メッセージID引用' and No eq 12\")),\"\")",
+    "68,7": "IFERROR(IF(ODATA(\"日報_下書き?$select=終了時刻&$filter=メッセージID eq 'メッセージID引用' and No eq 6\")=0,\"\",ODATA(\"日報_下書き?$select=終了時刻&$filter=メッセージID eq 'メッセージID引用' and No eq 6\")),\"\")",
+    "146,12": "IFERROR(endtime12-starttime12,\"\")",
+    "94,12": "IFERROR(endtime8-starttime8,\"\")",
+    "81,7": "IFERROR(IF(ODATA(\"日報_下書き?$select=終了時刻&$filter=メッセージID eq 'メッセージID引用' and No eq 7\")=0,\"\",ODATA(\"日報_下書き?$select=終了時刻&$filter=メッセージID eq 'メッセージID引用' and No eq 7\")),\"\")",
+    "133,12": "IFERROR(endtime11-starttime11,\"\")",
+    "29,12": "IFERROR(endtime3-starttime3,\"\")",
+    "94,7": "IFERROR(IF(ODATA(\"日報_下書き?$select=終了時刻&$filter=メッセージID eq 'メッセージID引用' and No eq 8\")=0,\"\",ODATA(\"日報_下書き?$select=終了時刻&$filter=メッセージID eq 'メッセージID引用' and No eq 8\")),\"\")",
+    "55,12": "IFERROR(endtime5-starttime5,\"\")",
+    "55,7": "IFERROR(IF(ODATA(\"日報_下書き?$select=終了時刻&$filter=メッセージID eq 'メッセージID引用' and No eq 5\")=0,\"\",ODATA(\"日報_下書き?$select=終了時刻&$filter=メッセージID eq 'メッセージID引用' and No eq 5\")),\"\")",
+    "120,7": "IFERROR(IF(ODATA(\"日報_下書き?$select=終了時刻&$filter=メッセージID eq 'メッセージID引用' and No eq 10\")=0,\"\",ODATA(\"日報_下書き?$select=終了時刻&$filter=メッセージID eq 'メッセージID引用' and No eq 10\")),\"\")",
+    "133,2": "IFERROR(IF(ODATA(\"日報_下書き?$select=開始時刻&$filter=メッセージID eq 'メッセージID引用' and No eq 11\")=0,\"\",ODATA(\"日報_下書き?$select=開始時刻&$filter=メッセージID eq 'メッセージID引用' and No eq 11\")),\"\")",
+    "185,2": "IFERROR(IF(ODATA(\"日報_下書き?$select=開始時刻&$filter=メッセージID eq 'メッセージID引用' and No eq 15\")=0,\"\",ODATA(\"日報_下書き?$select=開始時刻&$filter=メッセージID eq 'メッセージID引用' and No eq 15\")),\"\")",
+    "159,7": "IFERROR(IF(ODATA(\"日報_下書き?$select=終了時刻&$filter=メッセージID eq 'メッセージID引用' and No eq 13\")=0,\"\",ODATA(\"日報_下書き?$select=終了時刻&$filter=メッセージID eq 'メッセージID引用' and No eq 13\")),\"\")",
+    "18,5": "IFERROR(IF(ODATA(\"日報_下書き?$select=顧問先&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 2\")=0,\"\",ODATA(\"日報_下書き?$select=顧問先&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 2\")),\"\")",
+    "81,2": "IFERROR(IF(ODATA(\"日報_下書き?$select=開始時刻&$filter=メッセージID eq 'メッセージID引用' and No eq 7\")=0,\"\",ODATA(\"日報_下書き?$select=開始時刻&$filter=メッセージID eq 'メッセージID引用' and No eq 7\")),\"\")",
+    "55,17": "IFERROR(IF(ODATA(\"日報_下書き?$select=項目&$filter=メッセージID eq 'メッセージID引用' and No eq 5\")=0,\"\",ODATA(\"日報_下書き?$select=項目&$filter=メッセージID eq 'メッセージID引用' and No eq 5\")),\"\")",
+    "16,7": "IFERROR(IF(ODATA(\"日報_下書き?$select=終了時刻&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 2\")=0,\"\",ODATA(\"日報_下書き?$select=終了時刻&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 2\")),\"\")",
+    "59,2": "IFERROR(IF(ODATA(\"日報_下書き?$select=内容&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 5\")=0,\"\",ODATA(\"日報_下書き?$select=内容&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 5\")),\"\")",
+    "159,2": "IFERROR(IF(ODATA(\"日報_下書き?$select=開始時刻&$filter=メッセージID eq 'メッセージID引用' and No eq 13\")=0,\"\",ODATA(\"日報_下書き?$select=開始時刻&$filter=メッセージID eq 'メッセージID引用' and No eq 13\")),\"\")",
+    "81,12": "IFERROR(endtime7-starttime7,\"\")",
+    "68,17": "IFERROR(IF(ODATA(\"日報_下書き?$select=項目&$filter=メッセージID eq 'メッセージID引用' and No eq 6\")=0,\"\",ODATA(\"日報_下書き?$select=項目&$filter=メッセージID eq 'メッセージID引用' and No eq 6\")),\"\")",
+    "172,7": "IFERROR(IF(ODATA(\"日報_下書き?$select=終了時刻&$filter=メッセージID eq 'メッセージID引用' and No eq 14\")=0,\"\",ODATA(\"日報_下書き?$select=終了時刻&$filter=メッセージID eq 'メッセージID引用' and No eq 14\")),\"\")",
+    "20,2": "IFERROR(IF(ODATA(\"日報_下書き?$select=内容&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 2\")=0,\"\",ODATA(\"日報_下書き?$select=内容&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 2\")),\"\")",
+    "133,7": "IFERROR(IF(ODATA(\"日報_下書き?$select=終了時刻&$filter=メッセージID eq 'メッセージID引用' and No eq 11\")=0,\"\",ODATA(\"日報_下書き?$select=終了時刻&$filter=メッセージID eq 'メッセージID引用' and No eq 11\")),\"\")",
+    "98,2": "IFERROR(IF(ODATA(\"日報_下書き?$select=内容&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 8\")=0,\"\",ODATA(\"日報_下書き?$select=内容&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 8\")),\"\")",
+    "57,5": "IFERROR(IF(ODATA(\"日報_下書き?$select=顧問先&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 5\")=0,\"\",ODATA(\"日報_下書き?$select=顧問先&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 5\")),\"\")",
+    "70,5": "IFERROR(IF(ODATA(\"日報_下書き?$select=顧問先&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 6\")=0,\"\",ODATA(\"日報_下書き?$select=顧問先&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 6\")),\"\")",
+    "29,17": "IFERROR(IF(ODATA(\"日報_下書き?$select=項目&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 3\")=0,\"\",ODATA(\"日報_下書き?$select=項目&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 3\")),\"\")",
+    "107,7": "IFERROR(IF(ODATA(\"日報_下書き?$select=終了時刻&$filter=メッセージID eq 'メッセージID引用' and No eq 9\")=0,\"\",ODATA(\"日報_下書き?$select=終了時刻&$filter=メッセージID eq 'メッセージID引用' and No eq 9\")),\"\")",
+    "185,7": "IFERROR(IF(ODATA(\"日報_下書き?$select=終了時刻&$filter=メッセージID eq 'メッセージID引用' and No eq 15\")=0,\"\",ODATA(\"日報_下書き?$select=終了時刻&$filter=メッセージID eq 'メッセージID引用' and No eq 15\")),\"\")",
+    "72,2": "IFERROR(IF(ODATA(\"日報_下書き?$select=内容&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 6\")=0,\"\",ODATA(\"日報_下書き?$select=内容&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 6\")),\"\")",
+    "3,2": "IFERROR(IF(ODATA(\"日報_下書き?$select=開始時刻&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 1\")=0,\"\",ODATA(\"日報_下書き?$select=開始時刻&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 1\")),\"\")",
+    "31,5": "IFERROR(IF(ODATA(\"日報_下書き?$select=顧問先&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 3\")=0,\"\",ODATA(\"日報_下書き?$select=顧問先&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 3\")),\"\")",
+    "29,2": "IFERROR(IF(ODATA(\"日報_下書き?$select=開始時刻&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 3\")=0,\"\",ODATA(\"日報_下書き?$select=開始時刻&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 3\")),\"\")",
+    "81,17": "IFERROR(IF(ODATA(\"日報_下書き?$select=項目&$filter=メッセージID eq 'メッセージID引用' and No eq 7\")=0,\"\",ODATA(\"日報_下書き?$select=項目&$filter=メッセージID eq 'メッセージID引用' and No eq 7\")),\"\")",
+    "83,5": "IFERROR(IF(ODATA(\"日報_下書き?$select=顧問先&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 7\")=0,\"\",ODATA(\"日報_下書き?$select=顧問先&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 7\")),\"\")",
+    "146,2": "IFERROR(IF(ODATA(\"日報_下書き?$select=開始時刻&$filter=メッセージID eq 'メッセージID引用' and No eq 12\")=0,\"\",ODATA(\"日報_下書き?$select=開始時刻&$filter=メッセージID eq 'メッセージID引用' and No eq 12\")),\"\")",
+    "33,2": "IFERROR(IF(ODATA(\"日報_下書き?$select=内容&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 3\")=0,\"\",ODATA(\"日報_下書き?$select=内容&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 3\")),\"\")",
+    "68,12": "IFERROR(endtime6-starttime6,\"\")",
+    "85,2": "IFERROR(IF(ODATA(\"日報_下書き?$select=内容&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 7\")=0,\"\",ODATA(\"日報_下書き?$select=内容&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 7\")),\"\")",
+    "150,2": "IFERROR(IF(ODATA(\"日報_下書き?$select=内容&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 12\")=0,\"\",ODATA(\"日報_下書き?$select=内容&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 12\")),\"\")",
+    "94,2": "IFERROR(IF(ODATA(\"日報_下書き?$select=開始時刻&$filter=メッセージID eq 'メッセージID引用' and No eq 8\")=0,\"\",ODATA(\"日報_下書き?$select=開始時刻&$filter=メッセージID eq 'メッセージID引用' and No eq 8\")),\"\")",
+    "42,17": "IFERROR(IF(ODATA(\"日報_下書き?$select=項目&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 4\")=0,\"\",ODATA(\"日報_下書き?$select=項目&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 4\")),\"\")",
+    "120,12": "IFERROR(endtime10-starttime10,\"\")",
+    "172,2": "IFERROR(IF(ODATA(\"日報_下書き?$select=開始時刻&$filter=メッセージID eq 'メッセージID引用' and No eq 14\")=0,\"\",ODATA(\"日報_下書き?$select=開始時刻&$filter=メッセージID eq 'メッセージID引用' and No eq 14\")),\"\")",
+    "109,5": "IFERROR(IF(ODATA(\"日報_下書き?$select=顧問先&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 9\")=0,\"\",ODATA(\"日報_下書き?$select=顧問先&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 9\")),\"\")",
+    "94,17": "IFERROR(IF(ODATA(\"日報_下書き?$select=項目&$filter=メッセージID eq 'メッセージID引用' and No eq 8\")=0,\"\",ODATA(\"日報_下書き?$select=項目&$filter=メッセージID eq 'メッセージID引用' and No eq 8\")),\"\")",
+    "44,5": "IFERROR(IF(ODATA(\"日報_下書き?$select=顧問先&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 4\")=0,\"\",ODATA(\"日報_下書き?$select=顧問先&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 4\")),\"\")",
+    "16,12": "IFERROR(endtime2-starttime2,\"\")",
+    "42,2": "IFERROR(IF(ODATA(\"日報_下書き?$select=開始時刻&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 4\")=0,\"\",ODATA(\"日報_下書き?$select=開始時刻&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 4\")),\"\")",
+    "185,17": "IFERROR(IF(ODATA(\"日報_下書き?$select=項目&$filter=メッセージID eq 'メッセージID引用' and No eq 15\")=0,\"\",ODATA(\"日報_下書き?$select=項目&$filter=メッセージID eq 'メッセージID引用' and No eq 15\")),\"\")",
+    "96,5": "IFERROR(IF(ODATA(\"日報_下書き?$select=顧問先&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 8\")=0,\"\",ODATA(\"日報_下書き?$select=顧問先&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 8\")),\"\")",
+    "46,2": "IFERROR(IF(ODATA(\"日報_下書き?$select=内容&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 4\")=0,\"\",ODATA(\"日報_下書き?$select=内容&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 4\")),\"\")",
+    "107,12": "IFERROR(endtime9-starttime9,\"\")",
+    "107,17": "IFERROR(IF(ODATA(\"日報_下書き?$select=項目&$filter=メッセージID eq 'メッセージID引用' and No eq 9\")=0,\"\",ODATA(\"日報_下書き?$select=項目&$filter=メッセージID eq 'メッセージID引用' and No eq 9\")),\"\")",
+    "111,2": "IFERROR(IF(ODATA(\"日報_下書き?$select=内容&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 9\")=0,\"\",ODATA(\"日報_下書き?$select=内容&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 9\")),\"\")",
+    "148,5": "IFERROR(IF(ODATA(\"日報_下書き?$select=顧問先&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 12\")=0,\"\",ODATA(\"日報_下書き?$select=顧問先&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 12\")),\"\")",
+    "16,2": "IFERROR(IF(ODATA(\"日報_下書き?$select=開始時刻&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 2\")=0,\"\",ODATA(\"日報_下書き?$select=開始時刻&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 2\")),\"\")",
+    "55,2": "IFERROR(IF(ODATA(\"日報_下書き?$select=開始時刻&$filter=メッセージID eq 'メッセージID引用' and No eq 5\")=0,\"\",ODATA(\"日報_下書き?$select=開始時刻&$filter=メッセージID eq 'メッセージID引用' and No eq 5\")),\"\")",
+    "187,5": "IFERROR(IF(ODATA(\"日報_下書き?$select=顧問先&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 15\")=0,\"\",ODATA(\"日報_下書き?$select=顧問先&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 15\")),\"\")",
+    "120,17": "IFERROR(IF(ODATA(\"日報_下書き?$select=項目&$filter=メッセージID eq 'メッセージID引用' and No eq 10\")=0,\"\",ODATA(\"日報_下書き?$select=項目&$filter=メッセージID eq 'メッセージID引用' and No eq 10\")),\"\")",
+    "189,2": "IFERROR(IF(ODATA(\"日報_下書き?$select=内容&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 15\")=0,\"\",ODATA(\"日報_下書き?$select=内容&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 15\")),\"\")",
+    "107,2": "IFERROR(IF(ODATA(\"日報_下書き?$select=開始時刻&$filter=メッセージID eq 'メッセージID引用' and No eq 9\")=0,\"\",ODATA(\"日報_下書き?$select=開始時刻&$filter=メッセージID eq 'メッセージID引用' and No eq 9\")),\"\")",
+    "3,7": "IFERROR(IF(ODATA(\"日報_下書き?$select=終了時刻&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 1\")=0,\"\",ODATA(\"日報_下書き?$select=終了時刻&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 1\")),\"\")",
+    "122,5": "IFERROR(IF(ODATA(\"日報_下書き?$select=顧問先&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 10\")=0,\"\",ODATA(\"日報_下書き?$select=顧問先&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 10\")),\"\")",
+    "124,2": "IFERROR(IF(ODATA(\"日報_下書き?$select=内容&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 10\")=0,\"\",ODATA(\"日報_下書き?$select=内容&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 10\")),\"\")",
+    "133,17": "IFERROR(IF(ODATA(\"日報_下書き?$select=項目&$filter=メッセージID eq 'メッセージID引用' and No eq 11\")=0,\"\",ODATA(\"日報_下書き?$select=項目&$filter=メッセージID eq 'メッセージID引用' and No eq 11\")),\"\")",
+    "3,17": "IFERROR(IF(ODATA(\"日報_下書き?$select=項目&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 1\")=0,\"\",ODATA(\"日報_下書き?$select=項目&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 1\")),\"\")",
+    "42,12": "IFERROR(endtime4-starttime4,\"\")",
+    "135,5": "IFERROR(IF(ODATA(\"日報_下書き?$select=顧問先&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 11\")=0,\"\",ODATA(\"日報_下書き?$select=顧問先&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 11\")),\"\")",
+    "42,7": "IFERROR(IF(ODATA(\"日報_下書き?$select=終了時刻&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 4\")=0,\"\",ODATA(\"日報_下書き?$select=終了時刻&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 4\")),\"\")",
+    "137,2": "IFERROR(IF(ODATA(\"日報_下書き?$select=内容&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 11\")=0,\"\",ODATA(\"日報_下書き?$select=内容&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 11\")),\"\")",
+    "5,5": "IFERROR(IF(ODATA(\"日報_下書き?$select=顧問先&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 1\")=0,\"\",ODATA(\"日報_下書き?$select=顧問先&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 1\")),\"\")",
+    "159,12": "IFERROR(endtime13-starttime13,\"\")",
+    "68,2": "IFERROR(IF(ODATA(\"日報_下書き?$select=開始時刻&$filter=メッセージID eq 'メッセージID引用' and No eq 6\")=0,\"\",ODATA(\"日報_下書き?$select=開始時刻&$filter=メッセージID eq 'メッセージID引用' and No eq 6\")),\"\")",
+    "146,17": "IFERROR(IF(ODATA(\"日報_下書き?$select=項目&$filter=メッセージID eq 'メッセージID引用' and No eq 12\")=0,\"\",ODATA(\"日報_下書き?$select=項目&$filter=メッセージID eq 'メッセージID引用' and No eq 12\")),\"\")",
+    "161,5": "IFERROR(IF(ODATA(\"日報_下書き?$select=顧問先&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 13\")=0,\"\",ODATA(\"日報_下書き?$select=顧問先&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 13\")),\"\")",
+    "7,2": "IFERROR(IF(ODATA(\"日報_下書き?$select=内容&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 1\")=0,\"\",ODATA(\"日報_下書き?$select=内容&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 1\")),\"\")",
+    "185,12": "IFERROR(endtime15-starttime15,\"\")",
+    "163,2": "IFERROR(IF(ODATA(\"日報_下書き?$select=内容&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 13\")=0,\"\",ODATA(\"日報_下書き?$select=内容&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 13\")),\"\")",
+    "172,17": "IFERROR(IF(ODATA(\"日報_下書き?$select=項目&$filter=メッセージID eq 'メッセージID引用' and No eq 14\")=0,\"\",ODATA(\"日報_下書き?$select=項目&$filter=メッセージID eq 'メッセージID引用' and No eq 14\")),\"\")",
+    "174,5": "IFERROR(IF(ODATA(\"日報_下書き?$select=顧問先&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 14\")=0,\"\",ODATA(\"日報_下書き?$select=顧問先&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 14\")),\"\")",
+    "16,17": "IFERROR(IF(ODATA(\"日報_下書き?$select=項目&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 2\")=0,\"\",ODATA(\"日報_下書き?$select=項目&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 2\")),\"\")",
+    "120,2": "IFERROR(IF(ODATA(\"日報_下書き?$select=開始時刻&$filter=メッセージID eq 'メッセージID引用' and No eq 10\")=0,\"\",ODATA(\"日報_下書き?$select=開始時刻&$filter=メッセージID eq 'メッセージID引用' and No eq 10\")),\"\")",
+    "159,17": "IFERROR(IF(ODATA(\"日報_下書き?$select=項目&$filter=メッセージID eq 'メッセージID引用' and No eq 13\")=0,\"\",ODATA(\"日報_下書き?$select=項目&$filter=メッセージID eq 'メッセージID引用' and No eq 13\")),\"\")",
+    "3,12": "IFERROR(endtime1-starttime1,\"\")",
+    "176,2": "IFERROR(IF(ODATA(\"日報_下書き?$select=内容&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 14\")=0,\"\",ODATA(\"日報_下書き?$select=内容&$filter=メッセージID eq \"&IF(ISBLANK(メッセージID引用),\"null\",\"'\"&メッセージID引用&\"'\")&\" and No eq 14\")),\"\")"
+  },
+  "AttachInfos": {
+    "3,2": {
+      "CellType": {
+        "$type": "Forguncy.TimeCellType, ServerDesignerCommon",
+        "StartTime": "04:00:00",
+        "EndTime": "13:00:00",
+        "Interval": 15,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "MaxDropDownItemCount": 10
+      },
+      "BindingInfo": {
+        "TableName": "日報_下書き",
+        "ColumnName": "開始時刻"
+      },
+      "DataValidationInfo": {}
+    },
+    "3,7": {
+      "CellType": {
+        "$type": "Forguncy.TimeCellType, ServerDesignerCommon",
+        "StartTime": "06:00:00",
+        "EndTime": "12:30:00",
+        "Interval": 15,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "MaxDropDownItemCount": 10
+      },
+      "BindingInfo": {
+        "TableName": "日報_下書き",
+        "ColumnName": "終了時刻"
+      }
+    },
+    "3,12": {
+      "BindingInfo": {
+        "TableName": "日報_下書き",
+        "ColumnName": "作業時間"
+      }
+    },
+    "3,17": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "MaxDropDownItemCount": 10,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "日報項目",
+        "ValueColumnBindingInfo": {
+          "TableName": "日報項目",
+          "ColumnName": "日報項目ID"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "日報項目",
+          "ColumnName": "項目"
+        },
+        "AddNullItemWhenBinding": true,
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "Condition1": {
+                    "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                    "Condition1": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "Condition1": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                          "cellLocations": [
+                            {
+                              "SerializeProperty": "='正社員日報入力(下書き仮)'!item1"
+                            }
+                          ]
+                        },
+                        "value": "メールチェック"
+                      },
+                      "Condition2": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                          "cellLocations": [
+                            {
+                              "SerializeProperty": "='正社員日報入力(下書き仮)'!item1"
+                            }
+                          ]
+                        },
+                        "value": "朝礼"
+                      },
+                      "RelationType": 1
+                    },
+                    "Condition2": {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "='正社員日報入力(下書き仮)'!item1"
+                          }
+                        ]
+                      },
+                      "value": "掃除"
+                    },
+                    "RelationType": 1
+                  },
+                  "Condition2": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                      "cellLocations": [
+                        {
+                          "SerializeProperty": "='正社員日報入力(下書き仮)'!item1"
+                        }
+                      ]
+                    },
+                    "value": "昼食"
+                  },
+                  "RelationType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "Location": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='正社員日報入力(下書き仮)'!6:13"
+                        },
+                        "Value": false
+                      }
+                    ],
+                    "Disabled": true
+                  }
+                ],
+                "ID": "c35e8287-e0f4-4000-b4bd-8d53562d631d"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "Location": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='正社員日報入力(下書き仮)'!6:13"
+                        },
+                        "Value": true
+                      }
+                    ],
+                    "Disabled": true
+                  }
+                ],
+                "ID": "818adfcc-8180-414e-b183-3a28c9e7ccaa"
+              }
+            ],
+            "Disabled": true
+          }
+        ]
+      },
+      "BindingInfo": {
+        "TableName": "日報_下書き",
+        "ColumnName": "項目"
+      }
+    },
+    "5,5": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "MaxDropDownItemCount": 10,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "顧問先",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "顧客一覧",
+        "ValueColumnBindingInfo": {
+          "TableName": "顧客一覧",
+          "ColumnName": "MJS"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "顧客一覧",
+          "ColumnName": "会社名"
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "顧客一覧",
+                "ColumnName": "MJS"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "DropDownSubItems": [
+          {
+            "GUID": "490ed9ce4bd946c096de515e374ebb4d",
+            "ColumnName": "MJS",
+            "BindingInfo": {
+              "TableName": "顧客一覧",
+              "ColumnName": "MJS"
+            },
+            "BindingColumnDataType": 1
+          },
+          {
+            "GUID": "249875f6d8c544ec80be1f553bcfd4b2",
+            "ColumnName": "会社名",
+            "BindingInfo": {
+              "TableName": "顧客一覧",
+              "ColumnName": "会社名"
+            },
+            "BindingColumnDataType": 5
+          },
+          {
+            "GUID": "bc73a377bd2347e4b8109b1a397f6e66",
+            "ColumnName": "お客様名_代表_個人_",
+            "BindingInfo": {
+              "TableName": "顧客一覧",
+              "ColumnName": "お客様名_代表_個人_"
+            },
+            "BindingColumnDataType": 5
+          },
+          {
+            "GUID": "a7426602713e4d70bd0fc3315b0e2a81",
+            "ColumnName": "会社名ﾌﾘｶﾞﾅ",
+            "BindingInfo": {
+              "TableName": "顧客一覧",
+              "ColumnName": "会社名ﾌﾘｶﾞﾅ"
+            },
+            "BindingColumnDataType": 5
+          }
+        ],
+        "AddNullItemWhenBinding": true
+      },
+      "BindingInfo": {
+        "TableName": "日報_下書き",
+        "ColumnName": "顧問先"
+      }
+    },
+    "7,2": {
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "16,2": {
+      "CellType": {
+        "$type": "Forguncy.TimeCellType, ServerDesignerCommon",
+        "StartTime": "07:00:00",
+        "EndTime": "15:00:00",
+        "Interval": 15,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "MaxDropDownItemCount": 10
+      }
+    },
+    "16,7": {
+      "CellType": {
+        "$type": "Forguncy.TimeCellType, ServerDesignerCommon",
+        "StartTime": "07:00:00",
+        "Interval": 15,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "MaxDropDownItemCount": 10,
+        "CellDefaultValue": {
+          "$type": "Forguncy.TimeObject, ServerDesignerCommon",
+          "Value": "12:30:00"
+        }
+      },
+      "BindingInfo": {
+        "TableName": "日報_下書き",
+        "ColumnName": "終了時刻"
+      }
+    },
+    "16,12": {
+      "BindingInfo": {
+        "TableName": "日報_下書き",
+        "ColumnName": "作業時間"
+      }
+    },
+    "16,17": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "MaxDropDownItemCount": 10,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "日報項目",
+        "ValueColumnBindingInfo": {
+          "TableName": "日報項目",
+          "ColumnName": "日報項目ID"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "日報項目",
+          "ColumnName": "項目"
+        }
+      },
+      "BindingInfo": {
+        "TableName": "日報_下書き",
+        "ColumnName": "項目"
+      }
+    },
+    "18,5": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "MaxDropDownItemCount": 10,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "顧客一覧",
+        "ValueColumnBindingInfo": {
+          "TableName": "顧客一覧",
+          "ColumnName": "MJS"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "顧客一覧",
+          "ColumnName": "会社名"
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "顧客一覧",
+                "ColumnName": "MJS"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "DropDownSubItems": [
+          {
+            "GUID": "198622ad7e77482e9520406ee4b3c655",
+            "ColumnName": "MJS",
+            "BindingInfo": {
+              "TableName": "顧客一覧",
+              "ColumnName": "MJS"
+            },
+            "BindingColumnDataType": 1
+          },
+          {
+            "GUID": "2f28359913f34a2390b9798717132741",
+            "ColumnName": "会社名",
+            "BindingInfo": {
+              "TableName": "顧客一覧",
+              "ColumnName": "会社名"
+            },
+            "BindingColumnDataType": 5
+          },
+          {
+            "GUID": "8255f27280324a7386b9f226bdd9209e",
+            "ColumnName": "お客様名_代表_個人_",
+            "BindingInfo": {
+              "TableName": "顧客一覧",
+              "ColumnName": "お客様名_代表_個人_"
+            },
+            "BindingColumnDataType": 5
+          }
+        ],
+        "AddNullItemWhenBinding": true
+      },
+      "BindingInfo": {
+        "TableName": "日報_下書き",
+        "ColumnName": "顧問先"
+      }
+    },
+    "20,2": {
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      },
+      "BindingInfo": {
+        "TableName": "日報_下書き",
+        "ColumnName": "内容"
+      }
+    },
+    "29,2": {
+      "CellType": {
+        "$type": "Forguncy.TimeCellType, ServerDesignerCommon",
+        "Interval": 15,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "MaxDropDownItemCount": 10
+      }
+    },
+    "29,7": {
+      "CellType": {
+        "$type": "Forguncy.TimeCellType, ServerDesignerCommon",
+        "Interval": 15,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "MaxDropDownItemCount": 10
+      }
+    },
+    "29,17": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "MaxDropDownItemCount": 10,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "日報項目",
+        "ValueColumnBindingInfo": {
+          "TableName": "日報項目",
+          "ColumnName": "日報項目ID"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "日報項目",
+          "ColumnName": "項目"
+        },
+        "AddNullItemWhenBinding": true
+      }
+    },
+    "31,5": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "MaxDropDownItemCount": 10,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "顧客一覧",
+        "ValueColumnBindingInfo": {
+          "TableName": "顧客一覧",
+          "ColumnName": "MJS"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "顧客一覧",
+          "ColumnName": "会社名"
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "顧客一覧",
+                "ColumnName": "MJS"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "DropDownSubItems": [
+          {
+            "GUID": "198622ad7e77482e9520406ee4b3c655",
+            "ColumnName": "MJS",
+            "BindingInfo": {
+              "TableName": "顧客一覧",
+              "ColumnName": "MJS"
+            },
+            "BindingColumnDataType": 1
+          },
+          {
+            "GUID": "2f28359913f34a2390b9798717132741",
+            "ColumnName": "会社名",
+            "BindingInfo": {
+              "TableName": "顧客一覧",
+              "ColumnName": "会社名"
+            },
+            "BindingColumnDataType": 5
+          },
+          {
+            "GUID": "8255f27280324a7386b9f226bdd9209e",
+            "ColumnName": "お客様名_代表_個人_",
+            "BindingInfo": {
+              "TableName": "顧客一覧",
+              "ColumnName": "お客様名_代表_個人_"
+            },
+            "BindingColumnDataType": 5
+          }
+        ],
+        "AddNullItemWhenBinding": true
+      }
+    },
+    "33,2": {
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "42,2": {
+      "CellType": {
+        "$type": "Forguncy.TimeCellType, ServerDesignerCommon",
+        "Interval": 15,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "MaxDropDownItemCount": 10
+      }
+    },
+    "42,7": {
+      "CellType": {
+        "$type": "Forguncy.TimeCellType, ServerDesignerCommon",
+        "Interval": 15,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "MaxDropDownItemCount": 10
+      }
+    },
+    "42,17": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "MaxDropDownItemCount": 10,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "日報項目",
+        "ValueColumnBindingInfo": {
+          "TableName": "日報項目",
+          "ColumnName": "日報項目ID"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "日報項目",
+          "ColumnName": "項目"
+        },
+        "AddNullItemWhenBinding": true
+      }
+    },
+    "44,5": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "MaxDropDownItemCount": 10,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "顧客一覧",
+        "ValueColumnBindingInfo": {
+          "TableName": "顧客一覧",
+          "ColumnName": "MJS"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "顧客一覧",
+          "ColumnName": "会社名"
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "顧客一覧",
+                "ColumnName": "MJS"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "DropDownSubItems": [
+          {
+            "GUID": "198622ad7e77482e9520406ee4b3c655",
+            "ColumnName": "MJS",
+            "BindingInfo": {
+              "TableName": "顧客一覧",
+              "ColumnName": "MJS"
+            },
+            "BindingColumnDataType": 1
+          },
+          {
+            "GUID": "2f28359913f34a2390b9798717132741",
+            "ColumnName": "会社名",
+            "BindingInfo": {
+              "TableName": "顧客一覧",
+              "ColumnName": "会社名"
+            },
+            "BindingColumnDataType": 5
+          },
+          {
+            "GUID": "8255f27280324a7386b9f226bdd9209e",
+            "ColumnName": "お客様名_代表_個人_",
+            "BindingInfo": {
+              "TableName": "顧客一覧",
+              "ColumnName": "お客様名_代表_個人_"
+            },
+            "BindingColumnDataType": 5
+          }
+        ],
+        "AddNullItemWhenBinding": true
+      }
+    },
+    "46,2": {
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "55,2": {
+      "CellType": {
+        "$type": "Forguncy.TimeCellType, ServerDesignerCommon",
+        "StartTime": "10:00:00",
+        "Interval": 15,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "MaxDropDownItemCount": 10
+      }
+    },
+    "55,7": {
+      "CellType": {
+        "$type": "Forguncy.TimeCellType, ServerDesignerCommon",
+        "StartTime": "10:00:00",
+        "Interval": 15,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "MaxDropDownItemCount": 10
+      }
+    },
+    "55,17": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "MaxDropDownItemCount": 10,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "日報項目",
+        "ValueColumnBindingInfo": {
+          "TableName": "日報項目",
+          "ColumnName": "日報項目ID"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "日報項目",
+          "ColumnName": "項目"
+        },
+        "AddNullItemWhenBinding": true
+      }
+    },
+    "57,5": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "MaxDropDownItemCount": 10,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "顧客一覧",
+        "ValueColumnBindingInfo": {
+          "TableName": "顧客一覧",
+          "ColumnName": "MJS"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "顧客一覧",
+          "ColumnName": "会社名"
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "顧客一覧",
+                "ColumnName": "MJS"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "DropDownSubItems": [
+          {
+            "GUID": "198622ad7e77482e9520406ee4b3c655",
+            "ColumnName": "MJS",
+            "BindingInfo": {
+              "TableName": "顧客一覧",
+              "ColumnName": "MJS"
+            },
+            "BindingColumnDataType": 1
+          },
+          {
+            "GUID": "2f28359913f34a2390b9798717132741",
+            "ColumnName": "会社名",
+            "BindingInfo": {
+              "TableName": "顧客一覧",
+              "ColumnName": "会社名"
+            },
+            "BindingColumnDataType": 5
+          },
+          {
+            "GUID": "8255f27280324a7386b9f226bdd9209e",
+            "ColumnName": "お客様名_代表_個人_",
+            "BindingInfo": {
+              "TableName": "顧客一覧",
+              "ColumnName": "お客様名_代表_個人_"
+            },
+            "BindingColumnDataType": 5
+          }
+        ]
+      }
+    },
+    "59,2": {
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "68,2": {
+      "CellType": {
+        "$type": "Forguncy.TimeCellType, ServerDesignerCommon",
+        "StartTime": "11:00:00",
+        "EndTime": "19:00:00",
+        "Interval": 15,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "MaxDropDownItemCount": 10
+      }
+    },
+    "68,7": {
+      "CellType": {
+        "$type": "Forguncy.TimeCellType, ServerDesignerCommon",
+        "StartTime": "12:00:00",
+        "EndTime": "23:00:00",
+        "Interval": 15,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "MaxDropDownItemCount": 10
+      }
+    },
+    "68,17": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "MaxDropDownItemCount": 10,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "日報項目",
+        "ValueColumnBindingInfo": {
+          "TableName": "日報項目",
+          "ColumnName": "日報項目ID"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "日報項目",
+          "ColumnName": "項目"
+        }
+      }
+    },
+    "70,5": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "MaxDropDownItemCount": 10,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "顧客一覧",
+        "ValueColumnBindingInfo": {
+          "TableName": "顧客一覧",
+          "ColumnName": "MJS"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "顧客一覧",
+          "ColumnName": "会社名"
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "顧客一覧",
+                "ColumnName": "MJS"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "DropDownSubItems": [
+          {
+            "GUID": "198622ad7e77482e9520406ee4b3c655",
+            "ColumnName": "MJS",
+            "BindingInfo": {
+              "TableName": "顧客一覧",
+              "ColumnName": "MJS"
+            },
+            "BindingColumnDataType": 1
+          },
+          {
+            "GUID": "2f28359913f34a2390b9798717132741",
+            "ColumnName": "会社名",
+            "BindingInfo": {
+              "TableName": "顧客一覧",
+              "ColumnName": "会社名"
+            },
+            "BindingColumnDataType": 5
+          },
+          {
+            "GUID": "8255f27280324a7386b9f226bdd9209e",
+            "ColumnName": "お客様名_代表_個人_",
+            "BindingInfo": {
+              "TableName": "顧客一覧",
+              "ColumnName": "お客様名_代表_個人_"
+            },
+            "BindingColumnDataType": 5
+          }
+        ]
+      }
+    },
+    "72,2": {
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "81,2": {
+      "CellType": {
+        "$type": "Forguncy.TimeCellType, ServerDesignerCommon",
+        "StartTime": "12:00:00",
+        "EndTime": "23:00:00",
+        "Interval": 15,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "MaxDropDownItemCount": 10
+      }
+    },
+    "81,7": {
+      "CellType": {
+        "$type": "Forguncy.TimeCellType, ServerDesignerCommon",
+        "StartTime": "12:00:00",
+        "EndTime": "23:00:00",
+        "Interval": 15,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "MaxDropDownItemCount": 10
+      }
+    },
+    "81,17": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "MaxDropDownItemCount": 10,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "日報項目",
+        "ValueColumnBindingInfo": {
+          "TableName": "日報項目",
+          "ColumnName": "日報項目ID"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "日報項目",
+          "ColumnName": "項目"
+        },
+        "AddNullItemWhenBinding": true
+      }
+    },
+    "83,5": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "MaxDropDownItemCount": 10,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "顧客一覧",
+        "ValueColumnBindingInfo": {
+          "TableName": "顧客一覧",
+          "ColumnName": "MJS"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "顧客一覧",
+          "ColumnName": "会社名"
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "顧客一覧",
+                "ColumnName": "MJS"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "DropDownSubItems": [
+          {
+            "GUID": "198622ad7e77482e9520406ee4b3c655",
+            "ColumnName": "MJS",
+            "BindingInfo": {
+              "TableName": "顧客一覧",
+              "ColumnName": "MJS"
+            },
+            "BindingColumnDataType": 1
+          },
+          {
+            "GUID": "2f28359913f34a2390b9798717132741",
+            "ColumnName": "会社名",
+            "BindingInfo": {
+              "TableName": "顧客一覧",
+              "ColumnName": "会社名"
+            },
+            "BindingColumnDataType": 5
+          },
+          {
+            "GUID": "8255f27280324a7386b9f226bdd9209e",
+            "ColumnName": "お客様名_代表_個人_",
+            "BindingInfo": {
+              "TableName": "顧客一覧",
+              "ColumnName": "お客様名_代表_個人_"
+            },
+            "BindingColumnDataType": 5
+          }
+        ]
+      }
+    },
+    "85,2": {
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "94,2": {
+      "CellType": {
+        "$type": "Forguncy.TimeCellType, ServerDesignerCommon",
+        "StartTime": "13:00:00",
+        "EndTime": "23:00:00",
+        "Interval": 15,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "MaxDropDownItemCount": 10
+      }
+    },
+    "94,7": {
+      "CellType": {
+        "$type": "Forguncy.TimeCellType, ServerDesignerCommon",
+        "StartTime": "13:00:00",
+        "EndTime": "23:00:00",
+        "Interval": 15,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "MaxDropDownItemCount": 10
+      }
+    },
+    "94,17": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "MaxDropDownItemCount": 10,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "日報項目",
+        "ValueColumnBindingInfo": {
+          "TableName": "日報項目",
+          "ColumnName": "日報項目ID"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "日報項目",
+          "ColumnName": "項目"
+        },
+        "AddNullItemWhenBinding": true
+      }
+    },
+    "96,5": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "MaxDropDownItemCount": 10,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "顧客一覧",
+        "ValueColumnBindingInfo": {
+          "TableName": "顧客一覧",
+          "ColumnName": "MJS"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "顧客一覧",
+          "ColumnName": "会社名"
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "顧客一覧",
+                "ColumnName": "MJS"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "DropDownSubItems": [
+          {
+            "GUID": "198622ad7e77482e9520406ee4b3c655",
+            "ColumnName": "MJS",
+            "BindingInfo": {
+              "TableName": "顧客一覧",
+              "ColumnName": "MJS"
+            },
+            "BindingColumnDataType": 1
+          },
+          {
+            "GUID": "2f28359913f34a2390b9798717132741",
+            "ColumnName": "会社名",
+            "BindingInfo": {
+              "TableName": "顧客一覧",
+              "ColumnName": "会社名"
+            },
+            "BindingColumnDataType": 5
+          },
+          {
+            "GUID": "8255f27280324a7386b9f226bdd9209e",
+            "ColumnName": "お客様名_代表_個人_",
+            "BindingInfo": {
+              "TableName": "顧客一覧",
+              "ColumnName": "お客様名_代表_個人_"
+            },
+            "BindingColumnDataType": 5
+          }
+        ]
+      }
+    },
+    "98,2": {
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "107,2": {
+      "CellType": {
+        "$type": "Forguncy.TimeCellType, ServerDesignerCommon",
+        "StartTime": "12:00:00",
+        "EndTime": "23:00:00",
+        "Interval": 15,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "MaxDropDownItemCount": 10
+      }
+    },
+    "107,7": {
+      "CellType": {
+        "$type": "Forguncy.TimeCellType, ServerDesignerCommon",
+        "StartTime": "15:00:00",
+        "EndTime": "23:00:00",
+        "Interval": 15,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "MaxDropDownItemCount": 10
+      }
+    },
+    "107,17": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "MaxDropDownItemCount": 10,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "日報項目",
+        "ValueColumnBindingInfo": {
+          "TableName": "日報項目",
+          "ColumnName": "日報項目ID"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "日報項目",
+          "ColumnName": "項目"
+        }
+      }
+    },
+    "109,5": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "MaxDropDownItemCount": 10,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "顧客一覧",
+        "ValueColumnBindingInfo": {
+          "TableName": "顧客一覧",
+          "ColumnName": "MJS"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "顧客一覧",
+          "ColumnName": "会社名"
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "顧客一覧",
+                "ColumnName": "MJS"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "DropDownSubItems": [
+          {
+            "GUID": "198622ad7e77482e9520406ee4b3c655",
+            "ColumnName": "MJS",
+            "BindingInfo": {
+              "TableName": "顧客一覧",
+              "ColumnName": "MJS"
+            },
+            "BindingColumnDataType": 1
+          },
+          {
+            "GUID": "2f28359913f34a2390b9798717132741",
+            "ColumnName": "会社名",
+            "BindingInfo": {
+              "TableName": "顧客一覧",
+              "ColumnName": "会社名"
+            },
+            "BindingColumnDataType": 5
+          },
+          {
+            "GUID": "8255f27280324a7386b9f226bdd9209e",
+            "ColumnName": "お客様名_代表_個人_",
+            "BindingInfo": {
+              "TableName": "顧客一覧",
+              "ColumnName": "お客様名_代表_個人_"
+            },
+            "BindingColumnDataType": 5
+          }
+        ]
+      }
+    },
+    "111,2": {
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "120,2": {
+      "CellType": {
+        "$type": "Forguncy.TimeCellType, ServerDesignerCommon",
+        "EndTime": "23:00:00",
+        "Interval": 15,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "MaxDropDownItemCount": 10
+      }
+    },
+    "120,7": {
+      "CellType": {
+        "$type": "Forguncy.TimeCellType, ServerDesignerCommon",
+        "StartTime": "15:00:00",
+        "EndTime": "23:00:00",
+        "Interval": 15,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "MaxDropDownItemCount": 10
+      }
+    },
+    "120,17": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "MaxDropDownItemCount": 10,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "日報項目",
+        "ValueColumnBindingInfo": {
+          "TableName": "日報項目",
+          "ColumnName": "日報項目ID"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "日報項目",
+          "ColumnName": "項目"
+        },
+        "AddNullItemWhenBinding": true
+      }
+    },
+    "122,5": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "MaxDropDownItemCount": 10,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "顧客一覧",
+        "ValueColumnBindingInfo": {
+          "TableName": "顧客一覧",
+          "ColumnName": "MJS"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "顧客一覧",
+          "ColumnName": "会社名"
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "顧客一覧",
+                "ColumnName": "MJS"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "DropDownSubItems": [
+          {
+            "GUID": "198622ad7e77482e9520406ee4b3c655",
+            "ColumnName": "MJS",
+            "BindingInfo": {
+              "TableName": "顧客一覧",
+              "ColumnName": "MJS"
+            },
+            "BindingColumnDataType": 1
+          },
+          {
+            "GUID": "2f28359913f34a2390b9798717132741",
+            "ColumnName": "会社名",
+            "BindingInfo": {
+              "TableName": "顧客一覧",
+              "ColumnName": "会社名"
+            },
+            "BindingColumnDataType": 5
+          },
+          {
+            "GUID": "8255f27280324a7386b9f226bdd9209e",
+            "ColumnName": "お客様名_代表_個人_",
+            "BindingInfo": {
+              "TableName": "顧客一覧",
+              "ColumnName": "お客様名_代表_個人_"
+            },
+            "BindingColumnDataType": 5
+          }
+        ],
+        "AddNullItemWhenBinding": true
+      }
+    },
+    "124,2": {
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "133,2": {
+      "CellType": {
+        "$type": "Forguncy.TimeCellType, ServerDesignerCommon",
+        "StartTime": "15:00:00",
+        "EndTime": "12:00:00",
+        "Interval": 15,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "MaxDropDownItemCount": 10
+      }
+    },
+    "133,7": {
+      "CellType": {
+        "$type": "Forguncy.TimeCellType, ServerDesignerCommon",
+        "Interval": 15,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "MaxDropDownItemCount": 10
+      }
+    },
+    "133,17": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "MaxDropDownItemCount": 10,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "日報項目",
+        "ValueColumnBindingInfo": {
+          "TableName": "日報項目",
+          "ColumnName": "日報項目ID"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "日報項目",
+          "ColumnName": "項目"
+        }
+      }
+    },
+    "135,5": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "MaxDropDownItemCount": 10,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "顧客一覧",
+        "ValueColumnBindingInfo": {
+          "TableName": "顧客一覧",
+          "ColumnName": "MJS"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "顧客一覧",
+          "ColumnName": "会社名"
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "顧客一覧",
+                "ColumnName": "MJS"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "DropDownSubItems": [
+          {
+            "GUID": "198622ad7e77482e9520406ee4b3c655",
+            "ColumnName": "MJS",
+            "BindingInfo": {
+              "TableName": "顧客一覧",
+              "ColumnName": "MJS"
+            },
+            "BindingColumnDataType": 1
+          },
+          {
+            "GUID": "2f28359913f34a2390b9798717132741",
+            "ColumnName": "会社名",
+            "BindingInfo": {
+              "TableName": "顧客一覧",
+              "ColumnName": "会社名"
+            },
+            "BindingColumnDataType": 5
+          },
+          {
+            "GUID": "8255f27280324a7386b9f226bdd9209e",
+            "ColumnName": "お客様名_代表_個人_",
+            "BindingInfo": {
+              "TableName": "顧客一覧",
+              "ColumnName": "お客様名_代表_個人_"
+            },
+            "BindingColumnDataType": 5
+          }
+        ],
+        "AddNullItemWhenBinding": true
+      }
+    },
+    "137,2": {
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "146,2": {
+      "CellType": {
+        "$type": "Forguncy.TimeCellType, ServerDesignerCommon",
+        "StartTime": "15:00:00",
+        "EndTime": "23:00:00",
+        "Interval": 15,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "MaxDropDownItemCount": 10
+      }
+    },
+    "146,7": {
+      "CellType": {
+        "$type": "Forguncy.TimeCellType, ServerDesignerCommon",
+        "StartTime": "15:00:00",
+        "EndTime": "23:00:00",
+        "Interval": 15,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "MaxDropDownItemCount": 10
+      }
+    },
+    "146,17": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "MaxDropDownItemCount": 10,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "日報項目",
+        "ValueColumnBindingInfo": {
+          "TableName": "日報項目",
+          "ColumnName": "日報項目ID"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "日報項目",
+          "ColumnName": "項目"
+        },
+        "AddNullItemWhenBinding": true
+      }
+    },
+    "148,5": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "MaxDropDownItemCount": 10,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "顧客一覧",
+        "ValueColumnBindingInfo": {
+          "TableName": "顧客一覧",
+          "ColumnName": "MJS"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "顧客一覧",
+          "ColumnName": "会社名"
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "顧客一覧",
+                "ColumnName": "MJS"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "DropDownSubItems": [
+          {
+            "GUID": "198622ad7e77482e9520406ee4b3c655",
+            "ColumnName": "MJS",
+            "BindingInfo": {
+              "TableName": "顧客一覧",
+              "ColumnName": "MJS"
+            },
+            "BindingColumnDataType": 1
+          },
+          {
+            "GUID": "2f28359913f34a2390b9798717132741",
+            "ColumnName": "会社名",
+            "BindingInfo": {
+              "TableName": "顧客一覧",
+              "ColumnName": "会社名"
+            },
+            "BindingColumnDataType": 5
+          },
+          {
+            "GUID": "8255f27280324a7386b9f226bdd9209e",
+            "ColumnName": "お客様名_代表_個人_",
+            "BindingInfo": {
+              "TableName": "顧客一覧",
+              "ColumnName": "お客様名_代表_個人_"
+            },
+            "BindingColumnDataType": 5
+          }
+        ],
+        "AddNullItemWhenBinding": true
+      }
+    },
+    "150,2": {
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "159,2": {
+      "CellType": {
+        "$type": "Forguncy.TimeCellType, ServerDesignerCommon",
+        "StartTime": "15:00:00",
+        "EndTime": "23:00:00",
+        "Interval": 15,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "MaxDropDownItemCount": 10
+      }
+    },
+    "159,7": {
+      "CellType": {
+        "$type": "Forguncy.TimeCellType, ServerDesignerCommon",
+        "StartTime": "15:00:00",
+        "EndTime": "23:00:00",
+        "Interval": 15,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "MaxDropDownItemCount": 10
+      }
+    },
+    "159,17": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "MaxDropDownItemCount": 10,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "日報項目",
+        "ValueColumnBindingInfo": {
+          "TableName": "日報項目",
+          "ColumnName": "日報項目ID"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "日報項目",
+          "ColumnName": "項目"
+        },
+        "AddNullItemWhenBinding": true
+      }
+    },
+    "161,5": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "MaxDropDownItemCount": 10,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "顧客一覧",
+        "ValueColumnBindingInfo": {
+          "TableName": "顧客一覧",
+          "ColumnName": "MJS"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "顧客一覧",
+          "ColumnName": "会社名"
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "顧客一覧",
+                "ColumnName": "MJS"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "DropDownSubItems": [
+          {
+            "GUID": "198622ad7e77482e9520406ee4b3c655",
+            "ColumnName": "MJS",
+            "BindingInfo": {
+              "TableName": "顧客一覧",
+              "ColumnName": "MJS"
+            },
+            "BindingColumnDataType": 1
+          },
+          {
+            "GUID": "2f28359913f34a2390b9798717132741",
+            "ColumnName": "会社名",
+            "BindingInfo": {
+              "TableName": "顧客一覧",
+              "ColumnName": "会社名"
+            },
+            "BindingColumnDataType": 5
+          },
+          {
+            "GUID": "8255f27280324a7386b9f226bdd9209e",
+            "ColumnName": "お客様名_代表_個人_",
+            "BindingInfo": {
+              "TableName": "顧客一覧",
+              "ColumnName": "お客様名_代表_個人_"
+            },
+            "BindingColumnDataType": 5
+          }
+        ],
+        "AddNullItemWhenBinding": true
+      }
+    },
+    "163,2": {
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "172,2": {
+      "CellType": {
+        "$type": "Forguncy.TimeCellType, ServerDesignerCommon",
+        "StartTime": "15:00:00",
+        "EndTime": "23:00:00",
+        "Interval": 15,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "MaxDropDownItemCount": 10
+      }
+    },
+    "172,7": {
+      "CellType": {
+        "$type": "Forguncy.TimeCellType, ServerDesignerCommon",
+        "StartTime": "15:00:00",
+        "EndTime": "23:00:00",
+        "Interval": 15,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "MaxDropDownItemCount": 10
+      }
+    },
+    "172,17": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "MaxDropDownItemCount": 10,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "日報項目",
+        "ValueColumnBindingInfo": {
+          "TableName": "日報項目",
+          "ColumnName": "日報項目ID"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "日報項目",
+          "ColumnName": "項目"
+        },
+        "AddNullItemWhenBinding": true
+      }
+    },
+    "174,5": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "MaxDropDownItemCount": 10,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "顧客一覧",
+        "ValueColumnBindingInfo": {
+          "TableName": "顧客一覧",
+          "ColumnName": "MJS"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "顧客一覧",
+          "ColumnName": "会社名"
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "顧客一覧",
+                "ColumnName": "MJS"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "DropDownSubItems": [
+          {
+            "GUID": "198622ad7e77482e9520406ee4b3c655",
+            "ColumnName": "MJS",
+            "BindingInfo": {
+              "TableName": "顧客一覧",
+              "ColumnName": "MJS"
+            },
+            "BindingColumnDataType": 1
+          },
+          {
+            "GUID": "2f28359913f34a2390b9798717132741",
+            "ColumnName": "会社名",
+            "BindingInfo": {
+              "TableName": "顧客一覧",
+              "ColumnName": "会社名"
+            },
+            "BindingColumnDataType": 5
+          },
+          {
+            "GUID": "8255f27280324a7386b9f226bdd9209e",
+            "ColumnName": "お客様名_代表_個人_",
+            "BindingInfo": {
+              "TableName": "顧客一覧",
+              "ColumnName": "お客様名_代表_個人_"
+            },
+            "BindingColumnDataType": 5
+          }
+        ],
+        "AddNullItemWhenBinding": true
+      }
+    },
+    "176,2": {
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "185,2": {
+      "CellType": {
+        "$type": "Forguncy.TimeCellType, ServerDesignerCommon",
+        "StartTime": "15:00:00",
+        "EndTime": "23:00:00",
+        "Interval": 15,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "MaxDropDownItemCount": 10
+      }
+    },
+    "185,7": {
+      "CellType": {
+        "$type": "Forguncy.TimeCellType, ServerDesignerCommon",
+        "StartTime": "15:00:00",
+        "EndTime": "23:00:00",
+        "Interval": 15,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "MaxDropDownItemCount": 10
+      }
+    },
+    "185,17": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "MaxDropDownItemCount": 10,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "日報項目",
+        "ValueColumnBindingInfo": {
+          "TableName": "日報項目",
+          "ColumnName": "日報項目ID"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "日報項目",
+          "ColumnName": "項目"
+        },
+        "AddNullItemWhenBinding": true
+      }
+    },
+    "187,5": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "MaxDropDownItemCount": 10,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "顧客一覧",
+        "ValueColumnBindingInfo": {
+          "TableName": "顧客一覧",
+          "ColumnName": "MJS"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "顧客一覧",
+          "ColumnName": "会社名"
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "顧客一覧",
+                "ColumnName": "MJS"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "DropDownSubItems": [
+          {
+            "GUID": "198622ad7e77482e9520406ee4b3c655",
+            "ColumnName": "MJS",
+            "BindingInfo": {
+              "TableName": "顧客一覧",
+              "ColumnName": "MJS"
+            },
+            "BindingColumnDataType": 1
+          },
+          {
+            "GUID": "2f28359913f34a2390b9798717132741",
+            "ColumnName": "会社名",
+            "BindingInfo": {
+              "TableName": "顧客一覧",
+              "ColumnName": "会社名"
+            },
+            "BindingColumnDataType": 5
+          },
+          {
+            "GUID": "8255f27280324a7386b9f226bdd9209e",
+            "ColumnName": "お客様名_代表_個人_",
+            "BindingInfo": {
+              "TableName": "顧客一覧",
+              "ColumnName": "お客様名_代表_個人_"
+            },
+            "BindingColumnDataType": 5
+          }
+        ],
+        "AddNullItemWhenBinding": true
+      }
+    },
+    "189,2": {
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0
+      },
+      {
+        "Background": 1
+      },
+      {
+        "Background": 1,
+        "FontFamily": 2
+      },
+      {
+        "Background": 3,
+        "Formatter": 4
+      },
+      {
+        "Background": 1,
+        "FontFamily": 2,
+        "Formatter": 5
+      },
+      {
+        "Background": 3,
+        "FontFamily": 2,
+        "Formatter": 4
+      },
+      {
+        "Formatter": 4
+      },
+      {
+        "Background": 3,
+        "FontFamily": 2
+      },
+      {
+        "FontFamily": 2,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "Background": 3,
+        "FontFamily": 2,
+        "Formatter": 7,
+        "VerticalAlignment": 8,
+        "WordWrap": true
+      },
+      {
+        "Background": 0,
+        "FontFamily": 2
+      },
+      {
+        "FontFamily": 2
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Accent 2 40",
+        "Background 1 -5",
+        "Body",
+        "Background 1 0",
+        "h:mm",
+        "[AUTO]General",
+        "black",
+        "@",
+        "Top"
+      ],
+      "Borders": [
+        {
+          "Color": 6
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,31": 0,
+      "1,1": 1,
+      "1,2": 1,
+      "1,3": 1,
+      "1,4": 1,
+      "1,5": 1,
+      "1,6": 1,
+      "1,7": 1,
+      "1,8": 1,
+      "1,9": 1,
+      "1,10": 1,
+      "1,11": 1,
+      "1,12": 1,
+      "1,13": 1,
+      "1,14": 1,
+      "1,15": 1,
+      "1,16": 1,
+      "1,17": 1,
+      "1,18": 1,
+      "1,19": 1,
+      "1,20": 1,
+      "1,21": 1,
+      "1,22": 1,
+      "1,23": 1,
+      "1,24": 1,
+      "1,25": 1,
+      "1,26": 1,
+      "1,27": 1,
+      "1,28": 1,
+      "1,29": 1,
+      "2,1": 1,
+      "2,2": 1,
+      "2,3": 1,
+      "2,4": 1,
+      "2,5": 1,
+      "2,6": 2,
+      "2,7": 1,
+      "2,8": 1,
+      "2,9": 1,
+      "2,10": 1,
+      "2,11": 1,
+      "2,12": 1,
+      "2,13": 1,
+      "2,14": 1,
+      "2,15": 1,
+      "2,16": 1,
+      "2,17": 2,
+      "2,18": 1,
+      "2,19": 1,
+      "2,20": 1,
+      "2,21": 1,
+      "2,22": 1,
+      "2,23": 1,
+      "2,24": 1,
+      "2,25": 1,
+      "2,26": 1,
+      "2,27": 1,
+      "2,28": 1,
+      "2,29": 1,
+      "3,1": 1,
+      "3,2": 3,
+      "3,6": 4,
+      "3,7": 5,
+      "3,11": 1,
+      "3,12": 6,
+      "3,16": 1,
+      "3,17": 7,
+      "3,29": 1,
+      "3,31": 8,
+      "4,1": 1,
+      "4,2": 1,
+      "4,3": 1,
+      "4,4": 1,
+      "4,5": 1,
+      "4,6": 1,
+      "4,7": 1,
+      "4,8": 1,
+      "4,9": 1,
+      "4,10": 1,
+      "4,11": 1,
+      "4,12": 1,
+      "4,13": 1,
+      "4,14": 1,
+      "4,15": 1,
+      "4,16": 1,
+      "4,17": 1,
+      "4,18": 1,
+      "4,19": 1,
+      "4,20": 1,
+      "4,21": 1,
+      "4,22": 1,
+      "4,23": 1,
+      "4,24": 1,
+      "4,25": 1,
+      "4,26": 1,
+      "4,27": 1,
+      "4,28": 1,
+      "4,29": 1,
+      "5,1": 1,
+      "5,2": 1,
+      "5,3": 1,
+      "5,4": 1,
+      "5,5": 7,
+      "5,14": 1,
+      "5,15": 1,
+      "5,16": 1,
+      "5,17": 1,
+      "5,18": 1,
+      "5,19": 1,
+      "5,20": 1,
+      "5,21": 1,
+      "5,22": 1,
+      "5,23": 1,
+      "5,24": 1,
+      "5,25": 1,
+      "5,26": 1,
+      "5,27": 1,
+      "5,28": 1,
+      "5,29": 1,
+      "6,1": 1,
+      "6,2": 1,
+      "6,3": 1,
+      "6,4": 1,
+      "6,5": 1,
+      "6,6": 1,
+      "6,7": 1,
+      "6,8": 1,
+      "6,9": 1,
+      "6,10": 1,
+      "6,11": 1,
+      "6,12": 1,
+      "6,13": 1,
+      "6,14": 1,
+      "6,15": 1,
+      "6,16": 1,
+      "6,17": 1,
+      "6,18": 1,
+      "6,19": 1,
+      "6,20": 1,
+      "6,21": 1,
+      "6,22": 1,
+      "6,23": 1,
+      "6,24": 1,
+      "6,25": 1,
+      "6,26": 1,
+      "6,27": 1,
+      "6,28": 1,
+      "6,29": 1,
+      "7,1": 1,
+      "7,2": 9,
+      "7,29": 1,
+      "8,1": 1,
+      "8,29": 1,
+      "9,1": 1,
+      "9,29": 1,
+      "10,1": 1,
+      "10,29": 1,
+      "11,1": 1,
+      "11,29": 1,
+      "12,1": 1,
+      "12,2": 1,
+      "12,3": 1,
+      "12,4": 1,
+      "12,5": 1,
+      "12,6": 1,
+      "12,7": 1,
+      "12,8": 1,
+      "12,9": 1,
+      "12,10": 1,
+      "12,11": 1,
+      "12,12": 1,
+      "12,13": 1,
+      "12,14": 1,
+      "12,15": 1,
+      "12,16": 1,
+      "12,17": 1,
+      "12,18": 1,
+      "12,19": 1,
+      "12,20": 1,
+      "12,21": 1,
+      "12,22": 1,
+      "12,23": 1,
+      "12,24": 1,
+      "12,25": 1,
+      "12,26": 1,
+      "12,27": 1,
+      "12,28": 1,
+      "12,29": 1,
+      "13,0": 10,
+      "13,31": 10,
+      "14,0": 11,
+      "14,1": 4,
+      "14,2": 2,
+      "14,3": 2,
+      "14,4": 2,
+      "14,5": 2,
+      "14,6": 2,
+      "14,7": 2,
+      "14,8": 2,
+      "14,9": 2,
+      "14,10": 2,
+      "14,11": 2,
+      "14,12": 2,
+      "14,13": 2,
+      "14,14": 2,
+      "14,15": 2,
+      "14,16": 2,
+      "14,17": 2,
+      "14,18": 2,
+      "14,19": 2,
+      "14,20": 2,
+      "14,21": 2,
+      "14,22": 2,
+      "14,23": 2,
+      "14,24": 2,
+      "14,25": 2,
+      "14,26": 2,
+      "14,27": 2,
+      "14,28": 2,
+      "14,29": 2,
+      "14,30": 11,
+      "14,31": 11,
+      "15,0": 11,
+      "15,1": 2,
+      "15,2": 2,
+      "15,3": 2,
+      "15,4": 2,
+      "15,5": 2,
+      "15,6": 2,
+      "15,7": 2,
+      "15,8": 2,
+      "15,9": 2,
+      "15,10": 2,
+      "15,11": 2,
+      "15,12": 1,
+      "15,13": 2,
+      "15,14": 2,
+      "15,15": 2,
+      "15,16": 2,
+      "15,17": 2,
+      "15,18": 2,
+      "15,19": 2,
+      "15,20": 2,
+      "15,21": 2,
+      "15,22": 2,
+      "15,23": 2,
+      "15,24": 2,
+      "15,25": 2,
+      "15,26": 2,
+      "15,27": 2,
+      "15,28": 2,
+      "15,29": 2,
+      "15,30": 11,
+      "15,31": 11,
+      "16,0": 11,
+      "16,1": 2,
+      "16,2": 5,
+      "16,6": 4,
+      "16,7": 5,
+      "16,11": 2,
+      "16,12": 6,
+      "16,16": 2,
+      "16,17": 7,
+      "16,29": 1,
+      "16,30": 11,
+      "16,31": 11,
+      "17,0": 11,
+      "17,1": 2,
+      "17,2": 2,
+      "17,3": 2,
+      "17,4": 2,
+      "17,5": 2,
+      "17,6": 2,
+      "17,7": 2,
+      "17,8": 2,
+      "17,9": 2,
+      "17,10": 2,
+      "17,11": 2,
+      "17,12": 2,
+      "17,13": 2,
+      "17,14": 2,
+      "17,15": 2,
+      "17,16": 2,
+      "17,17": 2,
+      "17,18": 2,
+      "17,19": 2,
+      "17,20": 2,
+      "17,21": 2,
+      "17,22": 2,
+      "17,23": 2,
+      "17,24": 2,
+      "17,25": 2,
+      "17,26": 2,
+      "17,27": 2,
+      "17,28": 2,
+      "17,29": 2,
+      "17,30": 11,
+      "17,31": 11,
+      "18,0": 11,
+      "18,1": 2,
+      "18,2": 2,
+      "18,3": 2,
+      "18,4": 2,
+      "18,5": 7,
+      "18,14": 2,
+      "18,15": 4,
+      "18,16": 2,
+      "18,17": 2,
+      "18,18": 2,
+      "18,19": 2,
+      "18,20": 2,
+      "18,21": 2,
+      "18,22": 2,
+      "18,23": 2,
+      "18,24": 2,
+      "18,25": 2,
+      "18,26": 2,
+      "18,27": 2,
+      "18,28": 2,
+      "18,29": 2,
+      "18,30": 11,
+      "18,31": 11,
+      "19,0": 11,
+      "19,1": 2,
+      "19,2": 2,
+      "19,3": 2,
+      "19,4": 2,
+      "19,5": 2,
+      "19,6": 2,
+      "19,7": 2,
+      "19,8": 2,
+      "19,9": 2,
+      "19,10": 2,
+      "19,11": 2,
+      "19,12": 2,
+      "19,13": 2,
+      "19,14": 2,
+      "19,15": 2,
+      "19,16": 2,
+      "19,17": 2,
+      "19,18": 2,
+      "19,19": 2,
+      "19,20": 2,
+      "19,21": 2,
+      "19,22": 2,
+      "19,23": 2,
+      "19,24": 2,
+      "19,25": 2,
+      "19,26": 2,
+      "19,27": 2,
+      "19,28": 2,
+      "19,29": 2,
+      "19,30": 11,
+      "19,31": 11,
+      "20,0": 11,
+      "20,1": 2,
+      "20,2": 9,
+      "20,29": 1,
+      "20,30": 11,
+      "20,31": 11,
+      "21,0": 11,
+      "21,1": 2,
+      "21,29": 1,
+      "21,30": 11,
+      "21,31": 11,
+      "22,0": 11,
+      "22,1": 2,
+      "22,29": 1,
+      "22,30": 11,
+      "22,31": 11,
+      "23,0": 11,
+      "23,1": 2,
+      "23,29": 1,
+      "23,30": 11,
+      "23,31": 11,
+      "24,0": 11,
+      "24,1": 2,
+      "24,29": 1,
+      "24,30": 11,
+      "24,31": 11,
+      "25,0": 11,
+      "25,1": 2,
+      "25,2": 2,
+      "25,3": 2,
+      "25,4": 2,
+      "25,5": 2,
+      "25,6": 2,
+      "25,7": 2,
+      "25,8": 2,
+      "25,9": 2,
+      "25,10": 2,
+      "25,11": 2,
+      "25,12": 2,
+      "25,13": 2,
+      "25,14": 2,
+      "25,15": 2,
+      "25,16": 2,
+      "25,17": 2,
+      "25,18": 2,
+      "25,19": 2,
+      "25,20": 2,
+      "25,21": 2,
+      "25,22": 2,
+      "25,23": 2,
+      "25,24": 2,
+      "25,25": 2,
+      "25,26": 2,
+      "25,27": 2,
+      "25,28": 2,
+      "25,29": 2,
+      "25,30": 11,
+      "25,31": 11,
+      "26,0": 10,
+      "26,31": 10,
+      "27,0": 11,
+      "27,1": 4,
+      "27,2": 2,
+      "27,3": 2,
+      "27,4": 2,
+      "27,5": 2,
+      "27,6": 2,
+      "27,7": 2,
+      "27,8": 2,
+      "27,9": 2,
+      "27,10": 2,
+      "27,11": 2,
+      "27,12": 2,
+      "27,13": 2,
+      "27,14": 2,
+      "27,15": 2,
+      "27,16": 2,
+      "27,17": 2,
+      "27,18": 2,
+      "27,19": 2,
+      "27,20": 2,
+      "27,21": 2,
+      "27,22": 2,
+      "27,23": 2,
+      "27,24": 2,
+      "27,25": 2,
+      "27,26": 2,
+      "27,27": 2,
+      "27,28": 2,
+      "27,29": 2,
+      "27,30": 11,
+      "27,31": 11,
+      "28,0": 11,
+      "28,1": 2,
+      "28,2": 2,
+      "28,3": 2,
+      "28,4": 2,
+      "28,5": 2,
+      "28,6": 2,
+      "28,7": 2,
+      "28,8": 2,
+      "28,9": 2,
+      "28,10": 2,
+      "28,11": 2,
+      "28,12": 2,
+      "28,13": 2,
+      "28,14": 2,
+      "28,15": 2,
+      "28,16": 2,
+      "28,17": 2,
+      "28,18": 2,
+      "28,19": 2,
+      "28,20": 2,
+      "28,21": 2,
+      "28,22": 2,
+      "28,23": 2,
+      "28,24": 2,
+      "28,25": 2,
+      "28,26": 2,
+      "28,27": 2,
+      "28,28": 2,
+      "28,29": 2,
+      "28,30": 11,
+      "28,31": 11,
+      "29,0": 11,
+      "29,1": 2,
+      "29,2": 5,
+      "29,3": 11,
+      "29,4": 11,
+      "29,5": 11,
+      "29,6": 4,
+      "29,7": 5,
+      "29,8": 11,
+      "29,9": 11,
+      "29,10": 11,
+      "29,11": 2,
+      "29,12": 6,
+      "29,16": 2,
+      "29,17": 7,
+      "29,29": 1,
+      "29,30": 11,
+      "29,31": 11,
+      "30,0": 11,
+      "30,1": 2,
+      "30,2": 2,
+      "30,3": 2,
+      "30,4": 2,
+      "30,5": 2,
+      "30,6": 2,
+      "30,7": 2,
+      "30,8": 2,
+      "30,9": 2,
+      "30,10": 2,
+      "30,11": 2,
+      "30,12": 2,
+      "30,13": 2,
+      "30,14": 2,
+      "30,15": 2,
+      "30,16": 2,
+      "30,17": 2,
+      "30,18": 2,
+      "30,19": 2,
+      "30,20": 2,
+      "30,21": 2,
+      "30,22": 2,
+      "30,23": 2,
+      "30,24": 2,
+      "30,25": 2,
+      "30,26": 2,
+      "30,27": 2,
+      "30,28": 2,
+      "30,29": 2,
+      "30,30": 11,
+      "30,31": 11,
+      "31,0": 11,
+      "31,1": 2,
+      "31,2": 2,
+      "31,3": 2,
+      "31,4": 2,
+      "31,5": 7,
+      "31,6": 11,
+      "31,7": 11,
+      "31,8": 11,
+      "31,9": 11,
+      "31,10": 11,
+      "31,11": 11,
+      "31,12": 11,
+      "31,13": 11,
+      "31,14": 2,
+      "31,15": 4,
+      "31,16": 2,
+      "31,17": 2,
+      "31,18": 2,
+      "31,19": 2,
+      "31,20": 2,
+      "31,21": 2,
+      "31,22": 2,
+      "31,23": 2,
+      "31,24": 2,
+      "31,25": 2,
+      "31,26": 2,
+      "31,27": 2,
+      "31,28": 2,
+      "31,29": 2,
+      "31,30": 11,
+      "31,31": 11,
+      "32,0": 11,
+      "32,1": 2,
+      "32,2": 2,
+      "32,3": 2,
+      "32,4": 2,
+      "32,5": 2,
+      "32,6": 2,
+      "32,7": 2,
+      "32,8": 2,
+      "32,9": 2,
+      "32,10": 2,
+      "32,11": 2,
+      "32,12": 2,
+      "32,13": 2,
+      "32,14": 2,
+      "32,15": 2,
+      "32,16": 2,
+      "32,17": 2,
+      "32,18": 2,
+      "32,19": 2,
+      "32,20": 2,
+      "32,21": 2,
+      "32,22": 2,
+      "32,23": 2,
+      "32,24": 2,
+      "32,25": 2,
+      "32,26": 2,
+      "32,27": 2,
+      "32,28": 2,
+      "32,29": 2,
+      "32,30": 11,
+      "32,31": 11,
+      "33,0": 11,
+      "33,1": 2,
+      "33,2": 9,
+      "33,29": 1,
+      "33,30": 11,
+      "33,31": 11,
+      "34,0": 11,
+      "34,1": 2,
+      "34,29": 1,
+      "34,30": 11,
+      "34,31": 11,
+      "35,0": 11,
+      "35,1": 2,
+      "35,29": 1,
+      "35,30": 11,
+      "35,31": 11,
+      "36,0": 11,
+      "36,1": 2,
+      "36,29": 1,
+      "36,30": 11,
+      "36,31": 11,
+      "37,0": 11,
+      "37,1": 2,
+      "37,29": 1,
+      "37,30": 11,
+      "37,31": 11,
+      "38,0": 11,
+      "38,1": 2,
+      "38,2": 2,
+      "38,3": 2,
+      "38,4": 2,
+      "38,5": 2,
+      "38,6": 2,
+      "38,7": 2,
+      "38,8": 2,
+      "38,9": 2,
+      "38,10": 2,
+      "38,11": 2,
+      "38,12": 2,
+      "38,13": 2,
+      "38,14": 2,
+      "38,15": 2,
+      "38,16": 2,
+      "38,17": 2,
+      "38,18": 2,
+      "38,19": 2,
+      "38,20": 2,
+      "38,21": 2,
+      "38,22": 2,
+      "38,23": 2,
+      "38,24": 2,
+      "38,25": 2,
+      "38,26": 2,
+      "38,27": 2,
+      "38,28": 2,
+      "38,29": 2,
+      "38,30": 11,
+      "38,31": 11,
+      "39,0": 10,
+      "39,31": 10,
+      "40,0": 11,
+      "40,1": 4,
+      "40,2": 2,
+      "40,3": 2,
+      "40,4": 2,
+      "40,5": 2,
+      "40,6": 2,
+      "40,7": 2,
+      "40,8": 2,
+      "40,9": 2,
+      "40,10": 2,
+      "40,11": 2,
+      "40,12": 2,
+      "40,13": 2,
+      "40,14": 2,
+      "40,15": 2,
+      "40,16": 2,
+      "40,17": 2,
+      "40,18": 2,
+      "40,19": 2,
+      "40,20": 2,
+      "40,21": 2,
+      "40,22": 2,
+      "40,23": 2,
+      "40,24": 2,
+      "40,25": 2,
+      "40,26": 2,
+      "40,27": 2,
+      "40,28": 2,
+      "40,29": 2,
+      "40,30": 11,
+      "40,31": 11,
+      "41,0": 11,
+      "41,1": 2,
+      "41,2": 2,
+      "41,3": 2,
+      "41,4": 2,
+      "41,5": 2,
+      "41,6": 2,
+      "41,7": 2,
+      "41,8": 2,
+      "41,9": 2,
+      "41,10": 2,
+      "41,11": 2,
+      "41,12": 2,
+      "41,13": 2,
+      "41,14": 2,
+      "41,15": 2,
+      "41,16": 2,
+      "41,17": 2,
+      "41,18": 2,
+      "41,19": 2,
+      "41,20": 2,
+      "41,21": 2,
+      "41,22": 2,
+      "41,23": 2,
+      "41,24": 2,
+      "41,25": 2,
+      "41,26": 2,
+      "41,27": 2,
+      "41,28": 2,
+      "41,29": 2,
+      "41,30": 11,
+      "41,31": 11,
+      "42,0": 11,
+      "42,1": 2,
+      "42,2": 5,
+      "42,3": 11,
+      "42,4": 11,
+      "42,5": 11,
+      "42,6": 4,
+      "42,7": 5,
+      "42,8": 11,
+      "42,9": 11,
+      "42,10": 11,
+      "42,11": 2,
+      "42,12": 6,
+      "42,16": 2,
+      "42,17": 7,
+      "42,29": 1,
+      "42,30": 11,
+      "42,31": 11,
+      "43,0": 11,
+      "43,1": 2,
+      "43,2": 2,
+      "43,3": 2,
+      "43,4": 2,
+      "43,5": 2,
+      "43,6": 2,
+      "43,7": 2,
+      "43,8": 2,
+      "43,9": 2,
+      "43,10": 2,
+      "43,11": 2,
+      "43,12": 2,
+      "43,13": 2,
+      "43,14": 2,
+      "43,15": 2,
+      "43,16": 2,
+      "43,17": 2,
+      "43,18": 2,
+      "43,19": 2,
+      "43,20": 2,
+      "43,21": 2,
+      "43,22": 2,
+      "43,23": 2,
+      "43,24": 2,
+      "43,25": 2,
+      "43,26": 2,
+      "43,27": 2,
+      "43,28": 2,
+      "43,29": 2,
+      "43,30": 11,
+      "43,31": 11,
+      "44,0": 11,
+      "44,1": 2,
+      "44,2": 2,
+      "44,3": 2,
+      "44,4": 2,
+      "44,5": 7,
+      "44,6": 11,
+      "44,7": 11,
+      "44,8": 11,
+      "44,9": 11,
+      "44,10": 11,
+      "44,11": 11,
+      "44,12": 11,
+      "44,13": 11,
+      "44,14": 2,
+      "44,15": 4,
+      "44,16": 2,
+      "44,17": 2,
+      "44,18": 2,
+      "44,19": 2,
+      "44,20": 2,
+      "44,21": 2,
+      "44,22": 2,
+      "44,23": 2,
+      "44,24": 2,
+      "44,25": 2,
+      "44,26": 2,
+      "44,27": 2,
+      "44,28": 2,
+      "44,29": 2,
+      "44,30": 11,
+      "44,31": 11,
+      "45,0": 11,
+      "45,1": 2,
+      "45,2": 2,
+      "45,3": 2,
+      "45,4": 2,
+      "45,5": 2,
+      "45,6": 2,
+      "45,7": 2,
+      "45,8": 2,
+      "45,9": 2,
+      "45,10": 2,
+      "45,11": 2,
+      "45,12": 2,
+      "45,13": 2,
+      "45,14": 2,
+      "45,15": 2,
+      "45,16": 2,
+      "45,17": 2,
+      "45,18": 2,
+      "45,19": 2,
+      "45,20": 2,
+      "45,21": 2,
+      "45,22": 2,
+      "45,23": 2,
+      "45,24": 2,
+      "45,25": 2,
+      "45,26": 2,
+      "45,27": 2,
+      "45,28": 2,
+      "45,29": 2,
+      "45,30": 11,
+      "45,31": 11,
+      "46,0": 11,
+      "46,1": 2,
+      "46,2": 9,
+      "46,29": 1,
+      "46,30": 11,
+      "46,31": 11,
+      "47,0": 11,
+      "47,1": 2,
+      "47,29": 1,
+      "47,30": 11,
+      "47,31": 11,
+      "48,0": 11,
+      "48,1": 2,
+      "48,29": 1,
+      "48,30": 11,
+      "48,31": 11,
+      "49,0": 11,
+      "49,1": 2,
+      "49,29": 1,
+      "49,30": 11,
+      "49,31": 11,
+      "50,0": 11,
+      "50,1": 2,
+      "50,29": 1,
+      "50,30": 11,
+      "50,31": 11,
+      "51,0": 11,
+      "51,1": 2,
+      "51,2": 2,
+      "51,3": 2,
+      "51,4": 2,
+      "51,5": 2,
+      "51,6": 2,
+      "51,7": 2,
+      "51,8": 2,
+      "51,9": 2,
+      "51,10": 2,
+      "51,11": 2,
+      "51,12": 2,
+      "51,13": 2,
+      "51,14": 2,
+      "51,15": 2,
+      "51,16": 2,
+      "51,17": 2,
+      "51,18": 2,
+      "51,19": 2,
+      "51,20": 2,
+      "51,21": 2,
+      "51,22": 2,
+      "51,23": 2,
+      "51,24": 2,
+      "51,25": 2,
+      "51,26": 2,
+      "51,27": 2,
+      "51,28": 2,
+      "51,29": 2,
+      "51,30": 11,
+      "51,31": 11,
+      "52,0": 10,
+      "52,31": 10,
+      "53,0": 11,
+      "53,1": 4,
+      "53,2": 2,
+      "53,3": 2,
+      "53,4": 2,
+      "53,5": 2,
+      "53,6": 2,
+      "53,7": 2,
+      "53,8": 2,
+      "53,9": 2,
+      "53,10": 2,
+      "53,11": 2,
+      "53,12": 2,
+      "53,13": 2,
+      "53,14": 2,
+      "53,15": 2,
+      "53,16": 2,
+      "53,17": 2,
+      "53,18": 2,
+      "53,19": 2,
+      "53,20": 2,
+      "53,21": 2,
+      "53,22": 2,
+      "53,23": 2,
+      "53,24": 2,
+      "53,25": 2,
+      "53,26": 2,
+      "53,27": 2,
+      "53,28": 2,
+      "53,29": 2,
+      "53,30": 11,
+      "53,31": 11,
+      "54,0": 11,
+      "54,1": 2,
+      "54,2": 2,
+      "54,3": 2,
+      "54,4": 2,
+      "54,5": 2,
+      "54,6": 2,
+      "54,7": 2,
+      "54,8": 2,
+      "54,9": 2,
+      "54,10": 2,
+      "54,11": 2,
+      "54,12": 2,
+      "54,13": 2,
+      "54,14": 2,
+      "54,15": 2,
+      "54,16": 2,
+      "54,17": 2,
+      "54,18": 2,
+      "54,19": 2,
+      "54,20": 2,
+      "54,21": 2,
+      "54,22": 2,
+      "54,23": 2,
+      "54,24": 2,
+      "54,25": 2,
+      "54,26": 2,
+      "54,27": 2,
+      "54,28": 2,
+      "54,29": 2,
+      "54,30": 11,
+      "54,31": 11,
+      "55,0": 11,
+      "55,1": 2,
+      "55,2": 5,
+      "55,3": 11,
+      "55,4": 11,
+      "55,5": 11,
+      "55,6": 4,
+      "55,7": 5,
+      "55,8": 11,
+      "55,9": 11,
+      "55,10": 11,
+      "55,11": 2,
+      "55,12": 6,
+      "55,16": 2,
+      "55,17": 7,
+      "55,29": 1,
+      "55,30": 11,
+      "55,31": 11,
+      "56,0": 11,
+      "56,1": 2,
+      "56,2": 2,
+      "56,3": 2,
+      "56,4": 2,
+      "56,5": 2,
+      "56,6": 2,
+      "56,7": 2,
+      "56,8": 2,
+      "56,9": 2,
+      "56,10": 2,
+      "56,11": 2,
+      "56,12": 2,
+      "56,13": 2,
+      "56,14": 2,
+      "56,15": 2,
+      "56,16": 2,
+      "56,17": 2,
+      "56,18": 2,
+      "56,19": 2,
+      "56,20": 2,
+      "56,21": 2,
+      "56,22": 2,
+      "56,23": 2,
+      "56,24": 2,
+      "56,25": 2,
+      "56,26": 2,
+      "56,27": 2,
+      "56,28": 2,
+      "56,29": 2,
+      "56,30": 11,
+      "56,31": 11,
+      "57,0": 11,
+      "57,1": 2,
+      "57,2": 2,
+      "57,3": 2,
+      "57,4": 2,
+      "57,5": 7,
+      "57,6": 11,
+      "57,7": 11,
+      "57,8": 11,
+      "57,9": 11,
+      "57,10": 11,
+      "57,11": 11,
+      "57,12": 11,
+      "57,13": 11,
+      "57,14": 2,
+      "57,15": 4,
+      "57,16": 2,
+      "57,17": 2,
+      "57,18": 2,
+      "57,19": 2,
+      "57,20": 2,
+      "57,21": 2,
+      "57,22": 2,
+      "57,23": 2,
+      "57,24": 2,
+      "57,25": 2,
+      "57,26": 2,
+      "57,27": 2,
+      "57,28": 2,
+      "57,29": 2,
+      "57,30": 11,
+      "57,31": 11,
+      "58,0": 11,
+      "58,1": 2,
+      "58,2": 2,
+      "58,3": 2,
+      "58,4": 2,
+      "58,5": 2,
+      "58,6": 2,
+      "58,7": 2,
+      "58,8": 2,
+      "58,9": 2,
+      "58,10": 2,
+      "58,11": 2,
+      "58,12": 2,
+      "58,13": 2,
+      "58,14": 2,
+      "58,15": 2,
+      "58,16": 2,
+      "58,17": 2,
+      "58,18": 2,
+      "58,19": 2,
+      "58,20": 2,
+      "58,21": 2,
+      "58,22": 2,
+      "58,23": 2,
+      "58,24": 2,
+      "58,25": 2,
+      "58,26": 2,
+      "58,27": 2,
+      "58,28": 2,
+      "58,29": 2,
+      "58,30": 11,
+      "58,31": 11,
+      "59,0": 11,
+      "59,1": 2,
+      "59,2": 9,
+      "59,29": 1,
+      "59,30": 11,
+      "59,31": 11,
+      "60,0": 11,
+      "60,1": 2,
+      "60,29": 1,
+      "60,30": 11,
+      "60,31": 11,
+      "61,0": 11,
+      "61,1": 2,
+      "61,29": 1,
+      "61,30": 11,
+      "61,31": 11,
+      "62,0": 11,
+      "62,1": 2,
+      "62,29": 1,
+      "62,30": 11,
+      "62,31": 11,
+      "63,0": 11,
+      "63,1": 2,
+      "63,29": 1,
+      "63,30": 11,
+      "63,31": 11,
+      "64,0": 11,
+      "64,1": 2,
+      "64,2": 2,
+      "64,3": 2,
+      "64,4": 2,
+      "64,5": 2,
+      "64,6": 2,
+      "64,7": 2,
+      "64,8": 2,
+      "64,9": 2,
+      "64,10": 2,
+      "64,11": 2,
+      "64,12": 2,
+      "64,13": 2,
+      "64,14": 2,
+      "64,15": 2,
+      "64,16": 2,
+      "64,17": 2,
+      "64,18": 2,
+      "64,19": 2,
+      "64,20": 2,
+      "64,21": 2,
+      "64,22": 2,
+      "64,23": 2,
+      "64,24": 2,
+      "64,25": 2,
+      "64,26": 2,
+      "64,27": 2,
+      "64,28": 2,
+      "64,29": 2,
+      "64,30": 11,
+      "64,31": 11,
+      "65,0": 10,
+      "65,31": 10,
+      "66,0": 11,
+      "66,1": 4,
+      "66,2": 2,
+      "66,3": 2,
+      "66,4": 2,
+      "66,5": 2,
+      "66,6": 2,
+      "66,7": 2,
+      "66,8": 2,
+      "66,9": 2,
+      "66,10": 2,
+      "66,11": 2,
+      "66,12": 2,
+      "66,13": 2,
+      "66,14": 2,
+      "66,15": 2,
+      "66,16": 2,
+      "66,17": 2,
+      "66,18": 2,
+      "66,19": 2,
+      "66,20": 2,
+      "66,21": 2,
+      "66,22": 2,
+      "66,23": 2,
+      "66,24": 2,
+      "66,25": 2,
+      "66,26": 2,
+      "66,27": 2,
+      "66,28": 2,
+      "66,29": 2,
+      "66,30": 11,
+      "66,31": 11,
+      "67,0": 11,
+      "67,1": 2,
+      "67,2": 2,
+      "67,3": 2,
+      "67,4": 2,
+      "67,5": 2,
+      "67,6": 2,
+      "67,7": 2,
+      "67,8": 2,
+      "67,9": 2,
+      "67,10": 2,
+      "67,11": 2,
+      "67,12": 2,
+      "67,13": 2,
+      "67,14": 2,
+      "67,15": 2,
+      "67,16": 2,
+      "67,17": 2,
+      "67,18": 2,
+      "67,19": 2,
+      "67,20": 2,
+      "67,21": 2,
+      "67,22": 2,
+      "67,23": 2,
+      "67,24": 2,
+      "67,25": 2,
+      "67,26": 2,
+      "67,27": 2,
+      "67,28": 2,
+      "67,29": 2,
+      "67,30": 11,
+      "67,31": 11,
+      "68,0": 11,
+      "68,1": 2,
+      "68,2": 5,
+      "68,3": 11,
+      "68,4": 11,
+      "68,5": 11,
+      "68,6": 4,
+      "68,7": 5,
+      "68,8": 11,
+      "68,9": 11,
+      "68,10": 11,
+      "68,11": 2,
+      "68,12": 6,
+      "68,16": 2,
+      "68,17": 7,
+      "68,29": 1,
+      "68,30": 11,
+      "68,31": 11,
+      "69,0": 11,
+      "69,1": 2,
+      "69,2": 2,
+      "69,3": 2,
+      "69,4": 2,
+      "69,5": 2,
+      "69,6": 2,
+      "69,7": 2,
+      "69,8": 2,
+      "69,9": 2,
+      "69,10": 2,
+      "69,11": 2,
+      "69,12": 2,
+      "69,13": 2,
+      "69,14": 2,
+      "69,15": 2,
+      "69,16": 2,
+      "69,17": 2,
+      "69,18": 2,
+      "69,19": 2,
+      "69,20": 2,
+      "69,21": 2,
+      "69,22": 2,
+      "69,23": 2,
+      "69,24": 2,
+      "69,25": 2,
+      "69,26": 2,
+      "69,27": 2,
+      "69,28": 2,
+      "69,29": 2,
+      "69,30": 11,
+      "69,31": 11,
+      "70,0": 11,
+      "70,1": 2,
+      "70,2": 2,
+      "70,3": 2,
+      "70,4": 2,
+      "70,5": 7,
+      "70,6": 11,
+      "70,7": 11,
+      "70,8": 11,
+      "70,9": 11,
+      "70,10": 11,
+      "70,11": 11,
+      "70,12": 11,
+      "70,13": 11,
+      "70,14": 2,
+      "70,15": 4,
+      "70,16": 2,
+      "70,17": 2,
+      "70,18": 2,
+      "70,19": 2,
+      "70,20": 2,
+      "70,21": 2,
+      "70,22": 2,
+      "70,23": 2,
+      "70,24": 2,
+      "70,25": 2,
+      "70,26": 2,
+      "70,27": 2,
+      "70,28": 2,
+      "70,29": 2,
+      "70,30": 11,
+      "70,31": 11,
+      "71,0": 11,
+      "71,1": 2,
+      "71,2": 2,
+      "71,3": 2,
+      "71,4": 2,
+      "71,5": 2,
+      "71,6": 2,
+      "71,7": 2,
+      "71,8": 2,
+      "71,9": 2,
+      "71,10": 2,
+      "71,11": 2,
+      "71,12": 2,
+      "71,13": 2,
+      "71,14": 2,
+      "71,15": 2,
+      "71,16": 2,
+      "71,17": 2,
+      "71,18": 2,
+      "71,19": 2,
+      "71,20": 2,
+      "71,21": 2,
+      "71,22": 2,
+      "71,23": 2,
+      "71,24": 2,
+      "71,25": 2,
+      "71,26": 2,
+      "71,27": 2,
+      "71,28": 2,
+      "71,29": 2,
+      "71,30": 11,
+      "71,31": 11,
+      "72,0": 11,
+      "72,1": 2,
+      "72,2": 9,
+      "72,29": 1,
+      "72,30": 11,
+      "72,31": 11,
+      "73,0": 11,
+      "73,1": 2,
+      "73,29": 1,
+      "73,30": 11,
+      "73,31": 11,
+      "74,0": 11,
+      "74,1": 2,
+      "74,29": 1,
+      "74,30": 11,
+      "74,31": 11,
+      "75,0": 11,
+      "75,1": 2,
+      "75,29": 1,
+      "75,30": 11,
+      "75,31": 11,
+      "76,0": 11,
+      "76,1": 2,
+      "76,29": 1,
+      "76,30": 11,
+      "76,31": 11,
+      "77,0": 11,
+      "77,1": 2,
+      "77,2": 2,
+      "77,3": 2,
+      "77,4": 2,
+      "77,5": 2,
+      "77,6": 2,
+      "77,7": 2,
+      "77,8": 2,
+      "77,9": 2,
+      "77,10": 2,
+      "77,11": 2,
+      "77,12": 2,
+      "77,13": 2,
+      "77,14": 2,
+      "77,15": 2,
+      "77,16": 2,
+      "77,17": 2,
+      "77,18": 2,
+      "77,19": 2,
+      "77,20": 2,
+      "77,21": 2,
+      "77,22": 2,
+      "77,23": 2,
+      "77,24": 2,
+      "77,25": 2,
+      "77,26": 2,
+      "77,27": 2,
+      "77,28": 2,
+      "77,29": 2,
+      "77,30": 11,
+      "77,31": 11,
+      "78,0": 10,
+      "78,31": 10,
+      "79,0": 11,
+      "79,1": 4,
+      "79,2": 2,
+      "79,3": 2,
+      "79,4": 2,
+      "79,5": 2,
+      "79,6": 2,
+      "79,7": 2,
+      "79,8": 2,
+      "79,9": 2,
+      "79,10": 2,
+      "79,11": 2,
+      "79,12": 2,
+      "79,13": 2,
+      "79,14": 2,
+      "79,15": 2,
+      "79,16": 2,
+      "79,17": 2,
+      "79,18": 2,
+      "79,19": 2,
+      "79,20": 2,
+      "79,21": 2,
+      "79,22": 2,
+      "79,23": 2,
+      "79,24": 2,
+      "79,25": 2,
+      "79,26": 2,
+      "79,27": 2,
+      "79,28": 2,
+      "79,29": 2,
+      "79,30": 11,
+      "79,31": 11,
+      "80,0": 11,
+      "80,1": 2,
+      "80,2": 2,
+      "80,3": 2,
+      "80,4": 2,
+      "80,5": 2,
+      "80,6": 2,
+      "80,7": 2,
+      "80,8": 2,
+      "80,9": 2,
+      "80,10": 2,
+      "80,11": 2,
+      "80,12": 1,
+      "80,13": 2,
+      "80,14": 2,
+      "80,15": 2,
+      "80,16": 2,
+      "80,17": 2,
+      "80,18": 2,
+      "80,19": 2,
+      "80,20": 2,
+      "80,21": 2,
+      "80,22": 2,
+      "80,23": 2,
+      "80,24": 2,
+      "80,25": 2,
+      "80,26": 2,
+      "80,27": 2,
+      "80,28": 2,
+      "80,29": 2,
+      "80,30": 11,
+      "80,31": 11,
+      "81,0": 11,
+      "81,1": 2,
+      "81,2": 5,
+      "81,3": 11,
+      "81,4": 11,
+      "81,5": 11,
+      "81,6": 4,
+      "81,7": 7,
+      "81,8": 11,
+      "81,9": 11,
+      "81,10": 11,
+      "81,11": 2,
+      "81,12": 6,
+      "81,16": 2,
+      "81,17": 7,
+      "81,29": 1,
+      "81,30": 11,
+      "81,31": 11,
+      "82,0": 11,
+      "82,1": 2,
+      "82,2": 2,
+      "82,3": 2,
+      "82,4": 2,
+      "82,5": 2,
+      "82,6": 2,
+      "82,7": 2,
+      "82,8": 2,
+      "82,9": 2,
+      "82,10": 2,
+      "82,11": 2,
+      "82,12": 2,
+      "82,13": 2,
+      "82,14": 2,
+      "82,15": 2,
+      "82,16": 2,
+      "82,17": 2,
+      "82,18": 2,
+      "82,19": 2,
+      "82,20": 2,
+      "82,21": 2,
+      "82,22": 2,
+      "82,23": 2,
+      "82,24": 2,
+      "82,25": 2,
+      "82,26": 2,
+      "82,27": 2,
+      "82,28": 2,
+      "82,29": 2,
+      "82,30": 11,
+      "82,31": 11,
+      "83,0": 11,
+      "83,1": 2,
+      "83,2": 2,
+      "83,3": 2,
+      "83,4": 2,
+      "83,5": 7,
+      "83,6": 11,
+      "83,7": 11,
+      "83,8": 11,
+      "83,9": 11,
+      "83,10": 11,
+      "83,11": 11,
+      "83,12": 11,
+      "83,13": 11,
+      "83,14": 2,
+      "83,15": 4,
+      "83,16": 2,
+      "83,17": 2,
+      "83,18": 2,
+      "83,19": 2,
+      "83,20": 2,
+      "83,21": 2,
+      "83,22": 2,
+      "83,23": 2,
+      "83,24": 2,
+      "83,25": 2,
+      "83,26": 2,
+      "83,27": 2,
+      "83,28": 2,
+      "83,29": 2,
+      "83,30": 11,
+      "83,31": 11,
+      "84,0": 11,
+      "84,1": 2,
+      "84,2": 2,
+      "84,3": 2,
+      "84,4": 2,
+      "84,5": 2,
+      "84,6": 2,
+      "84,7": 2,
+      "84,8": 2,
+      "84,9": 2,
+      "84,10": 2,
+      "84,11": 2,
+      "84,12": 2,
+      "84,13": 2,
+      "84,14": 2,
+      "84,15": 2,
+      "84,16": 2,
+      "84,17": 2,
+      "84,18": 2,
+      "84,19": 2,
+      "84,20": 2,
+      "84,21": 2,
+      "84,22": 2,
+      "84,23": 2,
+      "84,24": 2,
+      "84,25": 2,
+      "84,26": 2,
+      "84,27": 2,
+      "84,28": 2,
+      "84,29": 2,
+      "84,30": 11,
+      "84,31": 11,
+      "85,0": 11,
+      "85,1": 2,
+      "85,2": 9,
+      "85,29": 1,
+      "85,30": 11,
+      "85,31": 11,
+      "86,0": 11,
+      "86,1": 2,
+      "86,29": 1,
+      "86,30": 11,
+      "86,31": 11,
+      "87,0": 11,
+      "87,1": 2,
+      "87,29": 1,
+      "87,30": 11,
+      "87,31": 11,
+      "88,0": 11,
+      "88,1": 2,
+      "88,29": 1,
+      "88,30": 11,
+      "88,31": 11,
+      "89,0": 11,
+      "89,1": 2,
+      "89,29": 1,
+      "89,30": 11,
+      "89,31": 11,
+      "90,0": 11,
+      "90,1": 2,
+      "90,2": 2,
+      "90,3": 2,
+      "90,4": 2,
+      "90,5": 2,
+      "90,6": 2,
+      "90,7": 2,
+      "90,8": 2,
+      "90,9": 2,
+      "90,10": 2,
+      "90,11": 2,
+      "90,12": 2,
+      "90,13": 2,
+      "90,14": 2,
+      "90,15": 2,
+      "90,16": 2,
+      "90,17": 2,
+      "90,18": 2,
+      "90,19": 2,
+      "90,20": 2,
+      "90,21": 2,
+      "90,22": 2,
+      "90,23": 2,
+      "90,24": 2,
+      "90,25": 2,
+      "90,26": 2,
+      "90,27": 2,
+      "90,28": 2,
+      "90,29": 2,
+      "90,30": 11,
+      "90,31": 11,
+      "91,0": 10,
+      "91,31": 10,
+      "92,0": 11,
+      "92,1": 4,
+      "92,2": 2,
+      "92,3": 2,
+      "92,4": 2,
+      "92,5": 2,
+      "92,6": 2,
+      "92,7": 2,
+      "92,8": 2,
+      "92,9": 2,
+      "92,10": 2,
+      "92,11": 2,
+      "92,12": 2,
+      "92,13": 2,
+      "92,14": 2,
+      "92,15": 2,
+      "92,16": 2,
+      "92,17": 2,
+      "92,18": 2,
+      "92,19": 2,
+      "92,20": 2,
+      "92,21": 2,
+      "92,22": 2,
+      "92,23": 2,
+      "92,24": 2,
+      "92,25": 2,
+      "92,26": 2,
+      "92,27": 2,
+      "92,28": 2,
+      "92,29": 2,
+      "92,30": 11,
+      "92,31": 11,
+      "93,0": 11,
+      "93,1": 2,
+      "93,2": 2,
+      "93,3": 2,
+      "93,4": 2,
+      "93,5": 2,
+      "93,6": 2,
+      "93,7": 2,
+      "93,8": 2,
+      "93,9": 2,
+      "93,10": 2,
+      "93,11": 2,
+      "93,12": 1,
+      "93,13": 1,
+      "93,14": 2,
+      "93,15": 2,
+      "93,16": 2,
+      "93,17": 2,
+      "93,18": 2,
+      "93,19": 2,
+      "93,20": 2,
+      "93,21": 2,
+      "93,22": 2,
+      "93,23": 2,
+      "93,24": 2,
+      "93,25": 2,
+      "93,26": 2,
+      "93,27": 2,
+      "93,28": 2,
+      "93,29": 2,
+      "93,30": 11,
+      "93,31": 11,
+      "94,0": 11,
+      "94,1": 2,
+      "94,2": 7,
+      "94,3": 11,
+      "94,4": 11,
+      "94,5": 11,
+      "94,6": 4,
+      "94,7": 7,
+      "94,8": 11,
+      "94,9": 11,
+      "94,10": 11,
+      "94,11": 2,
+      "94,12": 6,
+      "94,16": 2,
+      "94,17": 7,
+      "94,29": 1,
+      "94,30": 11,
+      "94,31": 11,
+      "95,0": 11,
+      "95,1": 2,
+      "95,2": 2,
+      "95,3": 2,
+      "95,4": 2,
+      "95,5": 2,
+      "95,6": 2,
+      "95,7": 2,
+      "95,8": 2,
+      "95,9": 2,
+      "95,10": 2,
+      "95,11": 2,
+      "95,12": 2,
+      "95,13": 2,
+      "95,14": 2,
+      "95,15": 2,
+      "95,16": 2,
+      "95,17": 2,
+      "95,18": 2,
+      "95,19": 2,
+      "95,20": 2,
+      "95,21": 2,
+      "95,22": 2,
+      "95,23": 2,
+      "95,24": 2,
+      "95,25": 2,
+      "95,26": 2,
+      "95,27": 2,
+      "95,28": 2,
+      "95,29": 2,
+      "95,30": 11,
+      "95,31": 11,
+      "96,0": 11,
+      "96,1": 2,
+      "96,2": 2,
+      "96,3": 2,
+      "96,4": 2,
+      "96,5": 7,
+      "96,6": 11,
+      "96,7": 11,
+      "96,8": 11,
+      "96,9": 11,
+      "96,10": 11,
+      "96,11": 11,
+      "96,12": 11,
+      "96,13": 11,
+      "96,14": 2,
+      "96,15": 4,
+      "96,16": 2,
+      "96,17": 2,
+      "96,18": 2,
+      "96,19": 2,
+      "96,20": 2,
+      "96,21": 2,
+      "96,22": 2,
+      "96,23": 2,
+      "96,24": 2,
+      "96,25": 2,
+      "96,26": 2,
+      "96,27": 2,
+      "96,28": 2,
+      "96,29": 2,
+      "96,30": 11,
+      "96,31": 11,
+      "97,0": 11,
+      "97,1": 2,
+      "97,2": 2,
+      "97,3": 2,
+      "97,4": 2,
+      "97,5": 2,
+      "97,6": 2,
+      "97,7": 2,
+      "97,8": 2,
+      "97,9": 2,
+      "97,10": 2,
+      "97,11": 2,
+      "97,12": 2,
+      "97,13": 2,
+      "97,14": 2,
+      "97,15": 2,
+      "97,16": 2,
+      "97,17": 2,
+      "97,18": 2,
+      "97,19": 2,
+      "97,20": 2,
+      "97,21": 2,
+      "97,22": 2,
+      "97,23": 2,
+      "97,24": 2,
+      "97,25": 2,
+      "97,26": 2,
+      "97,27": 2,
+      "97,28": 2,
+      "97,29": 2,
+      "97,30": 11,
+      "97,31": 11,
+      "98,0": 11,
+      "98,1": 2,
+      "98,2": 9,
+      "98,29": 1,
+      "98,30": 11,
+      "98,31": 11,
+      "99,0": 11,
+      "99,1": 2,
+      "99,29": 1,
+      "99,30": 11,
+      "99,31": 11,
+      "100,0": 11,
+      "100,1": 2,
+      "100,29": 1,
+      "100,30": 11,
+      "100,31": 11,
+      "101,0": 11,
+      "101,1": 2,
+      "101,29": 1,
+      "101,30": 11,
+      "101,31": 11,
+      "102,0": 11,
+      "102,1": 2,
+      "102,29": 1,
+      "102,30": 11,
+      "102,31": 11,
+      "103,0": 11,
+      "103,1": 2,
+      "103,2": 2,
+      "103,3": 2,
+      "103,4": 2,
+      "103,5": 2,
+      "103,6": 2,
+      "103,7": 2,
+      "103,8": 2,
+      "103,9": 2,
+      "103,10": 2,
+      "103,11": 2,
+      "103,12": 2,
+      "103,13": 2,
+      "103,14": 2,
+      "103,15": 2,
+      "103,16": 2,
+      "103,17": 2,
+      "103,18": 2,
+      "103,19": 2,
+      "103,20": 2,
+      "103,21": 2,
+      "103,22": 2,
+      "103,23": 2,
+      "103,24": 2,
+      "103,25": 2,
+      "103,26": 2,
+      "103,27": 2,
+      "103,28": 2,
+      "103,29": 2,
+      "103,30": 11,
+      "103,31": 11,
+      "104,0": 10,
+      "104,31": 10,
+      "105,0": 11,
+      "105,1": 4,
+      "105,2": 2,
+      "105,3": 2,
+      "105,4": 2,
+      "105,5": 2,
+      "105,6": 2,
+      "105,7": 2,
+      "105,8": 2,
+      "105,9": 2,
+      "105,10": 2,
+      "105,11": 2,
+      "105,12": 2,
+      "105,13": 2,
+      "105,14": 2,
+      "105,15": 2,
+      "105,16": 2,
+      "105,17": 2,
+      "105,18": 2,
+      "105,19": 2,
+      "105,20": 2,
+      "105,21": 2,
+      "105,22": 2,
+      "105,23": 2,
+      "105,24": 2,
+      "105,25": 2,
+      "105,26": 2,
+      "105,27": 2,
+      "105,28": 2,
+      "105,29": 2,
+      "105,30": 11,
+      "105,31": 11,
+      "106,0": 11,
+      "106,1": 2,
+      "106,2": 2,
+      "106,3": 2,
+      "106,4": 2,
+      "106,5": 2,
+      "106,6": 2,
+      "106,7": 2,
+      "106,8": 2,
+      "106,9": 2,
+      "106,10": 2,
+      "106,11": 2,
+      "106,12": 1,
+      "106,13": 1,
+      "106,14": 2,
+      "106,15": 2,
+      "106,16": 2,
+      "106,17": 2,
+      "106,18": 2,
+      "106,19": 2,
+      "106,20": 2,
+      "106,21": 2,
+      "106,22": 2,
+      "106,23": 2,
+      "106,24": 2,
+      "106,25": 2,
+      "106,26": 2,
+      "106,27": 2,
+      "106,28": 2,
+      "106,29": 2,
+      "106,30": 11,
+      "106,31": 11,
+      "107,0": 11,
+      "107,1": 2,
+      "107,2": 7,
+      "107,3": 11,
+      "107,4": 11,
+      "107,5": 11,
+      "107,6": 4,
+      "107,7": 7,
+      "107,8": 11,
+      "107,9": 11,
+      "107,10": 11,
+      "107,11": 2,
+      "107,12": 6,
+      "107,16": 2,
+      "107,17": 7,
+      "107,29": 1,
+      "107,30": 11,
+      "107,31": 11,
+      "108,0": 11,
+      "108,1": 2,
+      "108,2": 2,
+      "108,3": 2,
+      "108,4": 2,
+      "108,5": 2,
+      "108,6": 2,
+      "108,7": 2,
+      "108,8": 2,
+      "108,9": 2,
+      "108,10": 2,
+      "108,11": 2,
+      "108,12": 2,
+      "108,13": 2,
+      "108,14": 2,
+      "108,15": 2,
+      "108,16": 2,
+      "108,17": 2,
+      "108,18": 2,
+      "108,19": 2,
+      "108,20": 2,
+      "108,21": 2,
+      "108,22": 2,
+      "108,23": 2,
+      "108,24": 2,
+      "108,25": 2,
+      "108,26": 2,
+      "108,27": 2,
+      "108,28": 2,
+      "108,29": 2,
+      "108,30": 11,
+      "108,31": 11,
+      "109,0": 11,
+      "109,1": 2,
+      "109,2": 2,
+      "109,3": 2,
+      "109,4": 2,
+      "109,5": 7,
+      "109,6": 11,
+      "109,7": 11,
+      "109,8": 11,
+      "109,9": 11,
+      "109,10": 11,
+      "109,11": 11,
+      "109,12": 11,
+      "109,13": 11,
+      "109,14": 2,
+      "109,15": 4,
+      "109,16": 2,
+      "109,17": 2,
+      "109,18": 2,
+      "109,19": 2,
+      "109,20": 2,
+      "109,21": 2,
+      "109,22": 2,
+      "109,23": 2,
+      "109,24": 2,
+      "109,25": 2,
+      "109,26": 2,
+      "109,27": 2,
+      "109,28": 2,
+      "109,29": 2,
+      "109,30": 11,
+      "109,31": 11,
+      "110,0": 11,
+      "110,1": 2,
+      "110,2": 2,
+      "110,3": 2,
+      "110,4": 2,
+      "110,5": 2,
+      "110,6": 2,
+      "110,7": 2,
+      "110,8": 2,
+      "110,9": 2,
+      "110,10": 2,
+      "110,11": 2,
+      "110,12": 2,
+      "110,13": 2,
+      "110,14": 2,
+      "110,15": 2,
+      "110,16": 2,
+      "110,17": 2,
+      "110,18": 2,
+      "110,19": 2,
+      "110,20": 2,
+      "110,21": 2,
+      "110,22": 2,
+      "110,23": 2,
+      "110,24": 2,
+      "110,25": 2,
+      "110,26": 2,
+      "110,27": 2,
+      "110,28": 2,
+      "110,29": 2,
+      "110,30": 11,
+      "110,31": 11,
+      "111,0": 11,
+      "111,1": 2,
+      "111,2": 9,
+      "111,29": 1,
+      "111,30": 11,
+      "111,31": 11,
+      "112,0": 11,
+      "112,1": 2,
+      "112,29": 1,
+      "112,30": 11,
+      "112,31": 11,
+      "113,0": 11,
+      "113,1": 2,
+      "113,29": 1,
+      "113,30": 11,
+      "113,31": 11,
+      "114,0": 11,
+      "114,1": 2,
+      "114,29": 1,
+      "114,30": 11,
+      "114,31": 11,
+      "115,0": 11,
+      "115,1": 2,
+      "115,29": 1,
+      "115,30": 11,
+      "115,31": 11,
+      "116,0": 11,
+      "116,1": 2,
+      "116,2": 2,
+      "116,3": 2,
+      "116,4": 2,
+      "116,5": 2,
+      "116,6": 2,
+      "116,7": 2,
+      "116,8": 2,
+      "116,9": 2,
+      "116,10": 2,
+      "116,11": 2,
+      "116,12": 2,
+      "116,13": 2,
+      "116,14": 2,
+      "116,15": 2,
+      "116,16": 2,
+      "116,17": 2,
+      "116,18": 2,
+      "116,19": 2,
+      "116,20": 2,
+      "116,21": 2,
+      "116,22": 2,
+      "116,23": 2,
+      "116,24": 2,
+      "116,25": 2,
+      "116,26": 2,
+      "116,27": 2,
+      "116,28": 2,
+      "116,29": 2,
+      "116,30": 11,
+      "116,31": 11,
+      "117,0": 10,
+      "117,31": 10,
+      "118,0": 11,
+      "118,1": 4,
+      "118,2": 2,
+      "118,3": 2,
+      "118,4": 2,
+      "118,5": 2,
+      "118,6": 2,
+      "118,7": 2,
+      "118,8": 2,
+      "118,9": 2,
+      "118,10": 2,
+      "118,11": 2,
+      "118,12": 2,
+      "118,13": 2,
+      "118,14": 2,
+      "118,15": 2,
+      "118,16": 2,
+      "118,17": 2,
+      "118,18": 2,
+      "118,19": 2,
+      "118,20": 2,
+      "118,21": 2,
+      "118,22": 2,
+      "118,23": 2,
+      "118,24": 2,
+      "118,25": 2,
+      "118,26": 2,
+      "118,27": 2,
+      "118,28": 2,
+      "118,29": 2,
+      "118,30": 11,
+      "118,31": 11,
+      "119,0": 11,
+      "119,1": 2,
+      "119,2": 2,
+      "119,3": 2,
+      "119,4": 2,
+      "119,5": 2,
+      "119,6": 2,
+      "119,7": 2,
+      "119,8": 2,
+      "119,9": 2,
+      "119,10": 2,
+      "119,11": 2,
+      "119,12": 1,
+      "119,13": 1,
+      "119,14": 2,
+      "119,15": 2,
+      "119,16": 2,
+      "119,17": 2,
+      "119,18": 2,
+      "119,19": 2,
+      "119,20": 2,
+      "119,21": 2,
+      "119,22": 2,
+      "119,23": 2,
+      "119,24": 2,
+      "119,25": 2,
+      "119,26": 2,
+      "119,27": 2,
+      "119,28": 2,
+      "119,29": 2,
+      "119,30": 11,
+      "119,31": 11,
+      "120,0": 11,
+      "120,1": 2,
+      "120,2": 7,
+      "120,3": 11,
+      "120,4": 11,
+      "120,5": 11,
+      "120,6": 4,
+      "120,7": 7,
+      "120,8": 11,
+      "120,9": 11,
+      "120,10": 11,
+      "120,11": 2,
+      "120,12": 6,
+      "120,16": 2,
+      "120,17": 7,
+      "120,29": 1,
+      "120,30": 11,
+      "120,31": 11,
+      "121,0": 11,
+      "121,1": 2,
+      "121,2": 2,
+      "121,3": 2,
+      "121,4": 2,
+      "121,5": 2,
+      "121,6": 2,
+      "121,7": 2,
+      "121,8": 2,
+      "121,9": 2,
+      "121,10": 2,
+      "121,11": 2,
+      "121,12": 2,
+      "121,13": 2,
+      "121,14": 2,
+      "121,15": 2,
+      "121,16": 2,
+      "121,17": 2,
+      "121,18": 2,
+      "121,19": 2,
+      "121,20": 2,
+      "121,21": 2,
+      "121,22": 2,
+      "121,23": 2,
+      "121,24": 2,
+      "121,25": 2,
+      "121,26": 2,
+      "121,27": 2,
+      "121,28": 2,
+      "121,29": 2,
+      "121,30": 11,
+      "121,31": 11,
+      "122,0": 11,
+      "122,1": 2,
+      "122,2": 2,
+      "122,3": 2,
+      "122,4": 2,
+      "122,5": 7,
+      "122,6": 11,
+      "122,7": 11,
+      "122,8": 11,
+      "122,9": 11,
+      "122,10": 11,
+      "122,11": 11,
+      "122,12": 11,
+      "122,13": 11,
+      "122,14": 2,
+      "122,15": 4,
+      "122,16": 2,
+      "122,17": 2,
+      "122,18": 2,
+      "122,19": 2,
+      "122,20": 2,
+      "122,21": 2,
+      "122,22": 2,
+      "122,23": 2,
+      "122,24": 2,
+      "122,25": 2,
+      "122,26": 2,
+      "122,27": 2,
+      "122,28": 2,
+      "122,29": 2,
+      "122,30": 11,
+      "122,31": 11,
+      "123,0": 11,
+      "123,1": 2,
+      "123,2": 2,
+      "123,3": 2,
+      "123,4": 2,
+      "123,5": 2,
+      "123,6": 2,
+      "123,7": 2,
+      "123,8": 2,
+      "123,9": 2,
+      "123,10": 2,
+      "123,11": 2,
+      "123,12": 2,
+      "123,13": 2,
+      "123,14": 2,
+      "123,15": 2,
+      "123,16": 2,
+      "123,17": 2,
+      "123,18": 2,
+      "123,19": 2,
+      "123,20": 2,
+      "123,21": 2,
+      "123,22": 2,
+      "123,23": 2,
+      "123,24": 2,
+      "123,25": 2,
+      "123,26": 2,
+      "123,27": 2,
+      "123,28": 2,
+      "123,29": 2,
+      "123,30": 11,
+      "123,31": 11,
+      "124,0": 11,
+      "124,1": 2,
+      "124,2": 9,
+      "124,29": 1,
+      "124,30": 11,
+      "124,31": 11,
+      "125,0": 11,
+      "125,1": 2,
+      "125,29": 1,
+      "125,30": 11,
+      "125,31": 11,
+      "126,0": 11,
+      "126,1": 2,
+      "126,29": 1,
+      "126,30": 11,
+      "126,31": 11,
+      "127,0": 11,
+      "127,1": 2,
+      "127,29": 1,
+      "127,30": 11,
+      "127,31": 11,
+      "128,0": 11,
+      "128,1": 2,
+      "128,29": 1,
+      "128,30": 11,
+      "128,31": 11,
+      "129,0": 11,
+      "129,1": 2,
+      "129,2": 2,
+      "129,3": 2,
+      "129,4": 2,
+      "129,5": 2,
+      "129,6": 2,
+      "129,7": 2,
+      "129,8": 2,
+      "129,9": 2,
+      "129,10": 2,
+      "129,11": 2,
+      "129,12": 2,
+      "129,13": 2,
+      "129,14": 2,
+      "129,15": 2,
+      "129,16": 2,
+      "129,17": 2,
+      "129,18": 2,
+      "129,19": 2,
+      "129,20": 2,
+      "129,21": 2,
+      "129,22": 2,
+      "129,23": 2,
+      "129,24": 2,
+      "129,25": 2,
+      "129,26": 2,
+      "129,27": 2,
+      "129,28": 2,
+      "129,29": 2,
+      "129,30": 11,
+      "129,31": 11,
+      "130,0": 10,
+      "130,31": 10,
+      "131,0": 11,
+      "131,1": 4,
+      "131,2": 2,
+      "131,3": 2,
+      "131,4": 2,
+      "131,5": 2,
+      "131,6": 2,
+      "131,7": 2,
+      "131,8": 2,
+      "131,9": 2,
+      "131,10": 2,
+      "131,11": 2,
+      "131,12": 2,
+      "131,13": 2,
+      "131,14": 2,
+      "131,15": 2,
+      "131,16": 2,
+      "131,17": 2,
+      "131,18": 2,
+      "131,19": 2,
+      "131,20": 2,
+      "131,21": 2,
+      "131,22": 2,
+      "131,23": 2,
+      "131,24": 2,
+      "131,25": 2,
+      "131,26": 2,
+      "131,27": 2,
+      "131,28": 2,
+      "131,29": 2,
+      "131,30": 11,
+      "131,31": 11,
+      "132,0": 11,
+      "132,1": 2,
+      "132,2": 2,
+      "132,3": 2,
+      "132,4": 2,
+      "132,5": 2,
+      "132,6": 2,
+      "132,7": 2,
+      "132,8": 2,
+      "132,9": 2,
+      "132,10": 2,
+      "132,11": 2,
+      "132,12": 1,
+      "132,13": 2,
+      "132,14": 2,
+      "132,15": 2,
+      "132,16": 2,
+      "132,17": 2,
+      "132,18": 2,
+      "132,19": 2,
+      "132,20": 2,
+      "132,21": 2,
+      "132,22": 2,
+      "132,23": 2,
+      "132,24": 2,
+      "132,25": 2,
+      "132,26": 2,
+      "132,27": 2,
+      "132,28": 2,
+      "132,29": 2,
+      "132,30": 11,
+      "132,31": 11,
+      "133,0": 11,
+      "133,1": 2,
+      "133,2": 7,
+      "133,3": 11,
+      "133,4": 11,
+      "133,5": 11,
+      "133,6": 4,
+      "133,7": 7,
+      "133,8": 11,
+      "133,9": 11,
+      "133,10": 11,
+      "133,11": 2,
+      "133,12": 6,
+      "133,16": 2,
+      "133,17": 7,
+      "133,29": 1,
+      "133,30": 11,
+      "133,31": 11,
+      "134,0": 11,
+      "134,1": 2,
+      "134,2": 2,
+      "134,3": 2,
+      "134,4": 2,
+      "134,5": 2,
+      "134,6": 2,
+      "134,7": 2,
+      "134,8": 2,
+      "134,9": 2,
+      "134,10": 2,
+      "134,11": 2,
+      "134,12": 2,
+      "134,13": 2,
+      "134,14": 2,
+      "134,15": 2,
+      "134,16": 2,
+      "134,17": 2,
+      "134,18": 2,
+      "134,19": 2,
+      "134,20": 2,
+      "134,21": 2,
+      "134,22": 2,
+      "134,23": 2,
+      "134,24": 2,
+      "134,25": 2,
+      "134,26": 2,
+      "134,27": 2,
+      "134,28": 2,
+      "134,29": 2,
+      "134,30": 11,
+      "134,31": 11,
+      "135,0": 11,
+      "135,1": 2,
+      "135,2": 2,
+      "135,3": 2,
+      "135,4": 2,
+      "135,5": 7,
+      "135,6": 11,
+      "135,7": 11,
+      "135,8": 11,
+      "135,9": 11,
+      "135,10": 11,
+      "135,11": 11,
+      "135,12": 11,
+      "135,13": 11,
+      "135,14": 2,
+      "135,15": 4,
+      "135,16": 2,
+      "135,17": 2,
+      "135,18": 2,
+      "135,19": 2,
+      "135,20": 2,
+      "135,21": 2,
+      "135,22": 2,
+      "135,23": 2,
+      "135,24": 2,
+      "135,25": 2,
+      "135,26": 2,
+      "135,27": 2,
+      "135,28": 2,
+      "135,29": 2,
+      "135,30": 11,
+      "135,31": 11,
+      "136,0": 11,
+      "136,1": 2,
+      "136,2": 2,
+      "136,3": 2,
+      "136,4": 2,
+      "136,5": 2,
+      "136,6": 2,
+      "136,7": 2,
+      "136,8": 2,
+      "136,9": 2,
+      "136,10": 2,
+      "136,11": 2,
+      "136,12": 2,
+      "136,13": 2,
+      "136,14": 2,
+      "136,15": 2,
+      "136,16": 2,
+      "136,17": 2,
+      "136,18": 2,
+      "136,19": 2,
+      "136,20": 2,
+      "136,21": 2,
+      "136,22": 2,
+      "136,23": 2,
+      "136,24": 2,
+      "136,25": 2,
+      "136,26": 2,
+      "136,27": 2,
+      "136,28": 2,
+      "136,29": 2,
+      "136,30": 11,
+      "136,31": 11,
+      "137,0": 11,
+      "137,1": 2,
+      "137,2": 9,
+      "137,29": 1,
+      "137,30": 11,
+      "137,31": 11,
+      "138,0": 11,
+      "138,1": 2,
+      "138,29": 1,
+      "138,30": 11,
+      "138,31": 11,
+      "139,0": 11,
+      "139,1": 2,
+      "139,29": 1,
+      "139,30": 11,
+      "139,31": 11,
+      "140,0": 11,
+      "140,1": 2,
+      "140,29": 1,
+      "140,30": 11,
+      "140,31": 11,
+      "141,0": 11,
+      "141,1": 2,
+      "141,29": 1,
+      "141,30": 11,
+      "141,31": 11,
+      "142,0": 11,
+      "142,1": 2,
+      "142,2": 2,
+      "142,3": 2,
+      "142,4": 2,
+      "142,5": 2,
+      "142,6": 2,
+      "142,7": 2,
+      "142,8": 2,
+      "142,9": 2,
+      "142,10": 2,
+      "142,11": 2,
+      "142,12": 2,
+      "142,13": 2,
+      "142,14": 2,
+      "142,15": 2,
+      "142,16": 2,
+      "142,17": 2,
+      "142,18": 2,
+      "142,19": 2,
+      "142,20": 2,
+      "142,21": 2,
+      "142,22": 2,
+      "142,23": 2,
+      "142,24": 2,
+      "142,25": 2,
+      "142,26": 2,
+      "142,27": 2,
+      "142,28": 2,
+      "142,29": 2,
+      "142,30": 11,
+      "142,31": 11,
+      "143,0": 10,
+      "143,31": 10,
+      "144,0": 11,
+      "144,1": 4,
+      "144,2": 2,
+      "144,3": 2,
+      "144,4": 2,
+      "144,5": 2,
+      "144,6": 2,
+      "144,7": 2,
+      "144,8": 2,
+      "144,9": 2,
+      "144,10": 2,
+      "144,11": 2,
+      "144,12": 2,
+      "144,13": 2,
+      "144,14": 2,
+      "144,15": 2,
+      "144,16": 2,
+      "144,17": 2,
+      "144,18": 2,
+      "144,19": 2,
+      "144,20": 2,
+      "144,21": 2,
+      "144,22": 2,
+      "144,23": 2,
+      "144,24": 2,
+      "144,25": 2,
+      "144,26": 2,
+      "144,27": 2,
+      "144,28": 2,
+      "144,29": 2,
+      "144,30": 11,
+      "144,31": 11,
+      "145,0": 11,
+      "145,1": 2,
+      "145,2": 2,
+      "145,3": 2,
+      "145,4": 2,
+      "145,5": 2,
+      "145,6": 2,
+      "145,7": 2,
+      "145,8": 2,
+      "145,9": 2,
+      "145,10": 2,
+      "145,11": 2,
+      "145,12": 1,
+      "145,13": 2,
+      "145,14": 2,
+      "145,15": 2,
+      "145,16": 2,
+      "145,17": 2,
+      "145,18": 2,
+      "145,19": 2,
+      "145,20": 2,
+      "145,21": 2,
+      "145,22": 2,
+      "145,23": 2,
+      "145,24": 2,
+      "145,25": 2,
+      "145,26": 2,
+      "145,27": 2,
+      "145,28": 2,
+      "145,29": 2,
+      "145,30": 11,
+      "145,31": 11,
+      "146,0": 11,
+      "146,1": 2,
+      "146,2": 7,
+      "146,3": 11,
+      "146,4": 11,
+      "146,5": 11,
+      "146,6": 4,
+      "146,7": 7,
+      "146,8": 11,
+      "146,9": 11,
+      "146,10": 11,
+      "146,11": 2,
+      "146,12": 6,
+      "146,16": 2,
+      "146,17": 7,
+      "146,29": 1,
+      "146,30": 11,
+      "146,31": 11,
+      "147,0": 11,
+      "147,1": 2,
+      "147,2": 2,
+      "147,3": 2,
+      "147,4": 2,
+      "147,5": 2,
+      "147,6": 2,
+      "147,7": 2,
+      "147,8": 2,
+      "147,9": 2,
+      "147,10": 2,
+      "147,11": 2,
+      "147,12": 2,
+      "147,13": 2,
+      "147,14": 2,
+      "147,15": 2,
+      "147,16": 2,
+      "147,17": 2,
+      "147,18": 2,
+      "147,19": 2,
+      "147,20": 2,
+      "147,21": 2,
+      "147,22": 2,
+      "147,23": 2,
+      "147,24": 2,
+      "147,25": 2,
+      "147,26": 2,
+      "147,27": 2,
+      "147,28": 2,
+      "147,29": 2,
+      "147,30": 11,
+      "147,31": 11,
+      "148,0": 11,
+      "148,1": 2,
+      "148,2": 2,
+      "148,3": 2,
+      "148,4": 2,
+      "148,5": 7,
+      "148,6": 11,
+      "148,7": 11,
+      "148,8": 11,
+      "148,9": 11,
+      "148,10": 11,
+      "148,11": 11,
+      "148,12": 11,
+      "148,13": 11,
+      "148,14": 2,
+      "148,15": 4,
+      "148,16": 2,
+      "148,17": 2,
+      "148,18": 2,
+      "148,19": 2,
+      "148,20": 2,
+      "148,21": 2,
+      "148,22": 2,
+      "148,23": 2,
+      "148,24": 2,
+      "148,25": 2,
+      "148,26": 2,
+      "148,27": 2,
+      "148,28": 2,
+      "148,29": 2,
+      "148,30": 11,
+      "148,31": 11,
+      "149,0": 11,
+      "149,1": 2,
+      "149,2": 2,
+      "149,3": 2,
+      "149,4": 2,
+      "149,5": 2,
+      "149,6": 2,
+      "149,7": 2,
+      "149,8": 2,
+      "149,9": 2,
+      "149,10": 2,
+      "149,11": 2,
+      "149,12": 2,
+      "149,13": 2,
+      "149,14": 2,
+      "149,15": 2,
+      "149,16": 2,
+      "149,17": 2,
+      "149,18": 2,
+      "149,19": 2,
+      "149,20": 2,
+      "149,21": 2,
+      "149,22": 2,
+      "149,23": 2,
+      "149,24": 2,
+      "149,25": 2,
+      "149,26": 2,
+      "149,27": 2,
+      "149,28": 2,
+      "149,29": 2,
+      "149,30": 11,
+      "149,31": 11,
+      "150,0": 11,
+      "150,1": 2,
+      "150,2": 9,
+      "150,29": 1,
+      "150,30": 11,
+      "150,31": 11,
+      "151,0": 11,
+      "151,1": 2,
+      "151,29": 1,
+      "151,30": 11,
+      "151,31": 11,
+      "152,0": 11,
+      "152,1": 2,
+      "152,29": 1,
+      "152,30": 11,
+      "152,31": 11,
+      "153,0": 11,
+      "153,1": 2,
+      "153,29": 1,
+      "153,30": 11,
+      "153,31": 11,
+      "154,0": 11,
+      "154,1": 2,
+      "154,29": 1,
+      "154,30": 11,
+      "154,31": 11,
+      "155,0": 11,
+      "155,1": 2,
+      "155,2": 2,
+      "155,3": 2,
+      "155,4": 2,
+      "155,5": 2,
+      "155,6": 2,
+      "155,7": 2,
+      "155,8": 2,
+      "155,9": 2,
+      "155,10": 2,
+      "155,11": 2,
+      "155,12": 2,
+      "155,13": 2,
+      "155,14": 2,
+      "155,15": 2,
+      "155,16": 2,
+      "155,17": 2,
+      "155,18": 2,
+      "155,19": 2,
+      "155,20": 2,
+      "155,21": 2,
+      "155,22": 2,
+      "155,23": 2,
+      "155,24": 2,
+      "155,25": 2,
+      "155,26": 2,
+      "155,27": 2,
+      "155,28": 2,
+      "155,29": 2,
+      "155,30": 11,
+      "155,31": 11,
+      "156,0": 10,
+      "156,31": 10,
+      "157,0": 11,
+      "157,1": 4,
+      "157,2": 2,
+      "157,3": 2,
+      "157,4": 2,
+      "157,5": 2,
+      "157,6": 2,
+      "157,7": 2,
+      "157,8": 2,
+      "157,9": 2,
+      "157,10": 2,
+      "157,11": 2,
+      "157,12": 2,
+      "157,13": 2,
+      "157,14": 2,
+      "157,15": 2,
+      "157,16": 2,
+      "157,17": 2,
+      "157,18": 2,
+      "157,19": 2,
+      "157,20": 2,
+      "157,21": 2,
+      "157,22": 2,
+      "157,23": 2,
+      "157,24": 2,
+      "157,25": 2,
+      "157,26": 2,
+      "157,27": 2,
+      "157,28": 2,
+      "157,29": 2,
+      "157,30": 11,
+      "157,31": 11,
+      "158,0": 11,
+      "158,1": 2,
+      "158,2": 2,
+      "158,3": 2,
+      "158,4": 2,
+      "158,5": 2,
+      "158,6": 2,
+      "158,7": 2,
+      "158,8": 2,
+      "158,9": 2,
+      "158,10": 2,
+      "158,11": 2,
+      "158,12": 1,
+      "158,13": 2,
+      "158,14": 2,
+      "158,15": 2,
+      "158,16": 2,
+      "158,17": 2,
+      "158,18": 2,
+      "158,19": 2,
+      "158,20": 2,
+      "158,21": 2,
+      "158,22": 2,
+      "158,23": 2,
+      "158,24": 2,
+      "158,25": 2,
+      "158,26": 2,
+      "158,27": 2,
+      "158,28": 2,
+      "158,29": 2,
+      "158,30": 11,
+      "158,31": 11,
+      "159,0": 11,
+      "159,1": 2,
+      "159,2": 7,
+      "159,3": 11,
+      "159,4": 11,
+      "159,5": 11,
+      "159,6": 4,
+      "159,7": 7,
+      "159,8": 11,
+      "159,9": 11,
+      "159,10": 11,
+      "159,11": 2,
+      "159,12": 6,
+      "159,16": 2,
+      "159,17": 7,
+      "159,29": 1,
+      "159,30": 11,
+      "159,31": 11,
+      "160,0": 11,
+      "160,1": 2,
+      "160,2": 2,
+      "160,3": 2,
+      "160,4": 2,
+      "160,5": 2,
+      "160,6": 2,
+      "160,7": 2,
+      "160,8": 2,
+      "160,9": 2,
+      "160,10": 2,
+      "160,11": 2,
+      "160,12": 2,
+      "160,13": 2,
+      "160,14": 2,
+      "160,15": 2,
+      "160,16": 2,
+      "160,17": 2,
+      "160,18": 2,
+      "160,19": 2,
+      "160,20": 2,
+      "160,21": 2,
+      "160,22": 2,
+      "160,23": 2,
+      "160,24": 2,
+      "160,25": 2,
+      "160,26": 2,
+      "160,27": 2,
+      "160,28": 2,
+      "160,29": 2,
+      "160,30": 11,
+      "160,31": 11,
+      "161,0": 11,
+      "161,1": 2,
+      "161,2": 2,
+      "161,3": 2,
+      "161,4": 2,
+      "161,5": 7,
+      "161,6": 11,
+      "161,7": 11,
+      "161,8": 11,
+      "161,9": 11,
+      "161,10": 11,
+      "161,11": 11,
+      "161,12": 11,
+      "161,13": 11,
+      "161,14": 2,
+      "161,15": 4,
+      "161,16": 2,
+      "161,17": 2,
+      "161,18": 2,
+      "161,19": 2,
+      "161,20": 2,
+      "161,21": 2,
+      "161,22": 2,
+      "161,23": 2,
+      "161,24": 2,
+      "161,25": 2,
+      "161,26": 2,
+      "161,27": 2,
+      "161,28": 2,
+      "161,29": 2,
+      "161,30": 11,
+      "161,31": 11,
+      "162,0": 11,
+      "162,1": 2,
+      "162,2": 2,
+      "162,3": 2,
+      "162,4": 2,
+      "162,5": 2,
+      "162,6": 2,
+      "162,7": 2,
+      "162,8": 2,
+      "162,9": 2,
+      "162,10": 2,
+      "162,11": 2,
+      "162,12": 2,
+      "162,13": 2,
+      "162,14": 2,
+      "162,15": 2,
+      "162,16": 2,
+      "162,17": 2,
+      "162,18": 2,
+      "162,19": 2,
+      "162,20": 2,
+      "162,21": 2,
+      "162,22": 2,
+      "162,23": 2,
+      "162,24": 2,
+      "162,25": 2,
+      "162,26": 2,
+      "162,27": 2,
+      "162,28": 2,
+      "162,29": 2,
+      "162,30": 11,
+      "162,31": 11,
+      "163,0": 11,
+      "163,1": 2,
+      "163,2": 9,
+      "163,29": 1,
+      "163,30": 11,
+      "163,31": 11,
+      "164,0": 11,
+      "164,1": 2,
+      "164,29": 1,
+      "164,30": 11,
+      "164,31": 11,
+      "165,0": 11,
+      "165,1": 2,
+      "165,29": 1,
+      "165,30": 11,
+      "165,31": 11,
+      "166,0": 11,
+      "166,1": 2,
+      "166,29": 1,
+      "166,30": 11,
+      "166,31": 11,
+      "167,0": 11,
+      "167,1": 2,
+      "167,29": 1,
+      "167,30": 11,
+      "167,31": 11,
+      "168,0": 11,
+      "168,1": 2,
+      "168,2": 2,
+      "168,3": 2,
+      "168,4": 2,
+      "168,5": 2,
+      "168,6": 2,
+      "168,7": 2,
+      "168,8": 2,
+      "168,9": 2,
+      "168,10": 2,
+      "168,11": 2,
+      "168,12": 2,
+      "168,13": 2,
+      "168,14": 2,
+      "168,15": 2,
+      "168,16": 2,
+      "168,17": 2,
+      "168,18": 2,
+      "168,19": 2,
+      "168,20": 2,
+      "168,21": 2,
+      "168,22": 2,
+      "168,23": 2,
+      "168,24": 2,
+      "168,25": 2,
+      "168,26": 2,
+      "168,27": 2,
+      "168,28": 2,
+      "168,29": 2,
+      "168,30": 11,
+      "168,31": 11,
+      "169,0": 10,
+      "169,31": 10,
+      "170,0": 11,
+      "170,1": 4,
+      "170,2": 2,
+      "170,3": 2,
+      "170,4": 2,
+      "170,5": 2,
+      "170,6": 2,
+      "170,7": 2,
+      "170,8": 2,
+      "170,9": 2,
+      "170,10": 2,
+      "170,11": 2,
+      "170,12": 2,
+      "170,13": 2,
+      "170,14": 2,
+      "170,15": 2,
+      "170,16": 2,
+      "170,17": 2,
+      "170,18": 2,
+      "170,19": 2,
+      "170,20": 2,
+      "170,21": 2,
+      "170,22": 2,
+      "170,23": 2,
+      "170,24": 2,
+      "170,25": 2,
+      "170,26": 2,
+      "170,27": 2,
+      "170,28": 2,
+      "170,29": 2,
+      "170,30": 11,
+      "170,31": 11,
+      "171,0": 11,
+      "171,1": 2,
+      "171,2": 2,
+      "171,3": 2,
+      "171,4": 2,
+      "171,5": 2,
+      "171,6": 2,
+      "171,7": 2,
+      "171,8": 2,
+      "171,9": 2,
+      "171,10": 2,
+      "171,11": 2,
+      "171,12": 1,
+      "171,13": 2,
+      "171,14": 2,
+      "171,15": 2,
+      "171,16": 2,
+      "171,17": 2,
+      "171,18": 2,
+      "171,19": 2,
+      "171,20": 2,
+      "171,21": 2,
+      "171,22": 2,
+      "171,23": 2,
+      "171,24": 2,
+      "171,25": 2,
+      "171,26": 2,
+      "171,27": 2,
+      "171,28": 2,
+      "171,29": 2,
+      "171,30": 11,
+      "171,31": 11,
+      "172,0": 11,
+      "172,1": 2,
+      "172,2": 7,
+      "172,3": 11,
+      "172,4": 11,
+      "172,5": 11,
+      "172,6": 4,
+      "172,7": 7,
+      "172,8": 11,
+      "172,9": 11,
+      "172,10": 11,
+      "172,11": 2,
+      "172,12": 6,
+      "172,16": 2,
+      "172,17": 7,
+      "172,29": 1,
+      "172,30": 11,
+      "172,31": 11,
+      "173,0": 11,
+      "173,1": 2,
+      "173,2": 2,
+      "173,3": 2,
+      "173,4": 2,
+      "173,5": 2,
+      "173,6": 2,
+      "173,7": 2,
+      "173,8": 2,
+      "173,9": 2,
+      "173,10": 2,
+      "173,11": 2,
+      "173,12": 2,
+      "173,13": 2,
+      "173,14": 2,
+      "173,15": 2,
+      "173,16": 2,
+      "173,17": 2,
+      "173,18": 2,
+      "173,19": 2,
+      "173,20": 2,
+      "173,21": 2,
+      "173,22": 2,
+      "173,23": 2,
+      "173,24": 2,
+      "173,25": 2,
+      "173,26": 2,
+      "173,27": 2,
+      "173,28": 2,
+      "173,29": 2,
+      "173,30": 11,
+      "173,31": 11,
+      "174,0": 11,
+      "174,1": 2,
+      "174,2": 2,
+      "174,3": 2,
+      "174,4": 2,
+      "174,5": 7,
+      "174,6": 11,
+      "174,7": 11,
+      "174,8": 11,
+      "174,9": 11,
+      "174,10": 11,
+      "174,11": 11,
+      "174,12": 11,
+      "174,13": 11,
+      "174,14": 2,
+      "174,15": 4,
+      "174,16": 2,
+      "174,17": 2,
+      "174,18": 2,
+      "174,19": 2,
+      "174,20": 2,
+      "174,21": 2,
+      "174,22": 2,
+      "174,23": 2,
+      "174,24": 2,
+      "174,25": 2,
+      "174,26": 2,
+      "174,27": 2,
+      "174,28": 2,
+      "174,29": 2,
+      "174,30": 11,
+      "174,31": 11,
+      "175,0": 11,
+      "175,1": 2,
+      "175,2": 2,
+      "175,3": 2,
+      "175,4": 2,
+      "175,5": 2,
+      "175,6": 2,
+      "175,7": 2,
+      "175,8": 2,
+      "175,9": 2,
+      "175,10": 2,
+      "175,11": 2,
+      "175,12": 2,
+      "175,13": 2,
+      "175,14": 2,
+      "175,15": 2,
+      "175,16": 2,
+      "175,17": 2,
+      "175,18": 2,
+      "175,19": 2,
+      "175,20": 2,
+      "175,21": 2,
+      "175,22": 2,
+      "175,23": 2,
+      "175,24": 2,
+      "175,25": 2,
+      "175,26": 2,
+      "175,27": 2,
+      "175,28": 2,
+      "175,29": 2,
+      "175,30": 11,
+      "175,31": 11,
+      "176,0": 11,
+      "176,1": 2,
+      "176,2": 9,
+      "176,29": 1,
+      "176,30": 11,
+      "176,31": 11,
+      "177,0": 11,
+      "177,1": 2,
+      "177,29": 1,
+      "177,30": 11,
+      "177,31": 11,
+      "178,0": 11,
+      "178,1": 2,
+      "178,29": 1,
+      "178,30": 11,
+      "178,31": 11,
+      "179,0": 11,
+      "179,1": 2,
+      "179,29": 1,
+      "179,30": 11,
+      "179,31": 11,
+      "180,0": 11,
+      "180,1": 2,
+      "180,29": 1,
+      "180,30": 11,
+      "180,31": 11,
+      "181,0": 11,
+      "181,1": 2,
+      "181,2": 2,
+      "181,3": 2,
+      "181,4": 2,
+      "181,5": 2,
+      "181,6": 2,
+      "181,7": 2,
+      "181,8": 2,
+      "181,9": 2,
+      "181,10": 2,
+      "181,11": 2,
+      "181,12": 2,
+      "181,13": 2,
+      "181,14": 2,
+      "181,15": 2,
+      "181,16": 2,
+      "181,17": 2,
+      "181,18": 2,
+      "181,19": 2,
+      "181,20": 2,
+      "181,21": 2,
+      "181,22": 2,
+      "181,23": 2,
+      "181,24": 2,
+      "181,25": 2,
+      "181,26": 2,
+      "181,27": 2,
+      "181,28": 2,
+      "181,29": 2,
+      "181,30": 11,
+      "181,31": 11,
+      "182,0": 10,
+      "182,31": 10,
+      "183,0": 11,
+      "183,1": 4,
+      "183,2": 2,
+      "183,3": 2,
+      "183,4": 2,
+      "183,5": 2,
+      "183,6": 2,
+      "183,7": 2,
+      "183,8": 2,
+      "183,9": 2,
+      "183,10": 2,
+      "183,11": 2,
+      "183,12": 2,
+      "183,13": 2,
+      "183,14": 2,
+      "183,15": 2,
+      "183,16": 2,
+      "183,17": 2,
+      "183,18": 2,
+      "183,19": 2,
+      "183,20": 2,
+      "183,21": 2,
+      "183,22": 2,
+      "183,23": 2,
+      "183,24": 2,
+      "183,25": 2,
+      "183,26": 2,
+      "183,27": 2,
+      "183,28": 2,
+      "183,29": 2,
+      "183,30": 11,
+      "183,31": 11,
+      "184,0": 11,
+      "184,1": 2,
+      "184,2": 2,
+      "184,3": 2,
+      "184,4": 2,
+      "184,5": 2,
+      "184,6": 2,
+      "184,7": 2,
+      "184,8": 2,
+      "184,9": 2,
+      "184,10": 2,
+      "184,11": 2,
+      "184,12": 1,
+      "184,13": 2,
+      "184,14": 2,
+      "184,15": 2,
+      "184,16": 2,
+      "184,17": 2,
+      "184,18": 2,
+      "184,19": 2,
+      "184,20": 2,
+      "184,21": 2,
+      "184,22": 2,
+      "184,23": 2,
+      "184,24": 2,
+      "184,25": 2,
+      "184,26": 2,
+      "184,27": 2,
+      "184,28": 2,
+      "184,29": 2,
+      "184,30": 11,
+      "184,31": 11,
+      "185,0": 11,
+      "185,1": 2,
+      "185,2": 7,
+      "185,3": 11,
+      "185,4": 11,
+      "185,5": 11,
+      "185,6": 4,
+      "185,7": 7,
+      "185,8": 11,
+      "185,9": 11,
+      "185,10": 11,
+      "185,11": 2,
+      "185,12": 6,
+      "185,16": 2,
+      "185,17": 7,
+      "185,29": 1,
+      "185,30": 11,
+      "185,31": 11,
+      "186,0": 11,
+      "186,1": 2,
+      "186,2": 2,
+      "186,3": 2,
+      "186,4": 2,
+      "186,5": 2,
+      "186,6": 2,
+      "186,7": 2,
+      "186,8": 2,
+      "186,9": 2,
+      "186,10": 2,
+      "186,11": 2,
+      "186,12": 2,
+      "186,13": 2,
+      "186,14": 2,
+      "186,15": 2,
+      "186,16": 2,
+      "186,17": 2,
+      "186,18": 2,
+      "186,19": 2,
+      "186,20": 2,
+      "186,21": 2,
+      "186,22": 2,
+      "186,23": 2,
+      "186,24": 2,
+      "186,25": 2,
+      "186,26": 2,
+      "186,27": 2,
+      "186,28": 2,
+      "186,29": 2,
+      "186,30": 11,
+      "186,31": 11,
+      "187,0": 11,
+      "187,1": 2,
+      "187,2": 2,
+      "187,3": 2,
+      "187,4": 2,
+      "187,5": 7,
+      "187,6": 11,
+      "187,7": 11,
+      "187,8": 11,
+      "187,9": 11,
+      "187,10": 11,
+      "187,11": 11,
+      "187,12": 11,
+      "187,13": 11,
+      "187,14": 2,
+      "187,15": 4,
+      "187,16": 2,
+      "187,17": 2,
+      "187,18": 2,
+      "187,19": 2,
+      "187,20": 2,
+      "187,21": 2,
+      "187,22": 2,
+      "187,23": 2,
+      "187,24": 2,
+      "187,25": 2,
+      "187,26": 2,
+      "187,27": 2,
+      "187,28": 2,
+      "187,29": 2,
+      "187,30": 11,
+      "187,31": 11,
+      "188,0": 11,
+      "188,1": 2,
+      "188,2": 2,
+      "188,3": 2,
+      "188,4": 2,
+      "188,5": 2,
+      "188,6": 2,
+      "188,7": 2,
+      "188,8": 2,
+      "188,9": 2,
+      "188,10": 2,
+      "188,11": 2,
+      "188,12": 2,
+      "188,13": 2,
+      "188,14": 2,
+      "188,15": 2,
+      "188,16": 2,
+      "188,17": 2,
+      "188,18": 2,
+      "188,19": 2,
+      "188,20": 2,
+      "188,21": 2,
+      "188,22": 2,
+      "188,23": 2,
+      "188,24": 2,
+      "188,25": 2,
+      "188,26": 2,
+      "188,27": 2,
+      "188,28": 2,
+      "188,29": 2,
+      "188,30": 11,
+      "188,31": 11,
+      "189,0": 11,
+      "189,1": 2,
+      "189,2": 9,
+      "189,29": 1,
+      "189,30": 11,
+      "189,31": 11,
+      "190,0": 11,
+      "190,1": 2,
+      "190,29": 1,
+      "190,30": 11,
+      "190,31": 11,
+      "191,0": 11,
+      "191,1": 2,
+      "191,29": 1,
+      "191,30": 11,
+      "191,31": 11,
+      "192,0": 11,
+      "192,1": 2,
+      "192,29": 1,
+      "192,30": 11,
+      "192,31": 11,
+      "193,0": 11,
+      "193,1": 2,
+      "193,29": 1,
+      "193,30": 11,
+      "193,31": 11,
+      "194,0": 11,
+      "194,1": 2,
+      "194,2": 2,
+      "194,3": 2,
+      "194,4": 2,
+      "194,5": 2,
+      "194,6": 2,
+      "194,7": 2,
+      "194,8": 2,
+      "194,9": 2,
+      "194,10": 2,
+      "194,11": 2,
+      "194,12": 2,
+      "194,13": 2,
+      "194,14": 2,
+      "194,15": 2,
+      "194,16": 2,
+      "194,17": 2,
+      "194,18": 2,
+      "194,19": 2,
+      "194,20": 2,
+      "194,21": 2,
+      "194,22": 2,
+      "194,23": 2,
+      "194,24": 2,
+      "194,25": 2,
+      "194,26": 2,
+      "194,27": 2,
+      "194,28": 2,
+      "194,29": 2,
+      "194,30": 11,
+      "194,31": 11,
+      "195,0": 11,
+      "195,1": 11,
+      "195,2": 11,
+      "195,3": 11,
+      "195,4": 11,
+      "195,5": 11,
+      "195,6": 11,
+      "195,7": 11,
+      "195,8": 11,
+      "195,9": 11,
+      "195,10": 11,
+      "195,11": 11,
+      "195,12": 11,
+      "195,13": 11,
+      "195,14": 11,
+      "195,15": 11,
+      "195,16": 11,
+      "195,17": 11,
+      "195,18": 11,
+      "195,19": 11,
+      "195,20": 11,
+      "195,21": 11,
+      "195,22": 11,
+      "195,23": 11,
+      "195,24": 11,
+      "195,25": 11,
+      "195,26": 11,
+      "195,27": 11,
+      "195,28": 11,
+      "195,29": 11,
+      "195,31": 11
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "0,0,1,31",
+    "3,2,1,4",
+    "3,7,1,4",
+    "3,12,1,4",
+    "3,17,1,12",
+    "5,5,1,9",
+    "7,2,5,27",
+    "13,0,1,31",
+    "16,2,1,4",
+    "16,7,1,4",
+    "16,12,1,4",
+    "16,17,1,12",
+    "18,5,1,9",
+    "20,2,5,27",
+    "26,0,1,31",
+    "29,2,1,4",
+    "29,7,1,4",
+    "29,12,1,4",
+    "29,17,1,12",
+    "31,5,1,9",
+    "33,2,5,27",
+    "39,0,1,31",
+    "42,2,1,4",
+    "42,7,1,4",
+    "42,12,1,4",
+    "42,17,1,12",
+    "44,5,1,9",
+    "46,2,5,27",
+    "52,0,1,31",
+    "55,2,1,4",
+    "55,7,1,4",
+    "55,12,1,4",
+    "55,17,1,12",
+    "57,5,1,9",
+    "59,2,5,27",
+    "65,0,1,31",
+    "68,2,1,4",
+    "68,7,1,4",
+    "68,12,1,4",
+    "68,17,1,12",
+    "70,5,1,9",
+    "72,2,5,27",
+    "78,0,1,31",
+    "81,2,1,4",
+    "81,7,1,4",
+    "81,12,1,4",
+    "81,17,1,12",
+    "83,5,1,9",
+    "85,2,5,27",
+    "91,0,1,31",
+    "94,2,1,4",
+    "94,7,1,4",
+    "94,12,1,4",
+    "94,17,1,12",
+    "96,5,1,9",
+    "98,2,5,27",
+    "104,0,1,31",
+    "107,2,1,4",
+    "107,7,1,4",
+    "107,12,1,4",
+    "107,17,1,12",
+    "109,5,1,9",
+    "111,2,5,27",
+    "117,0,1,31",
+    "120,2,1,4",
+    "120,7,1,4",
+    "120,12,1,4",
+    "120,17,1,12",
+    "122,5,1,9",
+    "124,2,5,27",
+    "130,0,1,31",
+    "133,2,1,4",
+    "133,7,1,4",
+    "133,12,1,4",
+    "133,17,1,12",
+    "135,5,1,9",
+    "137,2,5,27",
+    "143,0,1,31",
+    "146,2,1,4",
+    "146,7,1,4",
+    "146,12,1,4",
+    "146,17,1,12",
+    "148,5,1,9",
+    "150,2,5,27",
+    "156,0,1,31",
+    "159,2,1,4",
+    "159,7,1,4",
+    "159,12,1,4",
+    "159,17,1,12",
+    "161,5,1,9",
+    "163,2,5,27",
+    "169,0,1,31",
+    "172,2,1,4",
+    "172,7,1,4",
+    "172,12,1,4",
+    "172,17,1,12",
+    "174,5,1,9",
+    "176,2,5,27",
+    "182,0,1,31",
+    "185,2,1,4",
+    "185,7,1,4",
+    "185,12,1,4",
+    "185,17,1,12",
+    "187,5,1,9",
+    "189,2,5,27"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "日報_下書き"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "client1",
+      "Formula": "'正社員日報入力(下書き仮)'!$F$6"
+    },
+    {
+      "Name": "client10",
+      "Formula": "'正社員日報入力(下書き仮)'!$F$123"
+    },
+    {
+      "Name": "client11",
+      "Formula": "'正社員日報入力(下書き仮)'!$F$136"
+    },
+    {
+      "Name": "client12",
+      "Formula": "'正社員日報入力(下書き仮)'!$F$149"
+    },
+    {
+      "Name": "client13",
+      "Formula": "'正社員日報入力(下書き仮)'!$F$162"
+    },
+    {
+      "Name": "client14",
+      "Formula": "'正社員日報入力(下書き仮)'!$F$175"
+    },
+    {
+      "Name": "client15",
+      "Formula": "'正社員日報入力(下書き仮)'!$F$188"
+    },
+    {
+      "Name": "client2",
+      "Formula": "'正社員日報入力(下書き仮)'!$F$19"
+    },
+    {
+      "Name": "client3",
+      "Formula": "'正社員日報入力(下書き仮)'!$F$32"
+    },
+    {
+      "Name": "client4",
+      "Formula": "'正社員日報入力(下書き仮)'!$F$45"
+    },
+    {
+      "Name": "client5",
+      "Formula": "'正社員日報入力(下書き仮)'!$F$58"
+    },
+    {
+      "Name": "client6",
+      "Formula": "'正社員日報入力(下書き仮)'!$F$71"
+    },
+    {
+      "Name": "client7",
+      "Formula": "'正社員日報入力(下書き仮)'!$F$84"
+    },
+    {
+      "Name": "client8",
+      "Formula": "'正社員日報入力(下書き仮)'!$F$97"
+    },
+    {
+      "Name": "client9",
+      "Formula": "'正社員日報入力(下書き仮)'!$F$110"
+    },
+    {
+      "Name": "detail1",
+      "Formula": "'正社員日報入力(下書き仮)'!$C$8"
+    },
+    {
+      "Name": "detail10",
+      "Formula": "'正社員日報入力(下書き仮)'!$C$125"
+    },
+    {
+      "Name": "detail11",
+      "Formula": "'正社員日報入力(下書き仮)'!$C$138"
+    },
+    {
+      "Name": "detail12",
+      "Formula": "'正社員日報入力(下書き仮)'!$C$151"
+    },
+    {
+      "Name": "detail13",
+      "Formula": "'正社員日報入力(下書き仮)'!$C$164"
+    },
+    {
+      "Name": "detail14",
+      "Formula": "'正社員日報入力(下書き仮)'!$C$177"
+    },
+    {
+      "Name": "detail15",
+      "Formula": "'正社員日報入力(下書き仮)'!$C$190"
+    },
+    {
+      "Name": "detail2",
+      "Formula": "'正社員日報入力(下書き仮)'!$C$21"
+    },
+    {
+      "Name": "detail3",
+      "Formula": "'正社員日報入力(下書き仮)'!$C$34"
+    },
+    {
+      "Name": "detail4",
+      "Formula": "'正社員日報入力(下書き仮)'!$C$47"
+    },
+    {
+      "Name": "detail5",
+      "Formula": "'正社員日報入力(下書き仮)'!$C$60"
+    },
+    {
+      "Name": "detail6",
+      "Formula": "'正社員日報入力(下書き仮)'!$C$73"
+    },
+    {
+      "Name": "detail7",
+      "Formula": "'正社員日報入力(下書き仮)'!$C$86"
+    },
+    {
+      "Name": "detail8",
+      "Formula": "'正社員日報入力(下書き仮)'!$C$99"
+    },
+    {
+      "Name": "detail9",
+      "Formula": "'正社員日報入力(下書き仮)'!$C$112"
+    },
+    {
+      "Name": "endtime1",
+      "Formula": "'正社員日報入力(下書き仮)'!$H$4"
+    },
+    {
+      "Name": "endtime10",
+      "Formula": "'正社員日報入力(下書き仮)'!$H$121"
+    },
+    {
+      "Name": "endtime11",
+      "Formula": "'正社員日報入力(下書き仮)'!$H$134"
+    },
+    {
+      "Name": "endtime12",
+      "Formula": "'正社員日報入力(下書き仮)'!$H$147"
+    },
+    {
+      "Name": "endtime13",
+      "Formula": "'正社員日報入力(下書き仮)'!$H$160"
+    },
+    {
+      "Name": "endtime14",
+      "Formula": "'正社員日報入力(下書き仮)'!$H$173"
+    },
+    {
+      "Name": "endtime15",
+      "Formula": "'正社員日報入力(下書き仮)'!$H$186"
+    },
+    {
+      "Name": "endtime2",
+      "Formula": "'正社員日報入力(下書き仮)'!$H$17"
+    },
+    {
+      "Name": "endtime3",
+      "Formula": "'正社員日報入力(下書き仮)'!$H$30"
+    },
+    {
+      "Name": "endtime4",
+      "Formula": "'正社員日報入力(下書き仮)'!$H$43"
+    },
+    {
+      "Name": "endtime5",
+      "Formula": "'正社員日報入力(下書き仮)'!$H$56"
+    },
+    {
+      "Name": "endtime6",
+      "Formula": "'正社員日報入力(下書き仮)'!$H$69"
+    },
+    {
+      "Name": "endtime7",
+      "Formula": "'正社員日報入力(下書き仮)'!$H$82"
+    },
+    {
+      "Name": "endtime8",
+      "Formula": "'正社員日報入力(下書き仮)'!$H$95"
+    },
+    {
+      "Name": "endtime9",
+      "Formula": "'正社員日報入力(下書き仮)'!$H$108"
+    },
+    {
+      "Name": "item1",
+      "Formula": "'正社員日報入力(下書き仮)'!$R$4"
+    },
+    {
+      "Name": "item10",
+      "Formula": "'正社員日報入力(下書き仮)'!$R$121"
+    },
+    {
+      "Name": "item11",
+      "Formula": "'正社員日報入力(下書き仮)'!$R$134"
+    },
+    {
+      "Name": "item12",
+      "Formula": "'正社員日報入力(下書き仮)'!$R$147"
+    },
+    {
+      "Name": "item13",
+      "Formula": "'正社員日報入力(下書き仮)'!$R$160"
+    },
+    {
+      "Name": "item14",
+      "Formula": "'正社員日報入力(下書き仮)'!$R$173"
+    },
+    {
+      "Name": "item15",
+      "Formula": "'正社員日報入力(下書き仮)'!$R$186"
+    },
+    {
+      "Name": "item2",
+      "Formula": "'正社員日報入力(下書き仮)'!$R$17"
+    },
+    {
+      "Name": "item3",
+      "Formula": "'正社員日報入力(下書き仮)'!$R$30"
+    },
+    {
+      "Name": "item4",
+      "Formula": "'正社員日報入力(下書き仮)'!$R$43"
+    },
+    {
+      "Name": "item5",
+      "Formula": "'正社員日報入力(下書き仮)'!$R$56"
+    },
+    {
+      "Name": "item6",
+      "Formula": "'正社員日報入力(下書き仮)'!$R$69"
+    },
+    {
+      "Name": "item7",
+      "Formula": "'正社員日報入力(下書き仮)'!$R$82"
+    },
+    {
+      "Name": "item8",
+      "Formula": "'正社員日報入力(下書き仮)'!$R$95"
+    },
+    {
+      "Name": "item9",
+      "Formula": "'正社員日報入力(下書き仮)'!$R$108"
+    },
+    {
+      "Name": "starttime1",
+      "Formula": "'正社員日報入力(下書き仮)'!$C$4"
+    },
+    {
+      "Name": "starttime10",
+      "Formula": "'正社員日報入力(下書き仮)'!$C$121"
+    },
+    {
+      "Name": "starttime11",
+      "Formula": "'正社員日報入力(下書き仮)'!$C$134"
+    },
+    {
+      "Name": "starttime12",
+      "Formula": "'正社員日報入力(下書き仮)'!$C$147"
+    },
+    {
+      "Name": "starttime13",
+      "Formula": "'正社員日報入力(下書き仮)'!$C$160"
+    },
+    {
+      "Name": "starttime14",
+      "Formula": "'正社員日報入力(下書き仮)'!$C$173"
+    },
+    {
+      "Name": "starttime15",
+      "Formula": "'正社員日報入力(下書き仮)'!$C$186"
+    },
+    {
+      "Name": "starttime2",
+      "Formula": "'正社員日報入力(下書き仮)'!$C$17"
+    },
+    {
+      "Name": "starttime3",
+      "Formula": "'正社員日報入力(下書き仮)'!$C$30"
+    },
+    {
+      "Name": "starttime4",
+      "Formula": "'正社員日報入力(下書き仮)'!$C$43"
+    },
+    {
+      "Name": "starttime5",
+      "Formula": "'正社員日報入力(下書き仮)'!$C$56"
+    },
+    {
+      "Name": "starttime6",
+      "Formula": "'正社員日報入力(下書き仮)'!$C$69"
+    },
+    {
+      "Name": "starttime7",
+      "Formula": "'正社員日報入力(下書き仮)'!$C$82"
+    },
+    {
+      "Name": "starttime8",
+      "Formula": "'正社員日報入力(下書き仮)'!$C$95"
+    },
+    {
+      "Name": "starttime9",
+      "Formula": "'正社員日報入力(下書き仮)'!$C$108"
+    },
+    {
+      "Name": "workflow",
+      "Formula": "#REF!"
+    },
+    {
+      "Name": "worktime1",
+      "Formula": "'正社員日報入力(下書き仮)'!$M$4"
+    },
+    {
+      "Name": "worktime10",
+      "Formula": "'正社員日報入力(下書き仮)'!$M$121"
+    },
+    {
+      "Name": "worktime11",
+      "Formula": "'正社員日報入力(下書き仮)'!$M$134"
+    },
+    {
+      "Name": "worktime12",
+      "Formula": "'正社員日報入力(下書き仮)'!$M$147"
+    },
+    {
+      "Name": "worktime13",
+      "Formula": "'正社員日報入力(下書き仮)'!$M$160"
+    },
+    {
+      "Name": "worktime14",
+      "Formula": "'正社員日報入力(下書き仮)'!$M$173"
+    },
+    {
+      "Name": "worktime15",
+      "Formula": "'正社員日報入力(下書き仮)'!$M$186"
+    },
+    {
+      "Name": "worktime2",
+      "Formula": "'正社員日報入力(下書き仮)'!$M$17"
+    },
+    {
+      "Name": "worktime3",
+      "Formula": "'正社員日報入力(下書き仮)'!$M$30"
+    },
+    {
+      "Name": "worktime4",
+      "Formula": "'正社員日報入力(下書き仮)'!$M$43"
+    },
+    {
+      "Name": "worktime5",
+      "Formula": "'正社員日報入力(下書き仮)'!$M$56"
+    },
+    {
+      "Name": "worktime6",
+      "Formula": "'正社員日報入力(下書き仮)'!$M$69"
+    },
+    {
+      "Name": "worktime7",
+      "Formula": "'正社員日報入力(下書き仮)'!$M$82"
+    },
+    {
+      "Name": "worktime8",
+      "Formula": "'正社員日報入力(下書き仮)'!$M$95"
+    },
+    {
+      "Name": "worktime9",
+      "Formula": "'正社員日報入力(下書き仮)'!$M$108"
+    },
+    {
+      "Name": "メッセージID引用",
+      "Formula": "'正社員日報入力(下書き仮)'!$AF$4"
+    }
+  ]
+}//tSdI40pBkxkAPc44FMerCBl7AxzJvSpSoJhGjrLxjSPAWbbVRT1qw8qroaXwE9wStDJ1O8dsp//+1hP6QHGT+Z0kFuRXE1GIv/qKxidc5WWwBJJeZnGfPmtDqfy7NgT6Z6gaWGND0RiXUQKoUSbBtijF5iTgAm2e5Xvp5PnIGqNYL7tpj/3q9agrOZoycOnlLy+NiwBfCbnoAfXWRCz5sjZ92bQpMl93fQf3Q9OAyH761Df+W451Q6RDYKke3DyX0XLWH6I6qQ7DBXjEgt0REibPlLBU3tI9mi8L4MugSkUueaBfX8EjJmXlguDKLhPQU36ypyxScL0rLxpxge/kGP28Vje3mllVs2LyyvbwhEvQwcs69Tx7+L1Av+ZV7qBc2KXqu8xk1xwo03Mif5GPUccP5mSyq/IVAKJ1OF2mf38hEh1qKCOjxBKf2ChpZg1xqLJ5ff2qxxgGgrUqob4EEpwEBCN6bLhTjJkX12jHjn5yjCuwJnm7OBChB8A6wU+k3dznUKq7TszViYd5S9lEbzERPhgTepNa7z+nYtNBhPj+I4CrPHmn6KnhZMh0xYE+dEBRIsljUz3VMmKyYIJj3ocwGFVxVlouRwVHl+IS9MlvIqcPDp9ldtmqDlHA5ChmEfvcjeoGXmk6NPiGS6R2FgpV0NX7IHzFIaYKXrICNOTh+84mofgSNqrvAUh1XeAF5EbXUOdflDnZigre3Q8EUEdKkNa3espRlLJYLkUy/fSrgOUmF5lEzeoZ3GBgg7pDTQN9dvbbMNnMb1FqeehM6yeNiLxYSZY3argYvYX2WtR5AkBYvTeWRddXjY7T5we+mt4qYHk6tQHVyP6+XePK4FJOC4CZHflPMtamyambELFDlAUnbZKIeaecuz6OsbkPQkp5lFaxZToB0CS71jbsYw==|920

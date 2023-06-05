@@ -1,0 +1,321 @@
+{
+  "Rows": {
+    "Count": 45
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58
+    ],
+    "Count": 59
+  },
+  "Values": {
+    "2,1": "下書き",
+    "6,1": 1,
+    "6,48": "削除"
+  },
+  "Formulas": {
+    "1,58": "ODATA(\"ユーザー?$select=MJSID&$filter=AzureADID eq \"&IF(ISBLANK(BG1),\"null\",\"'\"&BG1&\"'\"))",
+    "3,58": "ODATA(\"日報chat_未読既読/$count?$filter=宛先ユーザー eq \"&IF(ISBLANK(BG2),\"null\",BG2)&\" and 既読状態 eq false\")",
+    "6,1": "ROW()"
+  },
+  "AttachInfos": {
+    "0,58": {
+      "CellType": {
+        "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
+        "CellCustomValue": "%CurrentUser%",
+        "ShowCircleUserPicture": true,
+        "NavigateSettingWhenLogout": {
+          "NavigateWhenLogoutMode": 1
+        }
+      }
+    },
+    "5,1": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "日報_下書きワークフロー",
+        "RowIndex": 5,
+        "ColumnIndex": 1,
+        "ColumnCount": 55,
+        "RowCount": 18,
+        "AutoFitRowHeight": true,
+        "ColumnOperation": 2,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "リストビュー1",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "日報_下書きワークフロー",
+            "ColumnName": "ユーザーID"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=日報_下書き一覧!BG2"
+          }
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium17"
+      }
+    },
+    "6,3": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "正社員日報本体_下書き2",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_下書き一覧!BB7"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=正社員日報本体_下書き2!shitagakiID"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_下書き一覧!BB7"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=正社員日報本体_下書き2!メッセージID引用"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_下書き一覧!AI7"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=正社員日報本体_下書き2!宛先ユーザー一時"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報_下書き一覧!AI7"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=正社員日報本体_下書き2!BB15"
+                }
+              }
+            ]
+          }
+        ],
+        "ClickMode": 1
+      },
+      "BindingInfo": {
+        "TableName": "日報_下書きワークフロー",
+        "ColumnName": "日付"
+      }
+    },
+    "6,10": {
+      "BindingInfo": {
+        "TableName": "日報_下書きワークフロー",
+        "ColumnName": "報告事項"
+      }
+    },
+    "6,22": {
+      "BindingInfo": {
+        "TableName": "日報_下書きワークフロー",
+        "ColumnName": "訪問予定"
+      }
+    },
+    "6,34": {
+      "BindingInfo": {
+        "TableName": "日報_下書きワークフロー",
+        "ColumnName": "宛先"
+      }
+    },
+    "6,41": {
+      "BindingInfo": {
+        "TableName": "日報_下書きワークフロー",
+        "ColumnName": "FGC_LastModifyDate"
+      }
+    },
+    "6,48": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "日報_下書きワークフロー",
+            "UpdateType": "delete",
+            "ShowConfirm": true,
+            "ConfirmText": "本当に削除してもよろしいですか？",
+            "UpdateValues": [],
+            "NextUpdateDataTableCommand": {
+              "TableName": "日報_下書き",
+              "UpdateType": "delete",
+              "ShowConfirm": true,
+              "ConfirmText": "本当に削除してもよろしいですか？",
+              "UpdateValues": []
+            }
+          }
+        ],
+        "Text": "削除",
+        "ClickMode": 1
+      }
+    },
+    "6,53": {
+      "BindingInfo": {
+        "TableName": "日報_下書きワークフロー",
+        "ColumnName": "メッセージID"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 21.333333333333332,
+        "FontWeight": 1
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 2
+      },
+      {
+        "FontFamily": 0,
+        "Foreground": 3,
+        "Formatter": 4,
+        "Underline": true
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 5
+      },
+      {
+        "FontFamily": 0,
+        "Foreground": 3,
+        "Formatter": 2,
+        "Underline": true
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Bold",
+        "[AUTO]General",
+        "Blue",
+        "yyyy/MM/dd(aaa)",
+        "yyyy/m/d h:mm"
+      ]
+    },
+    "CellStyles": {
+      "0,58": 0,
+      "1,58": 0,
+      "2,1": 1,
+      "2,2": 0,
+      "2,3": 0,
+      "2,4": 0,
+      "2,5": 0,
+      "2,6": 0,
+      "2,7": 0,
+      "2,58": 0,
+      "3,1": 0,
+      "3,2": 0,
+      "3,3": 0,
+      "3,4": 0,
+      "3,5": 0,
+      "3,6": 0,
+      "3,7": 0,
+      "3,49": 0,
+      "3,50": 0,
+      "3,51": 0,
+      "3,52": 0,
+      "3,53": 0,
+      "3,54": 0,
+      "3,55": 0,
+      "3,56": 0,
+      "3,57": 0,
+      "3,58": 0,
+      "5,1": 0,
+      "5,2": 0,
+      "5,3": 0,
+      "5,10": 0,
+      "5,41": 0,
+      "5,43": 0,
+      "6,1": 2,
+      "6,2": 0,
+      "6,3": 3,
+      "6,10": 0,
+      "6,22": 2,
+      "6,34": 0,
+      "6,35": 0,
+      "6,36": 0,
+      "6,37": 0,
+      "6,38": 0,
+      "6,39": 0,
+      "6,40": 0,
+      "6,41": 4,
+      "6,42": 0,
+      "6,43": 0,
+      "6,44": 0,
+      "6,45": 0,
+      "6,46": 0,
+      "6,47": 0,
+      "6,48": 5,
+      "6,49": 0,
+      "6,53": 0,
+      "6,54": 0,
+      "6,55": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "2,1,2,7",
+    "6,1,1,2",
+    "6,3,1,7",
+    "7,1,16,55",
+    "6,53,1,3",
+    "6,10,1,12",
+    "6,22,1,12",
+    "6,34,1,7",
+    "6,41,1,7",
+    "6,48,1,2",
+    "5,1,1,2",
+    "5,3,1,7",
+    "5,10,1,12",
+    "5,22,1,12",
+    "5,34,1,7",
+    "5,41,1,7",
+    "5,48,1,2",
+    "5,53,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "マスターページ　日報CHAT",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "日報_下書きワークフロー"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "未読件数",
+      "Formula": "日報_下書き一覧!$BG$4"
+    }
+  ]
+}//ffihxsvcA+8qCh8p+/1WhPKZUndpQiRmPbsC3TZXM8Dz9kLz//rJ0XwkDW1TClBlJha/jMhc4mHzKstKymvhVsCgZoepcwovrdJ8Z2H50wZPBff3RMrBbVFV06udTwQl5mKfn9uJ48IJsIe5fE0kWyigP55bNC1OnQYTPOHma5MZBa0/s2rwQq+7xbmZHvlYoVkYQCHxyMhOijsiyfovj1aJA5+xwwdUEJXu419LVZEZw9WqVDkB5z01G8+LdcDOeT/ZesdmXb+jsYM9d2FCkIzXSDK2hJg8kT+sc1hR1Q/ee9AA7EBrg2DwsHVyz8cu0uzqBlgbCANN4Z1iR61gN3BPLyfHbd3Wow5VThr5tChaKmJpKhvqK5xLzesnlrBX7510OPH8X8XIGIG7UN8ubcVoOynqqoMb3N6eO8POg3EigMLgyntpSpNbxrutTYCDZXvmkAMZq1OHmZufSE3ZzNPLDA2ltBMT6DxJGphvBaf0sRG/IZju3+Wggn0fLOikOPkNYkVePhJYlorSPqItUMwiBpfn75YRZa53cE/IVAS8MOUC2Ij39DmMDbNmb+HHShIGVdsdgUX4fStKj91F4kEfffWKuJWEWR7wxskFi2DJbL6ufA2dCWqKvb6Q6nxKv+ZQ+vfNwJ86aaRdpwdJIEysg43RaDcrRWqa9cdPxktgMOBXEj4RzQ+AKGsJvFTX/yFKUOEr7QfmVGmTvTq0yc/NlzVPxr/aKLamMrD4wSTh8IAyGWsjyU2TusD4Dt8l2pnwuTCxEicrjJ6ohjWe8xHxV2TwQxjC/jUCEtF2ki5uHV1Mm/Vk5Jzz1k1f+jvIOe/g7p3IAX145xz7uRLajK2yKlwsBAFueg2x4JWUmFsZ29EpEPXstYjEeg8vblv/Ft1T0LdlAsfBz6e64FJBXA==|920

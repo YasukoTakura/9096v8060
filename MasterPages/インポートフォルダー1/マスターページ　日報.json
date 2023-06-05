@@ -1,0 +1,567 @@
+{
+  "Rows": {
+    "Count": 49,
+    "DefaultSize": 17.0
+  },
+  "Cols": {
+    "Count": 70,
+    "DefaultSize": 15.0
+  },
+  "Values": {
+    "0,0": "税理士法人生駒会計　日報アプリ",
+    "0,55": "%CurrentUser%"
+  },
+  "AttachInfos": {
+    "0,55": {
+      "CellType": {
+        "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
+        "CellCustomValue": "%CurrentUser%",
+        "ShowUserPicture": false,
+        "NavigateSettingWhenLogout": {
+          "NavigateWhenLogoutMode": 1
+        }
+      }
+    },
+    "4,0": {
+      "CellType": {
+        "$type": "Forguncy.CustomMenu.ForguncyMenuCellType, Forguncy.CustomMenu",
+        "TemplateKey": "_RS_Medium_ThemeStyle3",
+        "Items": [
+          {
+            "Value": "新規作成",
+            "Text": "新規作成",
+            "IconPath": "Application/023_edit_3.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "正社員日報本体",
+                "PassValues": []
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Value": "日報一覧",
+            "Text": "日報一覧",
+            "IconPath": "Application/150_paste_2.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "Expand": true,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "正社員日報一覧",
+                "PassValues": []
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ],
+            "SubItems": [
+              {
+                "Value": "役員",
+                "Text": "役員",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "Expand": true,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "NavigateType": "back",
+                    "PassValues": []
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ],
+                "Notification": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=マスターページ　日報!役員未読件数"
+                }
+              },
+              {
+                "Value": "第1課【奥田】",
+                "Text": "第1課【奥田】",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "NavigateType": "back",
+                    "PassValues": []
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ],
+                "Notification": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=マスターページ　日報!第一課未読件数"
+                }
+              },
+              {
+                "Value": "第2課【児嶋】",
+                "Text": "第2課【児嶋】",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "NavigateType": "back",
+                    "PassValues": []
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ],
+                "Notification": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=マスターページ　日報!secdiv"
+                }
+              },
+              {
+                "Value": "第3課【大野】",
+                "Text": "第3課【大野】",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "NavigateType": "back",
+                    "PassValues": []
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ],
+                "Notification": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=マスターページ　日報!thirddiv"
+                }
+              },
+              {
+                "Value": "第4課【合田】",
+                "Text": "第4課【合田】",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "NavigateType": "back",
+                    "PassValues": []
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ],
+                "Notification": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=マスターページ　日報!fourthdiv"
+                }
+              },
+              {
+                "Value": "第5課【渡邊】",
+                "Text": "第5課【渡邊】",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "NavigateType": "back",
+                    "PassValues": []
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ],
+                "Notification": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=マスターページ　日報!fifthdiv"
+                }
+              },
+              {
+                "Value": "第6課【森】",
+                "Text": "第6課【森】",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "NavigateType": "back",
+                    "PassValues": []
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ],
+                "Notification": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=マスターページ　日報!sixdiv"
+                }
+              },
+              {
+                "Value": "第7課【長谷川】",
+                "Text": "第7課【長谷川】",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "NavigateType": "back",
+                    "PassValues": []
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ],
+                "Notification": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=マスターページ　日報!sevendiv"
+                }
+              },
+              {
+                "Value": "第8課【武下】",
+                "Text": "第8課【武下】",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "NavigateType": "back",
+                    "PassValues": []
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ],
+                "Notification": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=マスターページ　日報!eightdiv"
+                }
+              },
+              {
+                "Value": "第9課【中西】",
+                "Text": "第9課【中西】",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "NavigateType": "back",
+                    "PassValues": []
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ],
+                "Notification": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=マスターページ　日報!ninediv"
+                }
+              },
+              {
+                "Value": "本部【奥田】",
+                "Text": "本部【奥田】",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "NavigateType": "back",
+                    "PassValues": []
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ],
+                "Notification": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=マスターページ　日報!honbu"
+                }
+              },
+              {
+                "Value": "システム課【松岡】",
+                "Text": "システム課【松岡】",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "NavigateType": "back",
+                    "PassValues": []
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ],
+                "Notification": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=マスターページ　日報!systemdiv"
+                }
+              }
+            ]
+          },
+          {
+            "Value": "日報個人",
+            "Text": "日報個人",
+            "IconPath": "Navigation/169_user_2.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "正社員日報個人",
+                "PassValues": []
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "MenuLevelsStyle": [
+          {
+            "FontFamily": "Meiryo UI",
+            "FontSize": 16.0,
+            "Height": 45.0,
+            "IconHeight": 32.0,
+            "IconWidth": 32.0
+          },
+          {
+            "FontFamily": "Meiryo UI",
+            "FontSize": 13.333333333333332,
+            "Height": 32.0,
+            "IconHeight": 24.0,
+            "IconWidth": 24.0
+          }
+        ]
+      }
+    },
+    "4,12": {
+      "IsPlaceHolderCell": true
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0,
+        "FontSize": 26.666666030883789,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "Formatter": 3,
+        "TextIndent": 5,
+        "HorizontalAlignment": 4
+      },
+      {
+        "Background": 0,
+        "FontSize": 14.670000076293945,
+        "Formatter": 3
+      },
+      {
+        "Background": 0,
+        "FontSize": 14.670000076293945,
+        "Foreground": 2,
+        "TextIndent": 5,
+        "HorizontalAlignment": 5,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 6,
+        "FontSize": 14.670000076293945,
+        "Foreground": 2,
+        "TextIndent": 5,
+        "HorizontalAlignment": 5,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 14.670000076293945,
+        "Formatter": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 7,
+        "FontSize": 14.670000076293945,
+        "Formatter": 3
+      },
+      {
+        "Background": 8
+      },
+      {
+        "FontFamily": 7
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Accent 2 -25",
+        "Normal",
+        "#FFFFFFFF",
+        "[AUTO]General",
+        "Left",
+        "Right",
+        "#FF007ACC",
+        "Meiryo UI",
+        "#FFD3D3D3"
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,28": 1,
+      "0,55": 2,
+      "0,56": 3,
+      "0,57": 3,
+      "0,58": 3,
+      "0,59": 3,
+      "0,60": 3,
+      "0,61": 3,
+      "0,62": 3,
+      "0,63": 3,
+      "0,64": 3,
+      "0,65": 3,
+      "0,66": 3,
+      "0,67": 3,
+      "0,68": 3,
+      "0,69": 4,
+      "1,55": 3,
+      "1,56": 3,
+      "1,57": 3,
+      "1,58": 3,
+      "1,59": 3,
+      "1,60": 3,
+      "1,61": 3,
+      "1,62": 3,
+      "1,63": 3,
+      "1,64": 3,
+      "1,65": 3,
+      "1,66": 3,
+      "1,67": 3,
+      "1,68": 3,
+      "1,69": 4,
+      "2,55": 3,
+      "2,56": 3,
+      "2,57": 3,
+      "2,58": 3,
+      "2,59": 3,
+      "2,60": 3,
+      "2,61": 3,
+      "2,62": 3,
+      "2,63": 3,
+      "2,64": 3,
+      "2,65": 3,
+      "2,66": 3,
+      "2,67": 3,
+      "2,68": 3,
+      "2,69": 4,
+      "3,55": 3,
+      "3,56": 3,
+      "3,57": 3,
+      "3,58": 3,
+      "3,59": 3,
+      "3,60": 3,
+      "3,61": 3,
+      "3,62": 3,
+      "3,63": 3,
+      "3,64": 3,
+      "3,65": 3,
+      "3,66": 3,
+      "3,67": 3,
+      "3,68": 3,
+      "3,69": 4,
+      "4,0": 5,
+      "4,12": 6,
+      "21,69": 4,
+      "22,69": 4,
+      "23,69": 4,
+      "24,69": 4,
+      "25,69": 4,
+      "26,69": 4,
+      "27,69": 4,
+      "28,69": 4,
+      "29,69": 4,
+      "30,69": 4,
+      "31,69": 4,
+      "32,69": 4,
+      "33,69": 4,
+      "34,69": 4,
+      "35,69": 4,
+      "36,69": 4,
+      "37,69": 4,
+      "38,69": 4,
+      "39,69": 4,
+      "40,69": 4,
+      "41,69": 4,
+      "42,69": 4,
+      "43,69": 4,
+      "44,69": 4,
+      "45,69": 4,
+      "46,69": 4,
+      "47,69": 4,
+      "48,1": 7,
+      "48,69": 4
+    },
+    "SheetStyle": {
+      "FontFamily": 7,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "0,55,4,14",
+    "0,0,4,28",
+    "0,28,4,27",
+    "4,12,45,57",
+    "4,0,44,12"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.MasterPage, ServerDesignerCommon",
+    "PageLoadedCommandList": []
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//5Zvbm4ZNXHHpo/NepTN9XVPp8M0/441P2e2+vFmhtoAVnWUWUOHl4Z+b+tDmI87AlxIXqT+NBf8iMfrR06MKIaH237Aye01BFak8eQloP12A0rHG+P7cMaxQVqQKTSByTXDgOey9Z+hli1qMIjRyEuSlHfSx6koRCtKeWaaTbtkia9X7y8HdNXxFXyQVDaPfbv9kXZTPqhli3NHGQUT6+Jy9xBAblUPEo8pwlAlROhufwN6P3knGPTKgQ0g4kVW5TYwhJn/0r+BWlfX8Sgvsme4Sf23Eu5/dp1VsUoUNQgNkxzBcd5G5U8StI/p7JHtC8Af06C6CiiiMSDFp9/CMrJrcOMhetphJUb7CkFad8sQaD4D7cxsTMPMXJTwppy22qzGaiGDKuK5u/eSl8+ToPTb+4xi8v5ut+eRLak8f/ynRDVIGBF/KbE8zMJiwmo1RLJPo/R6hrURzQldK9WzqQ341bP6Hl4c4G4i+JkmpyPmO4/u+Y7VirMrwL/QG+l4lPeO+QWptM1CkCDjQ/qhnI8zeMuHKynTibHDtcluYXBTAnd/qVfQ/SX2P41FREgPT966hBpeSAtv0gTiLFiATS05cxNZxKqcACIHOL0m8/SYAAU6FsQ8mJIdXgX2fVkibmqFpMMxdoxW2sGXI14LjmBGMG9OsP70yZWOmZ9KoYyKEuqMeE1ZpXw4DUJyc8IRNKbTPGVxo8k9FLnBozRQm1hdui0bIJ8eJVGPplToL9fqKtW5pj+XrRsD2EtrmChA9mW9w8YE+7c5As4hzmPK6Q2vDZNZWTuSFezJ3U+2yOWShYGeuA5YUkcS7VwfseyoIH24i6Y+Bw4nSU/K1c/FtiXozvPJ7auaKOq9eSUi+aavLT+yKdYYpWNyMvRdRmqY0AI80lvpHW5MXPJzs5MyFhA==|920

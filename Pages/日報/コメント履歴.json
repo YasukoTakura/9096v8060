@@ -1,0 +1,188 @@
+{
+  "Rows": {
+    "Count": 20
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "Count": 52
+  },
+  "Values": {
+    "1,2": "コメント履歴",
+    "1,23": "日報ID：",
+    "2,47": "行番号"
+  },
+  "Formulas": {
+    "3,47": "ROW()",
+    "1,51": "ODATA(\"ユーザー?$select=MJSID&$filter=AzureADID eq \"&IF(ISBLANK(AZ1),\"null\",\"'\"&AZ1&\"'\"))"
+  },
+  "AttachInfos": {
+    "0,51": {
+      "CellType": {
+        "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
+        "CellCustomValue": "%CurrentUser%",
+        "ShowCircleUserPicture": true,
+        "NavigateSettingWhenLogout": {
+          "NavigateWhenLogoutMode": 1
+        }
+      }
+    },
+    "2,43": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "日報_コメント",
+        "RowIndex": 2,
+        "ColumnIndex": 43,
+        "ColumnCount": 7,
+        "RowCount": 8,
+        "ColumnOperation": 2,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "リストビュー2",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "日報_コメント",
+              "ColumnName": "日報ID"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=コメント履歴!AB2"
+            }
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "日報_コメント",
+              "ColumnName": "宛先ユーザー"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=コメント履歴!AZ2"
+            }
+          }
+        },
+        "TopCondition": null,
+        "DoNotLoadDataWhenLoadPage": true,
+        "ListViewStyleName": "_RS_Medium2"
+      }
+    },
+    "3,2": {
+      "CellType": {
+        "$type": "Forguncy.RepeaterCellType, ServerDesignerCommon",
+        "ListviewName": "リストビュー2",
+        "TemplatePageName": "344c7f50a2a24fcd94b842daaf5beb7",
+        "Command": {
+          "$type": "GrapeCity.Forguncy.Commands.CustomCommandObject, Forguncy.Commands",
+          "Commands": [],
+          "ParamProperties": {
+            "ワークフローID": "ワークフローID",
+            "名前": "名前",
+            "最終更新日時": "最終更新日時",
+            "コメント": "コメント"
+          }
+        },
+        "TemplateKey": "_RS_Selectable"
+      }
+    },
+    "3,43": {
+      "BindingInfo": {
+        "TableName": "日報_コメント",
+        "ColumnName": "宛先ユーザー"
+      },
+      "NameUsedInJavaScript": "ワークフローID"
+    },
+    "3,44": {
+      "BindingInfo": {
+        "TableName": "日報_コメント",
+        "ColumnName": "差出人",
+        "RelationBinding": {
+          "RelatedTable": "ユーザー",
+          "RelatedColumn": "MJSID",
+          "DisplayColumn": "名前"
+        }
+      },
+      "NameUsedInJavaScript": "名前"
+    },
+    "3,45": {
+      "BindingInfo": {
+        "TableName": "日報_コメント",
+        "ColumnName": "FGC_LastModifyDate"
+      },
+      "NameUsedInJavaScript": "最終更新日時"
+    },
+    "3,46": {
+      "BindingInfo": {
+        "TableName": "日報_コメント",
+        "ColumnName": "コメント"
+      },
+      "NameUsedInJavaScript": "コメント"
+    },
+    "3,47": {
+      "NameUsedInJavaScript": "行番号"
+    },
+    "3,48": {
+      "BindingInfo": {
+        "TableName": "日報_コメント",
+        "ColumnName": "日報ID"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 21.333333333333332,
+        "FontWeight": 0
+      },
+      {
+        "FontFamily": 1,
+        "HorizontalAlignment": 2
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "Body",
+        "Center"
+      ]
+    },
+    "CellStyles": {
+      "1,2": 0,
+      "3,2": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "1,2,2,8",
+    "4,43,6,7",
+    "3,2,17,41",
+    "1,23,2,4",
+    "1,27,2,13"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "日報_コメント"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//DWHhzjgeSmZcOa+08WKPOBP/W+f37PXQwKFQU9Alv268jFPxRxeGEJk7mx8JPfO0Uic2FbLkAdNSBy2rH/liputtRSGYms7Zzaj8P+D4hbDDurcgK2vA4CWWL53cTXbcSmON3yU9shSjn9E7pTjDN5s2pq6fGiU6FzHtVctKk8DzalasDD0yG9wxKEwgKGQ473AAN9kllPDmYFTVi57lICULdnVpGmwH9UoVNOZzU/dYaKRfgoNC+mV3BnRN5DPvNk3/P4Y2tx94GNC2j4i5YLzpB8BsxUIffUnAMDVmcMLT6CQZcDt3/cjBnrh73/YVdsgRENw423H36xqV3NCdhVlFJ3Uy46bciv9+G+NQPAXJvblr9N0kuJfjtHnNtRLRaXPfX0xdr9g4N40fzGal8NTxkMn1YSnTiqscaLNPCj93unWwvdux/N1I/hpWXj9ouc+y1S4WQU5vruecHo8H3uSgmYeIAUl23eP4bPPLb7U3+WSf2wi63ID4iXNC5eq7gqnDUG09Q9pPkulx/cTye3UJ9YXvptUXf9UMDpwf7/R5Ur6f0a4fKxax9MhAXWP3amrIqQ9F4JDDA0QBGSas1NfO04Eg729jvzv1XprlGz5vfYf3yrvAkkRVAOhqda98qgOGU2LpIdjjTVlSun7JQddlJ2aJu9ODcqhWrqsU3PpwG/ttEkUVUFD7wcdKKKoCq1D4ktMVi1upafZmfD7Q1+lMkw+CTNQV8aQ0pScD607lp6XNIxWK2PfZbnKZW3y0luwyHIu3Bf7ezsWDez/ApZKiO6pi1M5x2qKZL3rtgUVIU+g2KzvUEQZvZzHOaUy77riF4AqHvPtmy86b2uSf64dVHTqTlSMkHiSmJZz+rxhJX2cNLmFfpNjfNbgH6oAK8TxcOlb/bW/qSOyNgNxYFQ==|920

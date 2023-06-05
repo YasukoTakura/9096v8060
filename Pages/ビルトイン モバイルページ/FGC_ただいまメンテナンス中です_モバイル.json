@@ -1,0 +1,123 @@
+{
+  "Rows": {
+    "Count": 25
+  },
+  "Cols": {
+    "Count": 18
+  },
+  "Values": {
+    "2,2": "ただいまメンテナンス中です",
+    "6,2": "現在メンテナンスを行っているため、目的のサイトにアクセスできません。",
+    "10,2": "ご迷惑をおかけしますが、お時間をおいて後ほどアクセスしてください。"
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "BorderBottom": null
+      },
+      {
+        "FontSize": 21.333333969116211,
+        "Foreground": 0,
+        "Formatter": 1,
+        "TextIndent": 0,
+        "HorizontalAlignment": 2,
+        "VerticalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "BorderTop": null
+      },
+      {
+        "FontSize": 16.0,
+        "FontWeight": 5,
+        "Foreground": 6,
+        "Formatter": 1,
+        "WordWrap": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "#FF09519D",
+        "[AUTO]General",
+        "Center",
+        "Bottom",
+        "#FFA9BCD1",
+        "Bold",
+        "#FF7F7F7F",
+        "Meiryo UI",
+        "#FF000000"
+      ],
+      "Borders": [
+        {
+          "Color": 4
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,3": 0,
+      "1,4": 0,
+      "1,5": 0,
+      "1,6": 0,
+      "1,7": 0,
+      "1,8": 0,
+      "1,9": 0,
+      "1,10": 0,
+      "1,11": 0,
+      "1,12": 0,
+      "1,13": 0,
+      "1,14": 0,
+      "2,2": 1,
+      "3,1": 2,
+      "3,16": 2,
+      "4,1": 3,
+      "4,2": 3,
+      "4,3": 3,
+      "4,4": 3,
+      "4,5": 3,
+      "4,6": 3,
+      "4,7": 3,
+      "4,8": 3,
+      "4,9": 3,
+      "4,10": 3,
+      "4,11": 3,
+      "4,12": 3,
+      "4,13": 3,
+      "4,14": 3,
+      "4,15": 3,
+      "4,16": 3,
+      "6,2": 4,
+      "10,2": 4
+    },
+    "SheetStyle": {
+      "FontFamily": 7,
+      "FontSize": 13.333333015441895,
+      "Foreground": 8
+    }
+  },
+  "Spans": [
+    "2,2,2,14",
+    "6,2,4,14",
+    "10,2,3,14"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsBuiltInPage": true,
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//4xf8qxsdZzIrFJMsii9eM5ARV7td/YHNkzMBUdPOrQl+1pHf16zYWgLJO6UXRY0kw2lOiq0nK6hfpyHOr1fvLaES5CfsyjNY/cLBe1pIkcHzfoLxjWyL5Qvz6Ot2oi2LaumVE2Hmb7m4OsyelCvTS0dXfk4uIVxlnZpFPg6a6fX3ICCfJXgfI1kBxRLM+2YnLhK4R2vANh9cbHnAfKjOZPExqP8ubRBRySEAKcsDdeBrDNOg3I/clhyp2hg+KdztJ09qOgpVPY6s2u3yNpr9XWf66PksjJT8aI9hrobsdFCt1u9d5HflSIXaeIUcy/8xBku5S8A+XiOFClZREJPrhRp1ZzMA/Zhs0HLXMG4SzcEcS1QqWu/tr4uV6BbeQIm3DnG2mH1S+KMYctoFY2hA4vV0P15ZTkNGjTNN/ZOpdpOeeb2AQfAaHB4THebRBHDdAwixc55WLPLFqMAkmMF1/h/LsoAY5Q4N6hOls4w7867KKoBgKlRMZJ/T9Gzs9e+9s/hu3C1oZ1uhCTV+YJ77w4N4kByLlxCNsRVL9wR97fiAm22wV18VYKw04i63NguDA+E7FgCrkmriXtwjLlnkZKA4M5gkvGb/49sLakkSXCnmhXL/9LPnBBoBnqeEPrLMah4GvIo16zjLvomrzGcrQKMpjtZB+iisIrgLr+4ISSGES35s4vjS+Q12uF9t+wNTjhz2b2DNpZz/zRyynNJ7cKVGl9cIsu0aEbrdxu8yja+lNQWsD6bOGSNGl+GzbBLG4qtYxor7NzgqTz5yhpdAFxIs6MMqykhjPeqgGSx0TlPD10RkXR7yzpuuxOG3EKvmhxD7B4wzyECW8FL1VlN9ZVuRn/aExdUZdRp/nNOUQv++VUEsGxwBTj+S1LBeZZDANGarb4CQpcxE0ZPSRIGy9w==|920

@@ -1,0 +1,141 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 8.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 7.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 7.0
+        }
+      }
+    },
+    "Count": 8,
+    "DefaultSize": 18.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 6.0
+        }
+      },
+      "37": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 6.0
+        }
+      }
+    },
+    "Count": 38
+  },
+  "AttachInfos": {
+    "2,1": {
+      "TemplateCellSource": "行番号"
+    },
+    "2,4": {
+      "TemplateCellSource": "最終更新日時"
+    },
+    "2,13": {
+      "TemplateCellSource": "名前"
+    },
+    "3,1": {
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "ReadOnly": true
+      },
+      "TemplateCellSource": "コメント"
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0
+      },
+      {
+        "Background": 0,
+        "Formatter": 1
+      },
+      {
+        "Background": 2,
+        "Formatter": 3,
+        "VerticalAlignment": 4,
+        "WordWrap": true
+      },
+      {
+        "Background": 5
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Background 1 -5",
+        "yyyy/m/d\\ h:mm",
+        "Accent 2 80",
+        "@",
+        "Top",
+        "Accent 2 60",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "2,1": 0,
+      "2,4": 1,
+      "2,13": 0,
+      "2,18": 0,
+      "2,19": 0,
+      "2,20": 0,
+      "2,21": 0,
+      "2,22": 0,
+      "2,23": 0,
+      "2,24": 0,
+      "2,25": 0,
+      "2,26": 0,
+      "2,27": 0,
+      "2,28": 0,
+      "2,29": 0,
+      "2,30": 0,
+      "2,31": 0,
+      "2,32": 0,
+      "2,33": 0,
+      "2,34": 0,
+      "2,35": 0,
+      "2,36": 0,
+      "3,1": 2
+    },
+    "RowStyles": {
+      "1": 3,
+      "7": 3
+    },
+    "SheetStyle": {
+      "FontFamily": 6
+    }
+  },
+  "Spans": [
+    "1,0,1,38",
+    "7,0,1,38",
+    "2,1,1,3",
+    "2,4,1,9",
+    "2,13,1,5",
+    "3,1,4,36"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.TemplatePage, ServerDesignerCommon",
+    "ParentPageName": "コメント履歴"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//LpI846CLBeRozCvD5z+rrOz7Dx9MI1p1L2+FIWkgsvE9XpEwZwyMbQFx+oqRp40JCSJ822l9sJPn/nhO7HFZAp8KYaq/fC5GdD6lkmyzd0E+Fv7plSeCIBokc2FKw+Ww0rlrp/LvynEk5uyMnc9qNLZkKy/cSj2uu8F8BkxSkbxkS2m03tnR9gFS2KGtjOsDc+WyLtqv5E9uRdcoIwnKGM1a1yhf5TXZvh3XEUr2rvtzn+sQTeV9i/Fo4/m1ULX3UZS+DVTrB+UJrHz+/siJAufXhzpkfP3S8HcQf+Vr8lh0ivqXAR7PUgraJL4JG/GLoxacEQ/YA6kqf3j2nZx0iePZCenVVCw99FOXLUblDzeJEhpGoZgI9S54IJMByRhW7UwBXPPDhzjDoJwnTvuh0ZGR+gevyjKK/9wziv20Pm+EPyfiKTTWr/Ukl7O60qA4ukgbSiNd1OXje+JSE9xASk+SPq/fTlEP4Zz9gqFWpOsVF4zi06lic8X4+oyZovS34K4AgYTKCgl9IqZxVAgpkNyLq5DY/o91cQROZD/3Dl+2yTye1AEQvYbyS0Ug01YNEkGuYvwl9XE+6NREbEqtcIBuqYB9S3pWdW+wZc4T/IRlyEh+aVKeLN8/6qODF1KyPr5UuFmqefJnN5lHFT5KkFZesDuxiMCB6N6rWn5Oae2Y2Hmavg9ncZcUtC5jfOaIdN0Xr7bhBCmEZO/Lkl9OejTcCCz4MFqEmPh0boW7RdjlHw5GNR2SE03fbXI6DztIzHMEiBhVfOPOXPBasjkaG1KvXtzLRpVjlu4QqOlRezOPq18FzLPIpE4si7XcOFO2B+QnAOuHkTWJ+Anhm4/xLAp5rlRU6s7KC7x2OraMCo9AmX9obtnKinMEpNhsKkUm7SMIRAi1hsG3R1tKKn6cjw==|920

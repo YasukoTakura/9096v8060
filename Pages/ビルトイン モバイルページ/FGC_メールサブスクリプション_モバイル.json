@@ -1,0 +1,269 @@
+{
+  "Rows": {
+    "Count": 25
+  },
+  "Cols": {
+    "Count": 18
+  },
+  "Values": {
+    "2,3": "メールによる通知設定",
+    "5,1": "通知設定の種類を選択してください。",
+    "21,2": "OK",
+    "21,10": "キャンセル"
+  },
+  "AttachInfos": {
+    "7,1": {
+      "CellType": {
+        "$type": "Forguncy.RadioGroupCellType, ServerDesignerCommon",
+        "NoneItemText": "<空>",
+        "LayoutMode": 1,
+        "ItemSpace": 14,
+        "Items": [
+          {
+            "Value": "0",
+            "DisplayValue": "通知しない"
+          },
+          {
+            "Value": "1",
+            "DisplayValue": "すべての変更を通知する"
+          },
+          {
+            "Value": "2",
+            "DisplayValue": "自分以外のユーザーからの変更を通知する"
+          },
+          {
+            "Value": "3",
+            "DisplayValue": "自身が作成したレコードの変更のみ通知"
+          },
+          {
+            "Value": "4",
+            "DisplayValue": "自身が担当者に割り当てられているレコードの変更のみ通知"
+          }
+        ],
+        "ForguncyAttribute": "MailSubscription_Choice"
+      }
+    },
+    "21,2": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "OK",
+        "AutoExecute": true,
+        "ForguncyAttribute": "MailSubscription_Button"
+      }
+    },
+    "21,10": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "NavigateType": "back",
+            "PassValues": [],
+            "IgnoreTargetPageCachedCurrentRowInfo": false
+          }
+        ],
+        "Text": "キャンセル"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "BorderBottom": null
+      },
+      {
+        "FontSize": 21.333333969116211,
+        "Foreground": 0,
+        "Formatter": 1,
+        "TextIndent": 0,
+        "HorizontalAlignment": 2,
+        "VerticalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "BorderTop": null
+      },
+      {
+        "FontSize": 14.666666984558105,
+        "Foreground": 5,
+        "Formatter": 1
+      },
+      {
+        "FontSize": 14.666666984558105,
+        "Foreground": 5,
+        "VerticalAlignment": 6,
+        "WordWrap": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 7,
+        "FontSize": 16.0,
+        "FontWeight": 8,
+        "Foreground": 9,
+        "Formatter": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderRight": null
+      },
+      {
+        "Background": 9,
+        "FontSize": 16.0,
+        "FontWeight": 8,
+        "Foreground": 10,
+        "Formatter": 1,
+        "BorderBottom": null,
+        "BorderTop": 1,
+        "BorderLeft": 1,
+        "BorderRight": null
+      },
+      {
+        "Background": 9,
+        "BorderTop": 1
+      },
+      {
+        "Background": 9,
+        "BorderTop": 1,
+        "BorderRight": 1
+      },
+      {
+        "BorderLeft": null
+      },
+      {
+        "Background": 9,
+        "BorderBottom": 1,
+        "BorderLeft": 1
+      },
+      {
+        "Background": 9,
+        "BorderBottom": 1
+      },
+      {
+        "Background": 9,
+        "BorderBottom": 1,
+        "BorderRight": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "#FF09519D",
+        "[AUTO]General",
+        "Center",
+        "Bottom",
+        "#FFA9BCD1",
+        "#FF3F3F3F",
+        "Top",
+        "#FF248FFF",
+        "Bold",
+        "#FFFFFFFF",
+        "#FF238EFF",
+        "Meiryo UI",
+        "#FF000000"
+      ],
+      "Borders": [
+        {
+          "Color": 4
+        },
+        {
+          "Color": 10
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,5": 0,
+      "1,6": 0,
+      "1,7": 0,
+      "1,8": 0,
+      "1,9": 0,
+      "1,10": 0,
+      "1,11": 0,
+      "1,12": 0,
+      "2,3": 1,
+      "3,1": 2,
+      "3,2": 2,
+      "3,15": 2,
+      "3,16": 2,
+      "4,1": 3,
+      "4,2": 3,
+      "4,3": 3,
+      "4,4": 3,
+      "4,5": 3,
+      "4,6": 3,
+      "4,7": 3,
+      "4,8": 3,
+      "4,9": 3,
+      "4,10": 3,
+      "4,11": 3,
+      "4,12": 3,
+      "4,13": 3,
+      "4,14": 3,
+      "4,15": 3,
+      "4,16": 3,
+      "5,1": 4,
+      "7,1": 5,
+      "20,10": 0,
+      "20,11": 0,
+      "20,12": 0,
+      "20,13": 0,
+      "20,14": 0,
+      "20,15": 0,
+      "21,2": 6,
+      "21,9": 7,
+      "21,10": 8,
+      "21,11": 9,
+      "21,12": 9,
+      "21,13": 9,
+      "21,14": 9,
+      "21,15": 10,
+      "21,16": 11,
+      "22,9": 7,
+      "22,10": 12,
+      "22,11": 13,
+      "22,12": 13,
+      "22,13": 13,
+      "22,14": 13,
+      "22,15": 14,
+      "22,16": 11,
+      "23,10": 3,
+      "23,11": 3,
+      "23,12": 3,
+      "23,13": 3,
+      "23,14": 3,
+      "23,15": 3
+    },
+    "SheetStyle": {
+      "FontFamily": 11,
+      "FontSize": 13.333333015441895,
+      "Foreground": 12
+    }
+  },
+  "Spans": [
+    "7,1,11,16",
+    "21,2,2,6",
+    "21,10,2,6",
+    "2,3,2,12"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsBuiltInPage": true,
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//pn4UJkIQVV5Btk+hnvfwJCkj46QA3R10ggreatO3PV4RLsACyE4La/YlHywukA6sEXtpIofBNv+3pYAG3vkD6fkb4RyhAIf3gcIeAobklSs+i5kq4H273CQeSlkLX0fpaX/vsvGy5yK0CS0Fto8o0K4s0UA/5Ix8NA/Vgv28Opzp5YxV7nC3CcHQcEnxNVV7ZoBypJK6sbZT5cpHaP8L3mjEFixPc6Wbz8BLYpHkt2ee6dha6/ucpa3K4x8h+bPDiJoKc6hv7m+Cfl9Bz97MRtLtLrVJifpiWc0qh1IbdZawo37N0l4fPR2fpsXKjsKRvY58Cxj5TZYKF3AU1WCbcWWywJuGOYopuD8dsjSr9ihGqS9zgtrUdkDJkygRyEL9kuyplJuAPut6KURu3DYWc8Ps+zRnaGWrsOE89O1b3Q+hpXdOBuWFhjp8DzhfZizoF+CHd9SpekP50S/7uguf/5W2wzlyzBDEjaHodPmHJmi/IiIjzOlsO9fauaOb6Zt4EtNwK2RP0MrMR+kcsX4jjHbn1Px7zn69uzvzGEHp0sRgSCDdMEe3YYY8ZB4XfDLfIgJ/KdeamIBSecMSnwEiQ3UyvqWRGjuc53+tEHgiyQzflq6fFNCWZTE7RH0zPlPuiTnP9b3/ZHfBGNO8Dzko7BmFCT6CBnB3P7Za1r5BAT6uKzFjq36pkkOW9t7DjTmPy1HHX/APdwm39pNsQCR9AcDWr3nCyUasgu73J0UJd7DTlBFFkroOjenwJD2Rw+FFBMUjDiSAB0KujXPX/9A5xWZi8Gm6+qDE8OHY9NrPWhYIiwsivOuBUyt4F73+FY/Drp+JRIFhDnif9kIpVSIQSW5URib4bSmCSBh5Akamjgdj+Km6TXF8/VnDVe0ij6SXhK6KCLShniihIqk1RswB0Q==|920

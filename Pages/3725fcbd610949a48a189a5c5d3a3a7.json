@@ -1,0 +1,323 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 17.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 17.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0
+    ],
+    "Count": 6,
+    "DefaultSize": 14.0
+  },
+  "Cols": {
+    "Count": 10,
+    "DefaultSize": 18.0
+  },
+  "AttachInfos": {
+    "0,0": {
+      "TemplateCellSource": "既読"
+    },
+    "1,0": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=OR('3725fcbd610949a48a189a5c5d3a3a7'!$A$1=FALSE,'3725fcbd610949a48a189a5c5d3a3a7'!$A$1=\"\")"
+            },
+            "StyleInfo": {
+              "Background": "Accent 3 60",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "差出人"
+    },
+    "1,6": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=OR('3725fcbd610949a48a189a5c5d3a3a7'!$A$1=FALSE,'3725fcbd610949a48a189a5c5d3a3a7'!$A$1=\"\")"
+            },
+            "StyleInfo": {
+              "Background": "Accent 3 60",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=OR('3725fcbd610949a48a189a5c5d3a3a7'!$A$1=FALSE,'3725fcbd610949a48a189a5c5d3a3a7'!$A$1=\"\")"
+            },
+            "StyleInfo": {
+              "Background": "Accent 4 60",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "日時"
+    },
+    "2,0": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=OR('3725fcbd610949a48a189a5c5d3a3a7'!$A$1=FALSE,'3725fcbd610949a48a189a5c5d3a3a7'!$A$1=\"\")"
+            },
+            "StyleInfo": {
+              "Background": "Accent 3 60",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=OR('3725fcbd610949a48a189a5c5d3a3a7'!$A$1=FALSE,'3725fcbd610949a48a189a5c5d3a3a7'!$A$1=\"\")"
+            },
+            "StyleInfo": {
+              "Background": "Accent 4 60",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "顧問先"
+    },
+    "2,7": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=OR('3725fcbd610949a48a189a5c5d3a3a7'!$A$1=FALSE,'3725fcbd610949a48a189a5c5d3a3a7'!$A$1=\"\")"
+            },
+            "StyleInfo": {
+              "Background": "Accent 3 60",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=OR('3725fcbd610949a48a189a5c5d3a3a7'!$A$1=FALSE,'3725fcbd610949a48a189a5c5d3a3a7'!$A$1=\"\")"
+            },
+            "StyleInfo": {
+              "Background": "Accent 4 60",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "2,8": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=OR('3725fcbd610949a48a189a5c5d3a3a7'!$A$1=FALSE,'3725fcbd610949a48a189a5c5d3a3a7'!$A$1=\"\")"
+            },
+            "StyleInfo": {
+              "Background": "Accent 3 60",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "2,9": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=OR('3725fcbd610949a48a189a5c5d3a3a7'!$A$1=FALSE,'3725fcbd610949a48a189a5c5d3a3a7'!$A$1=\"\")"
+            },
+            "StyleInfo": {
+              "Background": "Accent 3 60",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=OR('3725fcbd610949a48a189a5c5d3a3a7'!$A$1=FALSE,'3725fcbd610949a48a189a5c5d3a3a7'!$A$1=\"\")"
+            },
+            "StyleInfo": {
+              "Background": "Accent 4 60",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "3,0": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=OR('3725fcbd610949a48a189a5c5d3a3a7'!$A$1=FALSE,'3725fcbd610949a48a189a5c5d3a3a7'!$A$1=\"\")"
+            },
+            "StyleInfo": {
+              "Background": "Accent 3 60",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=OR('3725fcbd610949a48a189a5c5d3a3a7'!$A$1=FALSE,'3725fcbd610949a48a189a5c5d3a3a7'!$A$1=\"\")"
+            },
+            "StyleInfo": {
+              "Background": "Accent 4 60",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "標題"
+    },
+    "4,0": {
+      "CellType": {
+        "$type": "HtmlRichEditor.HtmlRichEditor, HtmlRichEditor",
+        "ShowToolBars": false,
+        "ReadOnly": true
+      },
+      "TemplateCellSource": "本文"
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Formatter": 0
+      },
+      {
+        "FontFamily": 1,
+        "WordWrap": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 2,
+        "FontSize": 12.0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 2,
+        "FontSize": 16.0,
+        "FontWeight": 3,
+        "Foreground": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 13.333333333333332
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "yyyy/m/d",
+        "Body",
+        "Accent 2 80",
+        "Normal",
+        "#FF000000"
+      ]
+    },
+    "CellStyles": {
+      "1,6": 0,
+      "3,0": 1,
+      "3,1": 2,
+      "3,2": 2,
+      "3,3": 2,
+      "3,5": 2,
+      "3,6": 2
+    },
+    "RowStyles": {
+      "1": 3,
+      "2": 3,
+      "3": 4,
+      "4": 5,
+      "5": 5
+    },
+    "SheetStyle": {
+      "FontFamily": 1,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "4,0,2,10",
+    "1,0,1,6",
+    "1,6,1,4",
+    "2,0,1,7",
+    "3,0,1,10"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.TemplatePage, ServerDesignerCommon",
+    "ParentPageName": "chat件名一覧 (2)"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//SPUqpnoOGWqSbpN97Rd6NklPmC/zvbXT9heQMEWKNOQUpB6CBkQfI9sDtDhs1mb8B4AvrIj01kv3HWuVUgwdxY3L8bqt53aa45i+S+9avcDE2l1yeTMF6FJPkC+yOFJwgmouZ5T22GI//APCS1GWMJ/afAf5IsJXS5Aa3PMF8mvw5KGMfG4stkqZm1o8GMK7H6/iGOaqvXEZik8dGPq2SLM8mVqs1B6IDPZrEZwgV7FwtU3I9Z/M3hgZtsM2Cko3XtfIpG00TxGpfw6zLSV8BMLsY7bUP53tOOrgtUd4+hAzKna+ZzyRZLA5khK0hh/7uSU5V4c6DaZfs0zH2HFqD4ALT5F/Qyldr1b+LQOjwNpsa2FCHq+J0oowDJNwKrDrm0tR8RZitvWB2z2YlJj19uiSEqVnkeMBLX9Ge/Glhw3zIXBZ+tQ9OWmiCxqOppbLA5Vp9RkHr72RARBa5mU0mWzASmzt4Zbiilw4AhIDvFJOPKYa5ggALZ5tIodhAE/wedeP8K6CDJ5nGp+RClCJkhMuOWpmfwp0ikTEKk1b/0k6a6jqowu0dH031lEdADUZmiinaNBBP3bG+24aplNkf6TAWN/eddC67bLPDy9kmLW17xiocEmHcGfVjNedI6EqhcKXWLho7WnGV/EvjeRqfKqox/awtX5Dkyp245+RR8P+qqWE9zRsemVmy2zw21Alkbdo7m1vrZbtA7Lr9h48liAMyAeTdGmg0wXH+kCVPWNhcnRr5J/Xt2mtqzK/EnqwSuzx3jn4lADvYkXUBUHtysOFE4dPsKpwvQ+R1zQyd0e0uD10CdGPR6AhgA4MHZ8EOJRdmgtTbJJYmlx2oGn4kMSpJ8MkPIR/IRkvLtiBQsYvBMTaYSXvZSzasqEqROxH2YSItfxzBVZfH87ErbrU9g==|920

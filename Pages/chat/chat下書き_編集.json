@@ -1,0 +1,955 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 36.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 6.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 6.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 400.0,
+          "IsHidden": true
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 42.0,
+          "IsHidden": true
+        }
+      },
+      "23": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "26": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "45": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 7.0
+        }
+      },
+      "48": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 7.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      21,
+      22
+    ],
+    "Count": 50
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "40": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 39.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      41,
+      42
+    ],
+    "Count": 43
+  },
+  "Values": {
+    "0,0": "　メッセージの送信",
+    "2,1": "顧問先",
+    "2,17": "差出人",
+    "5,1": "標題",
+    "8,1": "本文",
+    "19,40": "広げる",
+    "22,40": "戻す\n",
+    "24,1": "添付",
+    "27,1": "宛先",
+    "27,4": "宛先",
+    "46,8": "書き込む",
+    "46,15": "キャンセル",
+    "46,35": "下書き保存"
+  },
+  "Formulas": {
+    "2,32": "NOW()",
+    "2,20": "ODATA(\"ユーザー?$select=名前&$filter=AzureADID eq \"&IF(ISBLANK(AQ1),\"null\",\"'\"&AQ1&\"'\"))",
+    "0,41": "ODATA(\"ユーザー?$select=MJSID&$filter=AzureADID eq \"&IF(ISBLANK(AQ1),\"null\",\"'\"&AQ1&\"'\"))"
+  },
+  "AttachInfos": {
+    "0,42": {
+      "CellType": {
+        "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
+        "CellCustomValue": "%CurrentUser%",
+        "ShowCircleUserPicture": true,
+        "NavigateSettingWhenLogout": {
+          "NavigateWhenLogoutMode": 1
+        }
+      }
+    },
+    "2,4": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "ValidateItem": true,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "顧客一覧",
+        "ValueColumnBindingInfo": {
+          "TableName": "顧客一覧",
+          "ColumnName": "MJS"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "顧客一覧",
+          "ColumnName": "会社名"
+        },
+        "AddNullItemWhenBinding": true
+      },
+      "BindingInfo": {
+        "TableName": "メッセージ_下書き",
+        "ColumnName": "顧問先"
+      }
+    },
+    "2,20": {
+      "BindingInfo": {
+        "TableName": "メッセージ_未読既読",
+        "ColumnName": "メッセージID",
+        "RelationBinding": {
+          "RelatedTable": "メッセージ",
+          "RelatedColumn": "mid",
+          "DisplayColumn": "差出人",
+          "NextRelationBinding": {
+            "RelatedTable": "ユーザー",
+            "RelatedColumn": "MJSID",
+            "DisplayColumn": "名前"
+          }
+        }
+      }
+    },
+    "2,41": {
+      "BindingInfo": {
+        "TableName": "メッセージ_下書き",
+        "ColumnName": "宛先"
+      }
+    },
+    "5,4": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      },
+      "BindingInfo": {
+        "TableName": "メッセージ_下書き",
+        "ColumnName": "標題"
+      },
+      "DataValidationInfo": {}
+    },
+    "8,4": {
+      "CellType": {
+        "$type": "HtmlRichEditor.HtmlRichEditor, HtmlRichEditor"
+      },
+      "BindingInfo": {
+        "TableName": "メッセージ_下書き",
+        "ColumnName": "本文"
+      }
+    },
+    "19,40": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "Location": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=chat下書き_編集!22:23"
+                },
+                "Value": true
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=chat下書き_編集!AO20"
+                },
+                "PropertyType": 1,
+                "Value": false
+              }
+            ]
+          }
+        ],
+        "Text": "広げる",
+        "VerticalAlignment": 2,
+        "ImagePath": "Arrow/290_down_arrow_2.svg",
+        "BuiltIn": true,
+        "Color": "#FF00B050"
+      }
+    },
+    "22,40": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "Location": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=chat下書き_編集!22:23"
+                },
+                "Value": false
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=chat下書き_編集!AO20"
+                },
+                "PropertyType": 1,
+                "Value": true
+              }
+            ]
+          }
+        ],
+        "Text": "戻す\n",
+        "VerticalAlignment": 2,
+        "ImagePath": "Arrow/289_up_arrow_2.svg",
+        "BuiltIn": true,
+        "Color": "#FF00B050"
+      }
+    },
+    "24,4": {
+      "CellType": {
+        "$type": "Forguncy.AttachmentCelltype, ServerDesignerCommon",
+        "UploadLimit": {
+          "ExtensionFilter": ".jpg, .jpeg, .png, .gif, .bmp, .xlsx, .docx, .doc, .xls, .pdf",
+          "ReplaceWhenOneFile": true
+        },
+        "TemplateKey": "_RS_Normal_Style3"
+      },
+      "BindingInfo": {
+        "TableName": "メッセージ_下書き",
+        "ColumnName": "添付ファイル"
+      }
+    },
+    "27,4": {
+      "CellType": {
+        "$type": "Forguncy.ContentContainerCellType, ServerDesignerCommon",
+        "PageName": "宛先",
+        "OverflowMode": 1
+      }
+    },
+    "46,8": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "メッセージ",
+            "UpdateType": "add",
+            "ShowConfirm": false,
+            "ConfirmText": "本当に追加してもよろしいですか？",
+            "UpdateValues": [
+              {
+                "ColumnName": "mid",
+                "Value": "%GUID%"
+              },
+              {
+                "ColumnName": "顧問先",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=chat下書き_編集!E3"
+                }
+              },
+              {
+                "ColumnName": "差出人",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=chat下書き_編集!toukouuser"
+                }
+              },
+              {
+                "ColumnName": "標題",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=chat下書き_編集!E6"
+                }
+              },
+              {
+                "ColumnName": "本文",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=chat下書き_編集!E9"
+                }
+              },
+              {
+                "ColumnName": "添付ファイル",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=chat下書き_編集!E25"
+                }
+              },
+              {
+                "ColumnName": "日時",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=chat下書き_編集!AG3"
+                }
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "GUID",
+            "TableValue": {
+              "TableName": "メッセージ",
+              "OnlyGetValue": true,
+              "TableValueType": 0,
+              "BindingInfos": [
+                {
+                  "BindingInfo": {
+                    "TableName": "メッセージ",
+                    "ColumnName": "mid"
+                  },
+                  "ColumnName": "mid"
+                }
+              ],
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "メッセージ",
+                  "ColumnName": "差出人"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=chat下書き_編集!toukouuser"
+                }
+              },
+              "TopCount": "1",
+              "OrderBySqlCondition": {
+                "OrderByColumns": [
+                  {
+                    "ColumnBindingInfo": {
+                      "TableName": "メッセージ",
+                      "ColumnName": "日時"
+                    },
+                    "Order": 1
+                  }
+                ]
+              }
+            },
+            "ID": "86e83c28712349d7b5ab87238e0ce10a"
+          },
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "メッセージ_本文body",
+            "UpdateType": "add",
+            "ShowConfirm": false,
+            "ConfirmText": "本当に追加してもよろしいですか？",
+            "UpdateValues": [
+              {
+                "ColumnName": "メッセージID",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=chat下書き_編集!GUID"
+                }
+              },
+              {
+                "ColumnName": "本文body",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=\"<body>\"&chat下書き_編集!E9&\"</body>\""
+                }
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=chat下書き_編集!messageid"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=chat下書き_編集!GUID"
+                }
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "宛先以外ユーザー",
+            "TableValue": {
+              "TableName": "ユーザー",
+              "BindingInfos": [
+                {
+                  "BindingInfo": {
+                    "TableName": "ユーザー",
+                    "ColumnName": "MJSID"
+                  },
+                  "ColumnName": "MJSID"
+                }
+              ],
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                "CompareType": 9,
+                "ColumnBindingInfo": {
+                  "TableName": "ユーザー",
+                  "ColumnName": "MJSID"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=chat下書き_編集!atesaki"
+                }
+              }
+            },
+            "ID": "027f647b51204688a66ea91fb4601545"
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=chat下書き_編集!atesakiigai"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=chat下書き_編集!宛先以外ユーザー"
+                }
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.RunJavaScriptCommand, ServerDesignerCommon",
+            "JavaScript": "// 現在のページを取得する。\r\nvar page = Forguncy.Page;\r\n// 現在のページでatesakiという名前のセルを取得する。\r\nvar atesakicell = page.getCell(\"atesaki\");\r\n// getValueメソッドでatesakiセルの値を取得する。\r\nvar atesakicellValue = atesakicell.getValue();\r\n// 宛先を配列にする\r\nvar atesakiitem = atesakicellValue.split(',');\r\n//　配列に含まれる重複を削除\r\nvar atesakiitem1 = new Set(atesakiitem)\r\n// 現在のページでmessageidという名前のセルを取得する。\r\nvar midcell = page.getCell(\"messageid\");\r\n// getValueメソッドでmidセルの値を取得する。\r\nvar midcellValue = midcell.getValue();\r\n// 現在のページでtoukouuserセルを取得する。\r\nvar toukouusercell = page.getCell(\"toukouuser\");\r\n// getValueメソッドでtoukouuserセルの値を取得する。\r\nvar toukouuserValue = toukouusercell.getValue();\r\n\r\n//atesaki配列を作成\r\nvar atesaki = [];\r\n\r\n// atesakiitem1の配列の数を繰り返して、オブジェクトを作成\r\nfor ( var ate of atesakiitem1) { \r\n atesaki.push(\r\n\t{\r\n\t\t宛先ユーザー: ate,\r\n\t\t日報chatID:　midcellValue,\r\n\t\t既読状態: \"false\",\r\n\t\tコメント既読状態: \"true\",\r\n\t\t宛先メンバー: \"true\",\r\n\t\t区分: \"2\",\r\n\t\t差出人: toukouuserValue\r\n\t});\r\n}\r\n\r\n//  atesakiigaiのオブジェクトの数を繰り返して、オブジェクトを作成\r\natesaki.push(\r\n\t{\r\n\t宛先ユーザー: \"9999\",\r\n\t日報chatID: midcellValue,\r\n\t既読状態: \"true\",\r\n\tコメント既読状態: \"true\",\r\n\t宛先メンバー: \"false\",\r\n\t区分: \"2\",\r\n\t差出人: toukouuserValue\r\n\t} );\r\n\r\nForguncy.Page.getCell(\"atesaki_obj\").setValue(atesaki);\r\n",
+            "ID": "f8e290a17bb1446fbb1b3eb3606b24ed",
+            "Comments": "カスタムWebAPIを利用してメッセージユーザーテーブルに追加するためのオブジェクトを作成"
+          },
+          {
+            "$type": "Forguncy.Model.RunJavaScriptCommand, ServerDesignerCommon",
+            "JavaScript": "// 現在のページを取得する。\r\nvar page = Forguncy.Page;\r\n// 現在のページでatesakiという名前のセルを取得する。\r\nvar atesakicell = page.getCell(\"atesaki\");\r\n// getValueメソッドでatesakiセルの値を取得する。\r\nvar atesakicellValue = atesakicell.getValue();\r\n// 宛先を配列にする\r\nvar atesakiitem = atesakicellValue.split(',');\r\n//　配列に含まれる重複を削除\r\nvar atesakiitem1 = new Set(atesakiitem)\r\n// 現在のページでmessageidという名前のセルを取得する。\r\nvar midcell = page.getCell(\"messageid\");\r\n// getValueメソッドでmidセルの値を取得する。\r\nvar midcellValue = midcell.getValue();\r\n// 現在のページでatesakiigaiセルを取得する。\r\nvar ateigaicell = page.getCell(\"atesakiigai\");\r\n// getValueメソッドでatesakiigaiセルの値を取得する。\r\nvar ateigaiValue = ateigaicell.getValue();\r\n// 現在のページでtoukouuserセルを取得する。\r\nvar toukouusercell = page.getCell(\"toukouuser\");\r\n// getValueメソッドでtoukouuserセルの値を取得する。\r\nvar toukouuserValue = toukouusercell.getValue();\r\n\r\n//atesaki配列を作成\r\nvar atesaki = [];\r\n\r\n// atesakiitem1の配列の数を繰り返して、オブジェクトを作成\r\nfor ( var ate of atesakiitem1) { \r\n atesaki.push(\r\n\t{\r\n\t\t宛先ユーザー: ate,\r\n\t\t日報chatID:　midcellValue,\r\n\t\t既読状態: \"false\",\r\n\t\tコメント既読状態: \"true\",\r\n\t\t宛先メンバー: \"true\",\r\n\t\t区分: \"2\",\r\n\t\t差出人: toukouuserValue\r\n\t});\r\n}\r\n\r\n//  atesakiigaiのオブジェクトの数を繰り返して、オブジェクトを作成\r\nateigaiValue.forEach(function(item, index) {\r\n\tatesaki.push(\r\n\t\t{\r\n\t\t宛先ユーザー: item.MJSID,\r\n\t\t日報chatID: midcellValue,\r\n\t\t既読状態: \"true\",\r\n\t\tコメント既読状態: \"true\",\r\n\t\t宛先メンバー: \"false\",\r\n\t\t区分: \"2\",\r\n\t\t差出人: toukouuserValue\r\n\t\t} );\r\n})\r\n\r\nForguncy.Page.getCell(\"atesaki_obj\").setValue(atesaki);\r\n",
+            "ID": "7d2f6c248fce4886a8b1bd7cf04f77fa",
+            "Comments": "カスタムWebAPIを利用してメッセージユーザーテーブルに追加するためのオブジェクトを作成 ateigai",
+            "Disabled": true
+          },
+          {
+            "$type": "Forguncy.Model.RunJavaScriptCommand, ServerDesignerCommon",
+            "JavaScript": "// 現在のページを取得する。\r\nvar page = Forguncy.Page;\r\n// 現在のページでatesakiという名前のセルを取得する。\r\nvar ateobjcell = page.getCell(\"atesaki_obj\");\r\n// getValueメソッドでatesakiセルの値を取得する。\r\nvar ateobjcellValue = ateobjcell.getValue();\r\n\r\n// 1回のpostリクエストを送信して、サーバーサイドでテーブルを追加・\r\n\r\nvar postUrl = \"http://localhost:37998/customapi/modifytablesdatademo/modifytablesdata\";\r\n\r\n// サーバーサイドAPIの「IDataAccess.ModifyTablesData メソッドで使用するModifyDataのデータを準備します。\r\nvar modifyData = {};\r\n\r\nmodifyData.日報chat_未読既読= {};\r\n\r\n// 追加\r\nmodifyData.日報chat_未読既読.AddRows = ateobjcellValue;\r\n\r\n// post\r\n$.post(postUrl, JSON.stringify(modifyData), function () {\r\n});\r\n",
+            "ID": "dab3270a2571428eb64b93c7117e4ace",
+            "Comments": "カスタムWebAPIを利用してメッセージユーザーテーブルに追加"
+          },
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "chat一覧",
+            "PassValues": [],
+            "DeleteCachedQuery": true
+          }
+        ],
+        "Text": "書き込む",
+        "TemplateKey": "_RS_Gradient_Shadow_Style3"
+      }
+    },
+    "46,15": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "NavigateType": "back",
+            "PassValues": []
+          }
+        ],
+        "Text": "キャンセル",
+        "TemplateKey": "_RS_Outline_Style1"
+      }
+    },
+    "46,35": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "メッセージ_下書き",
+            "ShowConfirm": false,
+            "ConfirmText": "本当に更新してもよろしいですか？",
+            "UpdateValues": [
+              {
+                "ColumnName": "mid",
+                "Value": "%GUID%"
+              },
+              {
+                "ColumnName": "顧問先",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=chat下書き_編集!E3"
+                }
+              },
+              {
+                "ColumnName": "標題",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=chat下書き_編集!E6"
+                }
+              },
+              {
+                "ColumnName": "本文",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=chat下書き_編集!E9"
+                }
+              },
+              {
+                "ColumnName": "日時",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=chat下書き_編集!AG3"
+                }
+              },
+              {
+                "ColumnName": "差出人",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=chat下書き_編集!toukouuser"
+                }
+              },
+              {
+                "ColumnName": "添付ファイル",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=chat下書き_編集!E25"
+                }
+              },
+              {
+                "ColumnName": "宛先",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=chat下書き_編集!atesaki"
+                }
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "GUID",
+            "TableValue": {
+              "TableName": "メッセージ_下書き",
+              "OnlyGetValue": true,
+              "TableValueType": 0,
+              "BindingInfos": [
+                {
+                  "BindingInfo": {
+                    "TableName": "メッセージ_下書き",
+                    "ColumnName": "mid"
+                  },
+                  "ColumnName": "mid"
+                }
+              ],
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "メッセージ_下書き",
+                  "ColumnName": "差出人"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=chat下書き_編集!user"
+                }
+              },
+              "TopCount": "1"
+            },
+            "ID": "e62617aeeade4cb1a8fa71983d604e88",
+            "Disabled": true
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=chat下書き_編集!messageid"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=chat下書き_編集!GUID"
+                }
+              }
+            ],
+            "Disabled": true
+          },
+          {
+            "$type": "Forguncy.Model.RunJavaScriptCommand, ServerDesignerCommon",
+            "JavaScript": "// 現在のページを取得する。\r\nvar page = Forguncy.Page;\r\n// 現在のページでatesakiという名前のセルを取得する。\r\nvar atesakicell = page.getCell(\"atesaki\");\r\n// getValueメソッドでatesakiセルの値を取得する。\r\nvar atesakicellValue = atesakicell.getValue();\r\n// 宛先を配列にする\r\nvar atesakiitem = atesakicellValue.split(',');\r\n//　配列に含まれる重複を削除\r\nvar atesakiitem1 = new Set(atesakiitem)\r\n// 現在のページでmessageidという名前のセルを取得する。\r\nvar midcell = page.getCell(\"messageid\");\r\n// getValueメソッドでmidセルの値を取得する。\r\nvar midcellValue = midcell.getValue();\r\n\r\n//atesaki配列を作成\r\nvar atesaki = [];\r\n\r\n// atesakiitem1の配列の数を繰り返して、オブジェクトを作成\r\nfor ( var ate of atesakiitem1) { \r\n atesaki.push(\r\n\t{\r\n\t\t宛先ユーザー: ate,\r\n\t\tメッセージID:　midcellValue\r\n\t});\r\n}\r\n\r\nForguncy.Page.getCell(\"atesaki_obj\").setValue(atesaki);\r\n",
+            "ID": "1c0bb5c35099498390008467280eb950",
+            "Comments": "カスタムWebAPIを利用してメッセージユーザーテーブルに追加するためのオブジェクトを作成",
+            "Disabled": true
+          },
+          {
+            "$type": "Forguncy.Model.RunJavaScriptCommand, ServerDesignerCommon",
+            "JavaScript": "// 現在のページを取得する。\r\nvar page = Forguncy.Page;\r\n// 現在のページでatesakiという名前のセルを取得する。\r\nvar ateobjcell = page.getCell(\"atesaki_obj\");\r\n// getValueメソッドでatesakiセルの値を取得する。\r\nvar ateobjcellValue = ateobjcell.getValue();\r\n\r\n// 1回のpostリクエストを送信して、サーバーサイドでテーブルを追加・\r\n\r\nvar postUrl = \"http://localhost:37998/customapi/modifytablesdatademo/modifytablesdata\";\r\n\r\n// サーバーサイドAPIの「IDataAccess.ModifyTablesData メソッドで使用するModifyDataのデータを準備します。\r\nvar modifyData = {};\r\n\r\nmodifyData.メッセージユーザー= {};\r\n\r\n// 追加\r\nmodifyData.メッセージユーザー.AddRows = ateobjcellValue;\r\n\r\n// post\r\n$.post(postUrl, JSON.stringify(modifyData), function () {\r\n});\r\n",
+            "ID": "ffe03ef7cf794e8989dc72767b852e40",
+            "Comments": "カスタムWebAPIを利用してメッセージユーザーテーブルに追加",
+            "Disabled": true
+          },
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "chat一覧",
+            "PassValues": [],
+            "DeleteCachedQuery": true
+          },
+          {
+            "$type": "Forguncy.Model.RunJavaScriptCommand, ServerDesignerCommon",
+            "JavaScript": "// 現在のページを取得する。\r\nvar page = Forguncy.Page;\r\n// 現在のページでatesakiという名前のセルを取得する。\r\nvar atesakicell = page.getCell(\"atesaki\");\r\n// getValueメソッドでatesakiセルの値を取得する。\r\nvar atesakicellValue = atesakicell.getValue();\r\n// 宛先を配列にする\r\nvar atesakiitem = atesakicellValue.split(',');\r\n//　配列に含まれる重複を削除\r\nvar atesakiitem1 = new Set(atesakiitem)\r\n// 現在のページでmessageidという名前のセルを取得する。\r\nvar midcell = page.getCell(\"messageid\");\r\n// getValueメソッドでmidセルの値を取得する。\r\nvar midcellValue = midcell.getValue();\r\n\r\n// atesakiitem1の配列の数を繰り返して、メッセージユーザーテーブルに追加\r\nfor ( var ate of atesakiitem1) { \r\nForguncy.addTableData(\"メッセージユーザー\",\r\n\t{\r\n\t\t宛先ユーザー: ate,\r\n\t\tメッセージID:　midcellValue\r\n\t});\r\n}",
+            "ID": "41a9bd456def4784917703667633cb8c",
+            "Comments": "javascriptAPIを使用してメッセージユーザーテーブルに追加",
+            "Disabled": true
+          },
+          {
+            "$type": "Forguncy.Model.RunJavaScriptCommand, ServerDesignerCommon",
+            "JavaScript": "// 現在のページを取得する。\r\nvar page = Forguncy.Page;\r\n// 現在のページでmessegeidという名前のセルを取得する。\r\nvar midcell = page.getCell(\"itirannaiyou_messageid\");\r\n// getValueメソッドでmessegeidセルの値を取得する。\r\nvar midcellValue = midcell.getValue();\r\n// メッセージユーザーテーブルのメッセージIDが一致する宛先を取得\r\nvar midatesaki = \"メッセージユーザー?$select=宛先ユーザー&$filter=メッセージID eq \\'\" + midcellValue + \"\\'\";\r\n//\r\nForguncy.Page.getCell(\"TextBoxCell2\").setValue(midatesaki);\r\n// 現在のページでcommentidセルを取得する。\r\nvar cidcell = page.getCell(\"=itirannaiyou_commentid\");\r\n// getValueメソッドでmessegeidセルの値を取得する。\r\nvar cidcellValue = cidcell.getValue();\r\n\r\n// 本サンプルコードでは、getTableDataByODataメソッドを使用して「Caterories」テーブルの全レコードを取得し、表示に適切な内容に整形したうえで「resultLabel」という名前が付いたセルに値として設定する例を示します。\r\nForguncy.getTableDataByOData(midatesaki,\r\n    // 成功した場合のコールバック処理\r\n    function (data) {//データ型 Type:List&lt;Dictionary&lt;string, object&gt;&gt;\r\n        for (var item = 0; item < data.length ; item++){\r\n\tdata[item].メッセージID = midcellValue;\r\n            data[item].コメントID = cidcellValue;\r\n        }\r\n        Forguncy.Page.getCell(\"TextBoxCell1\").setValue(data);\r\n    },\r\n    // エラー時のコールバック処理\r\n    function (e) {\r\n        alert(e);\r\n    });",
+            "ID": "14e7ecc774524927a01d12fd9faf6807",
+            "Disabled": true
+          }
+        ],
+        "Text": "下書き保存",
+        "TemplateKey": "_RS_Outline_Style1"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0,
+        "FontFamily": 1,
+        "FontSize": 18.666666666666664,
+        "FontWeight": 2,
+        "Foreground": 3
+      },
+      {
+        "FontFamily": 4,
+        "Formatter": 5,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 4
+      },
+      {
+        "Formatter": 6,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 7
+      },
+      {
+        "FontFamily": 4,
+        "VerticalAlignment": 8,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "HorizontalAlignment": 9,
+        "VerticalAlignment": 10
+      },
+      {
+        "Underline": true
+      },
+      {
+        "FontFamily": 4,
+        "HorizontalAlignment": 9
+      },
+      {
+        "Background": 0
+      },
+      {
+        "Background": 0,
+        "FontFamily": 4
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Accent 2 80",
+        "ＭＳ Ｐゴシック",
+        "Bold",
+        "#FF000000",
+        "Body",
+        "[AUTO]General",
+        "General",
+        "@",
+        "Top",
+        "Center",
+        "Bottom"
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "2,17": 1,
+      "2,20": 2,
+      "2,32": 3,
+      "5,4": 4,
+      "8,4": 2,
+      "19,40": 5,
+      "20,40": 6,
+      "22,40": 7,
+      "24,4": 8,
+      "27,4": 9,
+      "44,4": 9,
+      "44,5": 9,
+      "44,6": 9,
+      "44,7": 9,
+      "44,8": 9,
+      "44,9": 9,
+      "44,10": 9,
+      "44,11": 9,
+      "44,12": 9,
+      "44,13": 9,
+      "44,14": 9,
+      "44,15": 9,
+      "44,16": 9,
+      "44,17": 9,
+      "44,18": 9,
+      "44,19": 9,
+      "44,20": 9,
+      "44,21": 9,
+      "44,22": 9,
+      "44,23": 9,
+      "44,24": 9,
+      "44,25": 9,
+      "44,26": 9,
+      "44,27": 9,
+      "44,28": 9,
+      "44,29": 9,
+      "44,30": 9,
+      "46,0": 10,
+      "46,1": 10,
+      "46,2": 10,
+      "46,3": 10,
+      "46,4": 10,
+      "46,5": 10,
+      "46,6": 10,
+      "46,7": 10,
+      "46,8": 2,
+      "46,13": 10,
+      "46,14": 10,
+      "46,20": 10,
+      "46,21": 10,
+      "46,22": 10,
+      "46,23": 10,
+      "46,24": 10,
+      "46,25": 10,
+      "46,26": 10,
+      "46,27": 10,
+      "46,28": 10,
+      "46,29": 10,
+      "46,30": 10,
+      "46,31": 10,
+      "46,32": 10,
+      "46,33": 10,
+      "46,34": 10,
+      "46,35": 6,
+      "46,36": 6,
+      "46,37": 6,
+      "46,38": 6,
+      "46,39": 6,
+      "46,40": 10,
+      "46,41": 10,
+      "46,42": 10,
+      "47,0": 10,
+      "47,1": 10,
+      "47,2": 10,
+      "47,3": 10,
+      "47,4": 10,
+      "47,5": 10,
+      "47,6": 10,
+      "47,7": 10,
+      "47,13": 10,
+      "47,14": 10,
+      "47,20": 10,
+      "47,21": 10,
+      "47,22": 10,
+      "47,23": 10,
+      "47,24": 10,
+      "47,25": 10,
+      "47,26": 10,
+      "47,27": 10,
+      "47,28": 10,
+      "47,29": 10,
+      "47,30": 10,
+      "47,31": 10,
+      "47,32": 10,
+      "47,33": 10,
+      "47,34": 10,
+      "47,35": 6,
+      "47,36": 6,
+      "47,37": 6,
+      "47,38": 6,
+      "47,39": 6,
+      "47,40": 10,
+      "47,41": 11,
+      "47,42": 10,
+      "48,8": 2,
+      "48,9": 2,
+      "48,10": 2,
+      "48,11": 2,
+      "48,12": 2,
+      "48,35": 2,
+      "48,36": 2,
+      "48,37": 2,
+      "48,38": 2,
+      "48,39": 2,
+      "48,41": 2
+    },
+    "RowStyles": {
+      "45": 10,
+      "48": 10
+    },
+    "SheetStyle": {
+      "FontFamily": 4,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "2,1,2,3",
+    "2,17,2,3",
+    "2,32,2,8",
+    "5,1,2,3",
+    "8,1,2,3",
+    "24,1,2,3",
+    "27,1,2,3",
+    "27,4,17,27",
+    "2,20,2,10",
+    "0,0,1,41",
+    "19,40,2,1",
+    "5,4,2,36",
+    "8,4,15,36",
+    "24,4,2,10",
+    "2,4,2,12",
+    "46,8,2,5",
+    "46,15,2,5",
+    "46,35,2,5"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "マスターページ　日報CHAT",
+    "PageOverflowMode": 2,
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+        "PropertyItemsList": [
+          {
+            "TargetCells": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=chat下書き_編集!atesaki"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=chat下書き_編集!AP3"
+            }
+          },
+          {
+            "TargetCells": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=chat下書き_編集!宛先ユーザー一時"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=chat下書き_編集!AP3"
+            }
+          }
+        ]
+      }
+    ],
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "メッセージ_下書き"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "messageid",
+      "Formula": "chat下書き_編集!$AP$4"
+    },
+    {
+      "Name": "sinkitoukou_btn",
+      "Formula": "chat下書き_編集!$I$47"
+    },
+    {
+      "Name": "toukouuser",
+      "Formula": "chat下書き_編集!$AP$1"
+    },
+    {
+      "Name": "atesakiigai",
+      "Formula": "chat下書き_編集!$AQ$4"
+    }
+  ]
+}//MfEJahFoepmMAsCj9i5ZSZpsG9DVG25PUfO1vm0XWpb5YO9mmusVvFEauxCEbkhZtZ8VpbI9Tot+b8Qi9SYM2RjoGvhptt0S3FDTo4YOafNCIicDh1wADh/90EGgNJYDcguUGSwPP7YnzdyT3xf7p9s7TuWx4j5twZjw9gaRNRavXFPOUdqXb8T53OSGFCJgU4Wn0Irrqcmo4ayGB1nA1iZMnI+WNK+HCoTzyuN9KdsAmpgOFQvz/IKqKRwtgzxuLQZK+RairuniXmF+NCTj006lbyBgTzuiYUrioEpzpQPpamZ+SuIRpBaktecO36bwGvQATcGqGz/jKfCnyV6sQJCv6YBIBGo2ZbfEg4CNyVTDE2Zj54x5Hjr3kIuBtb4Lbs9jblWC7mJK2palUgzou22peL8LQGhGtDGcvyUEG/qYTKq5wjAistSMryoLqMAgQiQaePCHAYK4ElZQvi/pYeKiZRQEP5vzUaNg3Nvl/iphSEdv3CaWn+416H4/zNK514rGdP1N2z/VLV42APEu3BLRidjUB5IKirsDay8NabAQNwwC9us5qqN1SatLUgF2ELwE6ShpJeR5EqyPHORzi73HliIM47SqZmq7086upBamV+8Ke9winox2LFZcmgWWVno+IpA/z7GX9SVEH2m2mJPeAcer7tG9R/M9Nmtr8nJaOtNMN89A/rOIMDZmRcQe7dhqqecviiU9cy8NsDSaG2LSadIkDLRnYkx4HTYVhtC1V2wyOtbdMK8l4SGy4FX+lgwL0g4Jgito0zyoJIZFGuY9pf29xhBzQOuJAoD2OwHt1G24rOeWSe3iWJOAEjHtpankfDmbYkFHu1U12YAaIchRklesnANErimbHvLrdudHzfpRsWNNVW5jJ61eOS7oFZnj/3PImY3pfffblkeYtg==|920

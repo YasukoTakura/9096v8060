@@ -1,0 +1,712 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 6.0
+        }
+      }
+    },
+    "Count": 43
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60
+    ],
+    "Count": 61
+  },
+  "Values": {
+    "1,1": "日報入力",
+    "3,1": "日付",
+    "3,12": "開始時刻",
+    "3,18": "終了時刻",
+    "3,24": "勤務時間",
+    "3,30": "差出人",
+    "4,17": "～",
+    "6,1": "正社員日報入力 (2)",
+    "19,48": "状況",
+    "20,48": "未確認",
+    "33,1": "報告事項",
+    "33,20": "訪問予定",
+    "33,37": "下書き保存",
+    "36,45": "保存（仮）",
+    "39,37": "キャンセル"
+  },
+  "TimeValues": {
+    "4,12": "08:00:00",
+    "4,18": "17:00:00"
+  },
+  "Formulas": {
+    "13,49": "COUNT(AX16)+1",
+    "4,51": "IFERROR(VLOOKUP(AV5,$BD$5:$BI$5,3,0),\"\")",
+    "4,24": "S5-M5-1"
+  },
+  "AttachInfos": {
+    "4,1": {
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "CellDefaultValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=TODAY()"
+        },
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "4,12": {
+      "CellType": {
+        "$type": "Forguncy.TimeCellType, ServerDesignerCommon",
+        "StartTime": "05:00:00",
+        "EndTime": "13:00:00",
+        "Interval": 10,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "MaxDropDownItemCount": 20,
+        "CellDefaultValue": {
+          "$type": "Forguncy.TimeObject, ServerDesignerCommon",
+          "Value": "08:00:00"
+        }
+      }
+    },
+    "4,18": {
+      "CellType": {
+        "$type": "Forguncy.TimeCellType, ServerDesignerCommon",
+        "StartTime": "12:00:00",
+        "EndTime": "00:00:00",
+        "Interval": 10,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "MaxDropDownItemCount": 20,
+        "CellDefaultValue": {
+          "$type": "Forguncy.TimeObject, ServerDesignerCommon",
+          "Value": "17:00:00"
+        }
+      }
+    },
+    "4,30": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "MaxDropDownItemCount": 10,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "ユーザー",
+        "ValueColumnBindingInfo": {
+          "TableName": "ユーザー",
+          "ColumnName": "MJSID"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "ユーザー",
+          "ColumnName": "名前"
+        },
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "ユーザー",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "ユーザー",
+                "ColumnName": "MJSID"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=正社員日報本体2!ユーザー"
+              }
+            },
+            "Params": [
+              "=ユーザー"
+            ],
+            "ID": "9d02d2f3414a4e77bd91270e523c9ac3"
+          }
+        ],
+        "CellDefaultValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=正社員日報本体2!AZ5"
+        }
+      }
+    },
+    "4,47": {
+      "CellType": {
+        "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
+        "CellCustomValue": "%CurrentUser%"
+      }
+    },
+    "4,55": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "ユーザー",
+        "RowIndex": 4,
+        "ColumnIndex": 55,
+        "ColumnCount": 6,
+        "RowCount": 1,
+        "ColumnOperation": 1,
+        "ShowGridLine": true,
+        "Name": "リストビュー1",
+        "TopCondition": {
+          "$type": "ForguncyDataAccess.TopCESqlCondition, ForguncyDataAccess",
+          "TopCount": 500
+        },
+        "TableLoadOnDemandInfo": {
+          "IsEnabled": true
+        },
+        "ListViewStyleName": "スタイル"
+      },
+      "BindingInfo": {
+        "TableName": "ユーザー",
+        "ColumnName": "AzureADID"
+      }
+    },
+    "4,57": {
+      "BindingInfo": {
+        "TableName": "ユーザー",
+        "ColumnName": "MJSID"
+      }
+    },
+    "4,59": {
+      "BindingInfo": {
+        "TableName": "ユーザー",
+        "ColumnName": "名前"
+      }
+    },
+    "6,1": {
+      "CellType": {
+        "$type": "Forguncy.ContentContainerCellType, ServerDesignerCommon",
+        "PageName": "正社員日報入力2",
+        "OverflowMode": 1
+      }
+    },
+    "14,49": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "日報_ワークフロー",
+        "RowIndex": 14,
+        "ColumnIndex": 49,
+        "ColumnCount": 9,
+        "RowCount": 3,
+        "ColumnOperation": 2,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "リストビュー2",
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2"
+      }
+    },
+    "15,49": {
+      "BindingInfo": {
+        "TableName": "日報_ワークフロー",
+        "ColumnName": "ID"
+      }
+    },
+    "33,37": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "下書き保存",
+        "TemplateKey": "_RS_Outline_RoundCorner_Style2"
+      }
+    },
+    "34,1": {
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "34,20": {
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "36,45": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+            "ServerCommandName": "サーバーサイドコマンド1",
+            "Parameters": [
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "Value": "1",
+                "ParamName": "No"
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報本体2!starttime1"
+                },
+                "ParamName": "開始時刻"
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報本体2!endtime1"
+                },
+                "ParamName": "終了時刻"
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報本体2!worktime1"
+                },
+                "ParamName": "作業時間"
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報本体2!item1"
+                },
+                "ParamName": "項目"
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報本体2!client1"
+                },
+                "ParamName": "顧問先"
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報本体2!detail1"
+                },
+                "ParamName": "内容"
+              }
+            ],
+            "ResultErrorCodeTo": {
+              "SerializeProperty": "=正社員日報本体2!A1"
+            },
+            "ResultMessageTo": {
+              "SerializeProperty": "=正社員日報本体2!messageid"
+            },
+            "RefreshAfterFinish": true,
+            "CheckDataValidation": true
+          },
+          {
+            "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+            "ServerCommandName": "サーバーサイドコマンド1",
+            "Parameters": [
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "Value": "2",
+                "ParamName": "No"
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報本体2!starttime2"
+                },
+                "ParamName": "開始時刻"
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報本体2!endtime2"
+                },
+                "ParamName": "終了時刻"
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報本体2!worktime2"
+                },
+                "ParamName": "作業時間"
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報本体2!item2"
+                },
+                "ParamName": "項目"
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報本体2!client2"
+                },
+                "ParamName": "顧問先"
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=正社員日報本体2!detail2"
+                },
+                "ParamName": "内容"
+              }
+            ],
+            "ResultErrorCodeTo": {
+              "SerializeProperty": "=正社員日報本体2!A1"
+            },
+            "ResultMessageTo": {
+              "SerializeProperty": "=正社員日報本体2!messageid"
+            },
+            "RefreshAfterFinish": true,
+            "CheckDataValidation": true
+          },
+          {
+            "$type": "Forguncy.Model.RunJavaScriptCommand, ServerDesignerCommon",
+            "JavaScript": "// 現在のページを取得する。\r\nvar page = Forguncy.Page;\r\n// 現在のページでatesakiという名前のセルを取得する。\r\nvar atesakicell = page.getCell(\"atesaki\");\r\n// getValueメソッドでatesakiセルの値を取得する。\r\nvar atesakicellValue = atesakicell.getValue();\r\n// 宛先を配列にする\r\nvar atesakiitem = atesakicellValue.split(',');\r\n//　配列に含まれる重複を削除\r\nvar atesakiitem1 = new Set(atesakiitem)\r\n// 現在のページでmessageidという名前のセルを取得する。\r\nvar midcell = page.getCell(\"messageid\");\r\n// getValueメソッドでmidセルの値を取得する。\r\nvar midcellValue = midcell.getValue();\r\n\r\n// atesakiitem1の配列の数を繰り返して、メッセージユーザーテーブルに追加\r\nfor ( var ate of atesakiitem1) { \r\nForguncy.addTableData(\"メッセージユーザー\",\r\n\t{\r\n\t\t宛先ユーザー: ate,\r\n\t\tメッセージID:　midcellValue\r\n\t});\r\n}",
+            "ID": "9697e621e17f43508e0f4e1fa2d8999f"
+          }
+        ],
+        "Text": "保存（仮）",
+        "TemplateKey": "_RS_Gradient_Shadow_Style4"
+      }
+    },
+    "39,37": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "正社員日報一覧(仮)",
+            "PassValues": []
+          }
+        ],
+        "Text": "キャンセル",
+        "TemplateKey": "_RS_Outline_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 18.666666666666664,
+        "FontWeight": 0
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 2
+      },
+      {
+        "FontFamily": 1
+      },
+      {
+        "Formatter": 3,
+        "HorizontalAlignment": 4
+      },
+      {
+        "Formatter": 5
+      },
+      {
+        "FontFamily": 6,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 6
+      },
+      {
+        "FontFamily": 6,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 6,
+        "BorderBottom": 0,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 6,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 6,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 8,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 8,
+        "VerticalAlignment": 9,
+        "WordWrap": true
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "Body",
+        "[AUTO]General",
+        "yyyy/m/d(aaa)",
+        "Center",
+        "h:mm",
+        "ＭＳ Ｐゴシック",
+        "#FFA9A9A9",
+        "@",
+        "Top"
+      ],
+      "Borders": [
+        {
+          "Color": 7
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "3,12": 1,
+      "3,30": 2,
+      "3,31": 2,
+      "3,32": 2,
+      "3,33": 2,
+      "3,34": 2,
+      "3,35": 2,
+      "3,36": 2,
+      "3,37": 2,
+      "3,38": 2,
+      "4,1": 3,
+      "4,12": 2,
+      "4,13": 2,
+      "4,14": 2,
+      "4,15": 2,
+      "4,16": 2,
+      "4,17": 1,
+      "4,24": 4,
+      "4,30": 2,
+      "4,31": 2,
+      "4,32": 2,
+      "4,33": 2,
+      "4,34": 2,
+      "4,35": 2,
+      "4,36": 2,
+      "4,37": 2,
+      "4,38": 2,
+      "4,47": 5,
+      "4,48": 6,
+      "4,49": 6,
+      "4,50": 6,
+      "4,51": 6,
+      "4,52": 6,
+      "4,53": 6,
+      "4,54": 6,
+      "4,55": 7,
+      "4,56": 8,
+      "4,57": 9,
+      "4,58": 9,
+      "4,59": 9,
+      "4,60": 10,
+      "5,46": 2,
+      "33,1": 2,
+      "33,2": 2,
+      "33,3": 2,
+      "33,4": 2,
+      "33,5": 2,
+      "33,6": 2,
+      "33,7": 2,
+      "33,8": 2,
+      "33,9": 2,
+      "33,10": 2,
+      "33,11": 2,
+      "33,12": 2,
+      "33,13": 2,
+      "33,14": 2,
+      "33,15": 2,
+      "33,16": 2,
+      "33,17": 2,
+      "33,18": 2,
+      "33,19": 2,
+      "33,20": 2,
+      "33,21": 2,
+      "33,22": 2,
+      "33,23": 2,
+      "33,24": 2,
+      "33,37": 11,
+      "33,38": 2,
+      "33,39": 2,
+      "33,40": 2,
+      "33,41": 2,
+      "33,42": 2,
+      "34,1": 12,
+      "34,19": 2,
+      "34,20": 12,
+      "34,37": 2,
+      "34,38": 2,
+      "34,39": 2,
+      "34,40": 2,
+      "34,41": 2,
+      "34,42": 2,
+      "35,19": 2,
+      "35,37": 2,
+      "35,38": 2,
+      "35,39": 2,
+      "35,40": 2,
+      "35,41": 2,
+      "35,42": 2,
+      "36,19": 2,
+      "36,37": 2,
+      "36,38": 2,
+      "36,39": 2,
+      "36,40": 2,
+      "36,41": 2,
+      "36,42": 2,
+      "37,19": 2,
+      "37,37": 2,
+      "37,38": 2,
+      "37,39": 2,
+      "37,40": 2,
+      "37,41": 2,
+      "37,42": 2,
+      "38,37": 2,
+      "38,38": 2,
+      "38,39": 2,
+      "38,40": 2,
+      "38,41": 2,
+      "38,42": 2,
+      "39,37": 2,
+      "39,38": 2,
+      "39,39": 2,
+      "39,40": 2,
+      "39,41": 2,
+      "39,42": 2,
+      "40,37": 2,
+      "40,38": 2,
+      "40,39": 2,
+      "40,40": 2,
+      "40,41": 2,
+      "40,42": 2,
+      "42,1": 2,
+      "42,2": 2,
+      "42,3": 2,
+      "42,4": 2,
+      "42,5": 2,
+      "42,6": 2,
+      "42,7": 2,
+      "42,8": 2,
+      "42,9": 2,
+      "42,10": 2,
+      "42,11": 2,
+      "42,12": 2,
+      "42,13": 2,
+      "42,14": 2,
+      "42,15": 2,
+      "42,16": 2,
+      "42,17": 2,
+      "42,18": 2,
+      "42,19": 2,
+      "42,20": 2,
+      "42,21": 2,
+      "42,22": 2,
+      "42,23": 2,
+      "42,24": 2
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "4,1,1,9",
+    "4,57,1,2",
+    "4,59,1,2",
+    "4,55,1,2",
+    "15,49,1,4",
+    "13,49,1,5",
+    "20,48,2,6",
+    "16,49,1,9",
+    "1,1,2,5",
+    "36,37,2,6",
+    "39,37,2,6",
+    "33,37,2,6",
+    "34,20,7,16",
+    "34,1,7,16",
+    "6,1,26,38",
+    "36,45,2,6",
+    "4,12,1,5",
+    "4,18,1,5",
+    "4,30,1,9",
+    "4,24,1,4",
+    "33,45,2,6",
+    "14,49,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "マスターページ　日報CHAT",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "日報_ワークフロー"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "day",
+      "Formula": "正社員日報本体2!$B$5"
+    },
+    {
+      "Name": "ユーザー",
+      "Formula": "正社員日報本体2!$AE$5"
+    },
+    {
+      "Name": "ワークフロー",
+      "Formula": "正社員日報本体2!$AX$14"
+    },
+    {
+      "Name": "報告事項",
+      "Formula": "正社員日報本体2!$B$35"
+    },
+    {
+      "Name": "訪問予定",
+      "Formula": "正社員日報本体2!$U$35"
+    },
+    {
+      "Name": "未確認",
+      "Formula": "正社員日報本体2!$AW$21"
+    },
+    {
+      "Name": "messageid",
+      "Formula": "正社員日報本体2!$AU$6"
+    }
+  ]
+}//uFX2jJdnFV9qGE3Nb7wvFUqWsTPgOL64LXvvu9OnaBPlJBGbRjBgKdj/vv54eS4gIhq0QyDFaYIAAV8JUKwm+DkMO269PiOBCRLlt9BqVxxNAsePLskvj/oDhe6H7fgKT0mp22nzHO9GtS+P/qvtensxbHgE4UKdaX6xY36yeiKv6Gw7hW5ez13V7gI6VijPdTN27918/csDCEA22KXwa+ywr/N7ET4IiHannog4szQJgo9Fxa8iLqzkQB9zRS4B9XHJPF2HlcsIFZv0xRBkSFhBOk9Drj27fqmwtByGAo+mqQiBhPtaO1DH0JNhaDwJ1BalSdQJ9Z8wCl8Z8BN7ne4eVa/mkwQaAG5ukaBD5UsCwCq5nTKv6b2IG2MZUJLvy0zpBm3JuzZYiugrcVhuCpu8vhawO3455CbGNMw8hgK7v4m3pxaxxU1xsOYFy1G0JY/AxjPnw5w9+l6cixq28PWKsNROCeKDDk+bqSr5druSfuGY63jjUREE4SUc6N5i4D8jcp0FUOeupXazC6kyD4mmQ1EjhsYh6yhpoed7OQVQ/5teEgEuFSG0cMLk1qm8vdB0KmQBIaH1Na+oBv6ruxCH1YCaRud8+Jt3mgeeZB1P1c6amSKDiBl2TcsWawhW0UG+Sv2wMyVxc6jhVPOP15dVTaxaqLWnE6atuwEppv9XNwfOatA1oehy8qGWmEgFfpSqPTxJ29d6Pw/8sjVkqTYwIMEu0uiemaI0UUAByBJC5OErko4pSpw2vdD3zm5od8UV0hTXzIoMRJwOHiMnyV/UGvxIFK0JFhVYvRIo4XN4eKiFshTQRWoG3CmzrL0Eik2P21cs2nM9R31oRxzu04Qe29tAzictgQsN1UnM1pKNfggHIgavAVfUzLj1GoZ3I5XwgRIN80Irbu3XYFt5/g==|920

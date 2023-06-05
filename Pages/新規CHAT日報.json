@@ -1,0 +1,54 @@
+{
+  "Rows": {
+    "Count": 45
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "AttachInfos": {
+    "2,1": {
+      "CellType": {
+        "$type": "Forguncy.TabControlCellType, ServerDesignerCommon",
+        "Tabs": [
+          "chat新規投稿",
+          "正社員日報本体"
+        ]
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Foreground": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "#337AB7",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "2,1": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "2,1,43,58"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "マスターページ　日報CHAT",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//TyPbpJMvY+OrQJzA5GNlWAqA2VNX+j9ckmVfB1/5gksIXULKr4A+K1007cTPr168KjQ59ThCms588zQ/aTQXCUhMr8n6e4cnruyv8o1KQf7oMFmSSDxyFL8kNUJqqPTestNR3VigN9Hb5u3EsQ3w9DRYECOFBH2IDOtDx2uluTODSSM1+PbPjJ2fA4bq65HkU2j260g0hCrv/rvhRbjuTTLim1q2S6P0bTgOPe2pPxslUWYlgIHB4wnTWPBDguX3VWmzfKLkC0Ac+ukcMIcqk3E9A1n3zFhqkrnUvHnJunA5HGSbVNcF1l72DBM6mt48wgc2CWqdNds//r+0iCS/pt9HSKaiVTCLQL7C/lPLzz63sfJ6QZCm19XG346wdWAsvqXL47v9/uDjJtvgLKUM5qvZZHLqycutA8/gO6gV8BYlcGT20tHHGxG8vZMXF87fb58ntYoB0Xfz9biOhuUAHznm+5+u9hm/piQtf3Yqq29VsoehJRFVdybXx3yd7R8xZnRc3PMSGzkLveaYT/GfWO8A7dZS+pR0msFlBIeoEnIf0Z/whHlVGfYwCqdwRImQMSl1OptaDuNI4xU2C6F69Q9pk9xlE6iNcFVM7qEjHJvd5ktYfCqJOJacsn4PH4t3jmaUPlP6SNnT9r91FBTwSI1QbpLGY3um3jF/qNEEQPGLoRFxsnQVY3STat0WWaJxNed6z4CEg8BZU7G/e3jujkcDNVgPAN8gGwY4VwFJJThBJ4KGS5qIqkj/CZKNOV8BDj1gA15akuEs4/pAEhh8ugUbXUw18mPPVxnwXOIvzTh4TK/unvb03ctcoO8wHznttDEL/vmSBoQxlOGfqW/V7L416IaZM6VK3tjS9S0Im9RzUSwUeUe+v3+gvXu/iqjG6jqkhvXlC6LJXEe6Q8Ag/g==|920

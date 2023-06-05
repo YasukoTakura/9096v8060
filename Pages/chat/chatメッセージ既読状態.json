@@ -1,0 +1,152 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 26.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0
+    ],
+    "Count": 19
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      7
+    ],
+    "Count": 21
+  },
+  "Values": {
+    "1,1": "確認状態",
+    "3,8": "状態"
+  },
+  "Formulas": {
+    "4,8": "IF(H5=TRUE,\"既読\",\"未読\")"
+  },
+  "AttachInfos": {
+    "3,1": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "日報chat_未読既読",
+        "RowIndex": 3,
+        "ColumnIndex": 1,
+        "ColumnCount": 19,
+        "RowCount": 15,
+        "ColumnOperation": 2,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "リストビュー1",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "日報chat_未読既読",
+              "ColumnName": "宛先メンバー"
+            },
+            "Value": "true"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "日報chat_未読既読",
+              "ColumnName": "日報chatID"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=chatメッセージ既読状態!A1"
+            }
+          }
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2"
+      }
+    },
+    "4,1": {
+      "BindingInfo": {
+        "TableName": "日報chat_未読既読",
+        "ColumnName": "宛先ユーザー",
+        "RelationBinding": {
+          "RelatedTable": "ユーザー",
+          "RelatedColumn": "MJSID",
+          "DisplayColumn": "名前"
+        }
+      }
+    },
+    "4,7": {
+      "BindingInfo": {
+        "TableName": "日報chat_未読既読",
+        "ColumnName": "既読状態"
+      }
+    },
+    "4,11": {
+      "BindingInfo": {
+        "TableName": "日報chat_未読既読",
+        "ColumnName": "既読日時"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 21.333333333333332,
+        "HorizontalAlignment": 1
+      },
+      {
+        "HorizontalAlignment": 1
+      },
+      {
+        "Formatter": 2,
+        "HorizontalAlignment": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "HG丸ｺﾞｼｯｸM-PRO",
+        "Center",
+        "yyyy/m/d h:mm",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "4,1": 1,
+      "4,8": 1,
+      "4,11": 2
+    },
+    "SheetStyle": {
+      "FontFamily": 3
+    }
+  },
+  "Spans": [
+    "1,1,1,19",
+    "4,8,1,3",
+    "5,1,13,19",
+    "4,1,1,6",
+    "4,11,1,9",
+    "3,1,1,6",
+    "3,8,1,3",
+    "3,11,1,9"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "日報chat_未読既読"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//wLC05Bp4ShW4iPC6n/Fxu862P28EmZ7AxnwVMWE58ES/Rsaq5yAaSlMHlmooXwytUz0nq1zkpAmdcLtjrmk7RqMDa4gxD73TD54u3ERTCO2coCRGNr37sEvgy1bTLKcQTKTFJSc2sNsNw03C8VNy89PrPBAou1IzXx9TksPNs1bmxwh3qwJH0th74b2XKXBbvOdaEgDRqRVySQmJzZGOxXQfEEjHlBtvdFanDKCVZcz9mp3w+uUqW3IdfVFzUoHF0V6JusSx4XZPY6ypuEYpw5h4SIDFiV0T/qNZaG6zXAfcyCnTQgYZ7VlSYlyqUF/SEQ+J6B9bZJ9ugO9rvZllCC3e3+1wSKPjhpDESPrI687LEG+tkEPS/A+s4y8NZlpYX5v7N1l1Mnjz371eK8w/9xgPdTGkByMW1y2HSH8vOUAV2yxpj7teUyGzDBwwvUDlPpZHVWJdCukXMfssoDPcieYa3fjGWoNxYfR4L3WUmjNSewWXZMH7BZ8rkgnm/I9Uavv4nMl6c3VryKM/ymvTX9STM/uQWcUCOUJR5UtYbNlFfQfHItK5wGPpYjis3wCaPmBVvNFG6+OZwiIqQbDYPLCTzDAwenyJg51aXRFmgs748FarqkPbarYPsLSPg0HeXDLsm3YWmAnoh8SO3etj47Tfd3p8CrjhrxfVVDfktBHk97bWA6KLeEuzeWdUy2fnPuoSOZy6muXwrrlJN+vvh+nVeLPdNyjos/EZLX7hbqpciugNIpfuvgDrex0OxmaP0LmKXmE/IQKbO2bNw9lbhHE3JEpsuGaMo4n3oALdjTgDpCVjJOOxwIugurCu1N6IQRYCmX5Z8AjIvexLbYuDCansdCAzNR5WhJ47qg25+CE3thFx+ch+gfrSyjGtqQoJ0eFhHBi5vlq/v51u8Rr5KA==|920

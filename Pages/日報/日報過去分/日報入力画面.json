@@ -1,0 +1,283 @@
+{
+  "Rows": {
+    "Count": 51
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "Values": {
+    "4,1": "日付",
+    "4,12": "差出人",
+    "7,1": "正社員日報",
+    "32,1": "報告事項",
+    "39,1": "訪問予定",
+    "47,15": "投稿"
+  },
+  "AttachInfos": {
+    "0,0": {
+      "CellType": {
+        "$type": "Forguncy.ProcessBarCellType, ServerDesignerCommon",
+        "TableName": "日報",
+        "ShowCreateBy": true,
+        "ShowModifyBy": true,
+        "ActionButtonStyleInfo": {
+          "CommonStyle": {
+            "FontSize": 14.666666666666666,
+            "FontFamily": "Body",
+            "FontWeight": "Normal",
+            "FontStyle": "Normal"
+          }
+        },
+        "DesignTimeShowState": {
+          "TableName": "日報内容",
+          "SelectedID": "00000000-0000-0000-0000-000000000000"
+        }
+      }
+    },
+    "5,1": {
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "CellDefaultValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=TODAY()"
+        },
+        "DateFormat": "ggg ee年MM月dd日",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "5,12": {
+      "CellType": {
+        "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
+        "CellCustomValue": "%CurrentUser%",
+        "ShowCircleUserPicture": true,
+        "NavigateSettingWhenLogout": {
+          "NavigateWhenLogoutMode": 1
+        }
+      }
+    },
+    "7,1": {
+      "CellType": {
+        "$type": "Forguncy.ContentContainerCellType, ServerDesignerCommon",
+        "PageName": "正社員日報入力",
+        "OverflowMode": 1
+      }
+    },
+    "33,1": {
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "40,1": {
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "47,15": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "日報",
+            "UpdateType": "add",
+            "ShowConfirm": false,
+            "ConfirmText": "本当に追加してもよろしいですか？",
+            "UpdateValues": [
+              {
+                "ColumnName": "日付",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報入力画面!B6"
+                }
+              },
+              {
+                "ColumnName": "No",
+                "Value": "1"
+              },
+              {
+                "ColumnName": "開始時刻",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日報入力画面サブ!starttime1"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "投稿",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "HorizontalAlignment": 0
+      },
+      {
+        "Formatter": 1,
+        "VerticalAlignment": 2,
+        "WordWrap": true
+      },
+      {
+        "Formatter": 1,
+        "WordWrap": true
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Center",
+        "@",
+        "Top",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "5,1": 0,
+      "33,1": 1,
+      "40,1": 1,
+      "46,1": 1,
+      "46,2": 1,
+      "46,3": 1,
+      "46,4": 1,
+      "46,5": 1,
+      "46,6": 1,
+      "46,7": 1,
+      "46,8": 1,
+      "46,9": 1,
+      "46,10": 1,
+      "46,11": 1,
+      "46,12": 1,
+      "46,13": 1,
+      "46,14": 1,
+      "46,15": 1,
+      "46,16": 1,
+      "46,17": 1,
+      "46,18": 1,
+      "46,19": 1,
+      "46,20": 1,
+      "46,21": 1,
+      "46,22": 1,
+      "46,23": 1,
+      "46,24": 1,
+      "47,1": 1,
+      "47,2": 1,
+      "47,3": 1,
+      "47,4": 1,
+      "47,5": 1,
+      "47,6": 1,
+      "47,7": 1,
+      "47,8": 1,
+      "47,9": 1,
+      "47,10": 1,
+      "47,11": 1,
+      "47,12": 1,
+      "47,13": 1,
+      "47,14": 1,
+      "47,15": 2,
+      "47,19": 1,
+      "47,20": 1,
+      "47,21": 1,
+      "47,22": 1,
+      "47,23": 1,
+      "47,24": 1,
+      "48,1": 1,
+      "48,2": 1,
+      "48,3": 1,
+      "48,4": 1,
+      "48,5": 1,
+      "48,6": 1,
+      "48,7": 1,
+      "48,8": 1,
+      "48,9": 1,
+      "48,10": 1,
+      "48,11": 1,
+      "48,12": 1,
+      "48,13": 1,
+      "48,14": 1,
+      "48,19": 1,
+      "48,20": 1,
+      "48,21": 1,
+      "48,22": 1,
+      "48,23": 1,
+      "48,24": 1,
+      "49,1": 1,
+      "49,2": 1,
+      "49,3": 1,
+      "49,4": 1,
+      "49,5": 1,
+      "49,6": 1,
+      "49,7": 1,
+      "49,8": 1,
+      "49,9": 1,
+      "49,10": 1,
+      "49,11": 1,
+      "49,12": 1,
+      "49,13": 1,
+      "49,14": 1,
+      "49,19": 1,
+      "49,20": 1,
+      "49,21": 1,
+      "49,22": 1,
+      "49,23": 1,
+      "49,24": 1,
+      "50,1": 1,
+      "50,2": 1,
+      "50,3": 1,
+      "50,4": 1,
+      "50,5": 1,
+      "50,6": 1,
+      "50,7": 1,
+      "50,8": 1,
+      "50,9": 1,
+      "50,10": 1,
+      "50,11": 1,
+      "50,12": 1,
+      "50,13": 1,
+      "50,14": 1,
+      "50,15": 1,
+      "50,16": 1,
+      "50,17": 1,
+      "50,18": 1,
+      "50,19": 1,
+      "50,20": 1,
+      "50,21": 1,
+      "50,22": 1,
+      "50,23": 1,
+      "50,24": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 3
+    }
+  },
+  "Spans": [
+    "5,1,1,9",
+    "5,12,1,9",
+    "40,1,6,24",
+    "47,15,3,4",
+    "33,1,5,24",
+    "7,1,24,42",
+    "0,0,4,44"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "マスターページ　日報",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "day",
+      "Formula": "日報入力画面!$B$6"
+    }
+  ]
+}//Jrk7mS6aQTr3LDLwptW4nTRpVV/97U+5k6o1MoXNcIeBG3no8hE1TG9jP3/2HODNXXJmWE6D4A7wXAaw1tY4pj7TqkK4pbJ9AagrS3uk7U2IYt/Zgn+gG7Xwv51cmzXfigX9k/VTKEE7lVGtNFkn2lCHtGBWPQu8RHTh1ufRK9oefpdOWYnRsqUo534EmEndWB0vZzU8RvwRM3dVjYJvX21AYiFviV9B7G6ydK+eR3p3kBfNQVaQ4fckzwEEPN1nYagXhIC3VHtqjjXFwWZwQqyee1OiEPUfQXbh4RK8Rg84fJodkouEn0unR9To208alRrsYBbxhXkjP2f1+c4nnb4FWjYhQWiRFu3DWcXXtEyNPEgxxPj5fen+33o9ztE7Vy27So/98l9F9usnHbNftJ4Yi94GnU2lCIuDe+45cY9EChrCKMT/jeJ5uBhjsaUJ42N0NiFGlTau3LyZJ3TzGjlvzMenxyJTPj0/bYssygAiKpXxrWWlsoqUxS7q00vGtVUfwVmLfTSsv8PBf2ty80V70cBHTOc5JukLVMhDeV67YCPSDhQg8sUNP5SZYgfvwtG3NQYQ15zEUZUMINWpoaM06FvrGeiNeLx50SI/5u4A7zROyj0spklMavG183Z0B1yeH1WOZkLLxl7uVsF8YrVWRbMrsvDpbfNj2hQ3/YjuWSkMfbZtglnVJmVPuU1DPUdFvAcS8YZiLRKmDspCC/HCd9xoFZyKO/z3QwZIHqbDMvX7jECr1xImBaSynJ6yRWiZeFsL+1z9TBey54F0/PrwdU6QFLbZTs9sYzDVI97hR0UoRz5NZd2Uyz6+W9PIJ8I5OaFaUcHytl1ZHFkncJXZ2mg9bHBdyCPsimx4P1wt9aYl4YtuJoFSrDJMOKpuJpqJT3oSh+AehMK2xD6IWg==|920

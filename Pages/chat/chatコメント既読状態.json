@@ -1,0 +1,141 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 26.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0
+    ],
+    "Count": 19
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      7
+    ],
+    "Count": 21
+  },
+  "Values": {
+    "1,1": "確認状態",
+    "3,8": "状態"
+  },
+  "Formulas": {
+    "4,8": "IF(H5=TRUE,\"既読\",\"未読\")"
+  },
+  "AttachInfos": {
+    "3,1": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "コメント_未読既読",
+        "RowIndex": 3,
+        "ColumnIndex": 1,
+        "ColumnCount": 19,
+        "RowCount": 15,
+        "ColumnOperation": 2,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "リストビュー1",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "コメント_未読既読",
+            "ColumnName": "コメントID"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=chatコメント既読状態!A1"
+          }
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2"
+      }
+    },
+    "4,1": {
+      "BindingInfo": {
+        "TableName": "コメント_未読既読",
+        "ColumnName": "宛先ユーザー",
+        "RelationBinding": {
+          "RelatedTable": "ユーザー",
+          "RelatedColumn": "MJSID",
+          "DisplayColumn": "名前"
+        }
+      }
+    },
+    "4,7": {
+      "BindingInfo": {
+        "TableName": "コメント_未読既読",
+        "ColumnName": "既読状態"
+      }
+    },
+    "4,11": {
+      "BindingInfo": {
+        "TableName": "コメント_未読既読",
+        "ColumnName": "既読日時"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 21.333333333333332,
+        "HorizontalAlignment": 1
+      },
+      {
+        "HorizontalAlignment": 1
+      },
+      {
+        "Formatter": 2,
+        "HorizontalAlignment": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "HG丸ｺﾞｼｯｸM-PRO",
+        "Center",
+        "yyyy/m/d h:mm",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "4,1": 1,
+      "4,8": 1,
+      "4,11": 2
+    },
+    "SheetStyle": {
+      "FontFamily": 3
+    }
+  },
+  "Spans": [
+    "1,1,1,19",
+    "4,8,1,3",
+    "5,1,13,19",
+    "4,1,1,6",
+    "4,11,1,9",
+    "3,1,1,6",
+    "3,8,1,3",
+    "3,11,1,9"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "コメント_未読既読"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//Zgq6FnprbbxGL9oR18SXfDpWYFvsWHtQP3R0ZCftk9PzFr1MJseYEjS01jIcZ/2owfF83GGDvCWvBZ2Z3MmK4iVt1McO6uUrLs/BOCNE/T7DyIIyaEvk7vuWidhocVaZXS5QNtEEtoLCq3PrIHd2ANrht2lkDvig8/jhyXepxQm6gT9xzjiEt1UejRRalA66vq9jAqOCiDK15AjH5d96uGObZLQIfCbmk3iprEWnPBT5hQf+QqckIIjACIJyFxOtwF//Xm62V7OpwVcJXKmB/Ifqp71SAuyQo6cF60PTTI/+iMxk5iCJc9FXX3HYy3RCk0la0zUg9w1d5FERhQe1AcMO3LzWqIlBzXR9b+Us4SZUTY/NlLcOFvbBf4WeY8V8uGPQIsJ9sXHMdUDXWsx2uruPU9ims5nTVwuDesTI+Qe7ZbOs1OWjjGQuhbloqe3G/F7yS97bEWiRLwBXJUsuTQ8kmtpmg5vLiOAe8ASZlFY+/CUwLOKr7ud0K90+t+p0sIrNosOxzZUga63ncL1zmRhgQioaUlzHhvudBlo4QAJaIdyqhIq3vlTbDVJL6EwCg4ZhmPJaAsjesLB/2F2T1upA3Wi0SAaWvN5fqdCFRGZoxZynFXq7VzsX+eQrALEHyGRSgXiAOUAtg6OQasjuCiko6RXfV6SszUXZbNrmUe8xZauxHNqTL0JluiWxtUZViako4YxW5HytrubHayFpmzb7K/d0icI0y4u24B5N1kXbHAZ86u4XCnvJYzXUwHDJ1dzi5OePfXmdRaigbbZZQ9ourO3lUCZcg7mWv22SqQPLiwZpkRxL7baDoE0S/Qr4Yus6H7LJdMy3qXe5IuII4Qt0Ni3nt5BSK/FP2EMjTRrdr1eJM+Q0qrcLMCmf5P/p/iEjEMSF1DGSnUX2Ew2QEA==|920

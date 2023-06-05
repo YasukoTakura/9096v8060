@@ -1,0 +1,138 @@
+{
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.PostRequestTrigger, ServerDesignerCommon",
+      "Permission": {
+        "AllowRoles": [
+          "FGC_LoginUser"
+        ]
+      },
+      "Parameters": [
+        {
+          "Name": "メッセージID"
+        },
+        {
+          "Name": "コメント"
+        },
+        {
+          "Name": "差出人"
+        },
+        {
+          "Name": "日時"
+        },
+        {
+          "Name": "コメント番号"
+        },
+        {
+          "Type": 1,
+          "ArrayParamItems": [
+            {
+              "Name": "宛先ユーザー"
+            }
+          ],
+          "PrimaryKeys": [
+            "ID"
+          ],
+          "Name": "宛先"
+        }
+      ]
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+      "TableName": "コメント",
+      "UpdateType": "add",
+      "ShowConfirm": false,
+      "ConfirmText": "本当に追加してもよろしいですか？",
+      "UpdateValues": [
+        {
+          "ColumnName": "メッセージID",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=メッセージID"
+          }
+        },
+        {
+          "ColumnName": "コメントID",
+          "Value": "%GUID%"
+        },
+        {
+          "ColumnName": "コメント番号",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=コメント番号"
+          }
+        },
+        {
+          "ColumnName": "コメント",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=コメント"
+          }
+        },
+        {
+          "ColumnName": "差出人",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=差出人"
+          }
+        },
+        {
+          "ColumnName": "日時",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=日時"
+          }
+        }
+      ],
+      "ParamNameToSaveNewRowValue": "New_Comment"
+    },
+    {
+      "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
+      "LoopInfo": {
+        "$type": "Forguncy.Model.CountLoopInfo, ServerDesignerCommon",
+        "LoopCount": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=宛先"
+        },
+        "LoopIndexParamName": "",
+        "LoopItemParamName": "Item"
+      },
+      "CommandList": [
+        {
+          "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+          "TableName": "コメント_未読既読",
+          "UpdateType": "add",
+          "ShowConfirm": false,
+          "ConfirmText": "本当に追加してもよろしいですか？",
+          "UpdateValues": [
+            {
+              "ColumnName": "メッセージID",
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=メッセージID"
+              }
+            },
+            {
+              "ColumnName": "コメントID",
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=New_Comment.コメントID"
+              }
+            },
+            {
+              "ColumnName": "宛先ユーザー",
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=Item.宛先ユーザー"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "Name": "コメントユーザー追加"
+}
